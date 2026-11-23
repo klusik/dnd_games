@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 4,
-  "last_event": "000004",
+  "revision": 5,
+  "last_event": "000005",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,10 +12,10 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "dialogue",
-    "resume": "Rudolf Kaře řekl, že neví, co vlastně chce, a pochybuje, zda intuitivně správné jednání je skutečně správné. Kara připomněla GAMMA-six, jeho záchranu jejího života a svou nejasnou roli v jeho minulosti. Vyjádřila přání opustit planetu a zároveň zjistit, co mu udělala a proč. Zeptala se, zda by s ní odletěl, kdyby bylo FSD zítra funkční, nebo by zůstal pátrat. Čeká na odpověď. Žádný odlet, oprava ani výprava neschváleny.",
+    "resume": "Rudolf s nadsázkou obrátil Kařinu otázku o vzpomínkách proti ní a řekl, že jsou na tom stejně. Kara se zasmála, přiznala ambivalentní vztah k odhalování minulosti a vyjádřila přání zjistit, zda je na planetě někdo ponechal úmyslně, nebo šlo o nehodu. Upozornila na možné riziko návratu mezi lidi, pokud by šlo o úmysl; jde pouze o hypotézu. Zavřela archiv, vstala a nabídla jídlo a domluvu o zítřejším postupu. Čeká na reakci. Žádná výprava ani odlet nejsou schváleny.",
     "pending": null,
     "certainty": "played",
-    "source": "events/000004.json",
+    "source": "events/000005.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -174,9 +174,10 @@
         "known_background": "Ex-Sirius Security; nezávislá kontraktorka; biometrická autorizace VELIN.KARA, Supervisor-5; podle archivu supervizorka DAWNSTAR. Vlastní vzpomínky neúplné.",
         "expressed_goals": [
           "Opustit planetu a obnovit běžný život bez permanentního ohrožení.",
-          "Objasnit svou minulou roli a případnou újmu způsobenou Rudolfovi."
+          "Objasnit svou minulou roli a případnou újmu způsobenou Rudolfovi.",
+          "Zjistit, zda jejich uváznutí bylo úmyslné, nebo následkem nehody; posoudit případné riziko návratu mezi lidi."
         ],
-        "last_question": "Kdyby bylo zítra opravené FSD, odletěl by Rudolf s ní, nebo zůstal pátrat?"
+        "last_question": "Nemáš hlad? Udělala bych něco k jídlu a můžeme se domluvit, co podnikneme zítra."
       }
     },
     "locations": {

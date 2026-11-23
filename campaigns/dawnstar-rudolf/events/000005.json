@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 4,
+  "revision": 5,
+  "day": 18,
+  "type": "dialogue",
+  "player_action": "„No, jak nedávno někdo řekl, ‚zajímala by mě jedna věc, chceš vlastně pořád získat svoje vzpomínky zpátky?‘ a nějak... no, mi přijde, že jsme na tom stejně“",
+  "dm_response": "Kara se zasměje a zavrtí hlavou.\n\n„No jo, dostals mě.“\n\nOpře se v židli a chvíli přemýšlí.\n\n„Víš, občas se přistihnu, že se těším, až najdeme nějaký další záznam. A když ho pak otevřeme, skoro si přeju, abychom ho nikdy nenašli.“\n\nPrstem přejede po okraji hrnku.\n\n„Ale je tu něco, co bych opravdu chtěla zjistit. Jestli nás tady někdo nechal úmyslně, nebo jestli se prostě něco pokazilo. Protože pokud se nás někdo snažil zbavit, nemusí být ani návrat mezi lidi úplně bezpečný.“\n\nOtočí se zpět k terminálu a zavře archiv.\n\n„Každopádně mám dneska už těch počítačů plný zuby. Nemáš hlad? Udělala bych něco k jídlu a můžeme se domluvit, co podnikneme zítra.“\n\nUsměje se na tebe a vstane.",
+  "rolls": [],
+  "changes": [
+    "Rudolf a Kara vyjádřili podobnou nejistotu ohledně minulosti.",
+    "Kara sdělila vlastní otázku ohledně příčiny uváznutí a nabídla jídlo.",
+    "Archiv na terminálu zavřen, žádná konzumace, přesun, spánek ani změna zásob zatím neproběhly."
+  ],
+  "sources": [
+    "events/000004.json",
+    "Nový dialog v tomto tahu"
+  ],
+  "correction_of": null
+}
