@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 1,
+  "revision": 2,
+  "day": 18,
+  "type": "analysis",
+  "player_action": "Podívám se na skener SRV a zkusím zjistit, jak daleko je DS-3 stanice, kolik mi ještě zbývá, kdybych se tam pokoušel dostat. Jen analýza.",
+  "dm_response": "Uložená mapa ukazuje orientační přímou vzdálenost asi 95 km, přibližný azimut 073°, poslední známý signál 1452,7 MHz ve fallback režimu. Odhad využívá starší triangulaci a polohu DS-Δ2. Cíl leží ve zvlněné planině s útesovým okrajem. Jízdní vzdálenost, aktuální signál a dojezd SRV nejsou ověřeny. Bez hodu, bez přesunu.",
+  "rolls": [],
+  "changes": [
+    "Zaznamenána pasivní navigační analýza.",
+    "Obnoven aktivní stav kampaně. Herní poloha, inventář, energie a den beze změn."
+  ],
+  "sources": [
+    "ChatGPT log.txt:15734-15746",
+    "rudolf_dawnstar_updated.txt:171-175",
+    "rudolf_dawnstar_updated.txt:218-234"
+  ],
+  "correction_of": null
+}
