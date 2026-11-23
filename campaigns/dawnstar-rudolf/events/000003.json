@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 2,
+  "revision": 3,
+  "day": 18,
+  "type": "travel_dialogue",
+  "player_action": "Nebudu to riskovat, vrátím se za Karou zatím zjistit, jestli přišla na něco nového. A o případném dalším plánu se pobavím s ní.",
+  "dm_response": "Návrat se SRV a dronem Δ-47 po známé trase za cca 2,5 h bez komplikací, satelitní modul zůstal na místě. SRV zaparkováno v hangáru 4B. Kara u výzkumného terminálu ukazuje dílčí výpis DS-Δ2 // MEMORY ISOLATION ARCHIVE: SUBJECT RDF-ΔK452; ARCHIVE STATUS ENCRYPTED; KEY SCHEME TRIPLE-NODE; DEPENDENCY COMMS_SYNC; HANDSHAKE INCOMPLETE; ACCESS LOCKED. Podle Kary stejné označení jako u mise DS-03, ale vztah ke klíči neověřený. Nenašla samotný záznam autorizace žádosti subjektu o izolaci paměti. Navrhuje zkontrolovat DBE, doplnit zásoby, letět poblíž DS-03 a použít SRV. Ptá se: „Víš, zajímala by mě jedna věc. Ty vlastně pořád chceš získat všechny svoje vzpomínky zpátky? I po tom všem, co jsme zjistili?“ Čeká na odpověď.",
+  "rolls": [],
+  "changes": [
+    "Přesun Rudolf, SRV a Δ-47 z DS-Δ2 na Sirius 4B po známé trase.",
+    "Uplynulo přibližně 2,5 hodiny, stále den 18. Energie spotřebována jízdou, přesné hodnoty neznámé; dobití neproběhlo.",
+    "Nová hráči odhalená archivní stopa COMMS_SYNC; hypotéza o DS-03, nikoli potvrzená funkce klíče.",
+    "Dialog s Karou otevřen, žádný souhlas s další expedicí ani konvergencí."
+  ],
+  "sources": [
+    "events/000002.json",
+    "history.md: DS-Δ2 RECORD, Mission 02 a 04",
+    "Nové fikční události vedené DM v tomto tahu"
+  ],
+  "correction_of": null
+}
