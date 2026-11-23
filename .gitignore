@@ -1,0 +1,7 @@
+local_sources/
+private_dm/
+__pycache__/
+*.py[cod]
+.DS_Store
+__MACOSX/
+.env

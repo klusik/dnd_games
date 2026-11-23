@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "campaign_id": "example",
+  "previous_revision": null,
+  "revision": 0,
+  "day": null,
+  "type": "import",
+  "player_action": null,
+  "dm_response": null,
+  "rolls": [],
+  "changes": [],
+  "sources": [],
+  "correction_of": null
+}

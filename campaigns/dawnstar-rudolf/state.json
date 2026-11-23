@@ -1,0 +1,220 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "revision": 0,
+  "last_event": "000000",
+  "status": "paused",
+  "language": "cs",
+  "scene": {
+    "day": 18,
+    "time": null,
+    "location": "U SRV v oblasti DS-Δ2, po návratu z podzemního archivu",
+    "system": "HIP 22022",
+    "planet": 4,
+    "phase": "exploration",
+    "resume": "DS-Δ2 uzavřen po stažení dat. Rudolf se vrátil k SRV a zavolal Kaře. Další akce dosud neodehrána.",
+    "pending": null,
+    "certainty": "extended_save",
+    "source": "rudolf_dawnstar_updated.txt:216-234"
+  },
+  "character": {
+    "name": "Rudolf",
+    "level": 5,
+    "race": "Human (possibly augmented)",
+    "role": "Technical Explorer, Analyst, Pilot",
+    "background": "Amnézie; projekt DAWNSTAR",
+    "attributes": {
+      "STR": 10,
+      "DEX": 12,
+      "CON": 13,
+      "INT": 18,
+      "WIS": 14,
+      "CHA": 11
+    },
+    "skills": {
+      "Technology": 6,
+      "Engineering": 5,
+      "Investigation": 4,
+      "Insight": 4,
+      "Piloting": 4,
+      "Survival": 4,
+      "Stealth": 4,
+      "Perception": 2,
+      "Persuasion": 1
+    },
+    "skill_bonuses_are_total": true,
+    "hp": {
+      "current": null,
+      "max": null
+    },
+    "ac": null,
+    "xp": null,
+    "conditions": [],
+    "traits": [
+      {
+        "name": "Data Whisperer",
+        "effect": "Bonus k elektronice a datovým interakcím; přesný rozsah podle historického pravidla."
+      },
+      {
+        "name": "Bioanalytik",
+        "effect": "+2 při analýze biologických vzorků, skryté vlastnosti a kódované biologické struktury."
+      },
+      {
+        "name": "Resonant Recall",
+        "effect": "Jednou denně výhoda na jeden INT skill při interakci s DAWNSTAR technologií.",
+        "used_today": null,
+        "source": "ChatGPT log.txt:15050-15052"
+      }
+    ],
+    "known_identity": [
+      "R-6.6",
+      "RDF-ΔK452"
+    ],
+    "inventory": [
+      "Calibrated Scanner s biometrickou analýzou",
+      "EVA Suit s rozšířeným HUD a filtrací",
+      "Utility Drone",
+      "SRV s přívěsem",
+      "DBE",
+      "GAMMA-six (aktivní, nikoliv běžně dominantní)"
+    ],
+    "resources": {
+      "food_days": null,
+      "water_days": null,
+      "oxygen_percent": null,
+      "suit_energy_percent": null,
+      "ammunition": null
+    }
+  },
+  "world": {
+    "assets": {
+      "DBE": {
+        "location": "4B nebo aktuální zázemí, poslední přesné umístění neověřené",
+        "status": "Letuschopná v atmosféře, částečně opravená",
+        "hull": "Stabilní s drobnými slabinami opláštění",
+        "left_engine": "Funkční a čistý",
+        "right_engine": "Čip a firmware opraveny, mechanicky stabilizován",
+        "maneuvering": "Vyčištěno a kalibrováno s GAMMA-six",
+        "control": "Náhradní čip, drobná HUD nekompatibilita",
+        "power": "Stabilní hlavní reaktor, omezená záloha",
+        "sensors": "Základní funkce; pokročilé skenování omezené",
+        "flight": "Krátký planetární let a supercruise podle staršího záznamu bezpečné; mezihvězdný skok vyžaduje přípravu",
+        "manipulator": "Instalován, pouze na povrchu",
+        "source": "ChatGPT log.txt:12734-12746"
+      },
+      "SRV": {
+        "location": "U Rudolfa v oblasti DS-Δ2",
+        "status": "Provozuschopné, přesná energie neznámá",
+        "trailer": true
+      },
+      "drone": {
+        "location": "S Rudolfem podle poslední výpravy",
+        "status": "Provozuschopný",
+        "functions": [
+          "Scanning",
+          "micro-repair",
+          "memory replay",
+          "field diagnostics"
+        ],
+        "installed_upgrades": [
+          "Field Precision Tools (+1 k opravářskému Engineering při asistenci)"
+        ],
+        "available_upgrades": [
+          "Telemetry Link Module",
+          "Data Archive Buffer",
+          "Micro-Deflector Emitter"
+        ],
+        "features": [
+          "Diagnostic Port",
+          "High-efficiency microtools",
+          "Protected memory core částečně izolované od GAMMA-six",
+          "Extendable antenna array"
+        ]
+      }
+    },
+    "npcs": {
+      "kara": {
+        "location": "Stanice 4B dle save dne 17, spojení navázáno po dni 18",
+        "role": "Spojenkyně, analýza biologických vzorků",
+        "relationship": "Vzájemná důvěra, společná historie; samostatná osobnost",
+        "health": null,
+        "knowledge": [
+          "Výsledky biologických analýz",
+          "Předchozí výzkum DS-01",
+          "Data relé z DS-Δ2"
+        ]
+      }
+    },
+    "locations": {
+      "base_4b": "Zázemí, archiv, hangár a výzkum; zásoby dříve nalezeny, aktuální množství neznámé",
+      "ds_01": "ONLINE po SEED_REBOOT, Phase 1 zahájena",
+      "ds_02": "Ping selhal po rebootu; dříve degradace",
+      "ds_03": "Slabá odpověď, fallback; poslední triangulace 53.924N 14.662E, cca 127 km NE od 4B dle chatu",
+      "ds_04": "Ztracený nebo degradovaný signál; neověřeno",
+      "ds_delta2": "Podzemní archiv, zálohován a zapečetěn, návštěva ukončena",
+      "satellite_module": "Starý triangulační modul cestou k DS-Δ2, označen k možné pozdější obnově"
+    },
+    "salvage": [
+      "Nekorodovaná kabeláž",
+      "Částečně vybitý energetický článek",
+      "Drobné kovové součástky"
+    ],
+    "biological_samples": [
+      "Blueleaf",
+      "Mech L12",
+      "Půda",
+      "Vzorky jeskynních organismů dle historie; přesný inventář neověřen"
+    ]
+  },
+  "objectives": [
+    {
+      "id": "ds03",
+      "status": "open",
+      "title": "Prozkoumat DS-03",
+      "detail": "Plán podle deníku, nikoli povinná další akce; poloha má rozporné historické záznamy."
+    },
+    {
+      "id": "delta2-data",
+      "status": "open",
+      "title": "Analyzovat zálohy z DS-Δ2 s Karou"
+    },
+    {
+      "id": "convergence",
+      "status": "open",
+      "title": "Rozhodnout o konvergenci",
+      "detail": "ROOT čeká na souhlas subjektu; neprovádět bez volby hráče."
+    },
+    {
+      "id": "identity",
+      "status": "open",
+      "title": "Zjistit minulost a důsledky implantátu"
+    },
+    {
+      "id": "survival",
+      "status": "open",
+      "title": "Udržet zásoby, zdraví, bezpečnost a provoz techniky"
+    },
+    {
+      "id": "escape",
+      "status": "open",
+      "title": "Připravit možnost opustit planetu"
+    },
+    {
+      "id": "ds01",
+      "status": "completed",
+      "title": "Prozkoumat a aktivovat DS-01"
+    },
+    {
+      "id": "delta2",
+      "status": "completed",
+      "title": "Prozkoumat archiv DS-Δ2 a zálohovat data"
+    }
+  ],
+  "uncertainties": [
+    "Přímý export končí dnem 15; dny 16 až 18 jsou z pozdějšího savegamu. Den 18 je nejnovější doložený checkpoint, ne nutně poslední skutečně odehraný tah.",
+    "Přesné HP, maximální HP, AC, zásoby, energie, munice, čas a aktuální poloha DBE nejsou v pozdním save uvedeny.",
+    "DS-03 má několik odlišných souřadnic a vzdáleností; evidovat, nepřepočítávat bez průzkumu.",
+    "Úvod přímého logu začíná ve vraku; souhrny začínají na základně. Přímá scéna má pro úvod přednost.",
+    "Deník naznačuje záměr odjet k DS-03 zítra, nejnovější save končí u SRV po hovoru Kaře. Příjezd do 4B ani další noc nepotvrzeny."
+  ]
+}

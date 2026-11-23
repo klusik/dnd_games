@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-agent",
+  "revision": 0,
+  "last_event": "000000",
+  "status": "archived_pending_selection",
+  "language": "cs",
+  "scene": {
+    "day": null,
+    "time": null,
+    "location": null,
+    "system": null,
+    "planet": null,
+    "phase": "exploration",
+    "resume": "Po stabilizaci Krena a deaktivaci beaconu. Další zamýšlený krok je doprovod Krena do Research Wing.",
+    "pending": null,
+    "certainty": "standalone_save",
+    "source": "game_with_AGENT.txt:1-93"
+  },
+  "character": {
+    "name": "Rudolf",
+    "designation": "AGNT-06",
+    "role": "Former Signal Keeper",
+    "level": null,
+    "attributes": {
+      "STR": 12,
+      "DEX": 15,
+      "CON": 13,
+      "INT": 15,
+      "WIS": 11,
+      "CHA": 9
+    },
+    "skills": {},
+    "hp": {
+      "current": null,
+      "max": null
+    },
+    "ac": null,
+    "conditions": [
+      "Paměť částečně obnovena, fyzický stav stabilní"
+    ],
+    "inventory": [
+      "Laser Pistol (1d8+DEX)",
+      "Improvised flamethrower",
+      "Wristpad terminal",
+      "DX-7",
+      "Ochranný oblek se svítilnou, filtrací a ochranou"
+    ],
+    "resources": {
+      "oxygen_percent": 53,
+      "shield_capacity": 10,
+      "shield_current": null
+    }
+  },
+  "world": {
+    "npcs": {
+      "kren": {
+        "status": "Stabilní s podporou, omezená pohyblivost",
+        "loyalty": "Vysoká"
+      },
+      "subject_g92": {
+        "status": "Neznámý",
+        "relation": "Rudolf jej dříve zachránil",
+        "reported_ability": "Odolnost vůči synchronizaci beaconu"
+      }
+    },
+    "assets": {
+      "dx7": {
+        "status": "Funkční, znovu získán, věrný Rudolfovi",
+        "sync": "Beacon loop disabled"
+      },
+      "beacon": {
+        "status": "Destroyed",
+        "next_transmission": "Cancelled"
+      },
+      "comms_node": {
+        "location": "Central station uplink",
+        "status": "Offline and disabled"
+      }
+    }
+  },
+  "objectives": [
+    {
+      "id": "escort",
+      "status": "open",
+      "title": "Doprovodit Krena do Research Wing"
+    },
+    {
+      "id": "g92",
+      "status": "open",
+      "title": "Odhalit záznamy o Subject G-92"
+    },
+    {
+      "id": "past",
+      "status": "open",
+      "title": "Zjistit minulost a dřívější operace"
+    },
+    {
+      "id": "archive",
+      "status": "open",
+      "title": "Zabezpečit nebo vymazat archiv DBE"
+    },
+    {
+      "id": "role",
+      "status": "open",
+      "title": "Rozhodnout o další roli"
+    }
+  ],
+  "uncertainties": [
+    "Přesné místo, čas, level, HP, stav zásob a skilly neznámé. Nejde o hlavní kampaň Dawnstar Rudolf."
+  ]
+}

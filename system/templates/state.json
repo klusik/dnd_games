@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "campaign_id": "example",
+  "revision": 0,
+  "last_event": "000000",
+  "status": "paused",
+  "language": "cs",
+  "scene": {
+    "day": null,
+    "time": null,
+    "location": null,
+    "system": null,
+    "planet": null,
+    "phase": "exploration",
+    "resume": "",
+    "pending": null,
+    "certainty": "new",
+    "source": null
+  },
+  "character": {
+    "name": null,
+    "level": null,
+    "attributes": {},
+    "skills": {},
+    "hp": {
+      "current": null,
+      "max": null
+    },
+    "inventory": [],
+    "resources": {}
+  },
+  "world": {
+    "assets": {},
+    "npcs": {},
+    "locations": {}
+  },
+  "objectives": [],
+  "uncertainties": []
+}

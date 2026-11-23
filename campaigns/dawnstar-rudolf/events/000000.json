@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": null,
+  "revision": 0,
+  "day": 18,
+  "type": "import",
+  "player_action": null,
+  "dm_response": null,
+  "rolls": [],
+  "changes": [
+    "Rekonstrukce checkpointu z historických savegamů a skutečného exportu; žádná nová herní akce."
+  ],
+  "sources": [
+    "rudolf_dawnstar_updated.txt:1-234",
+    "ChatGPT log.txt:1-16844",
+    "dawnstar_rudolf_story_part1.txt"
+  ],
+  "correction_of": null
+}

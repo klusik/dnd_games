@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-agent",
+  "previous_revision": null,
+  "revision": 0,
+  "day": null,
+  "type": "import",
+  "player_action": null,
+  "dm_response": null,
+  "rolls": [],
+  "changes": [
+    "Import samostatného historického save, bez postupu hry."
+  ],
+  "sources": [
+    "game_with_AGENT.txt:1-93"
+  ],
+  "correction_of": null
+}

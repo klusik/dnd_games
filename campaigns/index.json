@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "campaigns": [
+    {
+      "id": "dawnstar-rudolf",
+      "title": "Elite Dangerous: Dawnstar",
+      "player_character": "Rudolf",
+      "role": "solo_player",
+      "language": "cs",
+      "status": "paused",
+      "path": "campaigns/dawnstar-rudolf"
+    },
+    {
+      "id": "dawnstar-agent",
+      "title": "Elite Dangerous: AGNT-06",
+      "player_character": "Rudolf",
+      "role": "solo_player",
+      "language": "cs",
+      "status": "archived_pending_selection",
+      "path": "campaigns/dawnstar-agent"
+    }
+  ],
+  "default_campaign": "dawnstar-rudolf"
+}
