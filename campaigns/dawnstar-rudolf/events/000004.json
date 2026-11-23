@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 3,
+  "revision": 4,
+  "day": 18,
+  "type": "dialogue",
+  "player_action": "„Karo, já vůbec nevím, co chci. Přijde mi, jako bych tady jen dělal nějaké věci, ale vlastně netuším, proč je dělám. Přijde mi, že cokoliv dělám, dělám jen proto, že to *cítím jako správné*, to však neznamená, že *to je to správné,* víš jak“",
+  "dm_response": "Kara přestane sledovat terminál a pootočí židli směrem k tobě.\n\n„Jo, asi vím. Jenže u tebe je to ještě o něco složitější, že? Máš v hlavě něco, co může ovlivňovat tvoje rozhodování, a ani jeden pořádně nevíme, do jaké míry.“\n\nChvíli si tě prohlíží.\n\n„Když jsme se poprvé potkali, zachránil jsi mi život. Tehdy jsi o mně vůbec nic nevěděl. A podle toho, co jsme později našli v záznamech, jsem ti možná dost ublížila.“\n\nSklopí zrak k hrnku, který drží v rukou.\n\n„Já bych se odsud chtěla dostat. Chtěla bych se jednou normálně vyspat, dát si pořádný jídlo a nemuset každý ráno kontrolovat, jestli nám ještě funguje podpora života. Ale taky bych chtěla vědět, co jsem ti tehdy udělala. A proč.“\n\nOdloží hrnek a ukáže na navigační mapu.\n\n„Hele, kdybychom zítra opravili FSD a mohli odletět, odletěl bys se mnou? Nebo bys měl potřebu tady zůstat a přijít tomu všemu na kloub?“\n\nTentokrát se tě nesnaží přesvědčit o žádném konkrétním postupu. Čeká, co jí odpovíš.",
+  "rolls": [],
+  "changes": [
+    "Pokračování rozhovoru; Rudolf vyjádřil nejistotu ohledně motivace a správnosti jednání.",
+    "Kara vyjádřila vlastní cíle a položila hypotetickou otázku ohledně odletu. Žádné rozhodnutí hráče dosud nepadlo.",
+    "Bez přesunu, bez změny zdrojů a techniky."
+  ],
+  "sources": [
+    "events/000003.json",
+    "knowledge.md: záchrana Kary, její minulost, GAMMA-six",
+    "Nový dialog v tomto tahu"
+  ],
+  "correction_of": null
+}

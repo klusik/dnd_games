@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 3,
-  "last_event": "000003",
+  "revision": 4,
+  "last_event": "000004",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,10 +12,10 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "dialogue",
-    "resume": "Rudolf se po přibližně 2,5 hodinách bezpečně vrátil z DS-Δ2 na 4B. Kara ukázala nový dílčí výpis archivu paměti se závislostí COMMS_SYNC a nedokončeným handshake. Navrhla před další cestou zkontrolovat DBE a doplnit zásoby, následně letět poblíž DS-03 a použít SRV. Ptá se, zda Rudolf stále chce získat všechny své vzpomínky zpět. Čeká na odpověď; další výprava není schválena.",
+    "resume": "Rudolf Kaře řekl, že neví, co vlastně chce, a pochybuje, zda intuitivně správné jednání je skutečně správné. Kara připomněla GAMMA-six, jeho záchranu jejího života a svou nejasnou roli v jeho minulosti. Vyjádřila přání opustit planetu a zároveň zjistit, co mu udělala a proč. Zeptala se, zda by s ní odletěl, kdyby bylo FSD zítra funkční, nebo by zůstal pátrat. Čeká na odpověď. Žádný odlet, oprava ani výprava neschváleny.",
     "pending": null,
     "certainty": "played",
-    "source": "events/000003.json",
+    "source": "events/000004.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -36,7 +36,7 @@
       "travel_time": null,
       "certainty": "Pouze odhad z uložené mapy, nikoli nové měření; přesný azimut a délka trasy nejsou ověřeny."
     },
-    "elapsed_since_previous_hours_approx": 2.5
+    "elapsed_since_previous_hours_approx": null
   },
   "character": {
     "name": "Rudolf",
@@ -171,7 +171,12 @@
         ],
         "name": "Kara Velin",
         "age": 32,
-        "known_background": "Ex-Sirius Security; nezávislá kontraktorka; biometrická autorizace VELIN.KARA, Supervisor-5; podle archivu supervizorka DAWNSTAR. Vlastní vzpomínky neúplné."
+        "known_background": "Ex-Sirius Security; nezávislá kontraktorka; biometrická autorizace VELIN.KARA, Supervisor-5; podle archivu supervizorka DAWNSTAR. Vlastní vzpomínky neúplné.",
+        "expressed_goals": [
+          "Opustit planetu a obnovit běžný život bez permanentního ohrožení.",
+          "Objasnit svou minulou roli a případnou újmu způsobenou Rudolfovi."
+        ],
+        "last_question": "Kdyby bylo zítra opravené FSD, odletěl by Rudolf s ní, nebo zůstal pátrat?"
       }
     },
     "locations": {
