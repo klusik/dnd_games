@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 0,
+  "revision": 1,
+  "day": 18,
+  "type": "historical_correction",
+  "player_action": null,
+  "dm_response": null,
+  "rolls": [],
+  "changes": [
+    "Oprava chybné importované polohy na Gliese 5206 c.",
+    "Doplnění jména dronu Δ-47, historické identity a pozadí Kary, známých mechanismů GAMMA-six a předchozího rozhodnutí hráče.",
+    "Doplnění známé stopy orbitálního relé a přesného pravidla Data Whisperer.",
+    "Žádný posun scény, času, herních zdrojů či rozhodnutí."
+  ],
+  "sources": [
+    "ChatGPT log.txt:583-633",
+    "ChatGPT log.txt:905-957",
+    "ChatGPT log.txt:1725-1784",
+    "ChatGPT log.txt:2145-2160",
+    "ChatGPT log.txt:3495-3702",
+    "ChatGPT log.txt:3990-4162",
+    "ChatGPT log.txt:4395-4610",
+    "ChatGPT log.txt:4804-4911",
+    "ChatGPT log.txt:5389-5414",
+    "ChatGPT log.txt:5996"
+  ],
+  "correction_of": "000000"
+}
