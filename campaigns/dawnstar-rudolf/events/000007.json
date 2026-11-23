@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 6,
+  "revision": 7,
+  "day": 18,
+  "type": "dialogue",
+  "player_action": "„No, právě teď :-D A ne, já ti rozumím, ono to monotónní nic pořád dokola... klidně něco udělej, rád ochutnám“",
+  "dm_response": "„Tak jo. Ale reklamace nepřijímám,“ zasměje se Kara a odejde do kuchyně.\n\nAsi po dvaceti minutách se vrátí se dvěma miskami. V jedné z nich máš hustou směs brambor, fazolí a kousků konzervovaného masa. Příjemně voní po česneku a pepři.\n\n„Našla jsem vzadu ve skříňce ještě nějaký koření. Neuvěřitelný, co dokáže trocha pepře.“ Položí před tebe misku a lžíci, sedne si naproti a pustí se do jídla.\n\n„Víš, na co jsem si dneska vzpomněla? Na vůni deště. Nevybavuju si žádné konkrétní místo, ale pamatuju si, jak voní mokrá země po letní bouřce. Tady mi to docela chybí.“\n\nChvilku jí a pak se zeptá: „Máš taky něco takovýho? Nějakou úplně obyčejnou věc, která ti tady chybí?“",
+  "rolls": [],
+  "changes": [
+    "Kara připravila dvě porce jídla z konzerv a koření; odpovídající suroviny spotřebovány, přesný počet zbývajících konzerv neznámý.",
+    "Uplynulo přibližně 20 minut; Kara zahájila konzumaci, Rudolfova konzumace zatím nepotvrzena.",
+    "Kara sdělila vzpomínku na vůni deště a položila osobní otázku. Bez změny lokace hráče, žádná expedice schválena."
+  ],
+  "sources": [
+    "events/000006.json",
+    "Nové fikční události vedené DM v tomto tahu"
+  ],
+  "correction_of": null
+}

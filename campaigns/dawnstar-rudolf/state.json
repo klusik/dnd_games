@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 6,
-  "last_event": "000006",
+  "revision": 7,
+  "last_event": "000007",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,10 +12,10 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "dialogue",
-    "resume": "Rudolf uznal možné bezpečnostní riziko návratu a řekl, že Kara nemusí vařit kvůli němu, protože konzerv je podle něj dostatek. Kara vtipkovala, že má sama hlad a nechce jíst další studenou konzervu. Nabídla společnou přípravu večeře, zažertovala o Rudolfově možné kuchařské minulosti a u dveří se zeptala, kdy naposledy mluvili o něčem jiném než počítačích, opravách a výzkumu. Rudolf zatím neodešel od terminálu, Kara stojí ve dveřích; jídlo nebylo připraveno ani snědeno.",
+    "resume": "Kara přijala Rudolfův souhlas s přípravou jídla, odešla do kuchyně a po přibližně 20 minutách se vrátila ke výzkumnému terminálu se dvěma miskami teplé směsi z konzerv (brambory, fazole, maso, česnek, pepř). Kara začala jíst, Rudolf má porci připravenou; jeho konzumace zatím nepotvrzena. Kara si vybavila vůni mokré země po letní bouřce, ale nikoli konkrétní místo, a ptá se, zda Rudolfovi také nějaká obyčejná věc chybí. Žádný nový plán expedice.",
     "pending": null,
     "certainty": "played",
-    "source": "events/000006.json",
+    "source": "events/000007.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -36,7 +36,7 @@
       "travel_time": null,
       "certainty": "Pouze odhad z uložené mapy, nikoli nové měření; přesný azimut a délka trasy nejsou ověřeny."
     },
-    "elapsed_since_previous_hours_approx": null
+    "elapsed_since_previous_hours_approx": 0.3333333333333333
   },
   "character": {
     "name": "Rudolf",
@@ -159,7 +159,7 @@
     },
     "npcs": {
       "kara": {
-        "location": "Sirius 4B, ve dveřích výzkumné místnosti",
+        "location": "Sirius 4B, u výzkumného terminálu s Rudolfem",
         "role": "Spojenkyně, analýza biologických vzorků",
         "relationship": "Vzájemná důvěra, společná historie; samostatná osobnost",
         "health": null,
@@ -177,11 +177,14 @@
           "Objasnit svou minulou roli a případnou újmu způsobenou Rudolfovi.",
           "Zjistit, zda jejich uváznutí bylo úmyslné, nebo následkem nehody; posoudit případné riziko návratu mezi lidi."
         ],
-        "last_question": "Kdy jsme si naposledy povídali o něčem jiném než o počítačích, opravách a výzkumu?"
+        "last_question": "Máš taky něco takovýho? Nějakou úplně obyčejnou věc, která ti tady chybí?",
+        "known_personal_memories": [
+          "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
+        ]
       }
     },
     "locations": {
-      "base_4b": "Zázemí, archiv, hangár a výzkum; podle Rudolfova vyjádření v den 18 dostatek konzerv pro dvě osoby, přesný počet a trvanlivost neověřeny.",
+      "base_4b": "Zázemí, archiv, hangár a výzkum; podle Rudolfova vyjádření v den 18 dostatek konzerv pro dvě osoby, přesný počet a trvanlivost neověřeny. Na konci dne 18 připraveny dvě porce z konzerv a koření, odebrány odpovídající suroviny; zůstatek neznámý.",
       "ds_01": "ONLINE po SEED_REBOOT, Phase 1 zahájena",
       "ds_02": "Ping selhal po rebootu; dříve degradace",
       "ds_03": "Slabá odpověď, fallback; poslední triangulace 53.924N 14.662E, cca 127 km NE od 4B dle chatu",
