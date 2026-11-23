@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 5,
-  "last_event": "000005",
+  "revision": 6,
+  "last_event": "000006",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,10 +12,10 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "dialogue",
-    "resume": "Rudolf s nadsázkou obrátil Kařinu otázku o vzpomínkách proti ní a řekl, že jsou na tom stejně. Kara se zasmála, přiznala ambivalentní vztah k odhalování minulosti a vyjádřila přání zjistit, zda je na planetě někdo ponechal úmyslně, nebo šlo o nehodu. Upozornila na možné riziko návratu mezi lidi, pokud by šlo o úmysl; jde pouze o hypotézu. Zavřela archiv, vstala a nabídla jídlo a domluvu o zítřejším postupu. Čeká na reakci. Žádná výprava ani odlet nejsou schváleny.",
+    "resume": "Rudolf uznal možné bezpečnostní riziko návratu a řekl, že Kara nemusí vařit kvůli němu, protože konzerv je podle něj dostatek. Kara vtipkovala, že má sama hlad a nechce jíst další studenou konzervu. Nabídla společnou přípravu večeře, zažertovala o Rudolfově možné kuchařské minulosti a u dveří se zeptala, kdy naposledy mluvili o něčem jiném než počítačích, opravách a výzkumu. Rudolf zatím neodešel od terminálu, Kara stojí ve dveřích; jídlo nebylo připraveno ani snědeno.",
     "pending": null,
     "certainty": "played",
-    "source": "events/000005.json",
+    "source": "events/000006.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -159,7 +159,7 @@
     },
     "npcs": {
       "kara": {
-        "location": "Sirius 4B, výzkumný terminál",
+        "location": "Sirius 4B, ve dveřích výzkumné místnosti",
         "role": "Spojenkyně, analýza biologických vzorků",
         "relationship": "Vzájemná důvěra, společná historie; samostatná osobnost",
         "health": null,
@@ -177,11 +177,11 @@
           "Objasnit svou minulou roli a případnou újmu způsobenou Rudolfovi.",
           "Zjistit, zda jejich uváznutí bylo úmyslné, nebo následkem nehody; posoudit případné riziko návratu mezi lidi."
         ],
-        "last_question": "Nemáš hlad? Udělala bych něco k jídlu a můžeme se domluvit, co podnikneme zítra."
+        "last_question": "Kdy jsme si naposledy povídali o něčem jiném než o počítačích, opravách a výzkumu?"
       }
     },
     "locations": {
-      "base_4b": "Zázemí, archiv, hangár a výzkum; zásoby dříve nalezeny, aktuální množství neznámé",
+      "base_4b": "Zázemí, archiv, hangár a výzkum; podle Rudolfova vyjádření v den 18 dostatek konzerv pro dvě osoby, přesný počet a trvanlivost neověřeny.",
       "ds_01": "ONLINE po SEED_REBOOT, Phase 1 zahájena",
       "ds_02": "Ping selhal po rebootu; dříve degradace",
       "ds_03": "Slabá odpověď, fallback; poslední triangulace 53.924N 14.662E, cca 127 km NE od 4B dle chatu",

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 5,
+  "revision": 6,
+  "day": 18,
+  "type": "dialogue",
+  "player_action": "„To s tou bezpečností je pravda, hmm, to mě nenapadlo. A jídlo je dobrý nápad, jestli se ti do toho chce, ale kvůli mně to dělat nemusíš, klidně si tady vezmu konzervu, je jich tady mraky a ve dvou bychom to jedli dýl než je toho životnost“",
+  "dm_response": "Kara se na tebe pobaveně podívá.\n\n„Rudolfe, já mám taky hlad. A jestli mám zase jíst studený obsah konzervy přímo z plechovky, tak se z toho asi zblázním.“\n\nVezme hrnek a vydá se ke dveřím.\n\n„Zkusím z toho udělat něco, co alespoň vzdáleně připomíná večeři. Pojď, můžeš mi pomoct. Třeba zjistíme, že jsi byl před ztrátou paměti vynikající kuchař a celý ten výzkum DAWNSTAR je jen nedorozumění.“\n\nPousměje se a zastaví se ve dveřích.\n\n„Mimochodem, kdy jsme si naposledy povídali o něčem jiném než o počítačích, opravách a výzkumu?“",
+  "rolls": [],
+  "changes": [
+    "Hráč uvedl, že konzerv je podle něj dostatek; přesné množství zůstává neznámé.",
+    "Kara se přesunula ke dveřím, nabídla společnou přípravu večeře a otevřela osobnější rozhovor.",
+    "Bez spotřeby zásob, bez přesunu hráče, bez rozhodnutí o expedici."
+  ],
+  "sources": [
+    "events/000005.json",
+    "Nový dialog v tomto tahu"
+  ],
+  "correction_of": null
+}
