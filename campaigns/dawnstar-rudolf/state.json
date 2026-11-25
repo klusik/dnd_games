@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 35,
-  "last_event": "000035",
+  "revision": 36,
+  "last_event": "000036",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,10 +12,10 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "exploration",
-    "resume": "Den 19 ráno. Rudolf a Kara u recepce ve vstupní hale DS-03, Δ-47 pod kamerou. Kara sleduje okolí, zbraně připravené a svítilny zapnuté. Rudolf přiložil volnou ruku v rukavici na podsvícenou biometrickou čtečku dlaně terminálu RECEPTION-01. Čtečka pípnutím potvrdila autentizaci, výpis BIOMETRIC MATCH: CONFIRMED; SUBJECT: RDF-ΔK452; CLASSIFICATION: R-CLASS; AUTHORITY: LOCAL; SESSION: UNLOCKED. Čitelná hlavní nabídka: [1] STATION DIRECTORY, [2] SYSTEM STATUS, [3] SECURITY & SURVEILLANCE, [4] ACCESS LOG, [5] PERSONNEL REGISTRY. Pravá polovina monitoru zůstává černá. Zatím nebyla vybrána položka nabídky ani změněna konfigurace. Rozsah oprávnění, přístup k obrazu a skutečný stav záznamu neověřeny. Žádný pozorovaný alarm či pohyb kamery. Čeká se na další akci hráče.",
+    "resume": "Den 19 ráno. Rudolf a Kara u recepce ve vstupní hale DS-03, Δ-47 pod kamerou. Kara sleduje okolí, zbraně připravené a svítilny zapnuté. Rudolf přiložil volnou ruku v rukavici na podsvícenou biometrickou čtečku dlaně terminálu RECEPTION-01. Čtečka pípnutím potvrdila autentizaci, výpis BIOMETRIC MATCH: CONFIRMED; SUBJECT: RDF-ΔK452; CLASSIFICATION: R-CLASS; AUTHORITY: LOCAL; SESSION: UNLOCKED. Čitelná hlavní nabídka: [1] STATION DIRECTORY, [2] SYSTEM STATUS, [3] SECURITY & SURVEILLANCE, [4] ACCESS LOG, [5] PERSONNEL REGISTRY. Pravá polovina monitoru zůstává černá. Zatím nebyla vybrána položka nabídky ani změněna konfigurace. Rozsah oprávnění, přístup k obrazu a skutečný stav záznamu neověřeny. Žádný pozorovaný alarm či pohyb kamery. Kara si přečetla hlavní nabídku a souhlasila s postupným průzkumem. Navrhla začít mapou, poté stavem systémů a kamerami; zajímá ji také seznam personálu. Nadále hlídá chodby. Čeká se na výběr položky hráčem.",
     "pending": null,
     "certainty": "played",
-    "source": "events/000035.json",
+    "source": "events/000036.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -154,6 +154,6 @@
     "source": "events/000018.json"
   },
   "layout_version": 2,
-  "last_gameplay_event": "000035",
+  "last_gameplay_event": "000036",
   "audit_ref": "audit.md"
 }

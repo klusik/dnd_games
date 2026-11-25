@@ -15,7 +15,8 @@
     "Rudolf sdělil svou interpretaci konzultace GAMMA-six: snad bez globálního poplachu; jeho lokální biometrická autorizace otevřela závoru. Podrobný interní výpis GAMMA-six jí nesdělil.",
     "Den 19, event 000031: při pohledu do vstupní haly DS-03 zvenku nezaznamenala pohyb. Nevidí za recepční pult ani do celé levé chodby; bezpečnost neověřena.",
     "Den 19, event 000032: některé systémy DS-03 se jeví napájené; viditelná kamera nad recepcí, její funkčnost ani případné sledování nejsou ověřeny.",
-    "Den 19, event 000034: recepční terminál je částečně napájený a uzamčený, přístup k bezpečnostnímu systému nepotvrzen. Za pultem nikoho neviděla."
+    "Den 19, event 000034: recepční terminál je částečně napájený a uzamčený, přístup k bezpečnostnímu systému nepotvrzen. Za pultem nikoho neviděla.",
+    "Den 19, event 000036: viděla čitelnou hlavní nabídku RECEPTION-01, nikoli obsah jednotlivých položek."
   ],
   "name": "Kara Velin",
   "age": 32,
@@ -30,7 +31,7 @@
   "known_personal_memories": [
     "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
   ],
-  "current_activity": "Připravená zbraň, zapnutá svítilna, sleduje navazující chodby a okolí recepce. Za pultem nezaznamenala žádnou osobu.",
+  "current_activity": "Přečetla hlavní nabídku RECEPTION-01, doporučila mapu, stav systémů a kamery a vyjádřila zájem o seznam personálu. Nadále hlídá okolní chodby, zbraň připravena a svítilna zapnuta.",
   "level": null,
   "xp": null,
   "species": "Human",

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 35,
+  "revision": 36,
+  "day": 19,
+  "type": "reception_discussion",
+  "player_action": "Ke K: „Hele, koukej, vezmeme to postupně?“",
+  "dm_response": "Kara se nakloní k obrazovce a přečte si jednotlivé položky. „Jo. Začala bych mapou stanice, ať víme, jak je to tady rozlehlé. Pak stav systémů a kamery. Taky mě zajímá ten seznam personálu. Třeba tam najdeme i někoho známého.“ Narovná se a opět se zadívá do chodby. „Klidně čti, já hlídám.“",
+  "rolls": [],
+  "changes": [
+    "Kara se seznámila s hlavní nabídkou a vyjádřila vlastní preference pro průzkum.",
+    "Žádná položka nabídky nebyla vybrána. Pozice skupiny, technický stav, vybavení a zásoby beze změny."
+  ],
+  "sources": [
+    "events/000035.json",
+    "characters/kara.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}
