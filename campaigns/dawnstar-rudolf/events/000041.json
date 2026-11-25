@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 40,
+  "revision": 41,
+  "day": 19,
+  "type": "reception_recording_archive_index",
+  "player_action": "„Tolik k tomu, aby nás kamery neviděly“, řeknu trošku sarkasticky a vylezu o menu výše a pak vlezu do „recording archive“.",
+  "dm_response": "Kara se pousmála: „Tak alespoň víme, že vypadáme dobře i na bezpečnostní kameře.“ Rudolf se vrátil do bezpečnostní nabídky a otevřel RECORDING ARCHIVE. Index hlásí STORAGE LOCAL BUFFER, ARCHIVE MODE EVENT BASED, ACCESS READ ONLY, CENTRAL ARCHIVE UNREACHABLE. Položky: 001 CAM-02 právě probíhající MOTION EVENT RECORDING; 002 CAM-01 dnes ráno ENTRY EVENT AVAILABLE; 003 CAM-03 před 9 h 42 min MOTION EVENT 00:38; 004 CAM-03 před 31 h 16 min MOTION EVENT 01:12. Jde o dva starší pohybové eventy komunikační chodby dle indexu, nikoli o potvrzení osoby. Žádný záznam nepřehrán.",
+  "rolls": [],
+  "changes": [
+    "Návrat z živých náhledů do bezpečnostní nabídky a otevření indexu archivu v jednom výslovně zadaném tahu.",
+    "Nový lokální index obsahuje čtyři položky včetně probíhajícího záznamu, dva starší pohybové eventy CAM-03; obsah a časová základna neověřeny.",
+    "Bez změny konfigurace, pozic, zdraví, inventáře a doložené spotřeby. Rutinní čtení bez hodu."
+  ],
+  "sources": [
+    "events/000039.json",
+    "events/000040.json",
+    "world/expedition-ds03.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}

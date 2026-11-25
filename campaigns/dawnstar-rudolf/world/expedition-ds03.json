@@ -196,8 +196,8 @@
         "ACCESS LOG",
         "PERSONNEL REGISTRY"
       ],
-      "prompt": "ESC RETURN TO SECURITY MENU",
-      "view": "LIVE CAMERA FEEDS",
+      "prompt": "SELECT RECORDING OR ESC RETURN TO SECURITY MENU",
+      "view": "RECORDING ARCHIVE",
       "security_status": {
         "SECURITY NETWORK": "DEGRADED",
         "LOCAL RECORDING": "ACTIVE",
@@ -246,47 +246,48 @@
         "SECURITY ADMINISTRATION"
       ],
       "administration": "LOCKED; vyšší oprávnění nutné dle rozhraní",
-      "live_feeds": [
-        {
-          "id": "CAM-01",
-          "location": "Main entrance",
-          "display_status": "LIVE",
-          "recording_indicator": "REC",
-          "observations": "Otevřený hlavní vchod; ve viditelné části prostranství žádný pohyb osob.",
-          "limitations": "Pouze zorné pole kamery."
-        },
-        {
-          "id": "CAM-02",
-          "location": "Reception",
-          "display_status": "LIVE",
-          "recording_indicator": "REC",
-          "observations": "Rudolf a Kara u konzole. Pohyby Kary v obraze odpovídají pozorované skutečnosti. Δ-47 přímo pod kamerou nyní není v obraze.",
-          "limitations": "Dron mohl být zaznamenán při přesunu, dřívější záznam neověřen. Funkční živý náhled potvrzen pozorováním."
-        },
-        {
-          "id": "CAM-03",
-          "location": "Communications corridor",
-          "display_status": "UNSTABLE",
-          "recording_indicator": "REC",
-          "observations": "Prázdná viditelná část chodby, pootevřené dveře a světlo za nimi. Obraz občas problikne.",
-          "limitations": "Dovnitř komunikačního střediska není vidět."
-        },
-        {
-          "id": "CAM-04",
-          "location": "Data center",
-          "display_status": "NO SIGNAL"
-        },
-        {
-          "id": "CAM-05",
-          "location": "Engineering",
-          "display_status": "NO SIGNAL"
-        },
-        {
-          "id": "CAM-06",
-          "location": "Personnel facilities",
-          "display_status": "NO SIGNAL"
-        }
-      ]
+      "recording_archive": {
+        "storage": "LOCAL BUFFER",
+        "archive_mode": "EVENT BASED",
+        "access": "READ ONLY",
+        "central_archive": "UNREACHABLE",
+        "entries": [
+          {
+            "id": "001",
+            "camera": "CAM-02",
+            "time_label": "Právě probíhá",
+            "event_type": "MOTION EVENT",
+            "status": "RECORDING",
+            "duration_seconds": null
+          },
+          {
+            "id": "002",
+            "camera": "CAM-01",
+            "time_label": "Dnes ráno",
+            "event_type": "ENTRY EVENT",
+            "status": "AVAILABLE",
+            "duration_seconds": null
+          },
+          {
+            "id": "003",
+            "camera": "CAM-03",
+            "time_label": "Před 9 h 42 min",
+            "age_at_query_minutes": 582,
+            "event_type": "MOTION EVENT",
+            "status": "AVAILABLE",
+            "duration_seconds": 38
+          },
+          {
+            "id": "004",
+            "camera": "CAM-03",
+            "time_label": "Před 31 h 16 min",
+            "age_at_query_minutes": 1876,
+            "event_type": "MOTION EVENT",
+            "status": "AVAILABLE",
+            "duration_seconds": 72
+          }
+        ]
+      }
     },
     "last_authentication": {
       "event": "000035",
@@ -375,11 +376,11 @@
       ],
       "administration": "LOCKED; vyšší oprávnění nutné dle rozhraní",
       "live_feed_opened": true,
-      "archive_opened": false,
+      "archive_opened": true,
       "selected_function": {
-        "number": 1,
-        "name": "LIVE CAMERA FEEDS",
-        "event": "000040"
+        "number": 2,
+        "name": "RECORDING ARCHIVE",
+        "event": "000041"
       },
       "certainty": "Výpis lokálního bezpečnostního rozhraní v režimu FALLBACK, nikoli nezávislé ověření. ONLINE neprokazuje funkční živý obraz; ACTIVE RECORDING neprokazuje skutečné zaznamenání příchodu. UNREACHABLE neznamená zničené zařízení, REMOTE MONITORING UNAVAILABLE neprokazuje absenci všech forem vzdáleného sledování."
     },
@@ -430,6 +431,52 @@
       "archive_verified": false,
       "configuration_changed": false,
       "video_override": false
+    },
+    "recording_archive_report": {
+      "event": "000041",
+      "storage": "LOCAL BUFFER",
+      "archive_mode": "EVENT BASED",
+      "access": "READ ONLY",
+      "central_archive": "UNREACHABLE",
+      "entries": [
+        {
+          "id": "001",
+          "camera": "CAM-02",
+          "time_label": "Právě probíhá",
+          "event_type": "MOTION EVENT",
+          "status": "RECORDING",
+          "duration_seconds": null
+        },
+        {
+          "id": "002",
+          "camera": "CAM-01",
+          "time_label": "Dnes ráno",
+          "event_type": "ENTRY EVENT",
+          "status": "AVAILABLE",
+          "duration_seconds": null
+        },
+        {
+          "id": "003",
+          "camera": "CAM-03",
+          "time_label": "Před 9 h 42 min",
+          "age_at_query_minutes": 582,
+          "event_type": "MOTION EVENT",
+          "status": "AVAILABLE",
+          "duration_seconds": 38
+        },
+        {
+          "id": "004",
+          "camera": "CAM-03",
+          "time_label": "Před 31 h 16 min",
+          "age_at_query_minutes": 1876,
+          "event_type": "MOTION EVENT",
+          "status": "AVAILABLE",
+          "duration_seconds": 72
+        }
+      ],
+      "opened_recordings": [],
+      "selected_recording": null,
+      "certainty": "Pozorovaný index lokálního archivu, časy jsou relativní údaje terminálu při dotazu. Záznamy nebyly přehrány, časová základna a obsah nejsou nezávisle ověřeny. Detekce pohybu sama o sobě neprokazuje přítomnost osoby. Čtyři položky zahrnují jednu právě probíhající relaci."
     }
   }
 }
