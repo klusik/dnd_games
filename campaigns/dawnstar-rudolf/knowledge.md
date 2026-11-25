@@ -66,3 +66,7 @@ Z odstupu několika metrů od hlavního vchodu viditelná nadzemní část půso
 ## Den 19, otevření hlavních dveří DS-03 (event 000028)
 
 Kara vyzkoušela pohybový senzor bez reakce; ruční tlačítko na rámu spustilo elektromotor a dveře se plně odsunuly. Vadný senzor je její hypotéza. Viditelné převrácené židle, rozbitý monitor u recepce, ostatní vybavení zdánlivě zachovalé, slabé bílé světlo zleva od komunikačního střediska. Kara nikoho neslyší. Interiér zatím nenavštíven a jeho bezpečnost neověřena.
+
+## Doplnění výstroje z původního přímého logu (event 000029)
+
+Rudolfova malá energetická pistole (1d6) a nůž (1d4) jsou doloženy v ChatGPT log.txt:52–54, integrovaná svítilna EVA v ř. 186, náhradní zásobník a tehdejší cca 20 výstřelů v ř. 252–254. Pozdější příprava pistole je doložena v ř. 525, 11064–11066 a 13436. Aktuální stav munice neznámý. Kařina svítilna na helmě doložena v ř. 14752. Dne 19 oba připravili zbraně a zapnuli svítilny před DS-03; držení zbraně Karou nově stanoveno DM, typ a munice neznámé. Nikdo nevstoupil a nestřílelo se.

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 28,
+  "revision": 29,
+  "day": 19,
+  "type": "prepare_for_entry",
+  "player_action": "\"Připravme si pro jistotu zbraně a baterku.\" \n\nPro DM -- ukládáš to na github? Nevidím to tam nikde :-o",
+  "dm_response": "Kara přikývne, připraví si zbraň a rozsvítí svítilnu na helmě.\n\nTy si připravíš svou energetickou pistoli a aktivuješ integrovanou svítilnu skafandru.\n\nPaprsky světla osvítí recepci, převrácený nábytek a chodbu vedoucí doleva. Ve vzduchu jsou vidět drobné částice prachu.\n\n„Připravená,“ zašeptá Kara.\n\nΔ-47 zůstává vedle vás v pohotovosti. Hlavní dveře jsou stále otevřené.\n\nDM poznámka: V původním herním logu jsem dohledal tvoji energetickou pistoli s poškozením 1d6 a nůž s poškozením 1d4. Doplním je do inventáře. Aktuální množství munice a přesný typ Kařiny zbraně nejsou doloženy.",
+  "rolls": [],
+  "changes": [
+    "Rudolf a Kara připravili zbraně a svítilny. Držení zbraně Karou je nová fikční informace DM, přesný typ ani munice nejsou doloženy.",
+    "Doplněny dříve opomenuté položky Rudolfova inventáře z přímého historického logu: energetická pistole 1d6, nůž 1d4, integrovaná svítilna. Historických cca 20 výstřelů nebylo převzato jako aktuální stav.",
+    "Osvícená hala, recepce, nábytek, chodba vlevo a prach. Žádný vstup, střelba, nový hod ani doložená spotřeba munice.",
+    "OOC ověřen repo klusik/dnd_games, main revize 28 a odlišný develop; sděleny odkazy. Registry paused versus state active ponecháno beze změny."
+  ],
+  "sources": [
+    "events/000028.json",
+    "ChatGPT log.txt:52-54, 178-190, 252-254, 525, 11064-11066, 13436, 14752; původní ZIP SHA-256 dle sources.md a ověřený SHA-256 logu e3c11725d41f2737f75261a950d3b6778c582b3d7d465ad6e6122570a57d9667",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}
