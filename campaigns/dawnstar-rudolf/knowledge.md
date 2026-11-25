@@ -50,3 +50,7 @@ Perception 18. Vizuálně bez známek pastí či nedávných zásahů do cesty; 
 ## Den 19, konzultace GAMMA-six u závory DS-03 (event 000024)
 
 GAMMA-six v interní konzultaci bez externího spojení tvrdí, že rozpoznává řadu přístupového systému Sirius Corporation. Dle něj FALLBACK využívá místní databázi oprávnění, běžné zamítnutí nevyvolává poplach kromě identit označených za bezpečnostní hrozbu a servisní přehled terminálů této řady je standardně dostupný bez biometrie. Nemá aktuální seznam označených identit. Konkrétní konfigurace, servisní přehled a oprávnění DS-03 nebyly ověřeny. Výpis EXTERNAL CONNECTION NONE, CONTROL MODE UNCHANGED. Rudolf výslovně upozornil na neznámé neurologické účinky používání implantátu; konzultace bez vnímatelných fyzických obtíží není důkazem dlouhodobé bezpečnosti. Odpověď zná Rudolf, Kara ji neslyšela. Terminál zatím nekontaktován.
+
+## Den 19, lokální autorizace u závory DS-03 (event 000025)
+
+Rudolf předložil vlastní biometrické údaje. Displej: BIOMETRIC MATCH CONFIRMED, IDENTITY RDF-ΔK452, CLASSIFICATION R-CLASS, SECURITY FLAG NONE, LOCAL ACCESS AUTHORIZED, ENTRY LOG STORED LOCALLY, UPLINK UNAVAILABLE, ACCESS GRANTED. Závora se otevřela, bez sirény, viditelného pohybu kamer či jiné bezprostřední reakce. Výpis potvrzuje tvrzení místního terminálu a otevření závory, nikoli globální stav hledaných osob či skutečnou absenci externí komunikace. Za závorou parkoviště a asi 50 m dál hlavní vstup označený DS-03 / COMMUNICATIONS & SYNCHRONIZATION FACILITY. Rudolf pěšky u terminálu, Kara a Δ-47 v SRV, budova dosud nenavštívena.

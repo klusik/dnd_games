@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 24,
+  "revision": 25,
+  "day": 19,
+  "type": "local_biometric_access",
+  "player_action": "\"No, vypadá to, že by ta konzole (snad!) neměla být nikam připojená, takže nějaký globální poplach (snad!) nehrozí, čili zkusil bych asi svoji ID, jestli náhodou ještě nejsem v DB.\" A pak uvidíme. Zdrnout můžeme vždycky!",
+  "dm_response": "„Dobře. Zůstanu ve vozidle a budu hlídat okolí,“ odpoví Kara.\n\nVystoupíš ze SRV, přistoupíš k terminálu a necháš načíst své biometrické údaje. Oranžová kontrolka přestane blikat a na několik sekund zhasne.\n\nPotom se rozsvítí zeleně.\n\nSIRIUS CORPORATION | DS-03\nBIOMETRIC MATCH: CONFIRMED\nIDENTITY: RDF-ΔK452\nCLASSIFICATION: R-CLASS\nSECURITY FLAG: NONE\nLOCAL ACCESS: AUTHORIZED\nENTRY LOG: STORED LOCALLY\nUPLINK: UNAVAILABLE\nACCESS GRANTED\n\nOzve se elektromotor a závora se pomalu zvedne. Žádná siréna, žádný viditelný pohyb kamer ani jiná bezprostřední reakce komplexu.\n\nZ vysílačky ve skafandru se ozve Kara.\n\n„Tak alespoň tady tě ještě mají rádi,“ zasměje se.\n\nZa závorou vidíš servisní parkoviště a přibližně o padesát metrů dál hlavní vstup do budovy. Nad dveřmi svítí nápis:\n\nDS-03 / COMMUNICATIONS & SYNCHRONIZATION FACILITY\n\nStojíš stále vedle terminálu. Přístupová cesta je otevřená a Kara čeká v SRV.",
+  "rolls": [],
+  "changes": [
+    "Hráč zvolil přímou autentizaci vlastní biometrie. Rutinní předložení identity bez hodu; výsledek oprávnění určen DM v návaznosti na dřívější identitu RDF-ΔK452 a R-class.",
+    "Lokální terminál potvrdil oprávnění, žádný lokální bezpečnostní flag dle displeje, uložení vstupního záznamu a nedostupnost uplinku. Závora se otevřela. Globální status není ověřen.",
+    "Rudolf vystoupil v rámci zadané akce; Kara zůstala v SRV s dronem. Viditelný hlavní vstup cca 50 m za závorou.",
+    "Žádná siréna nebo jiná bezprostřední viditelná reakce. Žádný vstup za závoru, připojení implantátu ani konvergence."
+  ],
+  "sources": [
+    "events/000024.json",
+    "events/000021.json",
+    "knowledge.md: RDF-ΔK452 a předchozí biometrické autorizace",
+    "Nový fikční výsledek v tomto tahu"
+  ],
+  "correction_of": null
+}

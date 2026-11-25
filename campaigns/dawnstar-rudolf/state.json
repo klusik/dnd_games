@@ -1,21 +1,21 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 24,
-  "last_event": "000024",
+  "revision": 25,
+  "last_event": "000025",
   "status": "active",
   "language": "cs",
   "scene": {
     "day": 19,
     "time": "morning",
-    "location": "SRV na příjezdové cestě DS-03, vedle přístupového terminálu před zavřenou závorou",
+    "location": "Na povrchu u přístupového terminálu DS-03 vedle SRV, před otevřenou závorou",
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "exploration",
-    "resume": "Rudolf souhlasil s pouhou konzultací GAMMA-six a výslovně upozornil na neznámé následky jeho používání pro mozek; ve své řeči jej nazval omega-six. Kara opravila označení GAMMA-six, OMEGA je dosud zamčená část, uznala nejistotu dlouhodobých účinků. GAMMA-six byl konzultován bez externího spojení a změny režimu řízení. Interním hlasem tvrdí, že rozpoznává typ Sirius access control, FALLBACK používá místní databázi, standardní zamítnutí přístupu nevyvolává poplach kromě identit označených jako bezpečnostní hrozba, aktuální seznam nemá. Tvrdí, že terminály této řady mají servisní přehled standardně dostupný bez biometrie; konkrétní konfigurace DS-03, dostupnost přehledu a aktuální oprávnění neověřeny. Zobrazeno EXTERNAL CONNECTION NONE a CONTROL MODE UNCHANGED. Hráč během konzultace nemá vnímatelné fyzické obtíže; dlouhodobé neurologické následky neznámé. Kara odpověď neslyšela, čeká na sdělení Rudolfa. Oba stále uvnitř SRV vedle zavřené závory, žádný kontakt s terminálem nebo autentizace.",
+    "resume": "Rudolf sdělil Kaře svou interpretaci konzultace GAMMA-six (snad bez globálního poplachu), rozhodl se vyzkoušet vlastní ID. Kara zůstala v SRV a hlídá. Rudolf ve skafandru vystoupil a předložil vlastní biometrické údaje. Terminál potvrdil BIOMETRIC MATCH CONFIRMED, IDENTITY RDF-ΔK452, CLASSIFICATION R-CLASS, SECURITY FLAG NONE, LOCAL ACCESS AUTHORIZED, ENTRY LOG STORED LOCALLY, UPLINK UNAVAILABLE, ACCESS GRANTED. Závora se zvedla, bez sirény, viditelného pohybu kamer či jiné bezprostřední reakce. Údaje o flagu a uplinku jsou tvrzení lokálního terminálu, nikoliv potvrzení globálního stavu. Za závorou parkoviště a asi 50 m dál hlavní vstup s nápisem DS-03 / COMMUNICATIONS & SYNCHRONIZATION FACILITY. Rudolf stojí u terminálu, Kara i Δ-47 v SRV. Závora nepřekročena, budova nevstoupena, žádné připojení GAMMA-six ani konvergence.",
     "pending": null,
     "certainty": "played",
-    "source": "events/000024.json",
+    "source": "events/000025.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -34,10 +34,11 @@
       "live_signal_status": "DETECTED; NODE ID DS-03; FALLBACK; COMMS_SYNC INCOMPLETE; PERIODIC",
       "range_estimate": null,
       "travel_time": null,
-      "certainty": "SRV stojí před závorou, terminál cca 1 m od vozidla. Vizuální průzkum nezjistil známky pastí, jejich absence není zaručena.",
-      "origin": "SRV vedle přístupového terminálu DS-03",
-      "approach_observations": "Prašné kamery, napájený terminál, místní biometrická autentizace dle displeje. Bez viditelné reakce při přiblížení.",
-      "distance_to_barrier_m_approx": null
+      "certainty": "Závora otevřena po místní autentizaci; další prostor neprozkoumán.",
+      "origin": "Rudolf pěšky u přístupového terminálu DS-03",
+      "approach_observations": "Otevřená závora, servisní parkoviště, hlavní vstup asi 50 m za závorou, osvětlený nápis DS-03 / COMMUNICATIONS & SYNCHRONIZATION FACILITY.",
+      "distance_to_barrier_m_approx": null,
+      "distance_from_barrier_to_main_entrance_m_approx": 50
     },
     "elapsed_since_previous_hours_approx": null
   },
@@ -276,8 +277,8 @@
         }
       },
       "SRV": {
-        "location": "SRV na příjezdové cestě DS-03, vedle přístupového terminálu před zavřenou závorou",
-        "status": "Provozuschopné, stojí vedle terminálu před závorou; posádka uvnitř.",
+        "location": "Příjezdová cesta DS-03 u terminálu před otevřenou závorou",
+        "status": "Provozuschopné, stojí vedle přístupového terminálu před otevřenou závorou; Kara uvnitř, Rudolf venku.",
         "trailer": true,
         "energy_percent_at_charge_start": 41,
         "energy_percent": null,
@@ -296,7 +297,7 @@
         "last_measured_energy_percent": 100
       },
       "drone": {
-        "location": "V SRV vedle terminálu DS-03",
+        "location": "V SRV u terminálu DS-03 s Karou",
         "status": "Provozuschopný",
         "functions": [
           "Scanning",
@@ -324,7 +325,7 @@
     },
     "npcs": {
       "kara": {
-        "location": "SRV na příjezdové cestě DS-03, vedle přístupového terminálu před zavřenou závorou",
+        "location": "SRV u přístupového terminálu DS-03 před otevřenou závorou",
         "role": "Spojenkyně, analýza biologických vzorků",
         "relationship": "Vzájemná důvěra, společná historie; samostatná osobnost",
         "health": null,
@@ -332,7 +333,8 @@
           "Výsledky biologických analýz",
           "Předchozí výzkum DS-01",
           "Data relé z DS-Δ2",
-          "Dílčí výpis archivu DS-Δ2: COMMS_SYNC dependency, handshake incomplete; souvislost s DS-03 zatím hypotéza. Záznam samotné autorizace izolace paměti dosud nenalezen."
+          "Dílčí výpis archivu DS-Δ2: COMMS_SYNC dependency, handshake incomplete; souvislost s DS-03 zatím hypotéza. Záznam samotné autorizace izolace paměti dosud nenalezen.",
+          "Rudolf sdělil svou interpretaci konzultace GAMMA-six: snad bez globálního poplachu; jeho lokální biometrická autorizace otevřela závoru. Podrobný interní výpis GAMMA-six jí nesdělil."
         ],
         "name": "Kara Velin",
         "age": 32,
@@ -347,14 +349,14 @@
         "known_personal_memories": [
           "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
         ],
-        "current_activity": "Čeká v SRV, až Rudolf sdělí výsledek interní konzultace GAMMA-six; odpověď zatím nezná."
+        "current_activity": "Zůstala v SRV, hlídá okolí, komunikuje s Rudolfem vysílačkou."
       }
     },
     "locations": {
       "base_4b": "Zázemí, archiv, hangár a výzkum; podle Rudolfova vyjádření v den 18 dostatek konzerv pro dvě osoby, přesný počet a trvanlivost neověřeny. Na konci dne 18 připraveny dvě porce z konzerv a koření, odebrány odpovídající suroviny; zůstatek neznámý.",
       "ds_01": "ONLINE po SEED_REBOOT, Phase 1 zahájena",
       "ds_02": "Ping selhal po rebootu; dříve degradace",
-      "ds_03": "Den 19: vizuálně identifikován komplex mezi skalními výběžky, komunikační stožár, nízká kovová budova ve svahu, jedna parabola nakloněná. Pasivně potvrzen aktuální periodický signál 1452,7 MHz, ID DS-03, FALLBACK, COMMS_SYNC INCOMPLETE. DBE přistála cca 1,2 km od komplexu. Přístup a vnitřek neprozkoumány. Při pozemním přiblížení zjištěna spuštěná závora u servisní plochy, přístupový terminál s oranžovou blikající kontrolkou a viditelné bezpečnostní kamery. SRV zastavilo cca 20 m před závorou; přístup neověřen, žádná viditelná reakce objektu. Po vizuální kontrole SRV přistoupilo k terminálu bez komplikací. Displej nabízí místní biometrickou autentizaci, síť FALLBACK, závora CLOSED. Autorizace nevyzkoušena.",
+      "ds_03": "Den 19: vizuálně identifikován komplex mezi skalními výběžky, komunikační stožár, nízká kovová budova ve svahu, jedna parabola nakloněná. Pasivně potvrzen aktuální periodický signál 1452,7 MHz, ID DS-03, FALLBACK, COMMS_SYNC INCOMPLETE. DBE přistála cca 1,2 km od komplexu. Přístup a vnitřek neprozkoumány. Při pozemním přiblížení zjištěna spuštěná závora u servisní plochy, přístupový terminál s oranžovou blikající kontrolkou a viditelné bezpečnostní kamery. SRV zastavilo cca 20 m před závorou; přístup neověřen, žádná viditelná reakce objektu. Po vizuální kontrole SRV přistoupilo k terminálu bez komplikací. Displej nabízí místní biometrickou autentizaci, síť FALLBACK, závora CLOSED. Autorizace nevyzkoušena. Den 19: místní biometrie RDF-ΔK452 přijata jako R-CLASS; závora otevřena. Hlavní vstup cca 50 m za závorou, nápis DS-03 / COMMUNICATIONS & SYNCHRONIZATION FACILITY. Budova neprozkoumána.",
       "ds_04": "Ztracený nebo degradovaný signál; neověřeno",
       "ds_delta2": "Podzemní archiv zálohován a zapečetěn, Rudolf se vrátil na 4B.",
       "satellite_module": "Starý triangulační modul na trase k DS-Δ2; při návratu dne 18 stále na označeném místě, nevyzvednut.",
@@ -402,7 +404,7 @@
       "player_concern": "Den 19, event 000024: Rudolf výslovně upozornil na neznámé následky používání implantátu pro vlastní mozek."
     },
     "expedition_ds03": {
-      "status": "at_access_terminal",
+      "status": "access_barrier_open",
       "supplies": {
         "food_days_for_two": 3,
         "water_days_for_two": 3,
@@ -436,9 +438,9 @@
         "network": "FALLBACK",
         "authentication": "LOCAL",
         "prompt": "PRESENT BIOMETRIC ID",
-        "gate": "CLOSED",
-        "contacted": false,
-        "authorization_verified": false,
+        "gate": "OPEN",
+        "contacted": true,
+        "authorization_verified": true,
         "player_concern": "Možný poplach nebo označení identity při autentizaci; neověřeno.",
         "gamma_assessment": {
           "event": "000024",
@@ -446,6 +448,19 @@
           "source": "Tvrzení GAMMA-six o standardní řadě terminálu, konkrétní konfigurace neověřena.",
           "flagged_identities_current_status": null,
           "terminal_contacted": false
+        },
+        "last_authentication": {
+          "event": "000025",
+          "subject": "RDF-ΔK452",
+          "classification": "R-CLASS",
+          "biometric_match": "CONFIRMED",
+          "security_flag": "NONE",
+          "local_access": "AUTHORIZED",
+          "entry_log": "STORED LOCALLY",
+          "uplink": "UNAVAILABLE",
+          "result": "ACCESS GRANTED",
+          "observed_reaction": "Závora otevřena, bez sirény, viditelného pohybu kamer či jiné bezprostřední reakce.",
+          "certainty": "Lokální výpis a pozorovaná reakce; globální oprávnění a skutečný síťový stav neověřeny."
         }
       }
     }
@@ -455,7 +470,7 @@
       "id": "ds03",
       "status": "open",
       "title": "Prozkoumat DS-03",
-      "detail": "SRV stojí u zavřené závory. GAMMA-six lokálně konzultován, tvrdí, že běžná řada terminálu má servisní přehled bez biometrie; konkrétní dostupnost a aktuální označení identit neověřeny. Kara ještě nezná odpověď. Bez kontaktu s terminálem."
+      "detail": "Lokální biometrická autorizace RDF-ΔK452 úspěšná, závora otevřena. Hlavní vstup do komunikačního a synchronizačního komplexu cca 50 m za závorou. Rudolf pěšky u terminálu, Kara a dron v SRV. Vstup do budovy a COMMS_SYNC dosud nevyřešeny."
     },
     {
       "id": "delta2-data",
