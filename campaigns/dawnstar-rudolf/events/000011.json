@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 10,
+  "revision": 11,
+  "day": 18,
+  "type": "maintenance_pending_roll",
+  "player_action": "Je tu pár drobností, které zkusíme vyřešit, ty si klidně jdi odpočinout, s dronem to tady nějak dáme dohromady. Díky! \n\nA pokusím se postupně opravit všechny věci. Začnu tedy detailně s diagnostikou chlazení motoru.",
+  "dm_response": "Kara: „Dobře, ale nebuď tady zase do rána. Zásoby jsou připravené. Kdybys něco potřeboval, zavolej.“ Popřála dobrou noc, odešla do obytné části. Dron Δ-47 vysunul diagnostické rameno u pravého motoru. Rudolf otevřel servisní panel, připojil diagnostický terminál, testoval oba okruhy v servisním režimu bez spuštění motoru. Primární okruh NOMINAL, sekundární zkušební tlak 240 kPa, po 120 s 218 kPa, výkon čerpadla 100 %, průchodnost výměníku bez omezení. Dron lokalizoval netěsnost: ztvrdlé těsnění přípojky s drobnou prasklinou, přípojka a potrubí bez zjevného poškození. Náhradní kompatibilní těsnění v dílně. Plán opravy: výměna, doplnění média, odvzdušnění, tlaková zkouška. Hod Engineering 1d20+6 (5 skill, 1 Field Precision Tools), DC 12, čeká se na výsledek. Diagnostika bez dalšího hodu díky předchozímu úspěchu. Ostatní opravy dosud neprovedeny.",
+  "rolls": [],
+  "changes": [
+    "Kara odešla do obytné části.",
+    "Rudolf schválil provedení všech tří oprav s dronem; začal chlazením.",
+    "Nové fikční diagnostické hodnoty stanoveny DM v tomto tahu; závada zpřesněna bez opakování diagnostického hodu.",
+    "Čekající hod na první opravu, žádná oprava ani spotřeba náhradního dílu dosud potvrzena.",
+    "SRV nadále nabíjí, poslední naměřená hodnota 68 %, nová hodnota nezměřena."
+  ],
+  "sources": [
+    "events/000010.json",
+    "rules.md: Engineering a Field Precision Tools",
+    "Nové fikční výsledky v tomto tahu"
+  ],
+  "correction_of": null
+}

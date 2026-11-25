@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 10,
-  "last_event": "000010",
+  "revision": 11,
+  "last_event": "000011",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,10 +12,24 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "maintenance",
-    "resume": "Rudolf hodil 12 na kostce, Engineering +5 = 17, DC 10 a 15 úspěch, DC 20 nedosažen. Po cca 45 minutách detailní prohlídky odhalil netěsné těsnění sekundárního chlazení pravého motoru (25 min oprava), odírající se kabelový svazek manévrovacích trysek s neporušenými vodiči (15 min), povolený spoj a drobnou vůli tažného zařízení SRV (10 min). Náhradní díly jsou v dílně. Trup drží a reaktor bez nutnosti okamžitého zásahu. FSD stále neověřen pro mezihvězdný let, není nutný pro expedici DS-03. SRV nabito na 68 %, stále nabíjí. Kara připravila zásoby jídla a vody na tři dny pro oba, lékárničku a náhradní filtry; přišla do hangáru a ptá se na stav lodě a možnost ranního odletu. Opravy zatím neprovedeny.",
-    "pending": null,
+    "resume": "Rudolf Kaře oznámil, že opraví všechny tři zjištěné závady s dronem, a nabídl jí odpočinek. Kara odešla do obytné části. Rudolf s Δ-47 otevřel servisní panel pravého motoru DBE a provedl samostatný servisní test okruhů bez spuštění hlavního motoru. Primární okruh nominální; sekundární zkušební tlak 240 kPa, po 120 s 218 kPa; čerpadlo 100 %, výměník průchodný. Dron lokalizoval ztvrdlé prasklé těsnění přípojky, přípojka a potrubí bez zjevného poškození, kompatibilní náhradní těsnění v dílně. Plán: výměna těsnění, doplnění média, odvzdušnění a tlaková zkouška. Čeká se na hráčův hod Engineering 1d20+6 (skill +5, Field Precision Tools +1), DC 12. Žádná oprava dosud provedena; kabeláž a tažné zařízení zůstávají otevřené.",
+    "pending": {
+      "kind": "roll",
+      "skill": "Engineering",
+      "dice": "1d20",
+      "modifier": 6,
+      "modifier_breakdown": {
+        "engineering": 5,
+        "drone_field_precision_tools": 1
+      },
+      "dc": 12,
+      "action": "Oprava sekundárního chladicího okruhu pravého motoru DBE s asistencí Δ-47: výměna těsnění, doplnění chladicího média, odvzdušnění a kontrola těsnosti.",
+      "roll_owner": "player",
+      "raw": null,
+      "total": null
+    },
     "certainty": "played",
-    "source": "events/000010.json",
+    "source": "events/000011.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -36,7 +50,7 @@
       "travel_time": null,
       "certainty": "Pouze odhad z uložené mapy, nikoli nové měření; přesný azimut a délka trasy nejsou ověřeny."
     },
-    "elapsed_since_previous_hours_approx": 0.75
+    "elapsed_since_previous_hours_approx": null
   },
   "character": {
     "name": "Rudolf",
@@ -150,7 +164,7 @@
           {
             "id": "right-cooling-seal",
             "priority": "high",
-            "status": "open",
+            "status": "pending_repair_roll",
             "estimated_minutes": 25,
             "parts": "Náhradní těsnění v dílně",
             "risk": "Přehřátí při delším vysokém výkonu"
@@ -163,14 +177,26 @@
             "parts": "Ochranná izolace a upevňovací prvky v dílně",
             "risk": "Další poškození izolace při vibracích"
           }
-        ]
+        ],
+        "right_engine_cooling_diagnostics": {
+          "event": "000011",
+          "day": 18,
+          "primary": "NOMINAL",
+          "secondary_test_start_kpa": 240,
+          "secondary_test_after_120_seconds_kpa": 218,
+          "pump_percent": 100,
+          "heat_exchanger": "Bez omezení",
+          "leak": "Ztvrdlé těsnění přípojky s drobnou prasklinou; přípojka a potrubí bez zjevného poškození.",
+          "replacement": "Kompatibilní těsnění v dílně",
+          "repair_completed": false
+        }
       },
       "SRV": {
         "location": "Hangár Sirius 4B",
-        "status": "Provozuschopné; nabíjení pokračuje, naměřeno 68 %. Pohon, řízení a odpružení bez významné závady při prohlídce.",
+        "status": "Provozuschopné, nabíjení pokračuje; poslední změřená hodnota 68 % při předchozí inspekci.",
         "trailer": true,
         "energy_percent_at_charge_start": 41,
-        "energy_percent": 68,
+        "energy_percent": null,
         "charging": true,
         "trailer_inspection": "Povolený spoj a drobná vůle uchycení tažného zařízení; oprava cca 10 minut, dosud neprovedena.",
         "maintenance_tasks": [
@@ -181,10 +207,11 @@
             "estimated_minutes": 10,
             "parts": "Upevňovací prvky v dílně"
           }
-        ]
+        ],
+        "last_measured_energy_percent": 68
       },
       "drone": {
-        "location": "Sirius 4B; vrátil se s Rudolfem",
+        "location": "Hangár Sirius 4B, u pravého motoru DBE",
         "status": "Provozuschopný",
         "functions": [
           "Scanning",
@@ -206,12 +233,13 @@
           "Protected memory core částečně izolované od GAMMA-six",
           "Extendable antenna array"
         ],
-        "designation": "Δ-47"
+        "designation": "Δ-47",
+        "current_activity": "Asistence Rudolfovi, diagnostické rameno vysunuto, Field Precision Tools použitelné k opravě."
       }
     },
     "npcs": {
       "kara": {
-        "location": "Sirius 4B, hangár u Rudolfa",
+        "location": "Sirius 4B, obytná část",
         "role": "Spojenkyně, analýza biologických vzorků",
         "relationship": "Vzájemná důvěra, společná historie; samostatná osobnost",
         "health": null,
@@ -230,11 +258,11 @@
           "Zjistit, zda jejich uváznutí bylo úmyslné, nebo následkem nehody; posoudit případné riziko návratu mezi lidi.",
           "Soustředit další pátrání na DS-03 a přístup k archivu paměti, vynechat nepodstatné odbočky a nespouštět konvergenci bez pochopení následků."
         ],
-        "last_question": "Připravila jsem nám jídlo a vodu na tři dny, lékárničku a náhradní filtry. Jak to vypadá s lodí? Budeme moct ráno vyrazit?",
+        "last_question": null,
         "known_personal_memories": [
           "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
         ],
-        "current_activity": "Příprava expedičních zásob dokončena; čeká na informace o technickém stavu."
+        "current_activity": "Odešla odpočívat; zásoby připraveny, spánek zatím nepotvrzen."
       }
     },
     "locations": {
