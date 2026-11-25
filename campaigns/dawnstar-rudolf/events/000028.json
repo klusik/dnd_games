@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 27,
+  "revision": 28,
+  "day": 19,
+  "type": "main_entrance_door_check",
+  "player_action": "\"Karo, co dveře? Reaguje to nějak?\"",
+  "dm_response": "Kara přistoupí těsně ke dveřím a zamává rukou před pohybovým senzorem. Nic se nestane.\n\n„Automatika asi nefunguje. Ale tady je ruční ovládání.“\n\nStiskne tlačítko na rámu dveří. Ozve se krátké zabzučení elektromotoru a dveře se pomalu odsunou až do krajní polohy.\n\n„Takže napájení i mechanismus fungují. Jen senzor je nejspíš mimo provoz.“\n\nNyní máš nerušený výhled do vstupní haly. Na podlaze leží několik převrácených židlí a u recepce je rozbitý monitor. Ostatní vybavení působí zachovale. Zleva, od komunikačního střediska, proniká do haly slabé bílé světlo.\n\nKara zůstane na prahu a chvíli poslouchá.\n\n„Nikoho neslyším. Půjdeme?“",
+  "rolls": [],
+  "changes": [
+    "Kara autonomně vyzkoušela pohybový senzor a běžné ruční tlačítko, bez hodu. Dveře plně otevřené.",
+    "Nová fikční pozorování vstupní haly, poškození monitoru, převrácených židlí a světla zleva. Příčina poškození a bezpečnost neznámé.",
+    "Nikdo dosud nevstoupil, Kara čeká na rozhodnutí hráče. Žádný další technický zásah."
+  ],
+  "sources": [
+    "events/000026.json",
+    "events/000027.json",
+    "Nové fikční pozorování a akce NPC v tomto tahu"
+  ],
+  "correction_of": null
+}

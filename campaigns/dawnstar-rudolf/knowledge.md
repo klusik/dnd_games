@@ -62,3 +62,7 @@ SRV zůstalo uzamčené před závorou, vypnutý pohon, komunikace v pohotovosti
 ## Den 19, orientační exteriér DS-03 (event 000027)
 
 Z odstupu několika metrů od hlavního vchodu viditelná nadzemní část působí jednopodlažně, šířka odhadem 40 m, zadní část ve skalnatém svahu. Vlevo stožár, několik parabol a silné kabely do budovy, vpravo nižší přístavba s ventilačními průduchy a širšími servisními vraty. Jejich funkčnost neověřena. Mapa pouze orientační: komunikační středisko vlevo, datové centrum rovně, technické a obytné zázemí vpravo podle směrovek, nikoliv zjištěných příček. Rozsah ve skále a podzemní podlaží neznámé. Kara odhaduje servery ve skále; jde o hypotézu. Na viditelném exteriéru žádné pozorované osoby či pohyb. Posádka stále před vchodem.
+
+## Den 19, otevření hlavních dveří DS-03 (event 000028)
+
+Kara vyzkoušela pohybový senzor bez reakce; ruční tlačítko na rámu spustilo elektromotor a dveře se plně odsunuly. Vadný senzor je její hypotéza. Viditelné převrácené židle, rozbitý monitor u recepce, ostatní vybavení zdánlivě zachovalé, slabé bílé světlo zleva od komunikačního střediska. Kara nikoho neslyší. Interiér zatím nenavštíven a jeho bezpečnost neověřena.
