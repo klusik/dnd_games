@@ -1,21 +1,45 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 8,
-  "last_event": "000008",
+  "revision": 9,
+  "last_event": "000009",
   "status": "active",
   "language": "cs",
   "scene": {
     "day": 18,
     "time": null,
-    "location": "Sirius 4B, u výzkumného terminálu s Karou",
+    "location": "Sirius 4B, hangár a dílna u DBE a SRV",
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
-    "phase": "dialogue",
-    "resume": "Rudolf vyjádřil, že se ztrácí v dosavadních stopách a chce záhadu vyřešit i za cenu nepříjemného odhalení o sobě a Kaře. Kara přiznala obavy a nabídla zúžení pátrání na DS-03 kvůli možnému přístupu k zašifrované záloze paměti DS-Δ2. Navrhla odložit vedlejší průzkum a nespouštět konvergenci bez pochopení jejích účinků. Po večeři chce připravit zásoby a vybavení, Rudolfovi navrhla kontrolu DBE a dobití SRV, odlet ráno. Čeká na jeho odpověď. Žádná příprava, dobíjení, spánek ani odlet dosud neproběhly.",
-    "pending": null,
+    "phase": "maintenance",
+    "resume": "Rudolf a Kara souhlasili s prioritou DS-03, dojedli. Kara odešla do skladu připravovat zásoby, Rudolf do hangáru. DBE fyzicky potvrzena na podvozku v hangáru vedle SRV s přívěsem. Základní diagnostika odpovídá známým závadám a omezením DBE, bez výrazného zhoršení na první pohled. SRV nově změřeno 41 % energie, provozuschopný podvozek, pohon bez aktivní chyby, senzory online, přívěs vyžaduje mechanickou kontrolu. SRV připojeno k nabíjecímu portu a nabíjí se. Čeká se na hod Engineering pro detailní inspekci obou strojů. Žádné opravy, spánek ani odlet zatím neproběhly.",
+    "pending": {
+      "kind": "roll",
+      "skill": "Engineering",
+      "dice": "1d20",
+      "modifier": 5,
+      "dc": 10,
+      "tiers": [
+        {
+          "dc": 10,
+          "outcome": "Zjevné technické nedostatky"
+        },
+        {
+          "dc": 15,
+          "outcome": "Skryté závady a rizika při zatížení"
+        },
+        {
+          "dc": 20,
+          "outcome": "Velmi detailní analýza včetně možností optimalizace"
+        }
+      ],
+      "action": "Systematická detailní technická inspekce DBE a SRV v hangáru, mechanické spoje, kabeláž, chlazení, předchozí opravy. Výsledek jednoho hodu platí pro oba stroje; neprovádět automatické opravy.",
+      "roll_owner": "player",
+      "raw": null,
+      "total": null
+    },
     "certainty": "played",
-    "source": "events/000008.json",
+    "source": "events/000009.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -110,13 +134,14 @@
       "ammunition": null
     },
     "expressed_goals": [
-      "Vyřešit dosavadní záhadu i za cenu nepříjemných zjištění o vlastní minulosti a vztahu s Karou (den 18, event 000008)."
+      "Vyřešit dosavadní záhadu i za cenu nepříjemných zjištění o vlastní minulosti a vztahu s Karou (den 18, event 000008).",
+      "Prioritně prozkoumat DS-03 s Karou; před odletem důkladně zkontrolovat DBE a SRV."
     ]
   },
   "world": {
     "assets": {
       "DBE": {
-        "location": "4B nebo aktuální zázemí, poslední přesné umístění neověřené",
+        "location": "Hangár Sirius 4B, na podvozku, potvrzeno pozorováním dne 18",
         "status": "Letuschopná v atmosféře, částečně opravená",
         "hull": "Stabilní s drobnými slabinami opláštění",
         "left_engine": "Funkční a čistý",
@@ -127,12 +152,21 @@
         "sensors": "Základní funkce; pokročilé skenování omezené",
         "flight": "Krátký planetární let a supercruise podle staršího záznamu bezpečné; mezihvězdný skok vyžaduje přípravu",
         "manipulator": "Instalován, pouze na povrchu",
-        "source": "ChatGPT log.txt:12734-12746"
+        "source": "ChatGPT log.txt:12734-12746",
+        "last_preliminary_inspection": {
+          "day": 18,
+          "event": "000009",
+          "result": "Základní diagnostika odpovídá dřívějším známým stavům; bez výrazného viditelného zhoršení, detailní inspekce čeká na hod."
+        }
       },
       "SRV": {
         "location": "Hangár Sirius 4B",
-        "status": "Provozuschopné; po návratu z DS-Δ2 zaparkováno. Zbývající energie nezměřena, dobití zatím nepotvrzeno.",
-        "trailer": true
+        "status": "Provozuschopné; základní diagnostika pohonu bez aktivní chyby, senzory online. Připojeno k nabíjecímu portu; nabíjení zahájeno.",
+        "trailer": true,
+        "energy_percent_at_charge_start": 41,
+        "energy_percent": null,
+        "charging": true,
+        "trailer_inspection": "Mechanická kontrola čeká na výsledek detailní inspekce."
       },
       "drone": {
         "location": "Sirius 4B; vrátil se s Rudolfem",
@@ -162,7 +196,7 @@
     },
     "npcs": {
       "kara": {
-        "location": "Sirius 4B, u výzkumného terminálu s Rudolfem",
+        "location": "Sirius 4B, sklad",
         "role": "Spojenkyně, analýza biologických vzorků",
         "relationship": "Vzájemná důvěra, společná historie; samostatná osobnost",
         "health": null,
@@ -181,10 +215,11 @@
           "Zjistit, zda jejich uváznutí bylo úmyslné, nebo následkem nehody; posoudit případné riziko návratu mezi lidi.",
           "Soustředit další pátrání na DS-03 a přístup k archivu paměti, vynechat nepodstatné odbočky a nespouštět konvergenci bez pochopení následků."
         ],
-        "last_question": "Po večeři můžu připravit zásoby a vybavení. Ty bys mohl zkontrolovat DBE a dobít SRV. Ráno bychom vyrazili. Co říkáš?",
+        "last_question": null,
         "known_personal_memories": [
           "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
-        ]
+        ],
+        "current_activity": "Příprava zásob a vybavení na DS-03, dosud nedokončena."
       }
     },
     "locations": {
@@ -227,7 +262,7 @@
       "id": "ds03",
       "status": "open",
       "title": "Prozkoumat DS-03",
-      "detail": "Kara navrhla prioritní expedici k DS-03 ráno po přípravě zásob, kontrole DBE a dobití SRV. Cíl: ověřit souvislost s COMMS_SYNC a přístupem k archivu paměti. Hráč zatím nepotvrdil výpravu."
+      "detail": "Hráč souhlasil s prioritou DS-03 a přípravou expedice. Kara připravuje zásoby, Rudolf kontroluje techniku. Odlet plánován na ráno po přípravě; ještě neuskutečněn."
     },
     {
       "id": "delta2-data",

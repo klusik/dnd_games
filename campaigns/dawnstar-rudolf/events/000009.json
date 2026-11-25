@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 8,
+  "revision": 9,
+  "day": 18,
+  "type": "maintenance_pending_roll",
+  "player_action": "Naprostý souhlas, díky\n\nPostupne dojíme a ja se vydám prozkoumat dbe a srv. Chci prozkoumat detailně, jestli si nevšimnu nějakých věcí, co je třeba vyřešit.",
+  "dm_response": "Kara přikývne, po večeři jde do skladu připravovat zásoby. Rudolf jde do hangáru, DBE na podvozku, SRV s přívěsem vedle. Základní diagnostika DBE: levý motor funkční, pravý provizorně opravený, manévrovací trysky kalibrovány, trup drobné strukturální slabiny, reaktor stabilní, záložní napájení omezené, HUD drobné nekompatibility, FSD mezihvězdný skok neověřen, senzory omezené. Na první pohled bez výrazného zhoršení. SRV: nově změřeno 41 % energetických článků, podvozek provozuschopný, pohon bez aktivní chyby, senzory online, přívěs potřebuje mechanickou kontrolu. Rudolf připojil SRV k nabíjecímu portu v rámci schváleného plánu a nabíjení se spustilo. Detailní prohlídka obou strojů jedním hráčovým hodem 1d20+5 Engineering, DC 10/15/20. Čeká se na hod; žádné další výsledky ani opravy dosud neproběhly.",
+  "rolls": [],
+  "changes": [
+    "Večeře dokončena oběma, spotřeba surovin již evidována v revizi 7.",
+    "Schválen plán přípravy expedice DS-03, nikoli provedení odletu.",
+    "Přesun hráče do hangáru a Kary do skladu; zahájena příprava zásob.",
+    "Nová měřená hodnota SRV 41 % na začátku nabíjení je herní rozhodnutí DM, nikoli doplněný historický údaj. Nabíjení zahájeno; aktuální procento po zahájení zatím neznámé.",
+    "DBE potvrzena v hangáru; předběžná diagnostika provedena; detailní prohlídka čeká na hráčův hod."
+  ],
+  "sources": [
+    "events/000008.json",
+    "state.json revize 8: dosavadní technický stav DBE a SRV",
+    "Nové fikční pozorování a mechanika v tomto tahu"
+  ],
+  "correction_of": null
+}
