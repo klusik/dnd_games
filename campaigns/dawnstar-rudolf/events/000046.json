@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 45,
+  "revision": 46,
+  "day": 19,
+  "type": "reception_door_status",
+  "player_action": "„Ty přístupy odpovídají tomu, co jsme viděli na videu, použil auth19, vypadá to na servisní vstup bez konkrétní autentizace. Zkusím najít, co přesně to znamená.“ a dám ESC zpět do menu, tam už zbývá jen door status, tak ho dám a počkám, co vypíše konzole.",
+  "dm_response": "Kara: „Servisní token? Takže buď měl oprávnění k údržbě, nebo se k němu nějak dostal. Zkus zjistit, komu byl vydaný.“ Rudolf se vrátil do bezpečnostní nabídky a otevřel DOOR STATUS. D-01 MAIN ENTRANCE: OPEN; Manual mode; Motion sensor unresponsive. D-02 COMMUNICATIONS CONTROL: PARTIALLY OPEN; Lock disengaged; Local control. D-03 DATA CENTER: CLOSED; Last reported: Locked; Live status unavailable. D-04 ENGINEERING & MAINTENANCE: UNKNOWN; Controller unreachable. D-05 PERSONNEL FACILITIES: UNKNOWN; Controller unreachable. D-06 SERVICE ENTRANCE: UNKNOWN; Position sensor unavailable. REMOTE DOOR CONTROL DISABLED; LOCAL MANUAL CONTROL AVAILABLE; ACCESS LEVEL READ ONLY. Dveře do komunikačního střediska dle systému nezamčené, částečné otevření odpovídá pozorování. Datové centrum jen poslední známý stav. Z recepce dveře vzdáleně ovládat nelze. Žádná konfigurace nezměněna.",
+  "rolls": [],
+  "changes": [
+    "Kara informována o servisní autorizaci AUTH-019 v rozsahu hráčova sdělení; její reakce je hypotéza, nikoli potvrzení identity.",
+    "Návrat z SECURITY EVENT LOG a otevření DOOR STATUS v jednom výslovně zadaném tahu; report odlišuje současný, poslední známý a neznámý stav.",
+    "Rutinní čtení bez hodu. Žádné dveře ovládány, žádná změna konfigurace, zdraví, pozic, inventáře či doložené spotřeby."
+  ],
+  "sources": [
+    "events/000026.json",
+    "events/000028.json",
+    "events/000032.json",
+    "events/000040.json",
+    "events/000045.json",
+    "world/expedition-ds03.json",
+    "characters/kara.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}

@@ -197,7 +197,7 @@
         "PERSONNEL REGISTRY"
       ],
       "prompt": "ESC RETURN TO SECURITY MENU",
-      "view": "SECURITY EVENT LOG",
+      "view": "DOOR STATUS",
       "security_status": {
         "SECURITY NETWORK": "DEGRADED",
         "LOCAL RECORDING": "ACTIVE",
@@ -246,45 +246,57 @@
         "SECURITY ADMINISTRATION"
       ],
       "administration": "LOCKED; vyšší oprávnění nutné dle rozhraní",
-      "security_event_log": {
-        "storage": "LOCAL BUFFER",
-        "order": "NEWEST FIRST",
-        "entries": [
+      "door_status": {
+        "event": "000046",
+        "mode": "FALLBACK",
+        "doors": [
           {
-            "time_label": "CURRENT SESSION",
-            "lines": [
-              "RECEPTION-01: AUTH_SUCCESS",
-              "SUBJECT: RDF-ΔK452",
-              "CLASSIFICATION: R-CLASS"
-            ]
+            "id": "D-01",
+            "name": "MAIN ENTRANCE",
+            "position": "OPEN",
+            "detail": "Manual mode; Motion sensor unresponsive",
+            "freshness": "current_report"
           },
           {
-            "time_label": "TODAY / MORNING",
-            "lines": [
-              "MAIN ENTRANCE: MANUAL OPEN",
-              "PERIMETER GATE: ACCESS GRANTED",
-              "SUBJECT: RDF-ΔK452"
-            ]
+            "id": "D-02",
+            "name": "COMMUNICATIONS CONTROL",
+            "position": "PARTIALLY OPEN",
+            "detail": "Lock disengaged; Local control",
+            "freshness": "current_report"
           },
           {
-            "time_label": "ARCHIVE REF: CAM-03/003",
-            "lines": [
-              "CORRIDOR PANEL: MANUAL INPUT",
-              "LIGHTING CIRCUIT: ENABLED",
-              "USER: NOT IDENTIFIED"
-            ]
+            "id": "D-03",
+            "name": "DATA CENTER",
+            "position": "CLOSED",
+            "detail": "Last reported: Locked; Live status unavailable",
+            "freshness": "last_known_only"
           },
           {
-            "time_label": "ARCHIVE REF: CAM-03/004",
-            "lines": [
-              "COMMS CONTROL: ACCESS GRANTED",
-              "AUTH METHOD: SERVICE TOKEN",
-              "AUTH REFERENCE: AUTH-019",
-              "IDENTITY: UNRESOLVED"
-            ]
+            "id": "D-04",
+            "name": "ENGINEERING & MAINTENANCE",
+            "position": "UNKNOWN",
+            "detail": "Controller unreachable",
+            "freshness": "unknown"
+          },
+          {
+            "id": "D-05",
+            "name": "PERSONNEL FACILITIES",
+            "position": "UNKNOWN",
+            "detail": "Controller unreachable",
+            "freshness": "unknown"
+          },
+          {
+            "id": "D-06",
+            "name": "SERVICE ENTRANCE",
+            "position": "UNKNOWN",
+            "detail": "Position sensor unavailable",
+            "freshness": "unknown"
           }
         ],
-        "warning": "CENTRAL AUTH DATABASE UNREACHABLE; REFER TO LOCAL ACCESS LOG"
+        "remote_door_control": "DISABLED",
+        "local_manual_control": "AVAILABLE",
+        "access_level": "READ ONLY",
+        "certainty": "Výpis místní konzole; aktuální stav D-01 a částečné otevření D-02 odpovídají vizuálním pozorováním, hlášení o odjištěném zámku D-02 je tvrzení systému. D-03 je výhradně poslední známý stav, ne živá informace. Dostupnost místního ručního ovládání je obecné hlášení, nikoli ověření každého jednotlivého mechanismu. D-04 až D-06 aktuálně neověřeny."
       }
     },
     "last_authentication": {
@@ -376,9 +388,9 @@
       "live_feed_opened": true,
       "archive_opened": true,
       "selected_function": {
-        "number": 4,
-        "name": "SECURITY EVENT LOG",
-        "event": "000045"
+        "number": 3,
+        "name": "DOOR STATUS",
+        "event": "000046"
       },
       "certainty": "Výpis lokálního bezpečnostního rozhraní v režimu FALLBACK, nikoli nezávislé ověření. ONLINE neprokazuje funkční živý obraz; ACTIVE RECORDING neprokazuje skutečné zaznamenání příchodu. UNREACHABLE neznamená zničené zařízení, REMOTE MONITORING UNAVAILABLE neprokazuje absenci všech forem vzdáleného sledování."
     },
@@ -578,6 +590,58 @@
       ],
       "warning": "CENTRAL AUTH DATABASE UNREACHABLE; REFER TO LOCAL ACCESS LOG",
       "certainty": "Výpis místního bezpečnostního logu, korelace podle odkazů na kamerové záznamy. Použití servisního tokenu je tvrzení systému, nikoli ověření jeho vlastníka, platnosti, způsobu získání ani totožnosti postavy. Absence záznamu o násilném vstupu nevylučuje manipulaci či jiné způsoby vstupu. Obsah AUTH-019 dosud neotevřen."
+    },
+    "door_status_report": {
+      "event": "000046",
+      "mode": "FALLBACK",
+      "doors": [
+        {
+          "id": "D-01",
+          "name": "MAIN ENTRANCE",
+          "position": "OPEN",
+          "detail": "Manual mode; Motion sensor unresponsive",
+          "freshness": "current_report"
+        },
+        {
+          "id": "D-02",
+          "name": "COMMUNICATIONS CONTROL",
+          "position": "PARTIALLY OPEN",
+          "detail": "Lock disengaged; Local control",
+          "freshness": "current_report"
+        },
+        {
+          "id": "D-03",
+          "name": "DATA CENTER",
+          "position": "CLOSED",
+          "detail": "Last reported: Locked; Live status unavailable",
+          "freshness": "last_known_only"
+        },
+        {
+          "id": "D-04",
+          "name": "ENGINEERING & MAINTENANCE",
+          "position": "UNKNOWN",
+          "detail": "Controller unreachable",
+          "freshness": "unknown"
+        },
+        {
+          "id": "D-05",
+          "name": "PERSONNEL FACILITIES",
+          "position": "UNKNOWN",
+          "detail": "Controller unreachable",
+          "freshness": "unknown"
+        },
+        {
+          "id": "D-06",
+          "name": "SERVICE ENTRANCE",
+          "position": "UNKNOWN",
+          "detail": "Position sensor unavailable",
+          "freshness": "unknown"
+        }
+      ],
+      "remote_door_control": "DISABLED",
+      "local_manual_control": "AVAILABLE",
+      "access_level": "READ ONLY",
+      "certainty": "Výpis místní konzole; aktuální stav D-01 a částečné otevření D-02 odpovídají vizuálním pozorováním, hlášení o odjištěném zámku D-02 je tvrzení systému. D-03 je výhradně poslední známý stav, ne živá informace. Dostupnost místního ručního ovládání je obecné hlášení, nikoli ověření každého jednotlivého mechanismu. D-04 až D-06 aktuálně neověřeny."
     }
   }
 }

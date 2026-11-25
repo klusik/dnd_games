@@ -17,7 +17,8 @@
     "Den 19, event 000032: některé systémy DS-03 se jeví napájené; viditelná kamera nad recepcí, její funkčnost ani případné sledování nejsou ověřeny.",
     "Den 19, event 000034: recepční terminál je částečně napájený a uzamčený, přístup k bezpečnostnímu systému nepotvrzen. Za pultem nikoho neviděla.",
     "Den 19, event 000036: viděla čitelnou hlavní nabídku RECEPTION-01, nikoli obsah jednotlivých položek.",
-    "Den 19, event 000044: Rudolf jí sdělil obsah dvou starších záznamů CAM-03 v rozsahu neidentifikované postavy nesoucí kufřík dovnitř a podobné postavy vracející se bez něj; další záznamy zachycují jejich příchod. Nezná identitu, současné místo osoby ani obsah kufříku. Přesné stáří záznamů a obsluhu panelu jí Rudolf v tomto tahu výslovně nesdělil."
+    "Den 19, event 000044: Rudolf jí sdělil obsah dvou starších záznamů CAM-03 v rozsahu neidentifikované postavy nesoucí kufřík dovnitř a podobné postavy vracející se bez něj; další záznamy zachycují jejich příchod. Nezná identitu, současné místo osoby ani obsah kufříku. Přesné stáří záznamů a obsluhu panelu jí Rudolf v tomto tahu výslovně nesdělil.",
+    "Den 19, event 000046: Rudolf sdělil, že přístupové události odpovídají videu a že systém zaznamenal servisní vstup s referencí AUTH-019, bez přiřazené konkrétní identity. Kara navrhla zjistit, komu byl token vydán. Skutečnou identitu ani vlastníka tokenu nezná; Rudolf jí zatím nesdělil výsledek DOOR STATUS."
   ],
   "name": "Kara Velin",
   "age": 32,
@@ -32,7 +33,7 @@
   "known_personal_memories": [
     "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
   ],
-  "current_activity": "U recepce vedle Rudolfa, po jeho sdělení o kamerových záznamech se přiblížila k monitoru a nadále sleduje okolní chodby. Zbraň připravena, svítilna zapnuta. Během hlídání nezaznamenala pohyb, kroky ani hlasy; slyší ventilaci a nevidí do všech chodeb. Doporučila zkontrolovat případnou autorizaci neznámé postavy.",
+  "current_activity": "U recepce vedle Rudolfa, hlídá okolí, zbraň připravena, svítilna zapnuta. Reagovala na sdělení o servisním tokenu AUTH-019 a doporučila zjistit jeho vlastníka.",
   "level": null,
   "xp": null,
   "species": "Human",
