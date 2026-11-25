@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 47,
+  "revision": 48,
+  "day": 19,
+  "type": "reception_station_directory",
+  "player_action": "Vyberu položku 1: STATION DIRECTORY.",
+  "dm_response": "Rudolf otevřel STATION DIRECTORY. Konzole zobrazila lokálně uložené strukturální schéma DS-03, RECEPCE / YOU ARE HERE. RECEPTION: Vstupní hala a recepce; Centrální část. COMMUNICATIONS CONTROL: Řízení antén, komunikační spojení a synchronizace uzlů; Vlevo od recepce. DATA CENTER: Výpočetní technika a datová úložiště; Přímo od recepce, směrem do skalního masivu podle schématu. ENGINEERING & MAINTENANCE: Napájení, distribuce energie, ventilace a servisní dílna; Pravá větev od recepce. PERSONNEL FACILITIES: Ubikace a provozní zázemí personálu; Pravá větev od recepce. Spojení podle schématu: D-01 exterior -> reception (OPEN, dle reportu 000046); D-02 reception -> comms_control (PARTIALLY OPEN, dle reportu 000046); D-03 reception -> data_center (LAST KNOWN CLOSED/LOCKED; LIVE UNAVAILABLE, dle reportu 000046); D-04 right_corridor -> engineering (UNKNOWN, dle reportu 000046); D-05 right_corridor -> personnel (UNKNOWN, dle reportu 000046); D-06 exterior -> engineering (UNKNOWN, dle reportu 000046). Recepce spojena s pravou chodbou, která se větví k technické a personální sekci. SOURCE: LOCAL DIRECTORY CACHE; STRUCTURAL SCHEMATIC ONLY; CURRENT LAYOUT NOT VERIFIED. Schéma je orientační, bez podrobnějšího půdorysu, měřítka, aktuální polohy osob a ověřené průchodnosti. Pro hlavní napájení je podle adresáře relevantní technická sekce, pro COMMS_SYNC komunikační středisko.",
+  "rolls": [],
+  "changes": [
+    "Otevřen a přečten lokálně uložený adresář stanice, nová zjištění o funkci sekcí a jejich schematickém propojení uložena v modulu výpravy.",
+    "Stavy dveří pouze převzaty z předchozího reportu, nikoli nově měřeny. Žádná další sekce nebyla navštívena.",
+    "Rutinní čtení bez hodu. Bez změny konfigurace, pozic, zdraví, inventáře či doložené spotřeby."
+  ],
+  "sources": [
+    "events/000026.json",
+    "events/000027.json",
+    "events/000037.json",
+    "events/000046.json",
+    "events/000047.json",
+    "world/expedition-ds03.json",
+    "world/locations.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}

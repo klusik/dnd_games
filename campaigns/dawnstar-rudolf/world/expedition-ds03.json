@@ -196,8 +196,103 @@
         "ACCESS LOG",
         "PERSONNEL REGISTRY"
       ],
-      "prompt": "SELECT OPTION",
-      "view": "MAIN MENU"
+      "prompt": "ESC RETURN TO MAIN MENU",
+      "view": "STATION DIRECTORY",
+      "station_directory": {
+        "facility": "DS-03 / COMMUNICATIONS & SYNCHRONIZATION FACILITY",
+        "source": "LOCAL DIRECTORY CACHE",
+        "map_type": "STRUCTURAL SCHEMATIC ONLY",
+        "current_layout_verified": false,
+        "location_marker": "RECEPTION / YOU ARE HERE",
+        "zones": [
+          {
+            "id": "reception",
+            "name": "RECEPTION",
+            "purpose": "Vstupní hala a recepce",
+            "position": "Centrální část",
+            "observed": true
+          },
+          {
+            "id": "comms_control",
+            "name": "COMMUNICATIONS CONTROL",
+            "purpose": "Řízení antén, komunikační spojení a synchronizace uzlů",
+            "position": "Vlevo od recepce",
+            "observed": false
+          },
+          {
+            "id": "data_center",
+            "name": "DATA CENTER",
+            "purpose": "Výpočetní technika a datová úložiště",
+            "position": "Přímo od recepce, směrem do skalního masivu podle schématu",
+            "observed": false
+          },
+          {
+            "id": "engineering",
+            "name": "ENGINEERING & MAINTENANCE",
+            "purpose": "Napájení, distribuce energie, ventilace a servisní dílna",
+            "position": "Pravá větev od recepce",
+            "observed": false
+          },
+          {
+            "id": "personnel",
+            "name": "PERSONNEL FACILITIES",
+            "purpose": "Ubikace a provozní zázemí personálu",
+            "position": "Pravá větev od recepce",
+            "observed": false
+          }
+        ],
+        "connections": [
+          {
+            "door": "D-01",
+            "from": "exterior",
+            "to": "reception",
+            "status": "OPEN",
+            "status_source": "events/000046.json"
+          },
+          {
+            "door": "D-02",
+            "from": "reception",
+            "to": "comms_control",
+            "status": "PARTIALLY OPEN",
+            "status_source": "events/000046.json"
+          },
+          {
+            "door": "D-03",
+            "from": "reception",
+            "to": "data_center",
+            "status": "LAST KNOWN CLOSED/LOCKED; LIVE UNAVAILABLE",
+            "status_source": "events/000046.json"
+          },
+          {
+            "door": "D-04",
+            "from": "right_corridor",
+            "to": "engineering",
+            "status": "UNKNOWN",
+            "status_source": "events/000046.json"
+          },
+          {
+            "door": "D-05",
+            "from": "right_corridor",
+            "to": "personnel",
+            "status": "UNKNOWN",
+            "status_source": "events/000046.json"
+          },
+          {
+            "door": "D-06",
+            "from": "exterior",
+            "to": "engineering",
+            "status": "UNKNOWN",
+            "status_source": "events/000046.json"
+          }
+        ],
+        "additional_connectivity": [
+          {
+            "from": "reception",
+            "to": "right_corridor",
+            "source": "Lokální adresář"
+          }
+        ]
+      }
     },
     "last_authentication": {
       "event": "000035",
@@ -206,7 +301,11 @@
       "observed_reaction": "Modré světlo čtečky, tiché pípnutí, čitelná hlavní nabídka. Bez pozorovaného alarmu či pohybu kamery.",
       "certainty": "Lokální výpis terminálu; globální oprávnění a přístup k jednotlivým funkcím neověřeny."
     },
-    "selected_menu_item": null,
+    "selected_menu_item": {
+      "number": 1,
+      "name": "STATION DIRECTORY",
+      "event": "000048"
+    },
     "system_status_report": {
       "event": "000037",
       "query_type": "LOCAL DIAGNOSTICS | LIVE QUERY",
@@ -535,6 +634,103 @@
       "local_manual_control": "AVAILABLE",
       "access_level": "READ ONLY",
       "certainty": "Výpis místní konzole; aktuální stav D-01 a částečné otevření D-02 odpovídají vizuálním pozorováním, hlášení o odjištěném zámku D-02 je tvrzení systému. D-03 je výhradně poslední známý stav, ne živá informace. Dostupnost místního ručního ovládání je obecné hlášení, nikoli ověření každého jednotlivého mechanismu. D-04 až D-06 aktuálně neověřeny."
+    },
+    "station_directory_report": {
+      "event": "000048",
+      "facility": "DS-03 / COMMUNICATIONS & SYNCHRONIZATION FACILITY",
+      "source": "LOCAL DIRECTORY CACHE",
+      "map_type": "STRUCTURAL SCHEMATIC ONLY",
+      "current_layout_verified": false,
+      "location_marker": "RECEPTION / YOU ARE HERE",
+      "zones": [
+        {
+          "id": "reception",
+          "name": "RECEPTION",
+          "purpose": "Vstupní hala a recepce",
+          "position": "Centrální část",
+          "observed": true
+        },
+        {
+          "id": "comms_control",
+          "name": "COMMUNICATIONS CONTROL",
+          "purpose": "Řízení antén, komunikační spojení a synchronizace uzlů",
+          "position": "Vlevo od recepce",
+          "observed": false
+        },
+        {
+          "id": "data_center",
+          "name": "DATA CENTER",
+          "purpose": "Výpočetní technika a datová úložiště",
+          "position": "Přímo od recepce, směrem do skalního masivu podle schématu",
+          "observed": false
+        },
+        {
+          "id": "engineering",
+          "name": "ENGINEERING & MAINTENANCE",
+          "purpose": "Napájení, distribuce energie, ventilace a servisní dílna",
+          "position": "Pravá větev od recepce",
+          "observed": false
+        },
+        {
+          "id": "personnel",
+          "name": "PERSONNEL FACILITIES",
+          "purpose": "Ubikace a provozní zázemí personálu",
+          "position": "Pravá větev od recepce",
+          "observed": false
+        }
+      ],
+      "connections": [
+        {
+          "door": "D-01",
+          "from": "exterior",
+          "to": "reception",
+          "status": "OPEN",
+          "status_source": "events/000046.json"
+        },
+        {
+          "door": "D-02",
+          "from": "reception",
+          "to": "comms_control",
+          "status": "PARTIALLY OPEN",
+          "status_source": "events/000046.json"
+        },
+        {
+          "door": "D-03",
+          "from": "reception",
+          "to": "data_center",
+          "status": "LAST KNOWN CLOSED/LOCKED; LIVE UNAVAILABLE",
+          "status_source": "events/000046.json"
+        },
+        {
+          "door": "D-04",
+          "from": "right_corridor",
+          "to": "engineering",
+          "status": "UNKNOWN",
+          "status_source": "events/000046.json"
+        },
+        {
+          "door": "D-05",
+          "from": "right_corridor",
+          "to": "personnel",
+          "status": "UNKNOWN",
+          "status_source": "events/000046.json"
+        },
+        {
+          "door": "D-06",
+          "from": "exterior",
+          "to": "engineering",
+          "status": "UNKNOWN",
+          "status_source": "events/000046.json"
+        }
+      ],
+      "additional_connectivity": [
+        {
+          "from": "reception",
+          "to": "right_corridor",
+          "source": "Lokální adresář"
+        }
+      ],
+      "certainty": "Nově získané schéma a popis funkcí z lokálního adresáře. Odpovídá dřívějším směrovkám, ale přesné rozměry, podlaží, vnitřní dispozice, skutečná průchodnost a aktuální poloha osob nejsou ověřeny. D-06 propojuje exteriér s technickou sekcí podle adresáře; funkčnost neověřena. Stavy dveří jsou dřívější report 000046, nikoli nové měření."
     }
   }
 }
