@@ -287,7 +287,13 @@
             "duration_seconds": 72
           }
         ]
-      }
+      },
+      "reviewed_recordings": [
+        "004",
+        "003",
+        "002",
+        "001"
+      ]
     },
     "last_authentication": {
       "event": "000035",
@@ -428,9 +434,13 @@
         }
       ],
       "certainty": "Přímé pozorování náhledů. Živý obraz CAM-02 ověřen současným pohybem Kary; ostatní stavy dle obrazu a rozhraní. REC indikátor není ověření uloženého archivu. Negativní pozorování pouze v zorném poli.",
-      "archive_verified": false,
+      "archive_verified": true,
       "configuration_changed": false,
-      "video_override": false
+      "video_override": false,
+      "archive_verification": {
+        "event": "000042",
+        "scope": "Lokální dostupné záznamy, příchod lidí a pohyb Δ-47 skutečně vidět; vzdálený monitoring, centrální archiv a úplnost záznamů neověřeny."
+      }
     },
     "recording_archive_report": {
       "event": "000041",
@@ -474,9 +484,61 @@
           "duration_seconds": 72
         }
       ],
-      "opened_recordings": [],
+      "opened_recordings": [
+        "004",
+        "003",
+        "002",
+        "001"
+      ],
       "selected_recording": null,
-      "certainty": "Pozorovaný index lokálního archivu, časy jsou relativní údaje terminálu při dotazu. Záznamy nebyly přehrány, časová základna a obsah nejsou nezávisle ověřeny. Detekce pohybu sama o sobě neprokazuje přítomnost osoby. Čtyři položky zahrnují jednu právě probíhající relaci."
+      "certainty": "Pozorovaný index lokálního archivu, časy jsou relativní údaje terminálu při dotazu. Záznamy nebyly přehrány, časová základna a obsah nejsou nezávisle ověřeny. Detekce pohybu sama o sobě neprokazuje přítomnost osoby. Čtyři položky zahrnují jednu právě probíhající relaci.",
+      "playback_results": [
+        {
+          "id": "004",
+          "camera": "CAM-03",
+          "event": "000042",
+          "playback": "completed",
+          "observations": "Přibližně po dvaceti sekundách postava v tmavém ochranném obleku s helmou vstoupí do záběru, v pravé ruce menší pevný kufřík. Plynulá chůze bez zjevných obtíží. Projde pootevřenými dveřmi směrem do komunikačního střediska a zmizí z obrazu.",
+          "limitations": "Tvář a identifikační znaky nerozeznatelné; obsah kufříku a následné jednání neznámé."
+        },
+        {
+          "id": "003",
+          "camera": "CAM-03",
+          "event": "000042",
+          "playback": "completed",
+          "observations": "Z komunikačního střediska vyjde postava ve velmi podobném obleku, v rukou bez kufříku. Zastaví u nástěnného panelu, dotkne se ho, stropní osvětlení chodby se rozsvítí. Pokračuje směrem k recepci mimo záběr.",
+          "limitations": "Totožnost, zda je to stejná postava jako 004, význam dotyku panelu a další trasa neověřeny."
+        },
+        {
+          "id": "002",
+          "camera": "CAM-01",
+          "event": "000042",
+          "playback": "completed",
+          "observations": "Rudolf poznává sebe a Karu při otevírání hlavního vchodu. Žádná další postava v dostupném záběru.",
+          "limitations": "Pouze zorné pole."
+        },
+        {
+          "id": "001",
+          "camera": "CAM-02",
+          "event": "000042",
+          "playback": "available_buffer_reviewed",
+          "observations": "V dostupné části probíhajícího záznamu na okamžik vidět Δ-47 při přesunu pod kameru, následně Rudolf a Kara při společném příchodu k recepci. Žádné další neobvyklé pozorování.",
+          "limitations": "Probíhající záznam, ne uzavřený kompletní soubor."
+        }
+      ],
+      "last_review": {
+        "event": "000042",
+        "order": [
+          "004",
+          "003",
+          "002",
+          "001"
+        ],
+        "duration_minutes_approx": 4,
+        "summary": "Dle lokálního archivu nejméně jedna postava v ochranném obleku před příchodem skupiny procházela komunikační chodbou; ve starším záznamu nese kufřík do střediska, v novějším podobná postava bez kufříku odchází a dotkne se panelu, po čemž se rozsvítí stropní osvětlení. Identita, totožnost obou postav, umístění nyní, obsah kufříku, motiv a časová základna záznamů neověřeny. Δ-47 a příchod lidí skutečně zachyceny lokálním archivem.",
+        "all_listed_entries_reviewed": true,
+        "ongoing_recording_complete": false
+      }
     }
   }
 }

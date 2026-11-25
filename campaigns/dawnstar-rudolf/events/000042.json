@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 41,
+  "revision": 42,
+  "day": 19,
+  "type": "reception_recording_archive_playback",
+  "player_action": "„Vezmu to od toho nejstaršího, vydrž...“ a postupně koukám od nejstaršího videozáznamu až po ten nejnovější.",
+  "dm_response": "Kara odpověděla „Jasně“ a hlídá. Rudolf prohlédl 004, 003, 002 a dostupnou část 001. 004 CAM-03: Přibližně po dvaceti sekundách postava v tmavém ochranném obleku s helmou vstoupí do záběru, v pravé ruce menší pevný kufřík. Plynulá chůze bez zjevných obtíží. Projde pootevřenými dveřmi směrem do komunikačního střediska a zmizí z obrazu. Tvář a identifikační znaky nerozeznatelné; obsah kufříku a následné jednání neznámé. 003 CAM-03: Z komunikačního střediska vyjde postava ve velmi podobném obleku, v rukou bez kufříku. Zastaví u nástěnného panelu, dotkne se ho, stropní osvětlení chodby se rozsvítí. Pokračuje směrem k recepci mimo záběr. Totožnost, zda je to stejná postava jako 004, význam dotyku panelu a další trasa neověřeny. 002 CAM-01: Rudolf poznává sebe a Karu při otevírání hlavního vchodu. Žádná další postava v dostupném záběru. Pouze zorné pole. 001 CAM-02: V dostupné části probíhajícího záznamu na okamžik vidět Δ-47 při přesunu pod kameru, následně Rudolf a Kara při společném příchodu k recepci. Žádné další neobvyklé pozorování. Probíhající záznam, ne uzavřený kompletní soubor. Prohlížení přibližně čtyři minuty. Dle lokálního archivu nejméně jedna postava v ochranném obleku před příchodem skupiny procházela komunikační chodbou; ve starším záznamu nese kufřík do střediska, v novějším podobná postava bez kufříku odchází a dotkne se panelu, po čemž se rozsvítí stropní osvětlení. Identita, totožnost obou postav, umístění nyní, obsah kufříku, motiv a časová základna záznamů neověřeny. Δ-47 a příchod lidí skutečně zachyceny lokálním archivem. Ilustrace byly schematické rekonstrukce kamerových záběrů. Kara zatím obsah od Rudolfa neslyšela.",
+  "rolls": [],
+  "changes": [
+    "Přehrány všechny čtyři položky lokálního archivu v chronologickém pořadí, nejnovější pouze dostupná část probíhajícího záznamu.",
+    "Nová pozorování: postava s kufříkem vstupuje do komunikačního střediska v 004; podobná postava bez kufříku vychází a dotýká se panelu v 003, rozsvítí se stropní osvětlení. Identita a současný pobyt neznámé.",
+    "Záznamy 002 a 001 potvrzují zachycení příchodu lidí a krátce i Δ-47. Žádná smyčka ani změna kamer.",
+    "Uplynuly přibližně 4 minuty; stále den 19 ráno. Bez změny pozic, zdraví, inventáře či doložené číselné spotřeby. Rutinní přehrání bez hodu."
+  ],
+  "sources": [
+    "events/000033.json",
+    "events/000040.json",
+    "events/000041.json",
+    "world/expedition-ds03.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}
