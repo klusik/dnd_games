@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 17,
+  "revision": 18,
+  "day": 19,
+  "type": "deployment_and_rule_preference",
+  "player_action": "K DM -- neříkej mi dopředu složitost DC hodu, udrž ho jen vnitřně, prosím :-) \n\nK příběhu: Otočím se na Karu: \"Nevypadá to, že by tam něco zásadního bylo, no, dokud se tam nevydáme, asi víc nezjistíme.\"\n\nSpustím sekvenci vysunutí SRV.",
+  "dm_response": "DM: Odteď sděluji pouze typ hodu a bonus; DC a hranice úspěchu zůstávají interní. Kara: „Dobře, vezmeme drona s sebou. Kdybychom ho potřebovali, bude po ruce.“ Uvolní se pojistky transportní plošiny, vyrovnání tlaku v nákladovém prostoru, otevření poklopu, spuštění plošiny, aktivace palubních systémů SRV. READY FOR DEPARTURE, 100 %. SRV bezpečně dosedne na kamenitý povrch. Vizuálně poměrně sjízdný terén, zpevněná plocha před budovou pravděpodobně servisní parkoviště, cesta částečně zasypaná kameny. Kara zkontroluje těsnost skafandru a zamíří k přechodové komoře. „Pojedeme pomalu. Budu sledovat okolí, zatímco budeš řídit.“",
+  "rolls": [],
+  "changes": [
+    "Nová preference DM: nezveřejňovat DC ani hranice úspěchu; aktualizována pravidla konkrétní kampaně a obecný pokyn respektovat odlišná pravidla kampaní. Historické eventy ponechány beze změny.",
+    "SRV rutinně vysunuto, připraveno na povrchu; hráč dosud nevystoupil ani nezahájil jízdu.",
+    "Nové vizuální pozorování přístupové cesty a zpevněné plochy, účel plochy pouze odhad.",
+    "Kara se chystá k výstupu, navrhla vzít drona; dron zatím uvnitř DBE."
+  ],
+  "sources": [
+    "events/000017.json",
+    "Výslovná preference hráče v tomto tahu",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 17,
-  "last_event": "000017",
+  "revision": 18,
+  "last_event": "000018",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,10 +12,10 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "exploration",
-    "resume": "Rudolf hodil 5 na kostce, Technology +6 = 11. DC10 dosažen, DC15 a DC20 nedosaženy. Po přibližně pěti minutách pasivního průzkumu DBE nebyly detekovány lodě, vozidla ani pohyb na povrchu v dostupném zorném poli. Výrazný stacionární tepelný zdroj uvnitř budovy u paty stožáru, intenzita při pozorování stabilní; možná napájecí jednotka či elektronika, identifikace neověřena. Rádiově pouze známý DS-03, biologické známky života neprůkazné, obranné systémy neověřeny. Slabší tepelné zdroje a prostor za budovou a skalami nelze dostatečně rozlišit. Kara navrhla poslat napřed Δ-47, čeká na reakci. Oba nadále v DBE, dron i SRV naloženy. Žádné aktivní vysílání, výstup ani konvergence.",
+    "resume": "Rudolf v OOC požádal, aby DM nezveřejňoval DC a hranice úspěchu před hodem a uchovával je pouze interně; pravidlo platí pro další hru, veřejný repozitář nebude obsahovat skryté DC. Ve hře řekl Kaře, že bez výpravy asi více nezjistí, a spustil sekvenci vysunutí SRV. Kara souhlasí s pozemním průzkumem a chce vzít dron s sebou. SRV vysunuto na kamenitý povrch vedle DBE, palubní systémy aktivovány, poslední hodnota energie 100 %. Viditelný terén k DS-03 poměrně sjízdný, před budovou zpevněná plocha pravděpodobně servisní parkoviště, cesta částečně zasypaná drobnými kameny. Kara zkontrolovala těsnost skafandru, zamířila k přechodové komoře a navrhla pomalou jízdu se sledováním okolí. Rudolf dosud uvnitř DBE; Kara ještě nepřešla ven, dron dosud naložen v DBE, přemístění zásob mimo SRV nepotvrzeno. Žádná jízda, výstup hráče, aktivní spojení s uzlem ani konvergence.",
     "pending": null,
     "certainty": "played",
-    "source": "events/000017.json",
+    "source": "events/000018.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -35,9 +35,10 @@
       "range_estimate": null,
       "travel_time": null,
       "certainty": "Aktuální pasivní příjem a vizuální pozorování; přístup, přesná pozice a příčina závady neověřeny.",
-      "origin": "Přistávací plocha u DS-03"
+      "origin": "Přistávací plocha u DS-03",
+      "approach_observations": "Vizuálně poměrně sjízdný kamenitý terén, cesta částečně zasypaná drobnými kameny, zpevněná plocha před objektem, možná servisní parkoviště."
     },
-    "elapsed_since_previous_hours_approx": 0.08333333333333333
+    "elapsed_since_previous_hours_approx": null
   },
   "character": {
     "name": "Rudolf",
@@ -125,7 +126,7 @@
     "assets": {
       "DBE": {
         "location": "DBE na přistávací ploše přibližně 1,2 km od komplexu DS-03, Gliese 5206 c",
-        "status": "Přistála bezpečně u DS-03 po úspěšné standardní předletové kontrole a stabilním atmosférickém letu. Známá omezení přetrvávají.",
+        "status": "Zaparkována u DS-03, transportní plošina vysunula SRV; uzavření nákladového prostoru dosud nepotvrzeno.",
         "hull": "Dřívější opravy drží, bez nových deformací a nového zjevného poškození; pro atmosférický let se jeví dostatečně pevný.",
         "left_engine": "Funkční a čistý",
         "right_engine": "Provizorně opravený a mechanicky stabilizovaný motor; sekundární chladicí okruh utěsněn a ověřen tlakovou a cirkulační zkouškou, diagnostika bez závady chlazení.",
@@ -274,8 +275,8 @@
         }
       },
       "SRV": {
-        "location": "Zajištěno v nákladovém prostoru DBE u DS-03",
-        "status": "Provozuschopné, plně nabito, odpojeno od nabíjecího portu a zajištěno v DBE.",
+        "location": "Na povrchu vedle DBE, cca 1,2 km od DS-03",
+        "status": "Vysunuto transportní plošinou, palubní systémy aktivovány, připraveno k jízdě; bez komplikací při vysunutí.",
         "trailer": true,
         "energy_percent_at_charge_start": 41,
         "energy_percent": 100,
@@ -322,7 +323,7 @@
     },
     "npcs": {
       "kara": {
-        "location": "DBE na přistávací ploše u DS-03, sedadlo druhého pilota",
+        "location": "DBE, na cestě k přechodové komoře",
         "role": "Spojenkyně, analýza biologických vzorků",
         "relationship": "Vzájemná důvěra, společná historie; samostatná osobnost",
         "health": null,
@@ -341,11 +342,11 @@
           "Zjistit, zda jejich uváznutí bylo úmyslné, nebo následkem nehody; posoudit případné riziko návratu mezi lidi.",
           "Soustředit další pátrání na DS-03 a přístup k archivu paměti, vynechat nepodstatné odbočky a nespouštět konvergenci bez pochopení následků."
         ],
-        "last_question": "Co kdybychom tam nejdřív poslali našeho malého kamaráda?",
+        "last_question": null,
         "known_personal_memories": [
           "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
         ],
-        "current_activity": "Sleduje výsledky pasivního průzkumu, navrhla vyslat drona jako první."
+        "current_activity": "Po kontrole těsnosti skafandru se chystá na pozemní průzkum. Navrhla vzít drona a sledovat okolí při Rudolfově řízení."
       }
     },
     "locations": {
@@ -383,7 +384,7 @@
       "certainty": "Doložené výpisy a simulace, nikoli nezávisle ověřené skutečné chování všech vrstev"
     },
     "expedition_ds03": {
-      "status": "landed_security_scan_completed_limited",
+      "status": "srv_deployed",
       "supplies": {
         "food_days_for_two": 3,
         "water_days_for_two": 3,
@@ -409,7 +410,7 @@
       "id": "ds03",
       "status": "open",
       "title": "Prozkoumat DS-03",
-      "detail": "Pasivní bezpečnostní sken ze stojící DBE dokončen s omezenou jistotou (Technology 11). Žádná potvrzená hrozba, jeden výrazný stacionární tepelný zdroj uvnitř budovy, slabší zdroje a zákryty nevyhodnoceny. Kara navrhla průzkum dronem; čeká na rozhodnutí hráče."
+      "detail": "Pasivní sken dokončen s omezenou jistotou. Hráč spustil vysunutí SRV, vozidlo připraveno vedle DBE; další pozemní postup dosud nezahájen."
     },
     {
       "id": "delta2-data",
@@ -463,5 +464,11 @@
     "Deník naznačuje záměr odjet k DS-03 zítra, nejnovější save končí u SRV po hovoru Kaře. Příjezd do 4B ani další noc nepotvrzeny.",
     "Oprava importu: původní přímý log identifikuje planetu Gliese 5206 c, nikoli HIP 22022. Některé interní briefingy používají označení Moon 4B / Pleiades-South a HIP 20491; jde o údaje z fikčních dokumentů, nikoli nové astronomické určení aktuální polohy.",
     "Výpis GAMMA status ACTIVE FOR 674 DAYS se liší od pozdějšího záznamu aktivace dva hodiny před havárií. Význam obou časů zatím nerozhodnut; nedoplňovat vysvětlení bez zjištění."
-  ]
+  ],
+  "dm_preferences": {
+    "dc_visibility": "hidden",
+    "show_roll_type_and_modifier": true,
+    "show_dc_or_success_thresholds": false,
+    "source": "events/000018.json"
+  }
 }

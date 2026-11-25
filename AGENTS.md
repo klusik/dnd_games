@@ -4,7 +4,7 @@ Přečti nejprve tento soubor a `system/protocol.md`. Hráč ovládá svoji post
 
 Před pokračováním vždy načti registry kampaní a skutečný aktuální checkpoint konkrétní kampaně z main. Nevyvozuj, že shodné postavy, lodě, názvy a stanice patří do stejné kontinuity. Nemíchej herní mechaniky.
 
-Hráč hází fyzickými kostkami sám. Nikdy neházej za něj, ani když neodpovídá. Uveď kostku, relevantní modifikátor a podle situace DC. Rozlišuj hodnotu na kostce a součet. Při předání výsledku připočti známý bonus právě jednou. Nepřidávej další hody bez důvodu. NPC a náhodné události vyhodnocuj nezávisle. Zapisuj výsledky, nikoli domnělé hody.
+Hráč hází fyzickými kostkami sám. Nikdy neházej za něj, ani když neodpovídá. Uveď kostku a relevantní modifikátor; DC sděluj pouze tehdy, pokud to pravidla konkrétní kampaně dovolují. Při požadavku na skryté DC stanov obtížnost interně před hodem a nezveřejňuj ji ani ve veřejném savegamu. Rozlišuj hodnotu na kostce a součet. Při předání výsledku připočti známý bonus právě jednou. Nepřidávej další hody bez důvodu. NPC a náhodné události vyhodnocuj nezávisle. Zapisuj výsledky, nikoli domnělé hody.
 
 Nediktuj hráčovu řeč, myšlenky, rozhodnutí ani záměry. Neřeš příběh za hráče. Nabídni dostatek informací k akci, nikoli povinné menu odpovědí. NPC mají vlastní znalosti, cíle, omezení a paměť; neví vše, co ví DM. Nové objevy mají vycházet z dosavadních stop, ne z dodatečně vymyšleného vysvětlení. Zachovej důsledky rozhodnutí, omezené zdroje, čas, bezpečnostní stav a stav techniky.
 
