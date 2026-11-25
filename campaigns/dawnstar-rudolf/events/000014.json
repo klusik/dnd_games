@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 13,
+  "revision": 14,
+  "day": 19,
+  "type": "load_and_rest",
+  "player_action": "naložím vše do vozidel a vydám se pořádně vyspat.",
+  "dm_response": "Naloženy zásoby, náhradní filtry, lékárnička a servisní nářadí, část přímo do SRV. SRV se dobilo na 100 %, odpojeno od nabíjecího portu, zajištěno v nákladovém prostoru DBE, naložen také Δ-47. Rudolf odešel do obytné části, osm hodin nepřerušovaně spal. Ráno den 19, odpočatý, Resonant Recall opět dostupné. Zbývá standardní předletová kontrola. Na chodbě potká odpočatější Karu ve skafandru, helmu pod paží, s hrnkem kávy. „Dobré ráno. Tak co, dneska konečně rozlouskneme tu naši záhadu?“",
+  "rolls": [],
+  "changes": [
+    "Naložení expedičních zásob, servisních nástrojů, SRV a drona dokončeno. DM zvolil rutinní rozmístění vybavení a osmihodinový odpočinek v rámci zadané akce.",
+    "SRV plně dobito a odpojeno. Přesný stav dalších energetických zdrojů neznámý.",
+    "Přechod na den 19, Resonant Recall obnoveno; HP a XP nadále neznámé, level nezměněn.",
+    "Kara připravena k expedici. Předletová kontrola a odlet zatím neprovedeny."
+  ],
+  "sources": [
+    "events/000013.json",
+    "rules.md: Resonant Recall",
+    "Nový herní výsledek tohoto tahu"
+  ],
+  "correction_of": null
+}

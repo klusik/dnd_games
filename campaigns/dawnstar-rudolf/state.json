@@ -1,21 +1,21 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 13,
-  "last_event": "000013",
+  "revision": 14,
+  "last_event": "000014",
   "status": "active",
   "language": "cs",
   "scene": {
-    "day": 18,
-    "time": null,
-    "location": "Sirius 4B, hangár a dílna u DBE a SRV",
+    "day": 19,
+    "time": "morning",
+    "location": "Sirius 4B, chodba u obytné části s Karou",
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
-    "phase": "maintenance",
-    "resume": "Rudolf hodil 13 na kostce, Engineering +5 a Field Precision Tools +1 = 19 proti DC10, úspěch. Hod vyjádřil souhlas s navrženým vyrovnáním přípojky. S Δ-47 vyrovnal přípojku sekundárního okruhu pravého motoru bez poškození nového těsnění. Tlaková zkouška 240 kPa na začátku i po 120 s, PASSED. Cirkulace média a čerpadlo stabilní, diagnostika bez závady chlazení. V rámci dříve schválených oprav bez dalších hodů obnovil izolaci, přemístil a upevnil kabelový svazek manévrovacích trysek, odstranil vůli tažného zařízení SRV a zkontroloval spoj. Uplynulo cca 40 minut (15+15+10). SRV naměřeno 96 %, dále se nabíjí. Dron pohotovostní režim v hangáru. Všechny tři plánované opravy hotové. FSD a pokročilé senzory zůstávají omezeny. Zbývá naložit zásoby a standardní předletová kontrola. Kara v obytné části; žádný další přesun ani spánek hráče nepotvrzen.",
+    "phase": "expedition_preparation",
+    "resume": "Rudolf naložil připravené zásoby, náhradní filtry, lékárničku a servisní nářadí, část uložil do SRV pro pozemní průzkum. SRV se dobilo na 100 %, odpojeno od nabíjecího portu a zajištěno v nákladovém prostoru DBE, naložen také Δ-47. Rudolf odešel do obytné části a osm hodin nepřerušovaně spal. Nyní ráno den 19, odpočatý, Resonant Recall znovu dostupné. Potkal Karu na chodbě, připravenou ve skafandru, s helmou pod paží a hrnkem kávy. Kara: „Dobré ráno. Tak co, dneska konečně rozlouskneme tu naši záhadu?“ Zbývá standardní předletová kontrola, odlet neproběhl. Žádné nové rozhodnutí o konvergenci.",
     "pending": null,
     "certainty": "played",
-    "source": "events/000013.json",
+    "source": "events/000014.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -36,7 +36,7 @@
       "travel_time": null,
       "certainty": "Pouze odhad z uložené mapy, nikoli nové měření; přesný azimut a délka trasy nejsou ověřeny."
     },
-    "elapsed_since_previous_hours_approx": 0.6666666666666666
+    "elapsed_since_previous_hours_approx": null
   },
   "character": {
     "name": "Rudolf",
@@ -84,7 +84,7 @@
       {
         "name": "Resonant Recall",
         "effect": "Jednou denně výhoda na jeden INT skill při interakci s DAWNSTAR technologií.",
-        "used_today": null,
+        "used_today": false,
         "source": "ChatGPT log.txt:15050-15052"
       }
     ],
@@ -112,7 +112,13 @@
     "expressed_goals": [
       "Vyřešit dosavadní záhadu i za cenu nepříjemných zjištění o vlastní minulosti a vztahu s Karou (den 18, event 000008).",
       "Prioritně prozkoumat DS-03 s Karou; před odletem důkladně zkontrolovat DBE a SRV."
-    ]
+    ],
+    "last_rest": {
+      "day_started": 18,
+      "day_ended": 19,
+      "hours": 8,
+      "uninterrupted": true
+    }
   },
   "world": {
     "assets": {
@@ -199,12 +205,12 @@
         }
       },
       "SRV": {
-        "location": "Hangár Sirius 4B",
-        "status": "Provozuschopné, 96 %, nabíjení pokračuje; tažné zařízení zkontrolováno a opraveno.",
+        "location": "Zajištěno v nákladovém prostoru DBE, hangár Sirius 4B",
+        "status": "Provozuschopné, plně nabito, odpojeno od nabíjecího portu a zajištěno v DBE.",
         "trailer": true,
         "energy_percent_at_charge_start": 41,
-        "energy_percent": 96,
-        "charging": true,
+        "energy_percent": 100,
+        "charging": false,
         "trailer_inspection": "Vůle v uchycení odstraněna, mechanická kontrola spoje provedena.",
         "maintenance_tasks": [
           {
@@ -216,10 +222,10 @@
             "completed_event": "000013"
           }
         ],
-        "last_measured_energy_percent": 96
+        "last_measured_energy_percent": 100
       },
       "drone": {
-        "location": "Hangár Sirius 4B",
+        "location": "Naložen v DBE, hangár Sirius 4B",
         "status": "Provozuschopný",
         "functions": [
           "Scanning",
@@ -247,7 +253,7 @@
     },
     "npcs": {
       "kara": {
-        "location": "Sirius 4B, obytná část",
+        "location": "Sirius 4B, chodba u obytné části s Karou",
         "role": "Spojenkyně, analýza biologických vzorků",
         "relationship": "Vzájemná důvěra, společná historie; samostatná osobnost",
         "health": null,
@@ -266,11 +272,11 @@
           "Zjistit, zda jejich uváznutí bylo úmyslné, nebo následkem nehody; posoudit případné riziko návratu mezi lidi.",
           "Soustředit další pátrání na DS-03 a přístup k archivu paměti, vynechat nepodstatné odbočky a nespouštět konvergenci bez pochopení následků."
         ],
-        "last_question": null,
+        "last_question": "Tak co, dneska konečně rozlouskneme tu naši záhadu?",
         "known_personal_memories": [
           "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
         ],
-        "current_activity": "Odešla odpočívat; zásoby připraveny, spánek zatím nepotvrzen."
+        "current_activity": "Ráno, odpočatá, oblečená ve skafandru, připravena k expedici."
       }
     },
     "locations": {
@@ -308,17 +314,19 @@
       "certainty": "Doložené výpisy a simulace, nikoli nezávisle ověřené skutečné chování všech vrstev"
     },
     "expedition_ds03": {
-      "status": "preparing",
+      "status": "loaded_pending_preflight",
       "supplies": {
         "food_days_for_two": 3,
         "water_days_for_two": 3,
         "medical_kit": true,
         "spare_filters": true,
         "packed_by": "Kara",
-        "loaded_on_ship": null
+        "loaded_on_ship": true,
+        "distribution": "Část zásob a servisního vybavení přímo v SRV, zbytek v DBE; přesné rozdělení nevyčísleno.",
+        "service_tools": true
       },
       "maintenance_remaining_minutes_approx": 0,
-      "departure": "Plánováno ráno; zbývá naložit připravené zásoby a standardní předletová kontrola.",
+      "departure": "Den 19 ráno, čeká na standardní předletovou kontrolu a odlet.",
       "convergence_authorized": false
     }
   },
@@ -327,7 +335,7 @@
       "id": "ds03",
       "status": "open",
       "title": "Prozkoumat DS-03",
-      "detail": "Všechny tři zjištěné závady DBE/SRV odstraněny, SRV 96 % a nabíjí se. Zásoby připraveny, zbývá naložení a standardní předletová kontrola. Odlet dosud neproveden."
+      "detail": "Den 19 ráno. Opravy dokončeny, SRV 100 %, naloženo v DBE spolu s dronem a expedičním vybavením; oba odpočatí. Zbývá standardní předletová kontrola a odlet."
     },
     {
       "id": "delta2-data",
