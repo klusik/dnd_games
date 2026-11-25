@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 9,
+  "revision": 10,
+  "day": 18,
+  "type": "maintenance_inspection",
+  "player_action": "Hodil jsem 12",
+  "dm_response": "Engineering: 12 + 5 = 17. DC 10 a 15 překonány, DC 20 nedosaženo. Během cca 45 minut důkladné inspekce: DBE pravý motor má netěsné těsnění sekundárního chlazení, tlak při zahřátí klesá, při dlouhém vysokém výkonu riziko přehřátí (25 min); kabelový svazek manévrovacích trysek se otírá o konstrukci, izolace poškozená, vodiče neporušeny (15 min); trup a hlavní reaktor bez nutnosti okamžitého zásahu, FSD pro mezihvězdný let neověřen, pro DS-03 nepotřebný. SRV má povolený spoj tažného zařízení a drobnou vůli uchycení (10 min), pohon, řízení, odpružení bez významné závady. Potřebné díly v dílně. SRV 68 %, nabíjení pokračuje. Celkově cca 50 min oprav, dron může pomoci. Kara přijde do hangáru a říká: „Připravila jsem nám jídlo a vodu na tři dny, lékárničku a náhradní filtry. Jak to vypadá s lodí? Budeme moct ráno vyrazit?“",
+  "rolls": [
+    {
+      "owner": "player",
+      "skill": "Engineering",
+      "dice": "1d20",
+      "raw": 12,
+      "modifier": 5,
+      "total": 17,
+      "dc": 10,
+      "tiers": [
+        {
+          "dc": 10,
+          "success": true
+        },
+        {
+          "dc": 15,
+          "success": true
+        },
+        {
+          "dc": 20,
+          "success": false
+        }
+      ]
+    }
+  ],
+  "changes": [
+    "Čekající hod vyhodnocen, pending zrušeno.",
+    "Uplynulo cca 45 minut; nové fikční výsledky inspekce a stav nabití SRV 68 % jsou herní rozhodnutí DM, nikoli historicky importované údaje.",
+    "Zjištěny tři opravné úkoly, žádný dosud neproveden.",
+    "Kara připravila expediční zásoby na tři dny pro dvě osoby, lékárničku a filtry; přesný celkový stav skladu zůstává neznámý, naložení na loď nepotvrzeno.",
+    "Kara se přesunula do hangáru, čeká na odpověď."
+  ],
+  "sources": [
+    "events/000009.json",
+    "state.json revize 9: technický stav a čekající hod",
+    "Nové fikční výsledky vedené DM v tomto tahu"
+  ],
+  "correction_of": null
+}
