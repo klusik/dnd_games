@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 22,
-  "last_event": "000022",
+  "revision": 23,
+  "last_event": "000023",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,10 +12,10 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "exploration",
-    "resume": "Rudolf upozornil Karu na riziko označení jejich identity a poplachu při autentizaci. Kara souhlasila, že lokální autentizace poplach nevylučuje, připomněla předchozí biometrické autorizace a vyslovila hypotézy o odlišných oprávněních a možném označení hledaných osob, které nejsou potvrzeny. Navrhla požádat GAMMA-six o posouzení typu zařízení bez připojení k terminálu. Oba zůstávají uvnitř SRV vedle zavřené závory, kontrolka bliká stejně, žádná viditelná reakce. GAMMA-six dosud neosloven, žádná autentizace ani kontakt s terminálem.",
+    "resume": "Rudolf se Kary zeptal, jak by pomohla konzultace GAMMA-six. Kara připomněla jeho dřívější technologickou asistenci a znalosti projektu, navrhla zeptat se na známé bezpečnostní protokoly, význam FALLBACK a reakci zařízení na zneplatněné oprávnění. Jde o hypotézu o znalostech GAMMA-six, nikoliv o potvrzené schopnosti či aktuální stav oprávnění. Výslovně navrhla pouze dotaz bez předání kontroly nebo spojení s terminálem. Oba sedí v SRV u terminálu před zavřenou závorou, GAMMA-six dosud neosloven; žádný kontakt ani autentizace.",
     "pending": null,
     "certainty": "played",
-    "source": "events/000022.json",
+    "source": "events/000023.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -343,11 +343,11 @@
           "Zjistit, zda jejich uváznutí bylo úmyslné, nebo následkem nehody; posoudit případné riziko návratu mezi lidi.",
           "Soustředit další pátrání na DS-03 a přístup k archivu paměti, vynechat nepodstatné odbočky a nespouštět konvergenci bez pochopení následků."
         ],
-        "last_question": "Co kdybychom nechali GAMMA-six posoudit, jestli tenhle typ zařízení zná?",
+        "last_question": null,
         "known_personal_memories": [
           "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
         ],
-        "current_activity": "Zůstává sedět v SRV, navrhuje konzultaci GAMMA-six bez připojení k terminálu."
+        "current_activity": "Vysvětlila návrh konzultovat GAMMA-six pouze dotazem na jeho existující znalosti, bez připojení a předání kontroly."
       }
     },
     "locations": {

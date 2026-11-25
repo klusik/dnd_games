@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 22,
+  "revision": 23,
+  "day": 19,
+  "type": "dialogue_gamma_consultation",
+  "player_action": "\"Právě, to nevíme!\" \"A jak to myslíš s tím gammasix\"? Jak by nám to pomohlo? (zeptám se kary)",
+  "dm_response": "„No, GAMMA-six ti přece už několikrát pomohl s technologií, kterou jsme neznali. A evidentně má přístup k informacím o projektu, které si ty sám nepamatuješ.“\n\nKara se opře v sedačce.\n\n„Napadlo mě, že by mohl znát bezpečnostní protokoly těchto zařízení. Třeba co přesně znamená režim FALLBACK a jak systém reaguje na zneplatněná oprávnění.“\n\n„Samozřejmě nám asi neřekne, jestli jsme právě teď na nějakém seznamu hledaných osob. Ale možná ví, co by se stalo, kdybychom na něm byli.“\n\nPodívá se na tebe.\n\n„Nemyslím tím, abys mu předal kontrolu nebo ho připojoval k terminálu. Prostě bych se ho zeptala. Stejně jako se teď ptáš mě.“",
+  "rolls": [],
+  "changes": [
+    "Kara upřesnila návrh: zeptat se GAMMA-six na jeho existující znalosti zabezpečení a režimu FALLBACK, bez připojení nebo předání kontroly.",
+    "Znalost konkrétního terminálu, jeho reakcí a aktuální stav oprávnění nejsou potvrzeny.",
+    "Žádný přesun, komunikace s GAMMA-six, kontakt s terminálem, autentizace ani nový hod."
+  ],
+  "sources": [
+    "events/000022.json",
+    "knowledge.md: GAMMA-six, předchozí technologická asistence a biometrické autorizace",
+    "Nový dialog v tomto tahu"
+  ],
+  "correction_of": null
+}
