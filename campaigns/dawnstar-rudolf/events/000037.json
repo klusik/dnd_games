@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 36,
+  "revision": 37,
+  "day": 19,
+  "type": "reception_system_status",
+  "player_action": "Ke K: „Jdu na to!“ a nejdříve se podívám na „system status“, co to vůbec vypíše. Vyberu položku 2: SYSTEM STATUS.",
+  "dm_response": "Rudolf stiskl 2, konzole zobrazila lokální živý diagnostický výpis: PRIMARY POWER: OFFLINE; AUXILIARY POWER: ONLINE; VENTILATION: ACTIVE; LIFE SUPPORT: LIMITED; INTERNAL NETWORK: FALLBACK; SECURITY SYSTEM: PARTIAL; DATA CENTER: UNREACHABLE; COMMS CONTROL: ONLINE; EXTERNAL UPLINK: UNAVAILABLE; COMMS_SYNC: INCOMPLETE. WARNING: REMOTE NODE HANDSHAKE INCOMPLETE. DETAILED DIAGNOSTICS AVAILABLE AT COMMUNICATIONS CONTROL. [ESC] RETURN TO MAIN MENU. Pomocné napájení může vysvětlovat nouzové osvětlení a omezenou funkčnost. COMMS_SYNC INCOMPLETE odpovídá problému známému z analýzy DS-Δ2; výpis neprokazuje příčinu nedostupnosti datového centra. Podrobnější diagnostika je podle konzole dostupná v komunikačním středisku vlevo. Žádná konfigurace změněna.",
+  "rolls": [],
+  "changes": [
+    "Vybrána položka SYSTEM STATUS, přečten lokální diagnostický report.",
+    "Získána nová lokální hlášení a směr k podrobnější diagnostice COMMS_SYNC, nikoli potvrzení příčin nebo úspěšná synchronizace.",
+    "Bez změny konfigurace, inventáře, pozic, zdraví, doložené spotřeby a konvergence. Rutinní čtení bez hodu."
+  ],
+  "sources": [
+    "events/000035.json",
+    "events/000036.json",
+    "state.json (revize 36)",
+    "world/expedition-ds03.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}

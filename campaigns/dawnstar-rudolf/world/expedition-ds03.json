@@ -196,7 +196,22 @@
         "ACCESS LOG",
         "PERSONNEL REGISTRY"
       ],
-      "prompt": "SELECT OPTION"
+      "prompt": "[ESC] RETURN TO MAIN MENU",
+      "view": "SYSTEM STATUS",
+      "query_type": "LOCAL DIAGNOSTICS | LIVE QUERY",
+      "subsystems": {
+        "PRIMARY POWER": "OFFLINE",
+        "AUXILIARY POWER": "ONLINE",
+        "VENTILATION": "ACTIVE",
+        "LIFE SUPPORT": "LIMITED",
+        "INTERNAL NETWORK": "FALLBACK",
+        "SECURITY SYSTEM": "PARTIAL",
+        "DATA CENTER": "UNREACHABLE",
+        "COMMS CONTROL": "ONLINE",
+        "EXTERNAL UPLINK": "UNAVAILABLE",
+        "COMMS_SYNC": "INCOMPLETE"
+      },
+      "warning": "REMOTE NODE HANDSHAKE INCOMPLETE. DETAILED DIAGNOSTICS AVAILABLE AT COMMUNICATIONS CONTROL."
     },
     "last_authentication": {
       "event": "000035",
@@ -205,6 +220,28 @@
       "observed_reaction": "Modré světlo čtečky, tiché pípnutí, čitelná hlavní nabídka. Bez pozorovaného alarmu či pohybu kamery.",
       "certainty": "Lokální výpis terminálu; globální oprávnění a přístup k jednotlivým funkcím neověřeny."
     },
-    "selected_menu_item": null
+    "selected_menu_item": {
+      "number": 2,
+      "name": "SYSTEM STATUS",
+      "event": "000037"
+    },
+    "system_status_report": {
+      "event": "000037",
+      "query_type": "LOCAL DIAGNOSTICS | LIVE QUERY",
+      "subsystems": {
+        "PRIMARY POWER": "OFFLINE",
+        "AUXILIARY POWER": "ONLINE",
+        "VENTILATION": "ACTIVE",
+        "LIFE SUPPORT": "LIMITED",
+        "INTERNAL NETWORK": "FALLBACK",
+        "SECURITY SYSTEM": "PARTIAL",
+        "DATA CENTER": "UNREACHABLE",
+        "COMMS CONTROL": "ONLINE",
+        "EXTERNAL UPLINK": "UNAVAILABLE",
+        "COMMS_SYNC": "INCOMPLETE"
+      },
+      "warning": "REMOTE NODE HANDSHAKE INCOMPLETE. DETAILED DIAGNOSTICS AVAILABLE AT COMMUNICATIONS CONTROL.",
+      "certainty": "Tvrzení lokálního terminálu; stav a příčiny poruch vyžadují další ověření. UNREACHABLE neznamená nutně vypnuté nebo zničené datové centrum."
+    }
   }
 }
