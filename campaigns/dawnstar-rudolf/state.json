@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 12,
-  "last_event": "000012",
+  "revision": 13,
+  "last_event": "000013",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,10 +12,10 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "maintenance",
-    "resume": "Rudolf hodil 3 na kostce, Engineering +5 a Field Precision Tools +1 = 9 proti DC12, nekritický neúspěch. Během cca 25 minut vyměnil těsnění sekundárního chladicího okruhu pravého motoru, doplnil médium a provedl tlakovou zkoušku. Tlak po 120 s klesl z 240 na 233 kPa (před opravou 218 kPa). Netěsnost zmenšena, ale zkouška neúspěšná. Δ-47 odhalil neparalelní dosedací plochy přípojky a nerovnoměrné stlačení těsnění; nové těsnění nepoškozeno. Možná náprava: uvolnit uchycení potrubí, vyrovnat přípojku přesnými nástroji drona a zopakovat zkoušku, cca 15 minut, Engineering 1d20+6 DC10, pokud hráč zvolí tuto metodu. Zatím nejde o zahájený pokus, čeká se na rozhodnutí. Opravy kabeláže a tažného zařízení stále otevřeny.",
+    "resume": "Rudolf hodil 13 na kostce, Engineering +5 a Field Precision Tools +1 = 19 proti DC10, úspěch. Hod vyjádřil souhlas s navrženým vyrovnáním přípojky. S Δ-47 vyrovnal přípojku sekundárního okruhu pravého motoru bez poškození nového těsnění. Tlaková zkouška 240 kPa na začátku i po 120 s, PASSED. Cirkulace média a čerpadlo stabilní, diagnostika bez závady chlazení. V rámci dříve schválených oprav bez dalších hodů obnovil izolaci, přemístil a upevnil kabelový svazek manévrovacích trysek, odstranil vůli tažného zařízení SRV a zkontroloval spoj. Uplynulo cca 40 minut (15+15+10). SRV naměřeno 96 %, dále se nabíjí. Dron pohotovostní režim v hangáru. Všechny tři plánované opravy hotové. FSD a pokročilé senzory zůstávají omezeny. Zbývá naložit zásoby a standardní předletová kontrola. Kara v obytné části; žádný další přesun ani spánek hráče nepotvrzen.",
     "pending": null,
     "certainty": "played",
-    "source": "events/000012.json",
+    "source": "events/000013.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -36,7 +36,7 @@
       "travel_time": null,
       "certainty": "Pouze odhad z uložené mapy, nikoli nové měření; přesný azimut a délka trasy nejsou ověřeny."
     },
-    "elapsed_since_previous_hours_approx": 0.4166666666666667
+    "elapsed_since_previous_hours_approx": 0.6666666666666666
   },
   "character": {
     "name": "Rudolf",
@@ -118,11 +118,11 @@
     "assets": {
       "DBE": {
         "location": "Hangár Sirius 4B, na podvozku, potvrzeno pozorováním dne 18",
-        "status": "Atmosférický let možný podle dosavadního stavu; nově zjištěné chlazení pravého motoru a kabeláž vhodné opravit před expedicí.",
+        "status": "Tři plánované předexpediční opravy dokončeny; atmosférický let dle dosavadního stavu možný, předletová kontrola ještě neprovedena.",
         "hull": "Dřívější opravy drží, bez nových deformací a nového zjevného poškození; pro atmosférický let se jeví dostatečně pevný.",
         "left_engine": "Funkční a čistý",
-        "right_engine": "Provizorně opravený motor; nové těsnění instalováno, netěsnost sekundárního okruhu zmenšena, avšak tlaková zkouška neúspěšná. Odhalena nesouosost dosedacích ploch přípojky; nutná náprava před expedicí.",
-        "maneuvering": "Kalibrováno; jeden kabelový svazek se při vibracích otírá o kov, izolace poškozena, vodiče neporušeny.",
+        "right_engine": "Provizorně opravený a mechanicky stabilizovaný motor; sekundární chladicí okruh utěsněn a ověřen tlakovou a cirkulační zkouškou, diagnostika bez závady chlazení.",
+        "maneuvering": "Kalibrováno; poškozená izolace kabelového svazku obnovena, svazek přemístěn a upevněn proti vibracím.",
         "control": "Náhradní čip, drobná HUD nekompatibilita",
         "power": "Stabilní hlavní reaktor, omezená záloha",
         "sensors": "Základní funkce; pokročilé skenování omezené",
@@ -150,26 +150,20 @@
           {
             "id": "right-cooling-seal",
             "priority": "high",
-            "status": "partial_repair_failed_test",
-            "estimated_minutes": 15,
-            "parts": "Nové těsnění instalováno a nepoškozeno, další náhradní díl pro navrženou opravu není potřeba.",
-            "risk": "Přehřátí při delším vysokém výkonu",
-            "proposed_next_action": {
-              "action": "Uvolnit uchycení potrubí, vyrovnat přípojku s Δ-47 a zopakovat tlakovou zkoušku.",
-              "dice": "1d20",
-              "modifier": 6,
-              "dc": 10,
-              "estimated_minutes": 15,
-              "requires_player_decision": true
-            }
+            "status": "completed",
+            "estimated_minutes": 0,
+            "parts": "Nové těsnění instalováno při prvním pokusu, nepoškozeno; vyrovnáno uchycení přípojky.",
+            "risk": "Zjištěná závada odstraněna",
+            "completed_event": "000013"
           },
           {
             "id": "maneuvering-harness",
             "priority": "medium",
-            "status": "open",
-            "estimated_minutes": 15,
-            "parts": "Ochranná izolace a upevňovací prvky v dílně",
-            "risk": "Další poškození izolace při vibracích"
+            "status": "completed",
+            "estimated_minutes": 0,
+            "parts": "Použita ochranná izolace a upevňovací prvky z dílny.",
+            "risk": "Zjištěná závada odstraněna",
+            "completed_event": "000013"
           }
         ],
         "right_engine_cooling_diagnostics": {
@@ -182,8 +176,18 @@
           "heat_exchanger": "Bez omezení",
           "leak": "Ztvrdlé těsnění přípojky s drobnou prasklinou; přípojka a potrubí bez zjevného poškození.",
           "replacement": "Kompatibilní těsnění v dílně",
-          "repair_completed": false,
+          "repair_completed": true,
           "latest_test": {
+            "event": "000013",
+            "start_kpa": 240,
+            "after_120_seconds_kpa": 240,
+            "pressure_loss_kpa": 0,
+            "status": "PASSED",
+            "new_seal_intact": true,
+            "circulation": "Stabilní, čerpadlo pracuje stabilně, bez diagnostické závady chlazení."
+          },
+          "replacement_installed": true,
+          "previous_test": {
             "event": "000012",
             "start_kpa": 240,
             "after_120_seconds_kpa": 233,
@@ -191,31 +195,31 @@
             "status": "FAILED",
             "cause": "Nerovnoměrné stlačení nového těsnění kvůli neparalelním dosedacím plochám.",
             "new_seal_intact": true
-          },
-          "replacement_installed": true
+          }
         }
       },
       "SRV": {
         "location": "Hangár Sirius 4B",
-        "status": "Provozuschopné, nabíjení pokračuje; poslední změřená hodnota 68 % při předchozí inspekci.",
+        "status": "Provozuschopné, 96 %, nabíjení pokračuje; tažné zařízení zkontrolováno a opraveno.",
         "trailer": true,
         "energy_percent_at_charge_start": 41,
-        "energy_percent": null,
+        "energy_percent": 96,
         "charging": true,
-        "trailer_inspection": "Povolený spoj a drobná vůle uchycení tažného zařízení; oprava cca 10 minut, dosud neprovedena.",
+        "trailer_inspection": "Vůle v uchycení odstraněna, mechanická kontrola spoje provedena.",
         "maintenance_tasks": [
           {
             "id": "tow-coupling",
             "priority": "medium",
-            "status": "open",
-            "estimated_minutes": 10,
-            "parts": "Upevňovací prvky v dílně"
+            "status": "completed",
+            "estimated_minutes": 0,
+            "parts": "Upevňovací prvky v dílně",
+            "completed_event": "000013"
           }
         ],
-        "last_measured_energy_percent": 68
+        "last_measured_energy_percent": 96
       },
       "drone": {
-        "location": "Hangár Sirius 4B, u pravého motoru DBE",
+        "location": "Hangár Sirius 4B",
         "status": "Provozuschopný",
         "functions": [
           "Scanning",
@@ -238,7 +242,7 @@
           "Extendable antenna array"
         ],
         "designation": "Δ-47",
-        "current_activity": "Asistence Rudolfovi, diagnostické rameno vysunuto, Field Precision Tools použitelné k opravě."
+        "current_activity": "Pohotovostní režim, nástroje zasunuty."
       }
     },
     "npcs": {
@@ -313,8 +317,8 @@
         "packed_by": "Kara",
         "loaded_on_ship": null
       },
-      "maintenance_remaining_minutes_approx": 40,
-      "departure": "Plánováno ráno, podmíněno opravami a kontrolou",
+      "maintenance_remaining_minutes_approx": 0,
+      "departure": "Plánováno ráno; zbývá naložit připravené zásoby a standardní předletová kontrola.",
       "convergence_authorized": false
     }
   },
@@ -323,7 +327,7 @@
       "id": "ds03",
       "status": "open",
       "title": "Prozkoumat DS-03",
-      "detail": "Zásoby připraveny, SRV se nabíjí. První pokus o opravu chlazení zmenšil únik, ale neprošel zkouškou; cca 40 minut zbývajících oprav při úspěchu. Odlet dosud neproveden."
+      "detail": "Všechny tři zjištěné závady DBE/SRV odstraněny, SRV 96 % a nabíjí se. Zásoby připraveny, zbývá naložení a standardní předletová kontrola. Odlet dosud neproveden."
     },
     {
       "id": "delta2-data",

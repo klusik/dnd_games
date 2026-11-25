@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 12,
+  "revision": 13,
+  "day": 18,
+  "type": "maintenance_repair_result",
+  "player_action": "Hodil jsem 13",
+  "dm_response": "Engineering 13+5+1=19 proti DC10, úspěch. S Δ-47 vyrovnána přípojka sekundárního chlazení, těsnění nepoškozeno. Tlak 240 kPa na začátku a 240 kPa po 120 s, PASSED. Cirkulace a čerpadlo stabilní, diagnostika bez závady chlazení. Na základě dřívějšího výslovného záměru opravit všechny tři závady jsou zbývající dvě jednoduché lokalizované opravy v dobře vybavené dílně s dronem dokončeny bez dalších hodů: obnovena izolace a upevněn přemístěný kabelový svazek manévrovacích trysek; odstraněna vůle tažného zařízení SRV, spoj mechanicky zkontrolován. Celkem cca 40 minut. SRV 96 %, nabíjení pokračuje. Dron zasunul nástroje a přešel do pohotovosti. FSD a pokročilé senzory omezeny stejně jako dříve. Všechny tři opravy dokončeny, zbývá naložit zásoby a standardní předletová kontrola. Kara v obytné části. Co bude Rudolf dělat?",
+  "rolls": [
+    {
+      "owner": "player",
+      "skill": "Engineering",
+      "dice": "1d20",
+      "raw": 13,
+      "modifier": 6,
+      "total": 19,
+      "dc": 10,
+      "success": true,
+      "critical": false
+    }
+  ],
+  "changes": [
+    "Hod interpretován jako souhlas s navrženým postupem z předchozího tahu.",
+    "Chlazení úspěšně opraveno a ověřeno, kabeláž a tažné zařízení dokončeny bez nového hodu jako rutinní práce výslovně zadané hráčem.",
+    "Spotřebovány potřebné dílenské materiály k izolaci a upevnění, přesné množství neznámé.",
+    "Uplynulo cca 40 minut; 96 % nabití SRV je nový fikční naměřený údaj určený DM.",
+    "Expedice zůstává ve fázi přípravy, žádný odlet ani spánek hráče."
+  ],
+  "sources": [
+    "events/000012.json",
+    "events/000011.json: hráčův záměr opravit všechny tři závady",
+    "Nový herní výsledek tohoto tahu"
+  ],
+  "correction_of": null
+}
