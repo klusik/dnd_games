@@ -1,26 +1,26 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 25,
-  "last_event": "000025",
+  "revision": 26,
+  "last_event": "000026",
   "status": "active",
   "language": "cs",
   "scene": {
     "day": 19,
     "time": "morning",
-    "location": "Na povrchu u přístupového terminálu DS-03 vedle SRV, před otevřenou závorou",
+    "location": "Gliese 5206 c, před hlavním vchodem do budovy DS-03",
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "exploration",
-    "resume": "Rudolf sdělil Kaře svou interpretaci konzultace GAMMA-six (snad bez globálního poplachu), rozhodl se vyzkoušet vlastní ID. Kara zůstala v SRV a hlídá. Rudolf ve skafandru vystoupil a předložil vlastní biometrické údaje. Terminál potvrdil BIOMETRIC MATCH CONFIRMED, IDENTITY RDF-ΔK452, CLASSIFICATION R-CLASS, SECURITY FLAG NONE, LOCAL ACCESS AUTHORIZED, ENTRY LOG STORED LOCALLY, UPLINK UNAVAILABLE, ACCESS GRANTED. Závora se zvedla, bez sirény, viditelného pohybu kamer či jiné bezprostřední reakce. Údaje o flagu a uplinku jsou tvrzení lokálního terminálu, nikoliv potvrzení globálního stavu. Za závorou parkoviště a asi 50 m dál hlavní vstup s nápisem DS-03 / COMMUNICATIONS & SYNCHRONIZATION FACILITY. Rudolf stojí u terminálu, Kara i Δ-47 v SRV. Závora nepřekročena, budova nevstoupena, žádné připojení GAMMA-six ani konvergence.",
+    "resume": "Rudolf navrhl nechat SRV před závorou kvůli možnosti ústupu a dojít zbývajících cca 50 m pěšky. Kara souhlasila, vypnula pohon SRV, ponechala komunikační systém v pohotovosti, vystoupila s Δ-47 a vozidlo uzamkla. Oba s dronem opatrně došli k hlavnímu vchodu bez pozorované komplikace. Dveře pootevřené cca 40 cm, uvnitř nouzové osvětlení, zčásti viditelná vstupní hala s recepcí a několika židlemi; směrové značení: COMMUNICATIONS CONTROL vlevo, DATA CENTER rovně, ENGINEERING & MAINTENANCE a PERSONNEL FACILITIES vpravo. Z budovy slabé pravidelné hučení připomínající ventilaci. Kara upozornila na komunikační středisko. Oba i dron před vchodem; dovnitř ještě nevstoupili. SRV zůstalo před závorou, její aktuální poloha po pěším přiblížení znovu neověřena. Žádné připojení ani konvergence.",
     "pending": null,
     "certainty": "played",
-    "source": "events/000025.json",
+    "source": "events/000026.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
       "target": "DS-03",
-      "distance_straight_km_approx": null,
+      "distance_straight_km_approx": 0,
       "bearing_deg_approx": null,
       "method": "Přímý vizuální průzkum z vozidla",
       "last_known_target_coords": {
@@ -34,13 +34,13 @@
       "live_signal_status": "DETECTED; NODE ID DS-03; FALLBACK; COMMS_SYNC INCOMPLETE; PERIODIC",
       "range_estimate": null,
       "travel_time": null,
-      "certainty": "Závora otevřena po místní autentizaci; další prostor neprozkoumán.",
-      "origin": "Rudolf pěšky u přístupového terminálu DS-03",
-      "approach_observations": "Otevřená závora, servisní parkoviště, hlavní vstup asi 50 m za závorou, osvětlený nápis DS-03 / COMMUNICATIONS & SYNCHRONIZATION FACILITY.",
+      "certainty": "Hlavní vchod dosažen; interiér viditelný pouze částečně zvenčí, bezpečnost neověřena.",
+      "origin": "Před hlavním vchodem DS-03",
+      "approach_observations": "Dveře pootevřené cca 40 cm, nouzové osvětlení, recepce, židle, směrové značení, slyšitelné pravidelné hučení ventilace.",
       "distance_to_barrier_m_approx": null,
       "distance_from_barrier_to_main_entrance_m_approx": 50
     },
-    "elapsed_since_previous_hours_approx": null
+    "elapsed_since_previous_hours_approx": 0.05
   },
   "character": {
     "name": "Rudolf",
@@ -278,7 +278,7 @@
       },
       "SRV": {
         "location": "Příjezdová cesta DS-03 u terminálu před otevřenou závorou",
-        "status": "Provozuschopné, stojí vedle přístupového terminálu před otevřenou závorou; Kara uvnitř, Rudolf venku.",
+        "status": "Zaparkované a uzamčené před závorou DS-03 u terminálu, pohon vypnutý, komunikační systém v pohotovosti, bez posádky.",
         "trailer": true,
         "energy_percent_at_charge_start": 41,
         "energy_percent": null,
@@ -297,7 +297,7 @@
         "last_measured_energy_percent": 100
       },
       "drone": {
-        "location": "V SRV u terminálu DS-03 s Karou",
+        "location": "S Rudolfem a Karou před hlavním vchodem DS-03",
         "status": "Provozuschopný",
         "functions": [
           "Scanning",
@@ -320,12 +320,12 @@
           "Extendable antenna array"
         ],
         "designation": "Δ-47",
-        "current_activity": "Přepravován, zatím nenasazen k průzkumu."
+        "current_activity": "Doprovází posádku, žádný samostatný sken ani připojení."
       }
     },
     "npcs": {
       "kara": {
-        "location": "SRV u přístupového terminálu DS-03 před otevřenou závorou",
+        "location": "Gliese 5206 c, před hlavním vchodem do budovy DS-03",
         "role": "Spojenkyně, analýza biologických vzorků",
         "relationship": "Vzájemná důvěra, společná historie; samostatná osobnost",
         "health": null,
@@ -349,14 +349,14 @@
         "known_personal_memories": [
           "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
         ],
-        "current_activity": "Zůstala v SRV, hlídá okolí, komunikuje s Rudolfem vysílačkou."
+        "current_activity": "Doprovází Rudolfa a upozornila na směrové značení komunikačního střediska."
       }
     },
     "locations": {
       "base_4b": "Zázemí, archiv, hangár a výzkum; podle Rudolfova vyjádření v den 18 dostatek konzerv pro dvě osoby, přesný počet a trvanlivost neověřeny. Na konci dne 18 připraveny dvě porce z konzerv a koření, odebrány odpovídající suroviny; zůstatek neznámý.",
       "ds_01": "ONLINE po SEED_REBOOT, Phase 1 zahájena",
       "ds_02": "Ping selhal po rebootu; dříve degradace",
-      "ds_03": "Den 19: vizuálně identifikován komplex mezi skalními výběžky, komunikační stožár, nízká kovová budova ve svahu, jedna parabola nakloněná. Pasivně potvrzen aktuální periodický signál 1452,7 MHz, ID DS-03, FALLBACK, COMMS_SYNC INCOMPLETE. DBE přistála cca 1,2 km od komplexu. Přístup a vnitřek neprozkoumány. Při pozemním přiblížení zjištěna spuštěná závora u servisní plochy, přístupový terminál s oranžovou blikající kontrolkou a viditelné bezpečnostní kamery. SRV zastavilo cca 20 m před závorou; přístup neověřen, žádná viditelná reakce objektu. Po vizuální kontrole SRV přistoupilo k terminálu bez komplikací. Displej nabízí místní biometrickou autentizaci, síť FALLBACK, závora CLOSED. Autorizace nevyzkoušena. Den 19: místní biometrie RDF-ΔK452 přijata jako R-CLASS; závora otevřena. Hlavní vstup cca 50 m za závorou, nápis DS-03 / COMMUNICATIONS & SYNCHRONIZATION FACILITY. Budova neprozkoumána.",
+      "ds_03": "Den 19: vizuálně identifikován komplex mezi skalními výběžky, komunikační stožár, nízká kovová budova ve svahu, jedna parabola nakloněná. Pasivně potvrzen aktuální periodický signál 1452,7 MHz, ID DS-03, FALLBACK, COMMS_SYNC INCOMPLETE. DBE přistála cca 1,2 km od komplexu. Přístup a vnitřek neprozkoumány. Při pozemním přiblížení zjištěna spuštěná závora u servisní plochy, přístupový terminál s oranžovou blikající kontrolkou a viditelné bezpečnostní kamery. SRV zastavilo cca 20 m před závorou; přístup neověřen, žádná viditelná reakce objektu. Po vizuální kontrole SRV přistoupilo k terminálu bez komplikací. Displej nabízí místní biometrickou autentizaci, síť FALLBACK, závora CLOSED. Autorizace nevyzkoušena. Den 19: místní biometrie RDF-ΔK452 přijata jako R-CLASS; závora otevřena. Hlavní vstup cca 50 m za závorou, nápis DS-03 / COMMUNICATIONS & SYNCHRONIZATION FACILITY. Budova neprozkoumána. Oba s dronem došli k hlavnímu vchodu; dveře pootevřené cca 40 cm, nouzové osvětlení, částečný pohled do recepce. Směrovky COMMUNICATIONS CONTROL vlevo, DATA CENTER rovně, ENGINEERING & MAINTENANCE a PERSONNEL FACILITIES vpravo. SRV uzamčené před závorou; budova dosud nevstoupena.",
       "ds_04": "Ztracený nebo degradovaný signál; neověřeno",
       "ds_delta2": "Podzemní archiv zálohován a zapečetěn, Rudolf se vrátil na 4B.",
       "satellite_module": "Starý triangulační modul na trase k DS-Δ2; při návratu dne 18 stále na označeném místě, nevyzvednut.",
@@ -404,7 +404,7 @@
       "player_concern": "Den 19, event 000024: Rudolf výslovně upozornil na neznámé následky používání implantátu pro vlastní mozek."
     },
     "expedition_ds03": {
-      "status": "access_barrier_open",
+      "status": "at_main_entrance",
       "supplies": {
         "food_days_for_two": 3,
         "water_days_for_two": 3,
@@ -429,7 +429,8 @@
         "stopped_distance_to_barrier_m_approx": 20,
         "reason": "Neověřený přístupový terminál a závora; opatrný postup na žádost hráče.",
         "drone_accompanying": true,
-        "building_entered": false
+        "building_entered": false,
+        "srv_parked_outside_barrier": true
       },
       "access_terminal": {
         "event": "000021",
@@ -462,6 +463,21 @@
           "observed_reaction": "Závora otevřena, bez sirény, viditelného pohybu kamer či jiné bezprostřední reakce.",
           "certainty": "Lokální výpis a pozorovaná reakce; globální oprávnění a skutečný síťový stav neověřeny."
         }
+      },
+      "main_entrance": {
+        "event": "000026",
+        "door": "Pootevřená cca 40 cm",
+        "visible_interior": "Část haly, recepce, několik židlí, nouzové osvětlení.",
+        "audible": "Slabé pravidelné hučení ventilace.",
+        "signage": {
+          "left": "COMMUNICATIONS CONTROL",
+          "straight": "DATA CENTER",
+          "right": [
+            "ENGINEERING & MAINTENANCE",
+            "PERSONNEL FACILITIES"
+          ]
+        },
+        "entered": false
       }
     }
   },
@@ -470,7 +486,7 @@
       "id": "ds03",
       "status": "open",
       "title": "Prozkoumat DS-03",
-      "detail": "Lokální biometrická autorizace RDF-ΔK452 úspěšná, závora otevřena. Hlavní vstup do komunikačního a synchronizačního komplexu cca 50 m za závorou. Rudolf pěšky u terminálu, Kara a dron v SRV. Vstup do budovy a COMMS_SYNC dosud nevyřešeny."
+      "detail": "Pěšky dosažen hlavní vchod; SRV zůstalo uzamčené před závorou pro případ ústupu. Pootevřené dveře, nouzové osvětlení, směrovka ke komunikačnímu středisku vlevo. Vstup a COMMS_SYNC dosud nevyřešeny."
     },
     {
       "id": "delta2-data",

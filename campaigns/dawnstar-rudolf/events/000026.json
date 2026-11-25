@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 25,
+  "revision": 26,
+  "day": 19,
+  "type": "ground_approach_main_entrance",
+  "player_action": "Nechal bych SRV tady, kdyby bylo potřeba zdrhnout, ať nemusíme prorážet závoru, ten kousek snad dojdeme, co myslíš?",
+  "dm_response": "„Souhlasím. Těch padesát metrů nás nezabije. Navíc nevíme, jestli se závora za nějakou dobu automaticky nezavře.“\n\nKara vypne pohon SRV, ponechá komunikační systém v pohotovosti a vystoupí společně s dronem Δ-47. Vozidlo uzamkne.\n\nOpatrně přejdete přes servisní parkoviště až k hlavnímu vchodu. Cestou se nic neobvyklého nestane.\n\nVstupní dveře jsou pootevřené asi na čtyřicet centimetrů. Uvnitř svítí nouzové osvětlení a skrz mezeru vidíš část vstupní haly s recepcí a několika židlemi. Na stěně za recepcí rozeznáváš směrové značení:\n\nDS-03 FACILITY\nCOMMUNICATIONS CONTROL: vlevo\nDATA CENTER: rovně\nENGINEERING & MAINTENANCE: vpravo\nPERSONNEL FACILITIES: vpravo\n\nZ útrob budovy slyšíš slabé, pravidelné hučení ventilace.\n\nKara ztlumí hlas.\n\n„Alespoň tu pořád funguje elektřina. Koukni, komunikační středisko je hned nalevo.“\n\nStojíte před vchodem, dovnitř jste ještě nevstoupili.",
+  "rolls": [],
+  "changes": [
+    "Návrh pěšího postupu interpretován jako souhlas s rutinním přesunem po souhlasu Kary; cca 3 minuty odhad DM, bez hodu a pozorované komplikace.",
+    "Kara uzamkla SRV před závorou, vypnula pohon a nechala komunikaci v pohotovosti. Přesná aktuální energie SRV neznámá.",
+    "Rudolf, Kara a Δ-47 dosáhli hlavního vchodu, získali nové vizuální a zvukové informace. Účel jednotlivých místností dle značení; vnitřek neprozkoumán.",
+    "Závora byla otevřená při přechodu, její následná poloha neověřena. Žádný vstup do budovy, další autentizace, připojení či konvergence."
+  ],
+  "sources": [
+    "events/000025.json",
+    "Nová fikční pozorování a rutinní průběh v tomto tahu"
+  ],
+  "correction_of": null
+}
