@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 39,
-  "last_event": "000039",
+  "revision": 40,
+  "last_event": "000040",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,10 +12,10 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "exploration",
-    "resume": "Den 19 ráno. Rudolf a Kara uvnitř DS-03 u recepce, Kara hlídá chodby, Δ-47 pod kamerou. Zbraně připravené a svítilny zapnuté. RECEPTION-01 odemčen v lokální R-CLASS relaci, pravá polovina monitoru černá. Dříve přečten SYSTEM STATUS (event 000037): primary power offline, auxiliary power online, ventilation active, life support limited, internal network fallback, security system partial, data center unreachable, COMMS CONTROL online, external uplink unavailable, COMMS_SYNC incomplete. Nyní Rudolf vybral [3] SECURITY & SURVEILLANCE. Lokální výpis: SECURITY NETWORK DEGRADED, LOCAL RECORDING ACTIVE, REMOTE MONITORING UNAVAILABLE, ACTIVE ALARMS NONE, LOCKDOWN INACTIVE, ACCESS MODE READ ONLY. CAM-01 Main entrance, CAM-02 Reception, CAM-03 Communications corridor ONLINE; CAM-04 Data center, CAM-05 Engineering, CAM-06 Personnel facilities UNREACHABLE. Nabídka: [1] LIVE CAMERA FEEDS, [2] RECORDING ARCHIVE, [3] DOOR STATUS, [4] SECURITY EVENT LOG, [5] SECURITY ADMINISTRATION (zamčená, vyšší oprávnění), [ESC] RETURN TO MAIN MENU. Žádný živý obraz ani archiv dosud neotevřen, příchod mohl být zaznamenán, neověřeno. Výpisy jsou tvrzení lokálního systému. Žádná změna konfigurace. Čeká se na další volbu hráče.",
+    "resume": "Den 19 ráno. Rudolf a Kara uvnitř DS-03 u recepce, Kara hlídá chodby, Δ-47 pod kamerou CAM-02. Zbraně připravené, svítilny zapnuté. RECEPTION-01 odemčen lokální R-CLASS relací. SYSTEM STATUS (000037): pomocné napájení online, primární offline, COMMS CONTROL online, COMMS_SYNC incomplete, external uplink unavailable, data center unreachable. SECURITY & SURVEILLANCE (000039): částečná bezpečnostní síť, lokální záznam active, remote monitoring unavailable, žádný aktivní alarm, lockdown inactive, read-only oprávnění. Nyní otevřeny LIVE CAMERA FEEDS [1]: CAM-01 vchod otevřený, v dostupném zorném poli žádný pohyb; CAM-02 Rudolf a Kara u konzole, pohyb Kary v obraze odpovídá skutečnosti, Δ-47 přímo pod kamerou mimo aktuální obraz; CAM-03 viditelná část komunikační chodby prázdná, pootevřené dveře a světlo za nimi, obraz občas problikne, dovnitř střediska není vidět. CAM-04 až CAM-06 bez signálu. U prvních tří náhledů indikátor REC, archiv skutečných záznamů dosud neověřen. Žádná konfigurace změněna, žádná smyčka, žádná další místnost prozkoumána. Aktuální obrazovka LIVE CAMERA FEEDS; čeká se na další akci hráče.",
     "pending": null,
     "certainty": "played",
-    "source": "events/000039.json",
+    "source": "events/000040.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -36,7 +36,7 @@
       "travel_time": null,
       "certainty": "Rudolf a Kara uvnitř u recepce, Δ-47 pod kamerou. Hala částečně vizuálně prozkoumána; navazující prostory a bezpečnost celého objektu neověřeny.",
       "origin": "Vstupní hala DS-03, u recepce",
-      "approach_observations": "Dveře pootevřené cca 40 cm, nouzové osvětlení, recepce, židle, směrové značení, slyšitelné pravidelné hučení ventilace. Exteriér přibližně 40 m široký, jednopodlažní viditelná část, stožár vlevo, nižší technická přístavba a servisní vrata vpravo, rozsah ve svahu neznámý. Hlavní dveře nyní plně otevřené ručním tlačítkem, pohybový senzor bez reakce; viditelné převrácené židle, rozbitý monitor a světlo zleva. Vizuální průzkum z prahu event 000032: v prachu stopy podrážek od recepce k levé chodbě (stáří neurčeno), vytažené zásuvky a převrácená kancelářská židle, zelená kontrolka na rozbitém monitoru, bílé světlo zpoza pootevřených vnitřních dveří vlevo, bezpečnostní kamera nad recepcí bez pozorovaného pohybu. V dostupném zorném poli žádná osoba ani pohyb. Event 000033: Δ-47 vstoupil do haly a zastavil pod kamerou. Report: napájení aktivní, komunikace detekována, obraz odepřen, smyčka neprovedena. Kamera bez pozorovaného pohybu; detekce dronu, záznam a případné vzdálené sledování neověřeny. Bez zjevného alarmu. Event 000034: lidé společně vstoupili do haly a došli k recepci. Monitor částečně funkční, identifikace RECEPTION-01, lokální režim, uzamčená relace a požadavek autentizace; klávesnice a biometrická čtečka. Kara za pultem nevidí nikoho. Konzole nepoužita. Event 000035: RECEPTION-01 přijal biometrickou autentizaci dlaně přes rukavici, výpis lokální R-CLASS relace odemčena. Nabídka obsahuje STATION DIRECTORY, SYSTEM STATUS, SECURITY & SURVEILLANCE, ACCESS LOG a PERSONNEL REGISTRY; funkčnost položek a rozsah přístupu dosud neověřeny. Bez pozorovaného alarmu či pohybu kamery. Event 000037: RECEPTION-01 po výběru SYSTEM STATUS zobrazil lokální diagnostiku: primární napájení offline, pomocné online, ventilace aktivní, podpora života omezená, síť FALLBACK, bezpečnostní systém částečný, datové centrum nedostupné, COMMS CONTROL online, externí uplink nedostupný, COMMS_SYNC incomplete. Podrobná diagnostika směrována na COMMUNICATIONS CONTROL, neúplný handshake vzdáleného uzlu. Příčiny a skutečný stav dalších prostor neověřeny. Event 000039: bezpečnostní rozhraní RECEPTION-01 hlásí částečnou síť, aktivní lokální záznam, nedostupný vzdálený monitoring, žádný aktivní alarm, neaktivní lockdown, přístup jen ke čtení. Tři z šesti evidovaných kamer online (vchod, recepce, komunikační chodba); další tři nedostupné. Žádný živý obraz ani archiv otevřen, skutečné zaznamenání neověřeno.",
+      "approach_observations": "Dveře pootevřené cca 40 cm, nouzové osvětlení, recepce, židle, směrové značení, slyšitelné pravidelné hučení ventilace. Exteriér přibližně 40 m široký, jednopodlažní viditelná část, stožár vlevo, nižší technická přístavba a servisní vrata vpravo, rozsah ve svahu neznámý. Hlavní dveře nyní plně otevřené ručním tlačítkem, pohybový senzor bez reakce; viditelné převrácené židle, rozbitý monitor a světlo zleva. Vizuální průzkum z prahu event 000032: v prachu stopy podrážek od recepce k levé chodbě (stáří neurčeno), vytažené zásuvky a převrácená kancelářská židle, zelená kontrolka na rozbitém monitoru, bílé světlo zpoza pootevřených vnitřních dveří vlevo, bezpečnostní kamera nad recepcí bez pozorovaného pohybu. V dostupném zorném poli žádná osoba ani pohyb. Event 000033: Δ-47 vstoupil do haly a zastavil pod kamerou. Report: napájení aktivní, komunikace detekována, obraz odepřen, smyčka neprovedena. Kamera bez pozorovaného pohybu; detekce dronu, záznam a případné vzdálené sledování neověřeny. Bez zjevného alarmu. Event 000034: lidé společně vstoupili do haly a došli k recepci. Monitor částečně funkční, identifikace RECEPTION-01, lokální režim, uzamčená relace a požadavek autentizace; klávesnice a biometrická čtečka. Kara za pultem nevidí nikoho. Konzole nepoužita. Event 000035: RECEPTION-01 přijal biometrickou autentizaci dlaně přes rukavici, výpis lokální R-CLASS relace odemčena. Nabídka obsahuje STATION DIRECTORY, SYSTEM STATUS, SECURITY & SURVEILLANCE, ACCESS LOG a PERSONNEL REGISTRY; funkčnost položek a rozsah přístupu dosud neověřeny. Bez pozorovaného alarmu či pohybu kamery. Event 000037: RECEPTION-01 po výběru SYSTEM STATUS zobrazil lokální diagnostiku: primární napájení offline, pomocné online, ventilace aktivní, podpora života omezená, síť FALLBACK, bezpečnostní systém částečný, datové centrum nedostupné, COMMS CONTROL online, externí uplink nedostupný, COMMS_SYNC incomplete. Podrobná diagnostika směrována na COMMUNICATIONS CONTROL, neúplný handshake vzdáleného uzlu. Příčiny a skutečný stav dalších prostor neověřeny. Event 000039: bezpečnostní rozhraní RECEPTION-01 hlásí částečnou síť, aktivní lokální záznam, nedostupný vzdálený monitoring, žádný aktivní alarm, neaktivní lockdown, přístup jen ke čtení. Tři z šesti evidovaných kamer online (vchod, recepce, komunikační chodba); další tři nedostupné. Žádný živý obraz ani archiv otevřen, skutečné zaznamenání neověřeno. Event 000040: otevřeny živé kamerové náhledy. CAM-01 viditelný exteriér bez pohybu, vchod otevřený. CAM-02 obraz Rudolfa a Kary odpovídá současné scéně, Δ-47 pod kamerou aktuálně mimo záběr. CAM-03 viditelná část chodby prázdná, pootevřené dveře a světlo, občasné probliknutí, interiér komunikačního střediska není vidět. CAM-04 až CAM-06 bez signálu; archiv neověřen.",
       "distance_to_barrier_m_approx": null,
       "distance_from_barrier_to_main_entrance_m_approx": 50
     },
@@ -94,7 +94,7 @@
       "id": "ds03",
       "status": "open",
       "title": "Prozkoumat DS-03",
-      "detail": "Rudolf a Kara u recepce, Δ-47 pod kamerou. SYSTEM STATUS: COMMS CONTROL online, COMMS_SYNC incomplete, external uplink unavailable; podrobná diagnostika v COMMUNICATIONS CONTROL. SECURITY & SURVEILLANCE otevřeno, hlásí lokální záznam, 3 dostupné ze 6 evidovaných kamer a read-only oprávnění; živý obraz a záznam dosud neotevřeny, administrace zamčená. Bez změny konfigurace."
+      "detail": "Rudolf a Kara u recepce, Δ-47 pod kamerou. COMMS_SYNC incomplete, detailní diagnostika v COMMUNICATIONS CONTROL. Živé náhledy: CAM-01 a CAM-02 dostupné, CAM-03 nestabilní, CAM-04 až CAM-06 bez signálu. Viditelná část komunikační chodby bez osob, středisko neviditelné. Lokální záznam hlášen aktivní, archiv neověřen; konfigurace read-only a nezměněna."
     },
     {
       "id": "delta2-data",
@@ -154,6 +154,6 @@
     "source": "events/000018.json"
   },
   "layout_version": 2,
-  "last_gameplay_event": "000039",
+  "last_gameplay_event": "000040",
   "audit_ref": "audit.md"
 }

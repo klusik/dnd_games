@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 39,
+  "revision": 40,
+  "day": 19,
+  "type": "reception_live_camera_feeds",
+  "player_action": "V bezpečnostní nabídce vyberu položku 1: LIVE CAMERA FEEDS.",
+  "dm_response": "Konzole zobrazila tři malé živé náhledy na funkční polovině monitoru. CAM-01 Main entrance LIVE: otevřený hlavní vchod, žádný pohyb ve viditelné části prostranství. CAM-02 Reception LIVE: Rudolf a Kara u konzole, Δ-47 přímo pod kamerou mimo aktuální záběr; pohyby Kary odpovídají skutečnému pohybu. CAM-03 Communications corridor UNSTABLE: prázdná viditelná chodba, pootevřené dveře a světlo za nimi, obraz občas problikne; dovnitř střediska není vidět. CAM-04, CAM-05, CAM-06 NO SIGNAL. Indikátory REC u prvních tří, archiv dosud neověřen. Schémata náhledů jsou ilustrativní, nikoli přesná mapa. Žádná konfigurace změněna. ESC návrat do bezpečnostní nabídky.",
+  "rolls": [],
+  "changes": [
+    "Otevřeny místní živé kamerové náhledy s oprávněním pouze ke čtení.",
+    "Potvrzen aktuální živý obraz recepce s Rudolfem a Karou; Δ-47 nyní mimo záběr. Dřívější zaznamenání dronu a příchodu v archivu neověřeno.",
+    "Pozorována viditelná část komunikační chodby; žádný nový průchod ani průzkum místnosti za dveřmi.",
+    "Bez změny konfigurace, pozic, zdraví, inventáře a doložené spotřeby. Rutinní čtení bez hodu."
+  ],
+  "sources": [
+    "events/000032.json",
+    "events/000033.json",
+    "events/000039.json",
+    "world/expedition-ds03.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}
