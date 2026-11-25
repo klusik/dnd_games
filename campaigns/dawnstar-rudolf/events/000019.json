@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 18,
+  "revision": 19,
+  "day": 19,
+  "type": "cautious_ground_approach",
+  "player_action": "Určitě, pojedeme pomalu a budeme sledovat, jakmile se objeví něco sus, hned zastavíme, nevrhneme se bezhlavě do nějaké léčky!",
+  "dm_response": "„Přesně tak. Radši ztratíme deset minut, než abychom se pak neměli čím vrátit,“ souhlasí Kara.\n\nPřesunete se do SRV, vezmete s sebou Δ-47 a zabezpečíte DBE. Kara se věnuje sledování okolí a ty pomalu projíždíš kamenitým terénem rychlostí kolem 10 km/h.\n\nPrvních několik minut je naprostý klid. Nikde žádný pohyb, žádná vozidla ani viditelné známky nedávné lidské činnosti.\n\nKdyž se přiblížíte ke komplexu, Kara tě náhle upozorní:\n\n„Počkej, zastav. Podívej se na ten sloupek napravo.“\n\nZastavíš asi 20 metrů před spuštěnou závorou, která odděluje příjezdovou cestu od servisního parkoviště. Vedle závory stojí přístupový terminál. Na jeho horní části pravidelně bliká oranžová kontrolka.\n\nNa budově za závorou rozeznáváš několik bezpečnostních kamer. Nevidíš žádné zjevné zbraně ani obranné věže.\n\nKara si terminál prohlíží dalekohledem.\n\n„Zajímavé. Minimálně něco z bezpečnostního systému má pořád napájení. Zkusíme zjistit, jestli nás ten terminál pustí dovnitř?“\n\nZůstáváte uvnitř stojícího SRV. Závora se nehýbe a objekt na váš příjezd zatím nijak viditelně nereaguje.",
+  "rolls": [],
+  "changes": [
+    "Přesun obou do SRV, zabezpečení DBE a přeprava drona jako rutinní součást dohodnuté jízdy; cca 10 minut včetně přípravy, odhad DM.",
+    "Viditelná závora a kontrolka zpozorovány bez hodu; zastavení podle výslovné podmínky hráče.",
+    "Přítomnost kamer pozorována; jejich funkčnost ani absence skryté obrany nepotvrzeny.",
+    "Poslední změřené nabití SRV 100 % před jízdou; nové měření neprovedeno.",
+    "Žádný vstup, připojení, skrytý DC ani nový hod."
+  ],
+  "sources": [
+    "events/000018.json",
+    "events/000017.json",
+    "Nová fikční pozorování v tomto tahu"
+  ],
+  "correction_of": null
+}

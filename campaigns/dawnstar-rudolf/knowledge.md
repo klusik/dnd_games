@@ -38,3 +38,7 @@ Komplex vizuálně identifikován mezi skalními výběžky: vysoký komunikačn
 ## Den 19, pasivní bezpečnostní průzkum DS-03 (event 000017)
 
 Technology 11 (DC10 dosažen). Ze stojící DBE nebyly v dostupném zorném poli detekovány lodě, vozidla či pohyb na povrchu. Jediný výraznější tepelný zdroj uvnitř budovy u paty stožáru, stacionární, stabilní intenzita. Napájecí jednotka nebo elektronika jsou pouze možné interpretace. Rádiově pouze známý DS-03, biologické známky života neprůkazné, automatická obrana neověřena, slabší zdroje a terénní zákryty zůstávají nerozlišené. Žádná potvrzená hrozba neznamená bezpečný objekt. Kara navrhla průzkum Δ-47, dosud nenasazen.
+
+## Den 19, pozemní přiblížení k DS-03 (event 000019)
+
+Oba v SRV s Δ-47, DBE zabezpečena. Při opatrné jízdě nebyl pozorován pohyb, vozidla ani zjevné známky nedávné lidské činnosti. SRV zastavilo cca 20 m před spuštěnou závorou u servisní plochy. Vedle závory přístupový terminál s pravidelně blikající oranžovou kontrolkou; na budově viditelné bezpečnostní kamery, žádné zjevné zbraně či obranné věže. Žádná viditelná reakce objektu. Kara odhaduje napájení alespoň části bezpečnostního systému; funkčnost, bezpečnost a autorizace přístupu nejsou ověřeny. Závora nepřekročena, terminál nekontaktován.
