@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 7,
+  "revision": 8,
+  "day": 18,
+  "type": "dialogue",
+  "player_action": "Heleď, ani ne. Spis mam pocit, ze se ztrácím v tom, co už víme. A rad bych to už vyřešil. I za cenu toho, že se třeba dozvíme, že se máme nesnášet.",
+  "dm_response": "Kara položí lžíci do misky. Tentokrát se neusmívá.\n\n„Dobře. Já se toho taky bojím. Ale radši bych věděla, proč mě máš nesnášet, než abych nad tím přemýšlela dalších dvacet let.“\n\nPřitáhne si k sobě datapad a otevře poslední získané záznamy.\n\n„Myslím, že děláme jednu chybu. Každou novou informaci začneme zkoumat, najdeme dalších pět záhad a ani jednu pořádně nedořešíme. Takže bych se teď soustředila na jedinou věc.“\n\nUkáže ti tři položky: DS-01: Aktivovali jsme jej. DS-Δ2: Máme zálohu tvých vzpomínek, ale zašifrovanou. DS-03: Nedokončená synchronizace komunikace. Může nám pomoci zpřístupnit archiv.\n\n„Navrhuju, abychom se vydali přímo k DS-03. Nebudeme cestou zkoumat každou divnou kytku ani rozebírat každou starou konzoli. A hlavně nebudeme spouštět žádnou konvergenci, dokud nepochopíme, co vlastně dělá.“\n\nZnovu vezme do ruky lžíci.\n\n„Po večeři můžu připravit zásoby a vybavení. Ty bys mohl zkontrolovat DBE a dobít SRV. Ráno bychom vyrazili. Co říkáš?“",
+  "rolls": [],
+  "changes": [
+    "Hráč vyjádřil přání vyřešit záhadu bez ohledu na nepříjemné důsledky odhalené minulosti.",
+    "Kara navrhla konkrétní prioritu DS-03 a přípravu expedice na ráno. Jde o návrh, nikoliv uskutečněnou akci.",
+    "Bez přesunu, změny inventáře nebo dalšího potvrzeného vyčerpání zásob; žádný souhlas s konvergencí."
+  ],
+  "sources": [
+    "events/000003.json",
+    "events/000007.json",
+    "knowledge.md: DS-01, DS-Δ2, DS-03",
+    "Nový dialog v tomto tahu"
+  ],
+  "correction_of": null
+}

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 7,
-  "last_event": "000007",
+  "revision": 8,
+  "last_event": "000008",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,10 +12,10 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "dialogue",
-    "resume": "Kara přijala Rudolfův souhlas s přípravou jídla, odešla do kuchyně a po přibližně 20 minutách se vrátila ke výzkumnému terminálu se dvěma miskami teplé směsi z konzerv (brambory, fazole, maso, česnek, pepř). Kara začala jíst, Rudolf má porci připravenou; jeho konzumace zatím nepotvrzena. Kara si vybavila vůni mokré země po letní bouřce, ale nikoli konkrétní místo, a ptá se, zda Rudolfovi také nějaká obyčejná věc chybí. Žádný nový plán expedice.",
+    "resume": "Rudolf vyjádřil, že se ztrácí v dosavadních stopách a chce záhadu vyřešit i za cenu nepříjemného odhalení o sobě a Kaře. Kara přiznala obavy a nabídla zúžení pátrání na DS-03 kvůli možnému přístupu k zašifrované záloze paměti DS-Δ2. Navrhla odložit vedlejší průzkum a nespouštět konvergenci bez pochopení jejích účinků. Po večeři chce připravit zásoby a vybavení, Rudolfovi navrhla kontrolu DBE a dobití SRV, odlet ráno. Čeká na jeho odpověď. Žádná příprava, dobíjení, spánek ani odlet dosud neproběhly.",
     "pending": null,
     "certainty": "played",
-    "source": "events/000007.json",
+    "source": "events/000008.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -36,7 +36,7 @@
       "travel_time": null,
       "certainty": "Pouze odhad z uložené mapy, nikoli nové měření; přesný azimut a délka trasy nejsou ověřeny."
     },
-    "elapsed_since_previous_hours_approx": 0.3333333333333333
+    "elapsed_since_previous_hours_approx": null
   },
   "character": {
     "name": "Rudolf",
@@ -108,7 +108,10 @@
       "oxygen_percent": null,
       "suit_energy_percent": null,
       "ammunition": null
-    }
+    },
+    "expressed_goals": [
+      "Vyřešit dosavadní záhadu i za cenu nepříjemných zjištění o vlastní minulosti a vztahu s Karou (den 18, event 000008)."
+    ]
   },
   "world": {
     "assets": {
@@ -175,9 +178,10 @@
         "expressed_goals": [
           "Opustit planetu a obnovit běžný život bez permanentního ohrožení.",
           "Objasnit svou minulou roli a případnou újmu způsobenou Rudolfovi.",
-          "Zjistit, zda jejich uváznutí bylo úmyslné, nebo následkem nehody; posoudit případné riziko návratu mezi lidi."
+          "Zjistit, zda jejich uváznutí bylo úmyslné, nebo následkem nehody; posoudit případné riziko návratu mezi lidi.",
+          "Soustředit další pátrání na DS-03 a přístup k archivu paměti, vynechat nepodstatné odbočky a nespouštět konvergenci bez pochopení následků."
         ],
-        "last_question": "Máš taky něco takovýho? Nějakou úplně obyčejnou věc, která ti tady chybí?",
+        "last_question": "Po večeři můžu připravit zásoby a vybavení. Ty bys mohl zkontrolovat DBE a dobít SRV. Ráno bychom vyrazili. Co říkáš?",
         "known_personal_memories": [
           "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
         ]
@@ -223,7 +227,7 @@
       "id": "ds03",
       "status": "open",
       "title": "Prozkoumat DS-03",
-      "detail": "Zvažována cesta DBE a SRV po kontrole techniky a doplnění zásob; dosud nezvolena. Možná souvislost s COMMS_SYNC v archivu paměti."
+      "detail": "Kara navrhla prioritní expedici k DS-03 ráno po přípravě zásob, kontrole DBE a dobití SRV. Cíl: ověřit souvislost s COMMS_SYNC a přístupem k archivu paměti. Hráč zatím nepotvrdil výpravu."
     },
     {
       "id": "delta2-data",
