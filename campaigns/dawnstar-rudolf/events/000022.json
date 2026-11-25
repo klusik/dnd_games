@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 21,
+  "revision": 22,
+  "day": 19,
+  "type": "dialogue_access_risk",
+  "player_action": "\"Počkej,\" zavolám na Karu, \"třeba nás to flaglo a spustíme tím nějaký poplach\"!",
+  "dm_response": "Kara se zarazí a znovu se podívá na displej terminálu.\n\n„Pravda. To, že autentizace probíhá lokálně, ještě neznamená, že systém nemůže vyhlásit poplach.“\n\nChvíli přemýšlí.\n\n„Na DS-01 i DS-Δ2 naše biometrické údaje fungovaly. Ale tady může být úplně jiný seznam oprávnění. A taky nevíme, jestli nás někdo mezitím nezařadil mezi hledané osoby.“\n\nUkáže na terminál.\n\n„Mám nápad. Co kdybychom nechali GAMMA-six posoudit, jestli tenhle typ zařízení zná? Nemusel by se k němu vůbec připojovat.“\n\nKara zůstává sedět v SRV. Kontrolka terminálu nadále pravidelně bliká a okolí je klidné.",
+  "rolls": [],
+  "changes": [
+    "Hráč upozornil na riziko autentizace; Kara navrhla konzultovat GAMMA-six bez kontaktu s terminálem.",
+    "Možnost poplachu, odlišných oprávnění nebo evidence hledaných osob zůstává hypotézou.",
+    "Žádný přesun, připojení, autentizace, poplach ani nový hod."
+  ],
+  "sources": [
+    "events/000021.json",
+    "knowledge.md: předchozí biometrická autorizace",
+    "Nový dialog v tomto tahu"
+  ],
+  "correction_of": null
+}

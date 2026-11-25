@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 21,
-  "last_event": "000021",
+  "revision": 22,
+  "last_event": "000022",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,10 +12,10 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "exploration",
-    "resume": "Rudolf hodil 16 na kostce, Perception +2 = 18. Podrobná vizuální kontrola neodhalila viditelné známky pastí ani zjevné stopy nedávného zásahu na cestě; povrch dlouhodobě neudržovaný. Kamery na budově pokryté silnou vrstvou prachu, terminál napájen. V souladu s dříve uvedeným podmíněným záměrem hráče SRV pomalu popojelo a zastavilo vedle terminálu cca 1 m od něj, bez viditelné nežádoucí reakce. Displej čitelný ze SRV: SIRIUS CORPORATION, DS-03 ACCESS CONTROL, POWER ONLINE, NETWORK FALLBACK, AUTHENTICATION LOCAL, SECURITY GATE CLOSED, PRESENT BIOMETRIC ID. Kara vyslovila hypotézu, že mohou platit jejich původní oprávnění. Oba stále uvnitř SRV, žádný kontakt s terminálem, žádná biometrická autorizace ani překročení závory.",
+    "resume": "Rudolf upozornil Karu na riziko označení jejich identity a poplachu při autentizaci. Kara souhlasila, že lokální autentizace poplach nevylučuje, připomněla předchozí biometrické autorizace a vyslovila hypotézy o odlišných oprávněních a možném označení hledaných osob, které nejsou potvrzeny. Navrhla požádat GAMMA-six o posouzení typu zařízení bez připojení k terminálu. Oba zůstávají uvnitř SRV vedle zavřené závory, kontrolka bliká stejně, žádná viditelná reakce. GAMMA-six dosud neosloven, žádná autentizace ani kontakt s terminálem.",
     "pending": null,
     "certainty": "played",
-    "source": "events/000021.json",
+    "source": "events/000022.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -39,7 +39,7 @@
       "approach_observations": "Prašné kamery, napájený terminál, místní biometrická autentizace dle displeje. Bez viditelné reakce při přiblížení.",
       "distance_to_barrier_m_approx": null
     },
-    "elapsed_since_previous_hours_approx": 0.08333333333333333
+    "elapsed_since_previous_hours_approx": null
   },
   "character": {
     "name": "Rudolf",
@@ -343,11 +343,11 @@
           "Zjistit, zda jejich uváznutí bylo úmyslné, nebo následkem nehody; posoudit případné riziko návratu mezi lidi.",
           "Soustředit další pátrání na DS-03 a přístup k archivu paměti, vynechat nepodstatné odbočky a nespouštět konvergenci bez pochopení následků."
         ],
-        "last_question": null,
+        "last_question": "Co kdybychom nechali GAMMA-six posoudit, jestli tenhle typ zařízení zná?",
         "known_personal_memories": [
           "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
         ],
-        "current_activity": "Prohlíží přístupový terminál; vyslovila hypotézu o platnosti původních oprávnění."
+        "current_activity": "Zůstává sedět v SRV, navrhuje konzultaci GAMMA-six bez připojení k terminálu."
       }
     },
     "locations": {
@@ -421,7 +421,8 @@
         "prompt": "PRESENT BIOMETRIC ID",
         "gate": "CLOSED",
         "contacted": false,
-        "authorization_verified": false
+        "authorization_verified": false,
+        "player_concern": "Možný poplach nebo označení identity při autentizaci; neověřeno."
       }
     }
   },
