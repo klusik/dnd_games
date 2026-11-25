@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 43,
+  "revision": 44,
+  "day": 19,
+  "type": "reception_share_recording_findings",
+  "player_action": "Heleď, někdo sem vlezl a pak to vypadá, že šel někam jinam. Není vidět, kdo to je, jen dovnitř donesl nějaký kufřík a zpět šel bez něho. Pak jsme vidět až my, jak se snažíme být nenápadní, jdu koukat dál, co tu je, jak to vypadá? Žádný pohyb?",
+  "dm_response": "Kara: „Takže někdo komunikační středisko používal ještě docela nedávno. Otázka je, jestli vůbec odešel ze stanice.“ Rozhlédla se. „Žádný pohyb. Ani kroky, ani hlasy. Jen ta ventilace. Ale odsud samozřejmě nevidím do všech chodeb.“ Přistoupila blíže k Rudolfovi, aby lépe viděla na monitor a nadále sledovala okolí. „Zkus zjistit, jestli ten člověk někde použil svoji autorizaci. Třeba budeme mít i jméno.“ Konzole zůstala v SECURITY & SURVEILLANCE, žádná položka nebyla zvolena.",
+  "rolls": [],
+  "changes": [
+    "Kara obdržela Rudolfovo slovní shrnutí starších záznamů, nikoli automaticky všechny jeho znalosti.",
+    "Kara hlásí žádný pozorovaný pohyb ani slyšené kroky či hlasy ve svém omezeném dosahu a přistoupila blíže k monitoru; bezpečnost objektu neověřena. Rutinní hlídání a rozhovor bez hodu.",
+    "Žádná další položka nabídky nevybrána, žádná změna konfigurace, inventáře, zdraví či doložené spotřeby."
+  ],
+  "sources": [
+    "events/000041.json",
+    "events/000042.json",
+    "events/000043.json",
+    "characters/kara.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}

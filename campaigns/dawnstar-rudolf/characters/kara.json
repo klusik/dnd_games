@@ -16,7 +16,8 @@
     "Den 19, event 000031: při pohledu do vstupní haly DS-03 zvenku nezaznamenala pohyb. Nevidí za recepční pult ani do celé levé chodby; bezpečnost neověřena.",
     "Den 19, event 000032: některé systémy DS-03 se jeví napájené; viditelná kamera nad recepcí, její funkčnost ani případné sledování nejsou ověřeny.",
     "Den 19, event 000034: recepční terminál je částečně napájený a uzamčený, přístup k bezpečnostnímu systému nepotvrzen. Za pultem nikoho neviděla.",
-    "Den 19, event 000036: viděla čitelnou hlavní nabídku RECEPTION-01, nikoli obsah jednotlivých položek."
+    "Den 19, event 000036: viděla čitelnou hlavní nabídku RECEPTION-01, nikoli obsah jednotlivých položek.",
+    "Den 19, event 000044: Rudolf jí sdělil obsah dvou starších záznamů CAM-03 v rozsahu neidentifikované postavy nesoucí kufřík dovnitř a podobné postavy vracející se bez něj; další záznamy zachycují jejich příchod. Nezná identitu, současné místo osoby ani obsah kufříku. Přesné stáří záznamů a obsluhu panelu jí Rudolf v tomto tahu výslovně nesdělil."
   ],
   "name": "Kara Velin",
   "age": 32,
@@ -31,7 +32,7 @@
   "known_personal_memories": [
     "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
   ],
-  "current_activity": "Přečetla hlavní nabídku RECEPTION-01, doporučila mapu, stav systémů a kamery a vyjádřila zájem o seznam personálu. Nadále hlídá okolní chodby, zbraň připravena a svítilna zapnuta.",
+  "current_activity": "U recepce vedle Rudolfa, po jeho sdělení o kamerových záznamech se přiblížila k monitoru a nadále sleduje okolní chodby. Zbraň připravena, svítilna zapnuta. Během hlídání nezaznamenala pohyb, kroky ani hlasy; slyší ventilaci a nevidí do všech chodeb. Doporučila zkontrolovat případnou autorizaci neznámé postavy.",
   "level": null,
   "xp": null,
   "species": "Human",
