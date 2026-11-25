@@ -87,7 +87,17 @@
       "weapons_prepared": true,
       "flashlights_on": true,
       "kara_observations": "Bez pozorovaného pohybu; výhled omezen recepčním pultem a levou chodbou.",
-      "pending": "Rudolf Perception 1d20+2"
+      "pending": null,
+      "result_event": "000032",
+      "rudolf_observations": {
+        "reception": "Převrácená kancelářská židle, několik vytažených zásuvek, poškozený kryt monitoru a zelená kontrolka vespod.",
+        "footprints": "Nepravidelné stopy podrážek v prachu směrem od recepce k levé chodbě; stáří neurčeno.",
+        "left_corridor": "Bílé světlo zpoza pootevřených vnitřních dveří.",
+        "camera": "Bezpečnostní kamera nad recepcí, po dobu pozorování bez pohybu; funkčnost neověřena.",
+        "visible_movement": "Žádná osoba ani pohyb v dostupném zorném poli.",
+        "audible": "Ventilace."
+      },
+      "kara_comment": "Některé systémy zřejmě fungují, možnost pozorování neověřena."
     }
   },
   "exterior_survey": {

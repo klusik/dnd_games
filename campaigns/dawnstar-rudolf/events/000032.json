@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 31,
+  "revision": 32,
+  "day": 19,
+  "type": "threshold_recon_resolved",
+  "player_action": "Hozeno 16",
+  "dm_response": "Perception 16 + 2 = 18. Rudolf ze své strany vchodu vidí lépe za recepční pult: převrácená kancelářská židle, několik vytažených zásuvek. V prachu nepravidelné stopy podrážek od recepce k levé chodbě, stáří neurčeno. Rozbitý monitor má poškozený kryt a zelenou kontrolku vespod. Vlevo bílé světlo zpoza pootevřených vnitřních dveří. Nad recepcí bezpečnostní kamera, během pozorování bez pohybu. V dostupném zorném poli žádná osoba ani pohyb; slyšitelná jen ventilace. Kara: „Připadá mi, že tu pořád některé systémy fungují. Jen nevím, jestli nás taky někdo nepozoruje.“ Pohledem sjede ke kameře. Oba zůstávají venku, Δ-47 za rohem.",
+  "rolls": [
+    {
+      "actor": "rudolf",
+      "skill": "Perception",
+      "dice": "1d20",
+      "roll": 16,
+      "modifier": 2,
+      "total": 18,
+      "result": "Podrobnější vizuální průzkum zvenku, několik nových pozorování."
+    }
+  ],
+  "changes": [
+    "Vyhodnocen pending z eventu 000031, žádný další hod.",
+    "Zaznamenány vizuální stopy, kontrolka monitoru, vnitřní dveře a kamera.",
+    "Kara vyslovila obavu z možného sledování; nejde o potvrzené sledování.",
+    "Žádný vstup, střelba, nová spotřeba či změna postav a vybavení."
+  ],
+  "sources": [
+    "events/000031.json",
+    "characters/rudolf.json",
+    "world/expedition-ds03.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}
