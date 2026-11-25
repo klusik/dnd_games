@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 14,
+  "revision": 15,
+  "day": 19,
+  "type": "preflight_and_travel",
+  "player_action": "Jasně, dobré ráno! Poj´djme jen udělat předletovku a můžeme vyrazit. \n\nBěhem předletové kontroly zkontroluji vše, jestli nic neuniká (víc než před tím) a jestli systémy nic zásadního nehlásí.",
+  "dm_response": "Kara souhlasí. Rutinní předletová kontrola cca 20 min: bez nového úniku, chlazení 240 kPa stabilní, motory, reaktor, manévrovací trysky, kabina, podpora života, náklad a podvozek funkční. Známá omezení záložního napájení, HUD, pokročilých senzorů a mezihvězdného FSD trvají. Palivo 78 %. Bez hodu, PASSED. Následuje schválený atmosférický let cca 15 min, motory a chlazení stabilní. Kara upozorní na anténu; mezi skalními výběžky vysoký stožár a nízká kovová budova částečně ve svahu, jedna parabola nakloněná. Pasivní příjem 1452.7 MHz, NODE ID DS-03, FALLBACK, COMMS_SYNC INCOMPLETE, PERIODIC. Bezpečné přistání cca 1,2 km od komplexu, palivo 75 %. Oba stále uvnitř DBE, SRV a dron naloženy. Kara navrhuje dojet k budově v SRV, čeká na reakci.",
+  "rolls": [],
+  "changes": [
+    "Předletová kontrola dokončena bez nové závady.",
+    "Odlet z 4B a přistání u DS-03 v rámci hráčem schválené expedice. Cca 35 minut.",
+    "Palivo 78 % před odletem a 75 % po přistání jsou nové fikční údaje určené DM; bezpečné rutinní přistání vyhodnoceno bez hodu.",
+    "Aktuální pasivní vysílání DS-03 a vizuální podoba komplexu nově odhaleny; žádné aktivní připojení ani konvergence.",
+    "Zásoby na tři dny a SRV 100 % stále naloženy; přesná spotřeba podpory života nevyčíslena."
+  ],
+  "sources": [
+    "events/000014.json",
+    "events/000013.json",
+    "knowledge.md: DS-03, COMMS_SYNC",
+    "Nový fikční výsledek tohoto tahu"
+  ],
+  "correction_of": null
+}

@@ -30,3 +30,7 @@ Otevřené otázky: proč byly vzpomínky izolovány, kdo řídil výzkum, jaká
 ## Den 18, návrat na 4B (event 000003)
 
 Kara našla dílčí výpis DS-Δ2 MEMORY ISOLATION ARCHIVE: SUBJECT RDF-ΔK452; ARCHIVE STATUS ENCRYPTED; KEY SCHEME TRIPLE-NODE; DEPENDENCY COMMS_SYNC; HANDSHAKE INCOMPLETE; ACCESS LOCKED. Shoda názvu s misí DS-03 je pozorování; vztah ke klíči nebo zprostředkování komunikace je hypotéza Kary. Samotný autorizační záznam žádosti o izolaci paměti dosud nenalezla. Navrhla zkontrolovat DBE, doplnit zásoby a následně letět poblíž DS-03 a pokračovat SRV. Hráč další cestu zatím neschválil.
+
+## Den 19, přílet k DS-03 (event 000015)
+
+Komplex vizuálně identifikován mezi skalními výběžky: vysoký komunikační stožár, nízká kovová budova zapuštěná částečně do svahu, jedna nakloněná parabola. Pasivní přijímač potvrdil aktuální periodické vysílání na 1452,7 MHz: NODE ID DS-03, MODE FALLBACK, COMMS_SYNC INCOMPLETE. DBE přistála cca 1,2 km od komplexu. Přístup, obyvatelé, příčina závady a obsah uzlu nejsou ověřeny. Nebylo navázáno aktivní spojení ani povolena konvergence.

@@ -1,28 +1,28 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 14,
-  "last_event": "000014",
+  "revision": 15,
+  "last_event": "000015",
   "status": "active",
   "language": "cs",
   "scene": {
     "day": 19,
     "time": "morning",
-    "location": "Sirius 4B, chodba u obytné části s Karou",
+    "location": "DBE na přistávací ploše přibližně 1,2 km od komplexu DS-03, Gliese 5206 c",
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
-    "phase": "expedition_preparation",
-    "resume": "Rudolf naložil připravené zásoby, náhradní filtry, lékárničku a servisní nářadí, část uložil do SRV pro pozemní průzkum. SRV se dobilo na 100 %, odpojeno od nabíjecího portu a zajištěno v nákladovém prostoru DBE, naložen také Δ-47. Rudolf odešel do obytné části a osm hodin nepřerušovaně spal. Nyní ráno den 19, odpočatý, Resonant Recall znovu dostupné. Potkal Karu na chodbě, připravenou ve skafandru, s helmou pod paží a hrnkem kávy. Kara: „Dobré ráno. Tak co, dneska konečně rozlouskneme tu naši záhadu?“ Zbývá standardní předletová kontrola, odlet neproběhl. Žádné nové rozhodnutí o konvergenci.",
+    "phase": "exploration",
+    "resume": "Rudolf s Karou provedl standardní předletovou kontrolu DBE, cca 20 minut, bez hodu. Bez nového úniku, sekundární chlazení 240 kPa stabilní, motory, podpora života, podvozek, náklad a hlavní reaktor v pořádku; známá omezení HUD, záložního napájení, pokročilých senzorů a mezihvězdného režimu FSD přetrvávají. Palivo před odletem 78 %. Následoval cca 15min atmosférický let a bezpečné přistání na relativně rovné ploše cca 1,2 km od DS-03; motory a chlazení stabilní během letu, palivo po přistání 75 %. Vizuálně vysoký komunikační stožár, nízká kovová budova částečně zapuštěná do svahu mezi skalními výběžky; jedna parabola nakloněná, ostatní konstrukce relativně zachovalé. Pasivní přijímač zachytil 1452.7 MHz, NODE ID DS-03, FALLBACK, COMMS_SYNC INCOMPLETE, PERIODIC. Aktuální vysílání potvrzeno, přesný charakter závady a přístup do komplexu neověřeny. Rudolf a Kara stále v DBE, SRV a Δ-47 stále naloženy. Žádné aktivní připojení, vyložení, výstup ani konvergence. Kara navrhla dojet k budově v SRV, čeká na reakci.",
     "pending": null,
     "certainty": "played",
-    "source": "events/000014.json",
+    "source": "events/000015.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
       "target": "DS-03",
-      "distance_straight_km_approx": 95,
-      "bearing_deg_approx": 73,
-      "method": "Orientační rovinná geometrie z dřívějších údajů: 4B až DS-03 cca 127 km severovýchodně (pro odhad 45°); 4B až DS-Δ2 cca 63 km severně.",
+      "distance_straight_km_approx": 1.2,
+      "bearing_deg_approx": null,
+      "method": "Vizuální identifikace komplexu a palubní pasivní detekce v cílové oblasti; odhad vzdálenosti od přistání.",
       "last_known_target_coords": {
         "lat": 53.924,
         "lon": 14.662
@@ -31,12 +31,13 @@
       "last_known_signal_status": "FALLBACK",
       "terrain": "Zvlněná planina přecházející v útesový okraj, možné podzemní struktury.",
       "route_distance_km": null,
-      "live_signal_status": null,
+      "live_signal_status": "DETECTED; NODE ID DS-03; FALLBACK; COMMS_SYNC INCOMPLETE; PERIODIC",
       "range_estimate": null,
       "travel_time": null,
-      "certainty": "Pouze odhad z uložené mapy, nikoli nové měření; přesný azimut a délka trasy nejsou ověřeny."
+      "certainty": "Aktuální pasivní příjem a vizuální pozorování; přístup, přesná pozice a příčina závady neověřeny.",
+      "origin": "Přistávací plocha u DS-03"
     },
-    "elapsed_since_previous_hours_approx": null
+    "elapsed_since_previous_hours_approx": 0.5833333333333334
   },
   "character": {
     "name": "Rudolf",
@@ -123,8 +124,8 @@
   "world": {
     "assets": {
       "DBE": {
-        "location": "Hangár Sirius 4B, na podvozku, potvrzeno pozorováním dne 18",
-        "status": "Tři plánované předexpediční opravy dokončeny; atmosférický let dle dosavadního stavu možný, předletová kontrola ještě neprovedena.",
+        "location": "DBE na přistávací ploše přibližně 1,2 km od komplexu DS-03, Gliese 5206 c",
+        "status": "Přistála bezpečně u DS-03 po úspěšné standardní předletové kontrole a stabilním atmosférickém letu. Známá omezení přetrvávají.",
         "hull": "Dřívější opravy drží, bez nových deformací a nového zjevného poškození; pro atmosférický let se jeví dostatečně pevný.",
         "left_engine": "Funkční a čistý",
         "right_engine": "Provizorně opravený a mechanicky stabilizovaný motor; sekundární chladicí okruh utěsněn a ověřen tlakovou a cirkulační zkouškou, diagnostika bez závady chlazení.",
@@ -202,10 +203,45 @@
             "cause": "Nerovnoměrné stlačení nového těsnění kvůli neparalelním dosedacím plochám.",
             "new_seal_intact": true
           }
+        },
+        "fuel_percent": 75,
+        "last_preflight": {
+          "event": "000015",
+          "day": 19,
+          "result": "PASSED",
+          "fuel_percent_before_departure": 78,
+          "secondary_cooling_kpa": 240,
+          "leaks": "Bez nového úniku",
+          "checks": [
+            "Hlavní reaktor stabilní",
+            "Levý a pravý motor nominální při kontrole",
+            "Sekundární chlazení stabilní",
+            "Manévrovací trysky funkční",
+            "Kabina bez nového úniku",
+            "Podpora života funkční",
+            "Náklad zajištěn",
+            "Podvozek funkční"
+          ],
+          "limitations": [
+            "Omezené záložní napájení",
+            "Drobné nekompatibility HUD",
+            "Omezené pokročilé senzory",
+            "Mezihvězdný režim FSD neověřen"
+          ]
+        },
+        "last_flight": {
+          "event": "000015",
+          "day": 19,
+          "origin": "Sirius 4B",
+          "destination": "Přistávací plocha cca 1,2 km od DS-03",
+          "duration_minutes_approx": 15,
+          "result": "Bez komplikací",
+          "fuel_percent_before": 78,
+          "fuel_percent_after": 75
         }
       },
       "SRV": {
-        "location": "Zajištěno v nákladovém prostoru DBE, hangár Sirius 4B",
+        "location": "Zajištěno v nákladovém prostoru DBE u DS-03",
         "status": "Provozuschopné, plně nabito, odpojeno od nabíjecího portu a zajištěno v DBE.",
         "trailer": true,
         "energy_percent_at_charge_start": 41,
@@ -225,7 +261,7 @@
         "last_measured_energy_percent": 100
       },
       "drone": {
-        "location": "Naložen v DBE, hangár Sirius 4B",
+        "location": "Naložen v DBE u DS-03",
         "status": "Provozuschopný",
         "functions": [
           "Scanning",
@@ -253,7 +289,7 @@
     },
     "npcs": {
       "kara": {
-        "location": "Sirius 4B, chodba u obytné části s Karou",
+        "location": "DBE na přistávací ploše u DS-03, sedadlo druhého pilota",
         "role": "Spojenkyně, analýza biologických vzorků",
         "relationship": "Vzájemná důvěra, společná historie; samostatná osobnost",
         "health": null,
@@ -272,18 +308,18 @@
           "Zjistit, zda jejich uváznutí bylo úmyslné, nebo následkem nehody; posoudit případné riziko návratu mezi lidi.",
           "Soustředit další pátrání na DS-03 a přístup k archivu paměti, vynechat nepodstatné odbočky a nespouštět konvergenci bez pochopení následků."
         ],
-        "last_question": "Tak co, dneska konečně rozlouskneme tu naši záhadu?",
+        "last_question": "Tak co, dojedeme k té budově v SRV?",
         "known_personal_memories": [
           "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
         ],
-        "current_activity": "Ráno, odpočatá, oblečená ve skafandru, připravena k expedici."
+        "current_activity": "Spolu s Rudolfem dorazila do cílové oblasti, vizuálně upozornila na anténu."
       }
     },
     "locations": {
       "base_4b": "Zázemí, archiv, hangár a výzkum; podle Rudolfova vyjádření v den 18 dostatek konzerv pro dvě osoby, přesný počet a trvanlivost neověřeny. Na konci dne 18 připraveny dvě porce z konzerv a koření, odebrány odpovídající suroviny; zůstatek neznámý.",
       "ds_01": "ONLINE po SEED_REBOOT, Phase 1 zahájena",
       "ds_02": "Ping selhal po rebootu; dříve degradace",
-      "ds_03": "Slabá odpověď, fallback; poslední triangulace 53.924N 14.662E, cca 127 km NE od 4B dle chatu",
+      "ds_03": "Den 19: vizuálně identifikován komplex mezi skalními výběžky, komunikační stožár, nízká kovová budova ve svahu, jedna parabola nakloněná. Pasivně potvrzen aktuální periodický signál 1452,7 MHz, ID DS-03, FALLBACK, COMMS_SYNC INCOMPLETE. DBE přistála cca 1,2 km od komplexu. Přístup a vnitřek neprozkoumány.",
       "ds_04": "Ztracený nebo degradovaný signál; neověřeno",
       "ds_delta2": "Podzemní archiv zálohován a zapečetěn, Rudolf se vrátil na 4B.",
       "satellite_module": "Starý triangulační modul na trase k DS-Δ2; při návratu dne 18 stále na označeném místě, nevyzvednut.",
@@ -314,7 +350,7 @@
       "certainty": "Doložené výpisy a simulace, nikoli nezávisle ověřené skutečné chování všech vrstev"
     },
     "expedition_ds03": {
-      "status": "loaded_pending_preflight",
+      "status": "landed_near_target",
       "supplies": {
         "food_days_for_two": 3,
         "water_days_for_two": 3,
@@ -326,8 +362,13 @@
         "service_tools": true
       },
       "maintenance_remaining_minutes_approx": 0,
-      "departure": "Den 19 ráno, čeká na standardní předletovou kontrolu a odlet.",
-      "convergence_authorized": false
+      "departure": "Den 19 ráno, odlet z 4B a přistání v cílové oblasti dokončeny.",
+      "convergence_authorized": false,
+      "arrival": {
+        "day": 19,
+        "distance_to_complex_km_approx": 1.2,
+        "passive_signal_confirmed": true
+      }
     }
   },
   "objectives": [
@@ -335,7 +376,7 @@
       "id": "ds03",
       "status": "open",
       "title": "Prozkoumat DS-03",
-      "detail": "Den 19 ráno. Opravy dokončeny, SRV 100 %, naloženo v DBE spolu s dronem a expedičním vybavením; oba odpočatí. Zbývá standardní předletová kontrola a odlet."
+      "detail": "DBE bezpečně přistála cca 1,2 km od DS-03. Komplex vizuálně identifikován a živý signál potvrzen. Zbývá pozemní průzkum a zjištění příčiny nedokončené synchronizace."
     },
     {
       "id": "delta2-data",
