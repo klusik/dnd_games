@@ -196,8 +196,56 @@
         "ACCESS LOG",
         "PERSONNEL REGISTRY"
       ],
-      "prompt": "SELECT OPTION",
-      "view": "MAIN MENU"
+      "prompt": "SELECT FUNCTION OR ESC",
+      "view": "SECURITY & SURVEILLANCE",
+      "security_status": {
+        "SECURITY NETWORK": "DEGRADED",
+        "LOCAL RECORDING": "ACTIVE",
+        "REMOTE MONITORING": "UNAVAILABLE",
+        "ACTIVE ALARMS": "NONE",
+        "LOCKDOWN": "INACTIVE",
+        "ACCESS MODE": "READ ONLY"
+      },
+      "cameras": [
+        {
+          "id": "CAM-01",
+          "location": "Main entrance",
+          "status": "ONLINE"
+        },
+        {
+          "id": "CAM-02",
+          "location": "Reception",
+          "status": "ONLINE"
+        },
+        {
+          "id": "CAM-03",
+          "location": "Communications corridor",
+          "status": "ONLINE"
+        },
+        {
+          "id": "CAM-04",
+          "location": "Data center",
+          "status": "UNREACHABLE"
+        },
+        {
+          "id": "CAM-05",
+          "location": "Engineering",
+          "status": "UNREACHABLE"
+        },
+        {
+          "id": "CAM-06",
+          "location": "Personnel facilities",
+          "status": "UNREACHABLE"
+        }
+      ],
+      "functions": [
+        "LIVE CAMERA FEEDS",
+        "RECORDING ARCHIVE",
+        "DOOR STATUS",
+        "SECURITY EVENT LOG",
+        "SECURITY ADMINISTRATION"
+      ],
+      "administration": "LOCKED; vyšší oprávnění nutné dle rozhraní"
     },
     "last_authentication": {
       "event": "000035",
@@ -206,7 +254,11 @@
       "observed_reaction": "Modré světlo čtečky, tiché pípnutí, čitelná hlavní nabídka. Bez pozorovaného alarmu či pohybu kamery.",
       "certainty": "Lokální výpis terminálu; globální oprávnění a přístup k jednotlivým funkcím neověřeny."
     },
-    "selected_menu_item": null,
+    "selected_menu_item": {
+      "number": 3,
+      "name": "SECURITY & SURVEILLANCE",
+      "event": "000039"
+    },
     "system_status_report": {
       "event": "000037",
       "query_type": "LOCAL DIAGNOSTICS | LIVE QUERY",
@@ -229,6 +281,62 @@
       "event": "000038",
       "from": "SYSTEM STATUS",
       "session": "UNLOCKED"
+    },
+    "security_report": {
+      "event": "000039",
+      "node": "LOCAL SECURITY NODE",
+      "status": {
+        "SECURITY NETWORK": "DEGRADED",
+        "LOCAL RECORDING": "ACTIVE",
+        "REMOTE MONITORING": "UNAVAILABLE",
+        "ACTIVE ALARMS": "NONE",
+        "LOCKDOWN": "INACTIVE",
+        "ACCESS MODE": "READ ONLY"
+      },
+      "cameras": [
+        {
+          "id": "CAM-01",
+          "location": "Main entrance",
+          "status": "ONLINE"
+        },
+        {
+          "id": "CAM-02",
+          "location": "Reception",
+          "status": "ONLINE"
+        },
+        {
+          "id": "CAM-03",
+          "location": "Communications corridor",
+          "status": "ONLINE"
+        },
+        {
+          "id": "CAM-04",
+          "location": "Data center",
+          "status": "UNREACHABLE"
+        },
+        {
+          "id": "CAM-05",
+          "location": "Engineering",
+          "status": "UNREACHABLE"
+        },
+        {
+          "id": "CAM-06",
+          "location": "Personnel facilities",
+          "status": "UNREACHABLE"
+        }
+      ],
+      "functions": [
+        "LIVE CAMERA FEEDS",
+        "RECORDING ARCHIVE",
+        "DOOR STATUS",
+        "SECURITY EVENT LOG",
+        "SECURITY ADMINISTRATION"
+      ],
+      "administration": "LOCKED; vyšší oprávnění nutné dle rozhraní",
+      "live_feed_opened": false,
+      "archive_opened": false,
+      "selected_function": null,
+      "certainty": "Výpis lokálního bezpečnostního rozhraní v režimu FALLBACK, nikoli nezávislé ověření. ONLINE neprokazuje funkční živý obraz; ACTIVE RECORDING neprokazuje skutečné zaznamenání příchodu. UNREACHABLE neznamená zničené zařízení, REMOTE MONITORING UNAVAILABLE neprokazuje absenci všech forem vzdáleného sledování."
     }
   }
 }

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 38,
+  "revision": 39,
+  "day": 19,
+  "type": "reception_security_menu",
+  "player_action": "Vyberu položku 3: SECURITY & SURVEILLANCE.",
+  "dm_response": "Po stisku klávesy 3 se otevřelo bezpečnostní rozhraní LOCAL SECURITY NODE v režimu FALLBACK. Výpis: SECURITY NETWORK: DEGRADED; LOCAL RECORDING: ACTIVE; REMOTE MONITORING: UNAVAILABLE; ACTIVE ALARMS: NONE; LOCKDOWN: INACTIVE; ACCESS MODE: READ ONLY. Kamerová síť: CAM-01 Main entrance ONLINE; CAM-02 Reception ONLINE; CAM-03 Communications corridor ONLINE; CAM-04 Data center UNREACHABLE; CAM-05 Engineering UNREACHABLE; CAM-06 Personnel facilities UNREACHABLE. Dostupné funkce: [1] LIVE CAMERA FEEDS; [2] RECORDING ARCHIVE; [3] DOOR STATUS; [4] SECURITY EVENT LOG; [5] SECURITY ADMINISTRATION. SECURITY ADMINISTRATION zamčená, vyžaduje vyšší oprávnění. ESC návrat do hlavní nabídky. Podle výpisu tři ze šesti evidovaných kamer dostupné, lokální záznam aktivní, příchod mohl být zaznamenán; skutečný záznam neověřen. Přístup jen ke čtení. Žádný živý obraz ani archiv dosud neotevřen.",
+  "rolls": [],
+  "changes": [
+    "Vybrána položka SECURITY & SURVEILLANCE, přečten místní bezpečnostní report a nabídka funkcí.",
+    "Nová tvrzení systému o stavu kamer, lokálním záznamu a oprávnění; žádná funkce nebyla vybrána ani nezávisle ověřena.",
+    "Bez změny konfigurace, pozic, zdraví, inventáře nebo doložené spotřeby. Rutinní navigace bez hodu."
+  ],
+  "sources": [
+    "events/000033.json",
+    "events/000037.json",
+    "events/000038.json",
+    "world/expedition-ds03.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}
