@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 32,
+  "revision": 33,
+  "day": 19,
+  "type": "drone_camera_recon",
+  "player_action": "„D47, zajeď přímo pod kameru a zkus pod ní stát tak, aby tě neviděla a když se ti podaří napojit na její feed, bude to super. Optimálně podvrhnout prázdnou smyčku bez nás, zvládneš něco takového?“",
+  "dm_response": "Δ-47 potvrdil příkaz a možnost místní diagnostiky, negarantoval přepis obrazu. Přesunul se do haly pod kameru; kamera se během přesunu nepohnula. Po několika desítkách sekund report do Rudolfova HUD: napájení aktivní, datová komunikace detekována, přístup k obrazu odepřen, nahrazení smyčkou neprovedeno, detekce dronu neověřena. Dron doporučil vyhledat místní bezpečnostní konzoli. Zůstává pod kamerou, bez pozorovaného alarmu či jiné zjevné reakce stanice. Rudolf a Kara zůstávají venku.",
+  "rolls": [
+    {
+      "actor": "delta-47",
+      "skill": "Stealth",
+      "dice": "1d20",
+      "roll": 12,
+      "modifier": 2,
+      "total": 14,
+      "result": "Přesun pod kameru bez pozorované reakce; skutečné zaznamenání neověřeno."
+    },
+    {
+      "actor": "delta-47",
+      "skill": "Technology",
+      "dice": "1d20",
+      "roll": 10,
+      "modifier": 3,
+      "total": 13,
+      "result": "Dílčí místní diagnostika, přístup k obrazu odepřen, žádný přepis obrazu."
+    }
+  ],
+  "changes": [
+    "Δ-47 vstoupil do haly a čeká pod kamerou; lidé stále venku.",
+    "Doložen report o napájení a komunikaci kamery, nepodařilo se získat obraz ani vytvořit smyčku.",
+    "Žádný výstřel, EMP, poškození, doložená spotřeba ani hráčský hod; konvergence neautorizována."
+  ],
+  "sources": [
+    "events/000032.json",
+    "characters/delta-47.json",
+    "inventories/delta-47.json",
+    "world/expedition-ds03.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}

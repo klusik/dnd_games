@@ -19,7 +19,8 @@
     "reason": "Neověřený přístupový terminál a závora; opatrný postup na žádost hráče.",
     "drone_accompanying": true,
     "building_entered": false,
-    "srv_parked_outside_barrier": true
+    "srv_parked_outside_barrier": true,
+    "drone_entered": true
   },
   "access_terminal": {
     "event": "000021",
@@ -97,7 +98,28 @@
         "visible_movement": "Žádná osoba ani pohyb v dostupném zorném poli.",
         "audible": "Ventilace."
       },
-      "kara_comment": "Některé systémy zřejmě fungují, možnost pozorování neověřena."
+      "kara_comment": "Některé systémy zřejmě fungují, možnost pozorování neověřena.",
+      "current_positions": {
+        "event": "000033",
+        "rudolf": "Venku u jedné strany vchodu",
+        "kara": "Venku u opačné strany vchodu",
+        "drone": "Uvnitř přímo pod kamerou nad recepcí"
+      }
+    },
+    "drone_entered": true,
+    "camera_diagnostics": {
+      "event": "000033",
+      "target": "Bezpečnostní kamera nad recepcí DS-03",
+      "power": "ACTIVE",
+      "data_communication": "DETECTED",
+      "video_access": "DENIED",
+      "video_override": "NOT PERFORMED",
+      "detection_by_camera": null,
+      "reaction": "Bez pozorovaného pohybu kamery, sirény či jiné zjevné reakce",
+      "recommendation": "Vyhledat místní bezpečnostní konzoli",
+      "certainty": "Report dronu a viditelné pozorování; přístup k živému obrazu ani stav záznamu neověřeny.",
+      "drone_position": "Uvnitř vstupní haly DS-03 přímo pod kamerou nad recepcí",
+      "humans_entered": false
     }
   },
   "exterior_survey": {

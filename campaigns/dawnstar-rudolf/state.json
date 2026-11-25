@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 32,
-  "last_event": "000032",
+  "revision": 33,
+  "last_event": "000033",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,10 +12,10 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "exploration",
-    "resume": "Den 19 ráno, Rudolf a Kara stále venku na protilehlých stranách otevřeného hlavního vchodu DS-03, připravené zbraně a integrované svítilny. Δ-47 čeká za rohem. Vizuální průzkum dokončen: Rudolf zaznamenal stopy podrážek v prachu od recepce k levé chodbě, převrácenou kancelářskou židli, vytažené zásuvky, zelenou kontrolku na poškozeném monitoru, bílé světlo zpoza pootevřených vnitřních dveří vlevo a nehybnou bezpečnostní kameru nad recepcí. Kara vyjádřila nejistotu, zda je někdo nepozoruje. V dostupném zorném poli žádná osoba ani pohyb, slyšitelná ventilace. Stáří stop, funkčnost kamery a bezpečnost interiéru neověřeny. Čeká se na další akci hráče.",
+    "resume": "Den 19 ráno. Rudolf a Kara stále venku na protilehlých stranách otevřeného hlavního vchodu DS-03, připravené zbraně a zapnuté integrované svítilny. V hale stopy od recepce k levé chodbě, zelená kontrolka rozbitého monitoru, pootevřené dveře vlevo a kamera nad recepcí. Na Rudolfův příkaz Δ-47 vstoupil do haly, dostal se pod kameru a provedl místní diagnostiku. Podle jeho reportu je kamera napájená, datová komunikace detekována, přístup k obrazu odepřen, smyčka neprovedena. Kamera se při přesunu nepohnula; detekce dronu neověřena. Bez pozorovaného poplachu či jiné reakce stanice. Dron čeká pod kamerou na další pokyny. Doporučil vyhledat místní bezpečnostní konzoli. Rudolf ani Kara dosud nevstoupili. Čeká se na další akci hráče.",
     "pending": null,
     "certainty": "played",
-    "source": "events/000032.json",
+    "source": "events/000033.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -34,9 +34,9 @@
       "live_signal_status": "DETECTED; NODE ID DS-03; FALLBACK; COMMS_SYNC INCOMPLETE; PERIODIC",
       "range_estimate": null,
       "travel_time": null,
-      "certainty": "Hlavní vchod dosažen; interiér viditelný pouze částečně zvenčí, bezpečnost neověřena.",
+      "certainty": "Rudolf a Kara u vchodu venku, interiér viděli částečně zvenčí. Δ-47 uvnitř pod kamerou, omezená diagnostika; bezpečnost neověřena.",
       "origin": "Před hlavním vchodem DS-03",
-      "approach_observations": "Dveře pootevřené cca 40 cm, nouzové osvětlení, recepce, židle, směrové značení, slyšitelné pravidelné hučení ventilace. Exteriér přibližně 40 m široký, jednopodlažní viditelná část, stožár vlevo, nižší technická přístavba a servisní vrata vpravo, rozsah ve svahu neznámý. Hlavní dveře nyní plně otevřené ručním tlačítkem, pohybový senzor bez reakce; viditelné převrácené židle, rozbitý monitor a světlo zleva. Vizuální průzkum z prahu event 000032: v prachu stopy podrážek od recepce k levé chodbě (stáří neurčeno), vytažené zásuvky a převrácená kancelářská židle, zelená kontrolka na rozbitém monitoru, bílé světlo zpoza pootevřených vnitřních dveří vlevo, bezpečnostní kamera nad recepcí bez pozorovaného pohybu. V dostupném zorném poli žádná osoba ani pohyb.",
+      "approach_observations": "Dveře pootevřené cca 40 cm, nouzové osvětlení, recepce, židle, směrové značení, slyšitelné pravidelné hučení ventilace. Exteriér přibližně 40 m široký, jednopodlažní viditelná část, stožár vlevo, nižší technická přístavba a servisní vrata vpravo, rozsah ve svahu neznámý. Hlavní dveře nyní plně otevřené ručním tlačítkem, pohybový senzor bez reakce; viditelné převrácené židle, rozbitý monitor a světlo zleva. Vizuální průzkum z prahu event 000032: v prachu stopy podrážek od recepce k levé chodbě (stáří neurčeno), vytažené zásuvky a převrácená kancelářská židle, zelená kontrolka na rozbitém monitoru, bílé světlo zpoza pootevřených vnitřních dveří vlevo, bezpečnostní kamera nad recepcí bez pozorovaného pohybu. V dostupném zorném poli žádná osoba ani pohyb. Event 000033: Δ-47 vstoupil do haly a zastavil pod kamerou. Report: napájení aktivní, komunikace detekována, obraz odepřen, smyčka neprovedena. Kamera bez pozorovaného pohybu; detekce dronu, záznam a případné vzdálené sledování neověřeny. Bez zjevného alarmu.",
       "distance_to_barrier_m_approx": null,
       "distance_from_barrier_to_main_entrance_m_approx": 50
     },
@@ -94,7 +94,7 @@
       "id": "ds03",
       "status": "open",
       "title": "Prozkoumat DS-03",
-      "detail": "Hlavní vchod otevřený, vizuální průzkum zvenku dokončen. Stopy podrážek směrem k levé chodbě, kontrolka monitoru, světlo za pootevřenými dveřmi vlevo, nehybná kamera. Bez pozorovaného pohybu, bezpečnost neověřena. Nikdo nevstoupil, Δ-47 za rohem."
+      "detail": "Lidé dosud venku; Δ-47 uvnitř haly pod kamerou. Kamera dle jeho diagnostiky napájená a komunikuje, přístup k obrazu odepřen, smyčka neprovedena. Doporučil místní bezpečnostní konzoli. Bez zjevného poplachu, bezpečnost neověřena."
     },
     {
       "id": "delta2-data",
@@ -154,6 +154,6 @@
     "source": "events/000018.json"
   },
   "layout_version": 2,
-  "last_gameplay_event": "000032",
+  "last_gameplay_event": "000033",
   "audit_ref": "audit.md"
 }
