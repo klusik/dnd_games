@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 26,
+  "revision": 27,
+  "day": 19,
+  "type": "exterior_survey",
+  "player_action": "Rozhlídnu se zvenčí a zkusím alespoň základně zmapovat, jak vypadá struktura budov, jaký je prostě layout a rozložení, co bych takhle zvneku mohl odhadnout.",
+  "dm_response": "Odstoupíš několik metrů od vchodu, abys získal lepší přehled o celém objektu.\n\nDS-03 nepůsobí jako rozsáhlá výzkumná základna. Jde spíše o kompaktní technický komplex, jehož zadní část je zapuštěná do skalnatého svahu. Nadzemní část vypadá jako jednopodlažní stavba široká přibližně 40 metrů.\n\nVlevo vidíš komunikační stožár, několik parabolických antén a silné kabelové vedení vstupující do budovy. Vpravo je nižší přístavba s ventilačními průduchy a širšími servisními vraty.\n\nOrientační mapa DS-03: od parkoviště pohled na hlavní vchod a vstupní halu, komunikační stožár vlevo, hlavní budova, přístavba a servisní vrata vpravo, skalnatý svah za budovou. Odhadované vnitřní rozložení podle dříve přečtených směrovek: komunikační středisko vlevo, datové centrum rovně, technické a obytné zázemí vpravo. Mapa není v měřítku, vnitřní příčky a rozsah stavby ve skále nejsou ověřeny. SRV před závorou, parkoviště mezi závorou a vchodem.\n\nZvenčí nedokážeš určit, jak hluboko budova zasahuje do skály, ani zda má podzemní podlaží. V pravé přístavbě vidíš servisní vrata, ale nevíš, zda jsou funkční.\n\nKara se zadívá na svah za budovou.\n\n„Tipovala bych, že servery budou někde uvnitř skály. Stabilnější teplota a lepší ochrana před vnějším prostředím.“\n\nZákladní přehled o objektu máš. Na viditelných částech budovy nepozoruješ žádné osoby ani pohyb. Stále jste venku před hlavním vchodem.",
+  "rolls": [],
+  "changes": [
+    "Základní exteriér pozorován bez hodu; nová fikční geometrie a přibližná šířka určeny DM, nikoli přesný plán budovy.",
+    "Zjištěn stožár, kabelové vedení, nižší přístavba, ventilační průduchy a servisní vrata. Vnitřní layout odhadnut pouze dle směrovek a obrysu budovy.",
+    "Kara vyslovila nepotvrzenou hypotézu o serverech ve skále.",
+    "Oba a dron zůstávají před vchodem. Žádný vstup ani další technický zásah, uplynulý čas přesně nevyčíslen."
+  ],
+  "sources": [
+    "events/000015.json",
+    "events/000025.json",
+    "events/000026.json",
+    "Nové fikční pozorování v tomto tahu"
+  ],
+  "correction_of": null
+}

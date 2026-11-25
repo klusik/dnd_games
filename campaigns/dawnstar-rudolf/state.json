@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 26,
-  "last_event": "000026",
+  "revision": 27,
+  "last_event": "000027",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,10 +12,10 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "exploration",
-    "resume": "Rudolf navrhl nechat SRV před závorou kvůli možnosti ústupu a dojít zbývajících cca 50 m pěšky. Kara souhlasila, vypnula pohon SRV, ponechala komunikační systém v pohotovosti, vystoupila s Δ-47 a vozidlo uzamkla. Oba s dronem opatrně došli k hlavnímu vchodu bez pozorované komplikace. Dveře pootevřené cca 40 cm, uvnitř nouzové osvětlení, zčásti viditelná vstupní hala s recepcí a několika židlemi; směrové značení: COMMUNICATIONS CONTROL vlevo, DATA CENTER rovně, ENGINEERING & MAINTENANCE a PERSONNEL FACILITIES vpravo. Z budovy slabé pravidelné hučení připomínající ventilaci. Kara upozornila na komunikační středisko. Oba i dron před vchodem; dovnitř ještě nevstoupili. SRV zůstalo před závorou, její aktuální poloha po pěším přiblížení znovu neověřena. Žádné připojení ani konvergence.",
+    "resume": "Rudolf požádal o základní mapování exteriéru DS-03. Odstoupil několik metrů od vchodu, zůstal venku s Karou a Δ-47. Vizuální odhad nadzemní části: kompaktní převážně jednopodlažní budova široká cca 40 m, zadní část ve skalnatém svahu; vlevo stožár, několik parabol a kabelové vedení do budovy, vpravo nižší přístavba, ventilační průduchy, širší servisní vrata. Funkčnost vrat neověřena. Orientační schéma z pohledu od parkoviště spojuje pozorovaný exteriér a odhad umístění místností podle směrovek; není v měřítku, příčky, přesné rozměry, hloubka a podzemní podlaží neznámé. Kara vyslovila hypotézu o serverech ve skále kvůli stabilnější teplotě a ochraně. Na viditelných částech bez pozorovaných osob nebo pohybu. Žádná obchůzka zadní části, vstup, aktivní sken, připojení či konvergence.",
     "pending": null,
     "certainty": "played",
-    "source": "events/000026.json",
+    "source": "events/000027.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -36,11 +36,11 @@
       "travel_time": null,
       "certainty": "Hlavní vchod dosažen; interiér viditelný pouze částečně zvenčí, bezpečnost neověřena.",
       "origin": "Před hlavním vchodem DS-03",
-      "approach_observations": "Dveře pootevřené cca 40 cm, nouzové osvětlení, recepce, židle, směrové značení, slyšitelné pravidelné hučení ventilace.",
+      "approach_observations": "Dveře pootevřené cca 40 cm, nouzové osvětlení, recepce, židle, směrové značení, slyšitelné pravidelné hučení ventilace. Exteriér přibližně 40 m široký, jednopodlažní viditelná část, stožár vlevo, nižší technická přístavba a servisní vrata vpravo, rozsah ve svahu neznámý.",
       "distance_to_barrier_m_approx": null,
       "distance_from_barrier_to_main_entrance_m_approx": 50
     },
-    "elapsed_since_previous_hours_approx": 0.05
+    "elapsed_since_previous_hours_approx": null
   },
   "character": {
     "name": "Rudolf",
@@ -349,14 +349,14 @@
         "known_personal_memories": [
           "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
         ],
-        "current_activity": "Doprovází Rudolfa a upozornila na směrové značení komunikačního střediska."
+        "current_activity": "S Rudolfem a dronem před vchodem, odhaduje možnost serverů uvnitř skály."
       }
     },
     "locations": {
       "base_4b": "Zázemí, archiv, hangár a výzkum; podle Rudolfova vyjádření v den 18 dostatek konzerv pro dvě osoby, přesný počet a trvanlivost neověřeny. Na konci dne 18 připraveny dvě porce z konzerv a koření, odebrány odpovídající suroviny; zůstatek neznámý.",
       "ds_01": "ONLINE po SEED_REBOOT, Phase 1 zahájena",
       "ds_02": "Ping selhal po rebootu; dříve degradace",
-      "ds_03": "Den 19: vizuálně identifikován komplex mezi skalními výběžky, komunikační stožár, nízká kovová budova ve svahu, jedna parabola nakloněná. Pasivně potvrzen aktuální periodický signál 1452,7 MHz, ID DS-03, FALLBACK, COMMS_SYNC INCOMPLETE. DBE přistála cca 1,2 km od komplexu. Přístup a vnitřek neprozkoumány. Při pozemním přiblížení zjištěna spuštěná závora u servisní plochy, přístupový terminál s oranžovou blikající kontrolkou a viditelné bezpečnostní kamery. SRV zastavilo cca 20 m před závorou; přístup neověřen, žádná viditelná reakce objektu. Po vizuální kontrole SRV přistoupilo k terminálu bez komplikací. Displej nabízí místní biometrickou autentizaci, síť FALLBACK, závora CLOSED. Autorizace nevyzkoušena. Den 19: místní biometrie RDF-ΔK452 přijata jako R-CLASS; závora otevřena. Hlavní vstup cca 50 m za závorou, nápis DS-03 / COMMUNICATIONS & SYNCHRONIZATION FACILITY. Budova neprozkoumána. Oba s dronem došli k hlavnímu vchodu; dveře pootevřené cca 40 cm, nouzové osvětlení, částečný pohled do recepce. Směrovky COMMUNICATIONS CONTROL vlevo, DATA CENTER rovně, ENGINEERING & MAINTENANCE a PERSONNEL FACILITIES vpravo. SRV uzamčené před závorou; budova dosud nevstoupena.",
+      "ds_03": "Den 19: vizuálně identifikován komplex mezi skalními výběžky, komunikační stožár, nízká kovová budova ve svahu, jedna parabola nakloněná. Pasivně potvrzen aktuální periodický signál 1452,7 MHz, ID DS-03, FALLBACK, COMMS_SYNC INCOMPLETE. DBE přistála cca 1,2 km od komplexu. Přístup a vnitřek neprozkoumány. Při pozemním přiblížení zjištěna spuštěná závora u servisní plochy, přístupový terminál s oranžovou blikající kontrolkou a viditelné bezpečnostní kamery. SRV zastavilo cca 20 m před závorou; přístup neověřen, žádná viditelná reakce objektu. Po vizuální kontrole SRV přistoupilo k terminálu bez komplikací. Displej nabízí místní biometrickou autentizaci, síť FALLBACK, závora CLOSED. Autorizace nevyzkoušena. Den 19: místní biometrie RDF-ΔK452 přijata jako R-CLASS; závora otevřena. Hlavní vstup cca 50 m za závorou, nápis DS-03 / COMMUNICATIONS & SYNCHRONIZATION FACILITY. Budova neprozkoumána. Oba s dronem došli k hlavnímu vchodu; dveře pootevřené cca 40 cm, nouzové osvětlení, částečný pohled do recepce. Směrovky COMMUNICATIONS CONTROL vlevo, DATA CENTER rovně, ENGINEERING & MAINTENANCE a PERSONNEL FACILITIES vpravo. SRV uzamčené před závorou; budova dosud nevstoupena. Základní vnější mapování (event 000027): viditelná hlavní budova cca 40 m široká, zadní část ve skále, stožár a kabeláž vlevo, nižší přístavba s ventilací a servisními vraty vpravo. Půdorys interiéru neověřen.",
       "ds_04": "Ztracený nebo degradovaný signál; neověřeno",
       "ds_delta2": "Podzemní archiv zálohován a zapečetěn, Rudolf se vrátil na 4B.",
       "satellite_module": "Starý triangulační modul na trase k DS-Δ2; při návratu dne 18 stále na označeném místě, nevyzvednut.",
@@ -478,6 +478,36 @@
           ]
         },
         "entered": false
+      },
+      "exterior_survey": {
+        "event": "000027",
+        "viewpoint": "Od hlavního vchodu směrem do objektu, několik metrů odstup; bez obchůzky a vstupu.",
+        "observed": {
+          "aboveground_width_m_approx": 40,
+          "storeys_visible_approx": 1,
+          "rear": "Zadní část zapuštěná do skalnatého svahu.",
+          "left": "Komunikační stožár, několik parabolických antén, silné kabelové vedení vstupující do budovy.",
+          "right": "Nižší přístavba s ventilačními průduchy a širšími servisními vraty.",
+          "visible_persons_or_motion": "Nedetekováno vizuálně."
+        },
+        "inferred_layout": {
+          "left": "COMMUNICATIONS CONTROL",
+          "straight": "DATA CENTER",
+          "right": [
+            "ENGINEERING & MAINTENANCE",
+            "PERSONNEL FACILITIES"
+          ],
+          "source": "Směrovky z eventu 000026 a tvar exteriéru; nikoli ověřený půdorys.",
+          "kara_hypothesis": "Servery možná uvnitř skály kvůli stabilnější teplotě a ochraně."
+        },
+        "unknowns": [
+          "Přesný rozsah ve skále",
+          "Podzemní podlaží",
+          "Vnitřní příčky a propojení",
+          "Funkčnost servisních vrat",
+          "Bezpečnost nepozorovaných částí"
+        ],
+        "map_scale": "Orientační, není v měřítku"
       }
     }
   },

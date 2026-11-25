@@ -58,3 +58,7 @@ Rudolf předložil vlastní biometrické údaje. Displej: BIOMETRIC MATCH CONFIR
 ## Den 19, hlavní vchod DS-03 (event 000026)
 
 SRV zůstalo uzamčené před závorou, vypnutý pohon, komunikace v pohotovosti. Rudolf, Kara a Δ-47 došli cca 50 m přes servisní parkoviště k hlavnímu vchodu. Dveře pootevřené cca 40 cm, nouzové osvětlení, částečný pohled do haly s recepcí a židlemi. Slabé pravidelné hučení ventilace. Směrovky: COMMUNICATIONS CONTROL vlevo, DATA CENTER rovně, ENGINEERING & MAINTENANCE a PERSONNEL FACILITIES vpravo. Vnitřní prostory, stav zařízení a bezpečnost zatím neověřeny; nikdo nevstoupil.
+
+## Den 19, orientační exteriér DS-03 (event 000027)
+
+Z odstupu několika metrů od hlavního vchodu viditelná nadzemní část působí jednopodlažně, šířka odhadem 40 m, zadní část ve skalnatém svahu. Vlevo stožár, několik parabol a silné kabely do budovy, vpravo nižší přístavba s ventilačními průduchy a širšími servisními vraty. Jejich funkčnost neověřena. Mapa pouze orientační: komunikační středisko vlevo, datové centrum rovně, technické a obytné zázemí vpravo podle směrovek, nikoliv zjištěných příček. Rozsah ve skále a podzemní podlaží neznámé. Kara odhaduje servery ve skále; jde o hypotézu. Na viditelném exteriéru žádné pozorované osoby či pohyb. Posádka stále před vchodem.
