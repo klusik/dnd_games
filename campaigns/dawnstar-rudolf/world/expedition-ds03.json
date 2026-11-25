@@ -196,8 +196,8 @@
         "ACCESS LOG",
         "PERSONNEL REGISTRY"
       ],
-      "prompt": "SELECT RECORDING OR ESC RETURN TO SECURITY MENU",
-      "view": "RECORDING ARCHIVE",
+      "prompt": "SELECT FUNCTION OR ESC",
+      "view": "SECURITY & SURVEILLANCE",
       "security_status": {
         "SECURITY NETWORK": "DEGRADED",
         "LOCAL RECORDING": "ACTIVE",
@@ -245,55 +245,7 @@
         "SECURITY EVENT LOG",
         "SECURITY ADMINISTRATION"
       ],
-      "administration": "LOCKED; vyšší oprávnění nutné dle rozhraní",
-      "recording_archive": {
-        "storage": "LOCAL BUFFER",
-        "archive_mode": "EVENT BASED",
-        "access": "READ ONLY",
-        "central_archive": "UNREACHABLE",
-        "entries": [
-          {
-            "id": "001",
-            "camera": "CAM-02",
-            "time_label": "Právě probíhá",
-            "event_type": "MOTION EVENT",
-            "status": "RECORDING",
-            "duration_seconds": null
-          },
-          {
-            "id": "002",
-            "camera": "CAM-01",
-            "time_label": "Dnes ráno",
-            "event_type": "ENTRY EVENT",
-            "status": "AVAILABLE",
-            "duration_seconds": null
-          },
-          {
-            "id": "003",
-            "camera": "CAM-03",
-            "time_label": "Před 9 h 42 min",
-            "age_at_query_minutes": 582,
-            "event_type": "MOTION EVENT",
-            "status": "AVAILABLE",
-            "duration_seconds": 38
-          },
-          {
-            "id": "004",
-            "camera": "CAM-03",
-            "time_label": "Před 31 h 16 min",
-            "age_at_query_minutes": 1876,
-            "event_type": "MOTION EVENT",
-            "status": "AVAILABLE",
-            "duration_seconds": 72
-          }
-        ]
-      },
-      "reviewed_recordings": [
-        "004",
-        "003",
-        "002",
-        "001"
-      ]
+      "administration": "LOCKED; vyšší oprávnění nutné dle rozhraní"
     },
     "last_authentication": {
       "event": "000035",
@@ -383,11 +335,7 @@
       "administration": "LOCKED; vyšší oprávnění nutné dle rozhraní",
       "live_feed_opened": true,
       "archive_opened": true,
-      "selected_function": {
-        "number": 2,
-        "name": "RECORDING ARCHIVE",
-        "event": "000041"
-      },
+      "selected_function": null,
       "certainty": "Výpis lokálního bezpečnostního rozhraní v režimu FALLBACK, nikoli nezávislé ověření. ONLINE neprokazuje funkční živý obraz; ACTIVE RECORDING neprokazuje skutečné zaznamenání příchodu. UNREACHABLE neznamená zničené zařízení, REMOTE MONITORING UNAVAILABLE neprokazuje absenci všech forem vzdáleného sledování."
     },
     "live_camera_report": {
@@ -539,6 +487,11 @@
         "all_listed_entries_reviewed": true,
         "ongoing_recording_complete": false
       }
+    },
+    "last_security_menu_return": {
+      "event": "000043",
+      "from": "RECORDING ARCHIVE",
+      "session": "UNLOCKED"
     }
   }
 }

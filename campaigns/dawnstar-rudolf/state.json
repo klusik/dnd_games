@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 42,
-  "last_event": "000042",
+  "revision": 43,
+  "last_event": "000043",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,10 +12,10 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "exploration",
-    "resume": "Den 19 ráno, Rudolf a Kara u recepce DS-03, Δ-47 pod kamerou CAM-02. Kara hlídá okolní chodby. Zbraně připravené, svítilny zapnuté. RECEPTION-01 odemčen lokální R-CLASS relací, bezpečnostní funkce read-only. SYSTEM STATUS (000037): pomocné napájení online, primární offline, COMMS CONTROL online, COMMS_SYNC incomplete, external uplink unavailable, data center unreachable. SECURITY (000039): lokální záznam active, remote monitoring unavailable; živý obraz z CAM-01/02/03, ostatní bez signálu (000040). Index archivu (000041): lokální buffer, centrální archiv nedostupný. Rudolf prohlédl všechny čtyři položky chronologicky, z toho 001 dostupnou část probíhající relace. Dle lokálního archivu nejméně jedna postava v ochranném obleku před příchodem skupiny procházela komunikační chodbou; ve starším záznamu nese kufřík do střediska, v novějším podobná postava bez kufříku odchází a dotkne se panelu, po čemž se rozsvítí stropní osvětlení. Identita, totožnost obou postav, umístění nyní, obsah kufříku, motiv a časová základna záznamů neověřeny. Δ-47 a příchod lidí skutečně zachyceny lokálním archivem. Kara souhlasila s prohlížením a hlídá, obsah Rudolf jí zatím výslovně nesdělil. Prohlížení přibližně 4 minuty, stále ráno; přesné O2 a energie neznámé, žádné doložené číselné změny. Aktuální obrazovka RECORDING ARCHIVE, přehrávání dokončeno; čeká se na další akci hráče.",
+    "resume": "Den 19 ráno, Rudolf a Kara u recepce DS-03, Δ-47 pod kamerou CAM-02. Kara hlídá okolní chodby. Zbraně připravené, svítilny zapnuté. RECEPTION-01 odemčen lokální R-CLASS relací, bezpečnostní funkce read-only. SYSTEM STATUS (000037): pomocné napájení online, primární offline, COMMS CONTROL online, COMMS_SYNC incomplete, external uplink unavailable, data center unreachable. SECURITY (000039): lokální záznam active, remote monitoring unavailable; živý obraz z CAM-01/02/03, ostatní bez signálu (000040). Index archivu (000041): lokální buffer, centrální archiv nedostupný. Rudolf prohlédl všechny čtyři položky chronologicky, z toho 001 dostupnou část probíhající relace. Dle lokálního archivu nejméně jedna postava v ochranném obleku před příchodem skupiny procházela komunikační chodbou; ve starším záznamu nese kufřík do střediska, v novějším podobná postava bez kufříku odchází a dotkne se panelu, po čemž se rozsvítí stropní osvětlení. Identita, totožnost obou postav, umístění nyní, obsah kufříku, motiv a časová základna záznamů neověřeny. Δ-47 a příchod lidí skutečně zachyceny lokálním archivem. Kara souhlasila s prohlížením a hlídá, obsah Rudolf jí zatím výslovně nesdělil. Prohlížení přibližně 4 minuty, stále ráno; přesné O2 a energie neznámé, žádné doložené číselné změny. Rudolf se vrátil z archivu do SECURITY & SURVEILLANCE, autorizace platná. Živé náhledy a archiv již prohlédnuty, jejich výsledky zachovány. Kara stále čeká na odpověď ohledně záznamů a sleduje chodbu. Čeká se na další volbu hráče.",
     "pending": null,
     "certainty": "played",
-    "source": "events/000042.json",
+    "source": "events/000043.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -40,7 +40,7 @@
       "distance_to_barrier_m_approx": null,
       "distance_from_barrier_to_main_entrance_m_approx": 50
     },
-    "elapsed_since_previous_hours_approx": 0.06666666666666667
+    "elapsed_since_previous_hours_approx": null
   },
   "character": {
     "id": "rudolf",
@@ -154,6 +154,6 @@
     "source": "events/000018.json"
   },
   "layout_version": 2,
-  "last_gameplay_event": "000042",
+  "last_gameplay_event": "000043",
   "audit_ref": "audit.md"
 }

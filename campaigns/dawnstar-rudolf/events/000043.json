@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 42,
+  "revision": 43,
+  "day": 19,
+  "type": "reception_security_menu_return",
+  "player_action": "Vrátím se do nabídky SECURITY & SURVEILLANCE.",
+  "dm_response": "Rudolf se vrátil z RECORDING ARCHIVE do SECURITY & SURVEILLANCE. Autorizace zůstává platná. Nabídka: [1] LIVE CAMERA FEEDS, [2] RECORDING ARCHIVE, [3] DOOR STATUS, [4] SECURITY EVENT LOG, [5] SECURITY ADMINISTRATION (zamčená), [ESC] RETURN TO MAIN MENU. Živé náhledy a archiv již prohlédnuty. Kara stále čeká na odpověď ohledně záznamů a sleduje chodbu.",
+  "rolls": [],
+  "changes": [
+    "Návrat do bezpečnostní nabídky, dřívější reporty a pozorování zachovány.",
+    "Bez změny konfigurace, pozic, zdraví, inventáře či doložené spotřeby. Rutinní navigace bez hodu."
+  ],
+  "sources": [
+    "events/000039.json",
+    "events/000042.json",
+    "world/expedition-ds03.json"
+  ],
+  "correction_of": null
+}
