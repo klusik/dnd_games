@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 37,
-  "last_event": "000037",
+  "revision": 38,
+  "last_event": "000038",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,10 +12,10 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "exploration",
-    "resume": "Den 19 ráno. Rudolf a Kara uvnitř DS-03 u recepčního pultu, Kara hlídá chodby, Δ-47 pod kamerou, zbraně připravené a svítilny zapnuté. RECEPTION-01 biometricky odemčen v lokální R-CLASS relaci, pravá polovina monitoru černá. Rudolf zvolil [2] SYSTEM STATUS. Lokální živý diagnostický výpis: PRIMARY POWER OFFLINE, AUXILIARY POWER ONLINE, VENTILATION ACTIVE, LIFE SUPPORT LIMITED, INTERNAL NETWORK FALLBACK, SECURITY SYSTEM PARTIAL, DATA CENTER UNREACHABLE, COMMS CONTROL ONLINE, EXTERNAL UPLINK UNAVAILABLE, COMMS_SYNC INCOMPLETE. Varování REMOTE NODE HANDSHAKE INCOMPLETE; podrobná diagnostika v COMMUNICATIONS CONTROL. Výpisy jsou tvrzení terminálu; příčina nedostupnosti datového centra ani poruchy synchronizace neověřena. Žádné změny konfigurace. Zobrazen SYSTEM STATUS s volbou ESC pro návrat do hlavního menu. Čeká se na další akci hráče.",
+    "resume": "Den 19 ráno. Rudolf a Kara uvnitř DS-03 u recepčního pultu, Kara hlídá chodby, Δ-47 pod kamerou, zbraně připravené a svítilny zapnuté. RECEPTION-01 biometricky odemčen v lokální R-CLASS relaci, pravá polovina monitoru černá. Rudolf zvolil [2] SYSTEM STATUS. Lokální živý diagnostický výpis: PRIMARY POWER OFFLINE, AUXILIARY POWER ONLINE, VENTILATION ACTIVE, LIFE SUPPORT LIMITED, INTERNAL NETWORK FALLBACK, SECURITY SYSTEM PARTIAL, DATA CENTER UNREACHABLE, COMMS CONTROL ONLINE, EXTERNAL UPLINK UNAVAILABLE, COMMS_SYNC INCOMPLETE. Varování REMOTE NODE HANDSHAKE INCOMPLETE; podrobná diagnostika v COMMUNICATIONS CONTROL. Výpisy jsou tvrzení terminálu; příčina nedostupnosti datového centra ani poruchy synchronizace neověřena. Žádné změny konfigurace. Rudolf stiskl ESC, konzole zobrazuje hlavní menu [1] STATION DIRECTORY, [2] SYSTEM STATUS (již přečteno), [3] SECURITY & SURVEILLANCE, [4] ACCESS LOG, [5] PERSONNEL REGISTRY. Lokální R-CLASS relace zůstává odemčená. Čeká se na výběr hráčem.",
     "pending": null,
     "certainty": "played",
-    "source": "events/000037.json",
+    "source": "events/000038.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -154,6 +154,6 @@
     "source": "events/000018.json"
   },
   "layout_version": 2,
-  "last_gameplay_event": "000037",
+  "last_gameplay_event": "000038",
   "audit_ref": "audit.md"
 }

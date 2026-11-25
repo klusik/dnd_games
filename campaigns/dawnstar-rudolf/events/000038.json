@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 37,
+  "revision": 38,
+  "day": 19,
+  "type": "reception_main_menu_return",
+  "player_action": "Vrátím se do hlavní nabídky konzole.",
+  "dm_response": "Rudolf stiskl ESC. Konzole zobrazuje původní hlavní nabídku, lokální autorizace RDF-ΔK452 R-CLASS zůstává platná. SYSTEM STATUS již přečteno. Kara stále hlídá chodby, Δ-47 pod kamerou.",
+  "rolls": [],
+  "changes": [
+    "Návrat z SYSTEM STATUS do hlavního menu; diagnostický report z eventu 000037 zachován.",
+    "Bez změny konfigurace, inventáře, pozic, zdraví a doložené spotřeby. Rutinní navigace bez hodu."
+  ],
+  "sources": [
+    "events/000035.json",
+    "events/000037.json",
+    "world/expedition-ds03.json"
+  ],
+  "correction_of": null
+}
