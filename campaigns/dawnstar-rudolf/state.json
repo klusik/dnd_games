@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 46,
-  "last_event": "000046",
+  "revision": 47,
+  "last_event": "000047",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,10 +12,10 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "exploration",
-    "resume": "Den 19 ráno, Rudolf a Kara u recepce DS-03, Δ-47 pod kamerou CAM-02. Kara hlídá okolí, zbraně připravené, svítilny zapnuté. RECEPTION-01 odemčen lokální R-CLASS relací, bezpečnostní funkce read-only. SYSTEM STATUS (000037): primární napájení offline, pomocné online, COMMS CONTROL online, COMMS_SYNC incomplete, external uplink unavailable, data center unreachable. SECURITY (000039): lokální záznam active, remote monitoring unavailable. Živé náhledy a lokální archiv prohlédnuty (000040 až 000042); CAM-03/004 postava s kufříkem vstupuje do komunikačního střediska, CAM-03/003 podobná postava bez kufříku vychází a dotykem panelu zapíná světla. Identita, současné místo a obsah kufříku neznámé. Kara obdržela shrnutí záznamů (000044) a nyní informaci o shodě s bezpečnostním logem a servisní autorizaci AUTH-019 bez přiřazené identity (000046). SECURITY EVENT LOG (000045) odkazuje na LOCAL ACCESS LOG, AUTH-019 dosud neotevřen. Kara navrhla zjistit, komu byl token vydaný. Rudolf se vrátil do bezpečnostní nabídky a otevřel DOOR STATUS [3]. Výpis D-01 MAIN ENTRANCE OPEN, manual mode, motion sensor unresponsive; D-02 COMMUNICATIONS CONTROL PARTIALLY OPEN, lock disengaged, local control; D-03 DATA CENTER CLOSED, last reported locked, live status unavailable; D-04 ENGINEERING & MAINTENANCE a D-05 PERSONNEL FACILITIES UNKNOWN, controller unreachable; D-06 SERVICE ENTRANCE UNKNOWN, position sensor unavailable. REMOTE DOOR CONTROL DISABLED, LOCAL MANUAL CONTROL AVAILABLE, READ ONLY. Stav D-03 pouze historický, ostatní neověřené údaje nezaměňovat za skutečný stav. Žádná konfigurace změněna, žádné dveře ovládány. Aktuální obrazovka DOOR STATUS, čeká se na další akci hráče.",
+    "resume": "Den 19 ráno, Rudolf a Kara u recepce DS-03, Δ-47 pod kamerou CAM-02. Kara hlídá okolí, zbraně připravené, svítilny zapnuté. RECEPTION-01 odemčen lokální R-CLASS relací, bezpečnostní funkce read-only. SYSTEM STATUS (000037): primární napájení offline, pomocné online, COMMS CONTROL online, COMMS_SYNC incomplete, external uplink unavailable, data center unreachable. SECURITY (000039): lokální záznam active, remote monitoring unavailable. Živé náhledy a lokální archiv prohlédnuty (000040 až 000042); CAM-03/004 postava s kufříkem vstupuje do komunikačního střediska, CAM-03/003 podobná postava bez kufříku vychází a dotykem panelu zapíná světla. Identita, současné místo a obsah kufříku neznámé. Kara obdržela shrnutí záznamů (000044) a nyní informaci o shodě s bezpečnostním logem a servisní autorizaci AUTH-019 bez přiřazené identity (000046). SECURITY EVENT LOG (000045) odkazuje na LOCAL ACCESS LOG, AUTH-019 dosud neotevřen. Kara navrhla zjistit, komu byl token vydaný. Rudolf se vrátil do bezpečnostní nabídky a otevřel DOOR STATUS [3]. Výpis D-01 MAIN ENTRANCE OPEN, manual mode, motion sensor unresponsive; D-02 COMMUNICATIONS CONTROL PARTIALLY OPEN, lock disengaged, local control; D-03 DATA CENTER CLOSED, last reported locked, live status unavailable; D-04 ENGINEERING & MAINTENANCE a D-05 PERSONNEL FACILITIES UNKNOWN, controller unreachable; D-06 SERVICE ENTRANCE UNKNOWN, position sensor unavailable. REMOTE DOOR CONTROL DISABLED, LOCAL MANUAL CONTROL AVAILABLE, READ ONLY. Stav D-03 pouze historický, ostatní neověřené údaje nezaměňovat za skutečný stav. Žádná konfigurace změněna, žádné dveře ovládány. Rudolf sdělil Kaře domněnku o možnosti vzdáleného ovládání dveří po obnovení plného provozu stanice. Kara upozornila, že obnovení napájení nemusí stačit kvůli oprávnění pouze ke čtení, a navrhla zjistit, co pomocný systém udržuje v provozu. Rudolf se dvěma stisky ESC vrátil přes SECURITY & SURVEILLANCE do hlavní nabídky RECEPTION-01. Lokální R-CLASS relace zůstává odemčená. SYSTEM STATUS a dostupné bezpečnostní reporty přečteny, STATION DIRECTORY, ACCESS LOG a PERSONNEL REGISTRY dosud neotevřeny. Čeká se na volbu hráče.",
     "pending": null,
     "certainty": "played",
-    "source": "events/000046.json",
+    "source": "events/000047.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -154,6 +154,6 @@
     "source": "events/000018.json"
   },
   "layout_version": 2,
-  "last_gameplay_event": "000046",
+  "last_gameplay_event": "000047",
   "audit_ref": "audit.md"
 }

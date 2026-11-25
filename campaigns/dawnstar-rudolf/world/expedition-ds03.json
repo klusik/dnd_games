@@ -196,108 +196,8 @@
         "ACCESS LOG",
         "PERSONNEL REGISTRY"
       ],
-      "prompt": "ESC RETURN TO SECURITY MENU",
-      "view": "DOOR STATUS",
-      "security_status": {
-        "SECURITY NETWORK": "DEGRADED",
-        "LOCAL RECORDING": "ACTIVE",
-        "REMOTE MONITORING": "UNAVAILABLE",
-        "ACTIVE ALARMS": "NONE",
-        "LOCKDOWN": "INACTIVE",
-        "ACCESS MODE": "READ ONLY"
-      },
-      "cameras": [
-        {
-          "id": "CAM-01",
-          "location": "Main entrance",
-          "status": "ONLINE"
-        },
-        {
-          "id": "CAM-02",
-          "location": "Reception",
-          "status": "ONLINE"
-        },
-        {
-          "id": "CAM-03",
-          "location": "Communications corridor",
-          "status": "ONLINE"
-        },
-        {
-          "id": "CAM-04",
-          "location": "Data center",
-          "status": "UNREACHABLE"
-        },
-        {
-          "id": "CAM-05",
-          "location": "Engineering",
-          "status": "UNREACHABLE"
-        },
-        {
-          "id": "CAM-06",
-          "location": "Personnel facilities",
-          "status": "UNREACHABLE"
-        }
-      ],
-      "functions": [
-        "LIVE CAMERA FEEDS",
-        "RECORDING ARCHIVE",
-        "DOOR STATUS",
-        "SECURITY EVENT LOG",
-        "SECURITY ADMINISTRATION"
-      ],
-      "administration": "LOCKED; vyšší oprávnění nutné dle rozhraní",
-      "door_status": {
-        "event": "000046",
-        "mode": "FALLBACK",
-        "doors": [
-          {
-            "id": "D-01",
-            "name": "MAIN ENTRANCE",
-            "position": "OPEN",
-            "detail": "Manual mode; Motion sensor unresponsive",
-            "freshness": "current_report"
-          },
-          {
-            "id": "D-02",
-            "name": "COMMUNICATIONS CONTROL",
-            "position": "PARTIALLY OPEN",
-            "detail": "Lock disengaged; Local control",
-            "freshness": "current_report"
-          },
-          {
-            "id": "D-03",
-            "name": "DATA CENTER",
-            "position": "CLOSED",
-            "detail": "Last reported: Locked; Live status unavailable",
-            "freshness": "last_known_only"
-          },
-          {
-            "id": "D-04",
-            "name": "ENGINEERING & MAINTENANCE",
-            "position": "UNKNOWN",
-            "detail": "Controller unreachable",
-            "freshness": "unknown"
-          },
-          {
-            "id": "D-05",
-            "name": "PERSONNEL FACILITIES",
-            "position": "UNKNOWN",
-            "detail": "Controller unreachable",
-            "freshness": "unknown"
-          },
-          {
-            "id": "D-06",
-            "name": "SERVICE ENTRANCE",
-            "position": "UNKNOWN",
-            "detail": "Position sensor unavailable",
-            "freshness": "unknown"
-          }
-        ],
-        "remote_door_control": "DISABLED",
-        "local_manual_control": "AVAILABLE",
-        "access_level": "READ ONLY",
-        "certainty": "Výpis místní konzole; aktuální stav D-01 a částečné otevření D-02 odpovídají vizuálním pozorováním, hlášení o odjištěném zámku D-02 je tvrzení systému. D-03 je výhradně poslední známý stav, ne živá informace. Dostupnost místního ručního ovládání je obecné hlášení, nikoli ověření každého jednotlivého mechanismu. D-04 až D-06 aktuálně neověřeny."
-      }
+      "prompt": "SELECT OPTION",
+      "view": "MAIN MENU"
     },
     "last_authentication": {
       "event": "000035",
@@ -306,11 +206,7 @@
       "observed_reaction": "Modré světlo čtečky, tiché pípnutí, čitelná hlavní nabídka. Bez pozorovaného alarmu či pohybu kamery.",
       "certainty": "Lokální výpis terminálu; globální oprávnění a přístup k jednotlivým funkcím neověřeny."
     },
-    "selected_menu_item": {
-      "number": 3,
-      "name": "SECURITY & SURVEILLANCE",
-      "event": "000039"
-    },
+    "selected_menu_item": null,
     "system_status_report": {
       "event": "000037",
       "query_type": "LOCAL DIAGNOSTICS | LIVE QUERY",
@@ -330,8 +226,9 @@
       "certainty": "Tvrzení lokálního terminálu; stav a příčiny poruch vyžadují další ověření. UNREACHABLE neznamená nutně vypnuté nebo zničené datové centrum."
     },
     "last_menu_return": {
-      "event": "000038",
-      "from": "SYSTEM STATUS",
+      "event": "000047",
+      "from": "DOOR STATUS",
+      "via": "SECURITY & SURVEILLANCE",
       "session": "UNLOCKED"
     },
     "security_report": {
@@ -387,11 +284,7 @@
       "administration": "LOCKED; vyšší oprávnění nutné dle rozhraní",
       "live_feed_opened": true,
       "archive_opened": true,
-      "selected_function": {
-        "number": 3,
-        "name": "DOOR STATUS",
-        "event": "000046"
-      },
+      "selected_function": null,
       "certainty": "Výpis lokálního bezpečnostního rozhraní v režimu FALLBACK, nikoli nezávislé ověření. ONLINE neprokazuje funkční živý obraz; ACTIVE RECORDING neprokazuje skutečné zaznamenání příchodu. UNREACHABLE neznamená zničené zařízení, REMOTE MONITORING UNAVAILABLE neprokazuje absenci všech forem vzdáleného sledování."
     },
     "live_camera_report": {

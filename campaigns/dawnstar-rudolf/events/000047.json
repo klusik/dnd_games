@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 46,
+  "revision": 47,
+  "day": 19,
+  "type": "reception_main_menu_return",
+  "player_action": "„Tak to vypadá, že odsud ty dveře můžu ovládat, ale hádám, že bez pořádného spuštění stanice to nepůjde“ a vylezu z této nabídky zpět až do hlavního menu.",
+  "dm_response": "Kara přikývla: „Možná. Ale samotné obnovení napájení asi nebude stačit, pokud máme oprávnění jen ke čtení. Nejdřív bych zjistila, co ten pomocný systém vlastně udržuje v provozu.“ Rudolf dvěma stisky ESC přešel z DOOR STATUS přes bezpečnostní nabídku do hlavního menu RECEPTION-01. Lokální R-CLASS relace zůstává aktivní. Nabídka: [1] STATION DIRECTORY, [2] SYSTEM STATUS (přečteno), [3] SECURITY & SURVEILLANCE (prohlédnuty dostupné čtecí funkce), [4] ACCESS LOG, [5] PERSONNEL REGISTRY. Kara zůstává u Rudolfa, Δ-47 pod kamerou.",
+  "rolls": [],
+  "changes": [
+    "Návrat do hlavního menu v jednom zadaném tahu; předchozí reporty zachovány.",
+    "Kara reagovala na hráčovu hypotézu; obnovení vzdáleného ovládání dveří není potvrzeno.",
+    "Bez změny konfigurace, zdraví, výstroje, pozic a doložené spotřeby. Rutinní navigace bez hodu."
+  ],
+  "sources": [
+    "events/000037.json",
+    "events/000039.json",
+    "events/000046.json",
+    "world/expedition-ds03.json",
+    "characters/kara.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}
