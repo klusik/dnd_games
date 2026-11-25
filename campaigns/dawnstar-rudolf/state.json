@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 30,
-  "last_event": "000030",
+  "revision": 31,
+  "last_event": "000031",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,10 +12,18 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "exploration",
-    "resume": "Den 19 ráno. Rudolf, Kara a Δ-47 stojí před hlavním vchodem DS-03. Dveře otevřené ručním tlačítkem, pohybový senzor nereagoval. Oba mají připravené zbraně a zapnuté svítilny. V hale převrácené židle, rozbitý monitor a světlo zleva směrem ke komunikačnímu středisku. Nikdo dosud nevstoupil. SRV uzamčeno před závorou, DBE zabezpečena cca 1,2 km od komplexu. Čeká se na další akci hráče. Revize 30 je pouze administrativní rekonstrukce výstroje, sheetů a struktury; žádný herní čas ani příběhová akce.",
-    "pending": null,
+    "resume": "Den 19 ráno. Rudolf a Kara stojí každý u opačné strany otevřeného hlavního vchodu DS-03, zůstávají venku s připravenými zbraněmi a zapnutými integrovanými svítilnami skafandrů. Dohodli se na společném postupu až po průzkumu. Δ-47 čeká za rohem budovy mimo přímý výhled z haly. Kara při pohledu do haly nezaznamenala pohyb, přes recepční pult a do celé levé chodby nevidí. Nikdo dosud nevstoupil. Čeká se na Rudolfův hod Perception 1d20+2.",
+    "pending": {
+      "type": "skill_check",
+      "actor": "rudolf",
+      "skill": "Perception",
+      "dice": "1d20",
+      "modifier": 2,
+      "context": "Vizuální průzkum vstupní haly z jedné strany otevřeného vchodu DS-03, bez vstupu. Kara již provedla vlastní pozorování a sdělila výsledek; její hod neopakovat.",
+      "event": "000031"
+    },
     "certainty": "played",
-    "source": "events/000030.json",
+    "source": "events/000031.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -94,7 +102,7 @@
       "id": "ds03",
       "status": "open",
       "title": "Prozkoumat DS-03",
-      "detail": "Hlavní dveře otevřené, Rudolf a Kara připravili zbraně a svítilny, Δ-47 v pohotovosti. Zatím stojí před vstupem; interiér neprozkoumán."
+      "detail": "Rudolf a Kara z opačných stran otevřeného vchodu provádějí vizuální průzkum, Δ-47 za rohem mimo přímý výhled. Kara nepozorovala pohyb v dostupném zorném poli; čeká se na Rudolfův Perception. Dosud bez vstupu."
     },
     {
       "id": "delta2-data",
@@ -154,6 +162,6 @@
     "source": "events/000018.json"
   },
   "layout_version": 2,
-  "last_gameplay_event": "000029",
+  "last_gameplay_event": "000031",
   "audit_ref": "audit.md"
 }

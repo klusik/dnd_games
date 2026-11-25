@@ -79,6 +79,15 @@
       "flashlights_on": true,
       "drone_standby": true,
       "entered": false
+    },
+    "threshold_recon": {
+      "event": "000031",
+      "entered": false,
+      "positions": "Rudolf a Kara na opačných stranách vchodu; dron za rohem mimo přímý výhled z haly.",
+      "weapons_prepared": true,
+      "flashlights_on": true,
+      "kara_observations": "Bez pozorovaného pohybu; výhled omezen recepčním pultem a levou chodbou.",
+      "pending": "Rudolf Perception 1d20+2"
     }
   },
   "exterior_survey": {

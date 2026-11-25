@@ -3,7 +3,7 @@
   "campaign_id": "dawnstar-rudolf",
   "id": "kara",
   "kind": "character_sheet",
-  "location": "Na prahu otevřeného hlavního vchodu DS-03, dosud venku",
+  "location": "U jedné strany otevřeného hlavního vchodu DS-03, venku, naproti Rudolfovi",
   "role": "Spojenkyně, analýza biologických vzorků",
   "relationship": "Vzájemná důvěra, společná historie; samostatná osobnost",
   "health": null,
@@ -12,7 +12,8 @@
     "Předchozí výzkum DS-01",
     "Data relé z DS-Δ2",
     "Dílčí výpis archivu DS-Δ2: COMMS_SYNC dependency, handshake incomplete; souvislost s DS-03 zatím hypotéza. Záznam samotné autorizace izolace paměti dosud nenalezen.",
-    "Rudolf sdělil svou interpretaci konzultace GAMMA-six: snad bez globálního poplachu; jeho lokální biometrická autorizace otevřela závoru. Podrobný interní výpis GAMMA-six jí nesdělil."
+    "Rudolf sdělil svou interpretaci konzultace GAMMA-six: snad bez globálního poplachu; jeho lokální biometrická autorizace otevřela závoru. Podrobný interní výpis GAMMA-six jí nesdělil.",
+    "Den 19, event 000031: při pohledu do vstupní haly DS-03 zvenku nezaznamenala pohyb. Nevidí za recepční pult ani do celé levé chodby; bezpečnost neověřena."
   ],
   "name": "Kara Velin",
   "age": 32,
@@ -27,7 +28,7 @@
   "known_personal_memories": [
     "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
   ],
-  "current_activity": "Připravila zbraň a zapnula svítilnu na helmě, čeká před vstupem.",
+  "current_activity": "Zbraň připravena, helmová svítilna zapnuta; vizuálně zkontrolovala dostupnou část haly, nezaznamenala pohyb. Recepční pult a levá chodba omezují výhled. Čeká na Rudolfův průzkum.",
   "level": null,
   "xp": null,
   "species": "Human",

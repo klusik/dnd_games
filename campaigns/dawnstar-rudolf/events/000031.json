@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 30,
+  "revision": 31,
+  "day": 19,
+  "type": "threshold_recon_pending",
+  "player_action": "Stojíme tedy u otevřených dveří do DS-d2 vstupní haly, každý na jedné strany dveří, abychom případnou křížovou palbou pokryli lépe situaci. Nebudeme jak v americkém filmu volat \"halooooo\" a tím se prozradit, ale se světly (baterkami, svítilnami) a zbraněmi v hlavní ruce (svítilny ve vedlejší ruce, jestli to rozlišuješ) nakoukneme dovnitř a oba se budeme snažit co nejvíc vidět. Dron je za rohem a nebudeme ho zatím riskovat. Podle toho, co tam moje postava uvidí a jak zareaguje Kara na to, co tam uvidí, se pak rozhodneme, co dál. Řeknu Kaře: \"Nakoukneme, zmapujeme, zhodnotíme a pak až vstoupíme, nesmíme jít sólo, ale jako tým, jasné?\"",
+  "dm_response": "Kara přikývne a tiše odpoví: „Jasné. A kdybychom něco zahlédli, nejdřív si dáme znamení.“ Postaví se na opačnou stranu vchodu a opatrně vyhlédne zpoza zárubně. Δ-47 zůstává mimo přímý výhled z haly, za rohem budovy. Nouzové osvětlení uvnitř je poměrně slabé. Paprsky svítilen přejíždějí po podlaze, nábytku a stěnách. Kara do komunikátoru: „Zatím žádný pohyb. Přes recepční pult ale nevidím. A do té chodby vlevo taky nevidím celou.“ Zůstává na svém místě a čeká. Rudolf: Perception 1d20+2, výsledek zatím neodevzdán. OOC: označení DS-d2 v akci interpretováno jako DS-03 dle aktuální polohy. Doložené svítilny jsou integrované, žádné nové ruční svítilny nepřidány.",
+  "rolls": [
+    {
+      "actor": "kara",
+      "skill": "Perception",
+      "dice": "1d20",
+      "roll": 10,
+      "modifier": 3,
+      "total": 13,
+      "result": "V omezeném zorném poli nezaznamenala pohyb; sdělila omezení výhledu."
+    }
+  ],
+  "changes": [
+    "Rudolf a Kara zaujali pozice na protilehlých stranách vstupu, dron vyčkal za rohem.",
+    "Kara provedla vlastní vizuální kontrolu; neprokázala nepřítomnost osob či hrozeb.",
+    "Uložen pending pro Rudolfův Perception 1d20+2. Žádný vstup, výstřel ani doložená spotřeba."
+  ],
+  "sources": [
+    "events/000029.json",
+    "events/000030.json",
+    "characters/rudolf.json",
+    "characters/kara.json",
+    "world/expedition-ds03.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}

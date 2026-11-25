@@ -3,7 +3,7 @@
   "campaign_id": "dawnstar-rudolf",
   "id": "delta-47",
   "kind": "character_sheet",
-  "location": "S Rudolfem a Karou před hlavním vchodem DS-03",
+  "location": "Za rohem budovy DS-03, v blízkosti hlavního vchodu, mimo přímý výhled z haly",
   "status": "Provozuschopný",
   "functions": [
     "Scanning",
@@ -31,7 +31,7 @@
     "Extendable antenna array"
   ],
   "designation": "Δ-47",
-  "current_activity": "Pohotovostní režim vedle Rudolfa a Kary u hlavního vchodu.",
+  "current_activity": "Čeká v pohotovosti za rohem na další pokyny; nebyl vyslán dovnitř ani ke skenování.",
   "body": "Čtyřnohý nízký kloubový dron s otočnou hlavicí a vysouvací anténou; pozdější scény jej popisují i jako létající. Režim pohybu lze měnit jen podle doloženého vybavení, přesný pohon neověřen.",
   "original_designation": "SIRIUS MINING SECURITY NODE",
   "authorization": {
