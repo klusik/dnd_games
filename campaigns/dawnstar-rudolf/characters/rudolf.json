@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "id": "rudolf",
+  "kind": "character_sheet",
+  "name": "Rudolf",
+  "level": 5,
+  "race": "Human (possibly augmented)",
+  "role": "Technical Explorer, Analyst, Pilot",
+  "background": "Amnézie; projekt DAWNSTAR",
+  "attributes": {
+    "STR": 10,
+    "DEX": 12,
+    "CON": 13,
+    "INT": 18,
+    "WIS": 14,
+    "CHA": 11
+  },
+  "skills": {
+    "Technology": 6,
+    "Engineering": 5,
+    "Investigation": 4,
+    "Insight": 4,
+    "Piloting": 4,
+    "Survival": 4,
+    "Stealth": 4,
+    "Perception": 2,
+    "Persuasion": 1
+  },
+  "skill_bonuses_are_total": true,
+  "hp": {
+    "current": 14,
+    "max": 14,
+    "certainty": "provisional_play_baseline",
+    "source": "ChatGPT log.txt:28, 2124; events/000014.json",
+    "notes": "Poslední explicitní údaj 14 HP na levelu 2. Formulace +4 je v rozporu s úvodními 12 HP. Maximální a aktuální HP po levelu 5 nejsou doloženy. DM pro budoucí hru nastavuje konzervativních 14/14 po již odehraném odpočinku; nejde o historický nález ani další odpočinek."
+  },
+  "ac": 13,
+  "xp": null,
+  "conditions": [],
+  "traits": [
+    {
+      "name": "Data Whisperer",
+      "effect": "+2 při relevantní interakci se starou technologií, databázemi, šiframi a datovými signály, pokud bonus není již zahrnut. Výhoda proti digitálním klamům (simulace, deepfakes). Nejde o univerzální výhodu na každý technický hod.",
+      "source": "ChatGPT log.txt:5996,6024-6045,6132,6152-6185",
+      "notes": "Rozporný pozdější text o obecné výhodě při elektronice neaplikovat navíc; zachován dříve používaný +2 a doložená výhoda proti digitálním klamům."
+    },
+    {
+      "name": "Bioanalytik",
+      "effect": "+2 při analýze biologických vzorků, skryté vlastnosti a kódované biologické struktury."
+    },
+    {
+      "name": "Resonant Recall",
+      "effect": "Jednou denně výhoda na jeden INT skill při interakci s DAWNSTAR technologií.",
+      "used_today": false,
+      "source": "ChatGPT log.txt:15050-15052"
+    },
+    {
+      "name": "Technické soustředění",
+      "effect": "Jednou denně po neúspěšném technickém hodu může hráč zvolit přehodit kostku; použije nový výsledek. Neházet za hráče.",
+      "used_today": false,
+      "source": "ChatGPT log.txt:2115-2119",
+      "certainty": "restored_explicit_grant",
+      "notes": "Dne 19 není doloženo použití."
+    },
+    {
+      "name": "Skenovací čtení",
+      "effect": "Jednou denně při zkoumání signálů, technologií nebo anomálií získá fragment významu jinak nepřístupných dat i bez klasického úspěchu. Nezaručuje úplné odemčení.",
+      "used_today": false,
+      "source": "ChatGPT log.txt:2120-2123",
+      "certainty": "restored_explicit_grant",
+      "notes": "Dne 19 není doloženo použití."
+    }
+  ],
+  "known_identity": [
+    "R-6.6",
+    "RDF-ΔK452",
+    "REDWARD (operační označení)",
+    "Primary Trigger Host"
+  ],
+  "expressed_goals": [
+    "Vyřešit dosavadní záhadu i za cenu nepříjemných zjištění o vlastní minulosti a vztahu s Karou (den 18, event 000008).",
+    "Prioritně prozkoumat DS-03 s Karou; před odletem důkladně zkontrolovat DBE a SRV."
+  ],
+  "last_rest": {
+    "day_started": 18,
+    "day_ended": 19,
+    "hours": 8,
+    "uninterrupted": true
+  },
+  "ac_provenance": {
+    "certainty": "provisional_play_baseline",
+    "source": "ChatGPT log.txt:30,178-195",
+    "notes": "Původní AC 13 v lehké kombinéze, EVA nemá novou číselnou hodnotu. Do první revize vybavení se používá 13, bez přičítání druhé kombinézy."
+  },
+  "attribute_modifiers": {
+    "STR": 0,
+    "DEX": 1,
+    "CON": 1,
+    "INT": 4,
+    "WIS": 2,
+    "CHA": 0
+  },
+  "initiative_modifier": 1,
+  "proficiency": {
+    "current": null,
+    "historical_level2": 2,
+    "source": "ChatGPT log.txt:4193-4234",
+    "notes": "Současné skilly jsou celkové bonusy; proficiency ani atribut znovu nepřičítat. Samostatný aktuální proficiency není doložen."
+  },
+  "progression": {
+    "mode": "milestones",
+    "xp": null,
+    "level": 5,
+    "milestones": [
+      {
+        "level": 1,
+        "source": "ChatGPT log.txt:24-54"
+      },
+      {
+        "level": 2,
+        "source": "ChatGPT log.txt:2110-2148",
+        "grants": [
+          "Technické soustředění",
+          "Skenovací čtení",
+          "uvedeno 14 HP"
+        ]
+      },
+      {
+        "level": 3,
+        "source": "ChatGPT log.txt:6125-6245",
+        "grants": [
+          "Data Whisperer",
+          "INT 18"
+        ]
+      },
+      {
+        "level": 4,
+        "source": "ChatGPT log.txt:9199-9245,9373-9390",
+        "grants": [
+          "Stealth +1 a Survival +1 dle potvrzeného save"
+        ]
+      },
+      {
+        "level": 5,
+        "source": "ChatGPT log.txt:15105-15175",
+        "grants": [
+          "Bioanalytik"
+        ]
+      }
+    ],
+    "historical_conflicts": [
+      "Výchozí modifikátory a pozdější atributy se liší.",
+      "Level 2: 12 HP +4 neodpovídá uváděným 14 HP.",
+      "Level 3 uvádí Technology +7, Investigation +6, Engineering +7, Piloting +5 a Stealth +2; pozdější level 4 a 5 save uvádí současné bonusy. Stealth +4 není aritmeticky odvoditelné pouze z +1. Neopravovat zpětně."
+    ]
+  },
+  "combat": {
+    "damage_sources": [
+      "energy-pistol",
+      "knife"
+    ],
+    "initiative_modifier": 1,
+    "attack_rule": "1d20 + relevantní atributový modifikátor, není-li doložen samostatný celkový skill. Pro běžnou střelbu DEX +1, pro nůž STR +0 nebo DEX +1 při obratnostním použití. Prozatím bez další proficiency. Poškození dle inventáře, bez automatického přičítání atributu.",
+    "saving_throw_rule": "Není-li zvláštní bonus doložen, odpovídající atributový modifikátor.",
+    "source": "Pravidla domácího systému; útoky a damage doloženy v úvodním logu, výchozí způsob výpočtu je nové transparentní DM pravidlo."
+  },
+  "identity_archive": {
+    "archive_age": "CLASSIFIED, odhad 40–42",
+    "affiliation": "Redigováno; Deep-Recon Clearance Level 6",
+    "specialty": [
+      "Systems Override",
+      "Cognitive AI Architecture",
+      "Memory Isolation Protocols"
+    ],
+    "status": "ASSET ASSIGNED (DAWNSTAR VECTOR NODE SIGMA)",
+    "security_flag_historical": "REDLEVEL: FRACTURE RISK",
+    "source": "ChatGPT log.txt:3525-3573",
+    "certainty": "archive_claim",
+    "notes": "Historický příznak není současný SECURITY FLAG: NONE z lokálního DS-03. Plné jméno z archivního záznamu z důvodu veřejného repozitáře neopisováno."
+  },
+  "inventory_ref": "inventories/rudolf.json",
+  "sheet_provenance": {
+    "attributes_and_skills": "Nejnovější save rudolf_dawnstar_updated.txt a revize 29; žádné přepočítávání starších skillů.",
+    "restored_features": "ChatGPT log.txt:2115-2124,5996,6132,15050-15052,15165-15175",
+    "mechanical_defaults": "HP, AC a výchozí způsob útoku jsou explicitní prospektivní DM baseline, nikoli historická jistota."
+  }
+}

@@ -19,6 +19,115 @@ def load_json(path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+
+def validate_modules(directory, state):
+    """Validate the referenced modular snapshot without requiring modules in legacy saves.
+
+    :param directory: Campaign directory.
+    :param state: Loaded snapshot manifest.
+    """
+    errors = []
+    loaded = {}
+    active = set()
+    item_ids = set()
+    campaign_id = state["campaign_id"]
+
+    def visit(reference, expected_id=None, owner=None):
+        """Resolve a campaign-local JSON module and validate its contents.
+
+        :param reference: Relative module path.
+        :param expected_id: Expected entity ID, if applicable.
+        :param owner: Expected inventory owner, if applicable.
+        """
+        if not isinstance(reference, str):
+            errors.append(f"{campaign_id}: non-string module reference")
+            return
+        path = Path(reference)
+        if path.is_absolute() or ".." in path.parts or path.suffix != ".json":
+            errors.append(f"{campaign_id}: unsafe module reference {reference}")
+            return
+        target = (directory / path).resolve()
+        if not target.is_relative_to(directory.resolve()):
+            errors.append(f"{campaign_id}: unsafe module reference {reference}")
+            return
+        if target in active:
+            errors.append(f"{campaign_id}: module cycle at {reference}")
+            return
+        if target in loaded:
+            data = loaded[target]
+        else:
+            try:
+                data = load_json(target)
+            except (OSError, ValueError) as exc:
+                errors.append(f"{campaign_id}: cannot read module {reference}: {exc}")
+                return
+            if not isinstance(data, dict):
+                errors.append(f"{campaign_id}: invalid module {reference}")
+                return
+            loaded[target] = data
+            if data.get("campaign_id") != campaign_id or data.get("schema_version") != 1 or not data.get("id") or not data.get("kind"):
+                errors.append(f"{campaign_id}: invalid module identity {reference}")
+            hp = data.get("hp")
+            if isinstance(hp, dict):
+                current, maximum = hp.get("current"), hp.get("max")
+                if current is not None and maximum is not None and not 0 <= current <= maximum:
+                    errors.append(f"{campaign_id}: HP outside bounds in {reference}")
+            if data.get("kind") == "inventory":
+                for item in data.get("items", []):
+                    identifier = item["id"]
+                    if identifier in item_ids:
+                        errors.append(f"{campaign_id}: duplicate inventory item {identifier}")
+                    item_ids.add(identifier)
+                    quantity = item.get("quantity")
+                    if quantity is not None and (type(quantity) not in (int, float) or quantity < 0):
+                        errors.append(f"{campaign_id}: invalid inventory quantity {identifier}")
+                    if item.get("status") not in {"equipped", "carried", "confirmed", "last_known", "provisional", "historical_unverified", "used", "installed", "not_acquired"}:
+                        errors.append(f"{campaign_id}: invalid inventory status {identifier}")
+                    if not item.get("source"):
+                        errors.append(f"{campaign_id}: missing inventory provenance {identifier}")
+            active.add(target)
+            walk(data)
+            active.remove(target)
+        if expected_id is not None and data.get("id") != expected_id:
+            errors.append(f"{campaign_id}: module ID mismatch {reference}")
+        if owner is not None and data.get("owner") != owner:
+            errors.append(f"{campaign_id}: inventory owner mismatch {reference}")
+
+    def walk(value):
+        """Traverse explicit reference keys and nested containers.
+
+        :param value: JSON value.
+        """
+        if isinstance(value, list):
+            for entry in value:
+                walk(entry)
+        elif isinstance(value, dict):
+            for key, entry in value.items():
+                if key in {"ref", "sheet_ref"} and entry is not None:
+                    visit(entry, expected_id=value.get("id"))
+                elif key == "inventory_ref" and entry is not None:
+                    owner = value.get("id") if "sheet_ref" in value or value.get("kind") == "character_sheet" else None
+                    visit(entry, owner=owner)
+                elif key in {"roster_ref", "archive_ref"} and entry is not None:
+                    visit(entry)
+                elif key == "inventory_refs" and isinstance(entry, dict):
+                    for reference in entry.values():
+                        visit(reference)
+                elif key == "audit_ref":
+                    if entry != "audit.md" or not (directory / entry).is_file():
+                        errors.append(f"{campaign_id}: missing or invalid audit reference")
+                else:
+                    walk(entry)
+
+    if state.get("layout_version", 1) == 2:
+        if not state.get("character", {}).get("sheet_ref"):
+            errors.append(f"{campaign_id}: missing player sheet reference")
+        walk(state)
+    elif state.get("layout_version", 1) != 1:
+        errors.append(f"{campaign_id}: unsupported layout version")
+    return errors
+
+
 def validate(root=ROOT):
     """Return structural and revision-chain validation errors.
 
@@ -75,6 +184,9 @@ def validate(root=ROOT):
                 for key in ("player_action", "dm_response", "rolls", "changes", "sources"):
                     if key not in event:
                         errors.append(f"{campaign_id}: missing {key} in {path.name}")
+            errors.extend(validate_modules(directory, state))
+            if state.get("layout_version", 1) == 2 and state.get("status") != item.get("status"):
+                errors.append(f"{campaign_id}: registry status mismatch")
             objectives = state.get("objectives", [])
             identifiers = [objective["id"] for objective in objectives]
             if len(identifiers) != len(set(identifiers)):

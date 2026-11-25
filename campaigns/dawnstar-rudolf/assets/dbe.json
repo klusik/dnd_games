@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "id": "dbe",
+  "kind": "vehicle",
+  "location": "DBE na přistávací ploše přibližně 1,2 km od komplexu DS-03, Gliese 5206 c",
+  "status": "Zaparkována a zabezpečena u DS-03, cca 1,2 km od komplexu. Posádka odjela SRV.",
+  "hull": "Dřívější opravy drží, bez nových deformací a nového zjevného poškození; pro atmosférický let se jeví dostatečně pevný.",
+  "left_engine": "Funkční a čistý",
+  "right_engine": "Provizorně opravený a mechanicky stabilizovaný motor; sekundární chladicí okruh utěsněn a ověřen tlakovou a cirkulační zkouškou, diagnostika bez závady chlazení.",
+  "maneuvering": "Kalibrováno; poškozená izolace kabelového svazku obnovena, svazek přemístěn a upevněn proti vibracím.",
+  "control": "Náhradní čip, drobná HUD nekompatibilita",
+  "power": "Stabilní hlavní reaktor, omezená záloha",
+  "sensors": "Základní funkce; pokročilé skenování omezené",
+  "flight": "Krátký planetární let a supercruise podle staršího záznamu bezpečné; mezihvězdný skok vyžaduje přípravu",
+  "manipulator": "Instalován, pouze na povrchu",
+  "source": "ChatGPT log.txt:12734-12746",
+  "last_preliminary_inspection": {
+    "day": 18,
+    "event": "000009",
+    "result": "Základní diagnostika odpovídá dřívějším známým stavům; bez výrazného viditelného zhoršení, detailní inspekce čeká na hod."
+  },
+  "last_detailed_inspection": {
+    "day": 18,
+    "event": "000010",
+    "engineering_total": 17,
+    "duration_minutes_approx": 45,
+    "findings": [
+      "Netěsné těsnění sekundárního chladicího okruhu pravého motoru",
+      "Odírající se kabelový svazek manévrovacích trysek",
+      "Trup a hlavní reaktor bez potřeby okamžitého zásahu",
+      "FSD mezihvězdný režim neověřen"
+    ]
+  },
+  "maintenance_tasks": [
+    {
+      "id": "right-cooling-seal",
+      "priority": "high",
+      "status": "completed",
+      "estimated_minutes": 0,
+      "parts": "Nové těsnění instalováno při prvním pokusu, nepoškozeno; vyrovnáno uchycení přípojky.",
+      "risk": "Zjištěná závada odstraněna",
+      "completed_event": "000013"
+    },
+    {
+      "id": "maneuvering-harness",
+      "priority": "medium",
+      "status": "completed",
+      "estimated_minutes": 0,
+      "parts": "Použita ochranná izolace a upevňovací prvky z dílny.",
+      "risk": "Zjištěná závada odstraněna",
+      "completed_event": "000013"
+    }
+  ],
+  "right_engine_cooling_diagnostics": {
+    "event": "000011",
+    "day": 18,
+    "primary": "NOMINAL",
+    "secondary_test_start_kpa": 240,
+    "secondary_test_after_120_seconds_kpa": 218,
+    "pump_percent": 100,
+    "heat_exchanger": "Bez omezení",
+    "leak": "Ztvrdlé těsnění přípojky s drobnou prasklinou; přípojka a potrubí bez zjevného poškození.",
+    "replacement": "Kompatibilní těsnění v dílně",
+    "repair_completed": true,
+    "latest_test": {
+      "event": "000013",
+      "start_kpa": 240,
+      "after_120_seconds_kpa": 240,
+      "pressure_loss_kpa": 0,
+      "status": "PASSED",
+      "new_seal_intact": true,
+      "circulation": "Stabilní, čerpadlo pracuje stabilně, bez diagnostické závady chlazení."
+    },
+    "replacement_installed": true,
+    "previous_test": {
+      "event": "000012",
+      "start_kpa": 240,
+      "after_120_seconds_kpa": 233,
+      "pressure_loss_kpa": 7,
+      "status": "FAILED",
+      "cause": "Nerovnoměrné stlačení nového těsnění kvůli neparalelním dosedacím plochám.",
+      "new_seal_intact": true
+    }
+  },
+  "fuel_percent": 75,
+  "last_preflight": {
+    "event": "000015",
+    "day": 19,
+    "result": "PASSED",
+    "fuel_percent_before_departure": 78,
+    "secondary_cooling_kpa": 240,
+    "leaks": "Bez nového úniku",
+    "checks": [
+      "Hlavní reaktor stabilní",
+      "Levý a pravý motor nominální při kontrole",
+      "Sekundární chlazení stabilní",
+      "Manévrovací trysky funkční",
+      "Kabina bez nového úniku",
+      "Podpora života funkční",
+      "Náklad zajištěn",
+      "Podvozek funkční"
+    ],
+    "limitations": [
+      "Omezené záložní napájení",
+      "Drobné nekompatibility HUD",
+      "Omezené pokročilé senzory",
+      "Mezihvězdný režim FSD neověřen"
+    ]
+  },
+  "last_flight": {
+    "event": "000015",
+    "day": 19,
+    "origin": "Sirius 4B",
+    "destination": "Přistávací plocha cca 1,2 km od DS-03",
+    "duration_minutes_approx": 15,
+    "result": "Bez komplikací",
+    "fuel_percent_before": 78,
+    "fuel_percent_after": 75
+  },
+  "security_scan": {
+    "event": "000016",
+    "mode": "PASSIVE_RX_ONLY",
+    "status": "completed_limited_confidence",
+    "preliminary": {
+      "visible_ships": "Žádné pozorované",
+      "moving_vehicles": "Nedetekována",
+      "radio": "Známý signál DS-03",
+      "thermal": "Probíhá analýza",
+      "automated_defenses": "Neověřeno",
+      "terrain": "Skalní zákryty, omezená viditelnost"
+    },
+    "limitations": "Pokročilé senzory omezené; negativní zjištění nejsou důkazem nepřítomnosti hrozeb.",
+    "result_event": "000017",
+    "duration_minutes_approx": 5,
+    "technology_total": 11,
+    "results": {
+      "ships": "Nedetekovány",
+      "vehicles": "Nedetekována",
+      "surface_movement": "Nedetekován v dostupném zorném poli",
+      "radio": "Pouze známý DS-03",
+      "thermal": {
+        "strong_source_count": 1,
+        "location": "Uvnitř budovy u paty stožáru",
+        "motion": "Stacionární",
+        "intensity": "Stabilní při pozorování",
+        "possible_explanation": "Napájecí jednotka nebo elektronika, neověřeno"
+      },
+      "biological_life": "Neprůkazné",
+      "automated_defenses": "Neověřeno",
+      "blind_areas": "Za budovou a okolními skalami, slabší zdroje nerozlišeny"
+    }
+  },
+  "inventory_ref": "inventories/expedition-ds03.json",
+  "historical_identification": {
+    "name": "Jumper",
+    "source": "ChatGPT log.txt:2270-2288",
+    "certainty": "historical_log"
+  },
+  "notes": "Historická konfigurace motorů se měnila a popis centrálního motoru se liší. Platí nejnovější předletová kontrola a let, nikoli staré procentní hodnoty."
+}

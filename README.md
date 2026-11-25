@@ -5,7 +5,7 @@ Trvalé úložiště pro více nezávislých stolních RPG kampaní hraných s C
 ## Spuštění a pokračování
 
 1. Načti `AGENTS.md` a `campaigns/index.json` z větve main.
-2. Zvol přesný identifikátor kampaně. Načti její `state.json`, `rules.md`, `history.md`, `knowledge.md` a poslední událost.
+2. Zvol přesný identifikátor kampaně. Načti její `state.json`, `rules.md` a poslední událost. U modulárního layoutu načti relevantní odkazy ze stejného SHA; historii a znalosti podle potřeby.
 3. Při prvním obnovení stručně ověř výchozí stav, zvláště označené rozpory. Pokračuj až na pokyn hráče.
 4. Po každém vyhodnoceném tahu ulož nový checkpoint podle `system/protocol.md`. Neměň předchozí události.
 
@@ -13,7 +13,7 @@ Trvalé úložiště pro více nezávislých stolních RPG kampaní hraných s C
 
 | ID | Hra | Stav |
 | --- | --- | --- |
-| dawnstar-rudolf | Elite Dangerous: Dawnstar | Importováno, den 18 |
+| dawnstar-rudolf | Elite Dangerous: Dawnstar | Aktivní, modulární snapshot |
 | dawnstar-agent | Elite Dangerous: AGNT-06 | Importováno, samostatná kontinuita |
 
 ## Git
@@ -23,3 +23,5 @@ Trvalé úložiště pro více nezávislých stolních RPG kampaní hraných s C
 Repozitář je veřejný. DM podklady, neodhalená tajemství a původní neprověřené soubory zůstávají mimo veřejný Git. Adresář `local_sources/` je ignorován. Veřejné checkpointy obsahují jen zjištěné herní skutečnosti, nikoli neveřejné plánované zvraty.
 
 Kontrola lokálně: `python3 tools/validate.py`. Testy: `python3 -m unittest discover -s tests`. Samotná hra nevyžaduje běžící server ani externí knihovny. GitHub konektor používá přímé čtení a zápis souborů.
+
+Pro Dawnstar Rudolf je připraven [prompt pro pokračování](campaigns/dawnstar-rudolf/resume-prompt.md), [audit rekonstrukce](campaigns/dawnstar-rudolf/audit.md) a [registr postav](campaigns/dawnstar-rudolf/characters/index.json). Odkazy v state.json jsou kanonické; moduly nečti všechny při každém tahu.

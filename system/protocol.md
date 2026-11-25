@@ -28,3 +28,7 @@ Když GitHub není dostupný, nevydávej stav za uložený. Předlož přenosný
 ## Více kampaní
 
 Každá kampaň má vlastní pravidla, snapshot, historii, znalosti, zdroje a eventy. Přidání nové kampaně znamená nový jedinečný slug v registry a založení kopie šablony. Sdílené lore je jen reference, nikdy sdílený herní stav. Při práci nad develop se nevyvíjí ani neposouvá děj.
+
+## Modulární layout 2
+
+Pokud state.layout_version je 2, state.json zůstává úplným manifestem snapshotu. Objekty ref, sheet_ref a inventory_ref odkazují na relativní JSON soubory uvnitř kampaně. roster_ref a inventory_refs jsou další explicitní odkazy. Všechny JSON moduly mají schema_version 1, campaign_id, id a kind. Odkazované soubory čti ze stejného SHA, nikoli z různých hlav. Kanonická data jsou v modulu, nikoli paralelní inline kopii; historická metadata jsou označena. Ulož state, event a všechny skutečně změněné moduly atomicky ve stejném commitu. Neměň modul, který se v daném tahu nezměnil. Pro aktuální scénu čti pouze nutné moduly; pro audit lze načíst celý graf. audit_ref označuje Markdown audit a není JSON modul. Poslední administrativní event může mít last_gameplay_event; při obnově scény čti i tento event. Pokud některý modul chybí či má jinou identitu, nepokračuj s odhadem. Validátor podporuje původní inline layout i modulární layout.

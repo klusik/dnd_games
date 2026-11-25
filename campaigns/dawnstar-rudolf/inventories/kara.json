@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "id": "kara-inventory",
+  "kind": "inventory",
+  "owner": "kara",
+  "as_of_day": 19,
+  "items": [
+    {
+      "id": "kara-weapon",
+      "name": "Kařina zbraň (typ neověřen)",
+      "status": "equipped",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "events/000029.json",
+      "notes": "Připravena. Typ, skutečné nabití a původ neověřeny. Prozatím obecný herní damage 1d6 jako DM baseline, ne nález nové zbraně.",
+      "location": "U Kary",
+      "damage_dice": "1d6",
+      "mechanics_certainty": "provisional_dm_baseline"
+    },
+    {
+      "id": "kara-ammunition",
+      "name": "Použitelná munice / energetické výstřely",
+      "status": "provisional",
+      "quantity": 12,
+      "unit": "výstřelů",
+      "source": "events/000029.json",
+      "notes": "Připravená zbraň doložena, skutečný stav munice neznámý. 12 výstřelů je výslovně nová prospektivní DM baseline pro hratelnost, nikoli historické zjištění; pokud se skutečný typ zbraně později doloží, hodnotu revidovat.",
+      "location": "U Kary"
+    },
+    {
+      "id": "kara-eva",
+      "name": "EVA skafandr Kary",
+      "status": "equipped",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:858,905-925; events/000018.json; events/000029.json",
+      "notes": "Původně poškozený starší typ, opravená filtrace a netěsnost. Dříve 6 h kyslíku; aktuální hodnota neznámá. Svítilna na helmě ON.",
+      "location": "Na Kaře",
+      "helmet_light": "ON"
+    },
+    {
+      "id": "kara-datapad",
+      "name": "Osobní datapad / tablet Kary",
+      "status": "last_known",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:1046-1054,1072,5830,11406",
+      "notes": "Původně odnesen Rudolfem do 4B, později Kara používá datapad. Není jisté, zda jde o totožný kus nebo jiné zařízení; veden jeden doložený osobní přístroj bez duplicit. Přítomnost přímo u DS-03 neověřena.",
+      "location": "Poslední doložené použití na 4B"
+    },
+    {
+      "id": "kara-escape-suit-support",
+      "name": "Improvizovaná dlaha a stabilizační pomůcky",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "sada",
+      "source": "ChatGPT log.txt:860,1217,6381",
+      "notes": "Historicky 1 sada. Historicky používány; aktuální nošení nepotvrzeno.",
+      "location": null
+    }
+  ],
+  "resources": {
+    "oxygen_percent": null,
+    "suit_energy_percent": null
+  },
+  "notes": "Historické údaje o staré kapsli a materiálech byly převedeny do společného inventáře 4B; nejsou automaticky v osobním batohu."
+}

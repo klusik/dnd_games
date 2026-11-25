@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "id": "archival-persons",
+  "kind": "archival_roster",
+  "entries": [
+    {
+      "id": "havel-r8",
+      "name": "Dr. Havel-R8",
+      "kind": "archival_person",
+      "presence": "Pouze terminálový tag a archivní poznámka, fyzicky nepotkán.",
+      "known_role": "Operátor / možný člen personálu R-6.6",
+      "location": null,
+      "health": null,
+      "attributes": null,
+      "skills": null,
+      "inventory": null,
+      "source": "ChatGPT log.txt:14910-14913",
+      "certainty": "archive_claim"
+    },
+    {
+      "id": "sorell",
+      "name": "Dr. Sorell",
+      "kind": "archival_person",
+      "presence": "Hlas z DS-Δ2 předběžně přisouzen této osobě; fyzicky nepotkán.",
+      "known_role": null,
+      "location": null,
+      "health": null,
+      "attributes": null,
+      "skills": null,
+      "inventory": null,
+      "source": "rudolf_dawnstar_updated.txt, den 16",
+      "certainty": "unconfirmed_attribution"
+    },
+    {
+      "id": "kara-former-crew",
+      "name": "Nejmenovaná původní posádka Kary",
+      "kind": "archival_group",
+      "presence": "Podle Kary nikdo jiný nepřežil; nezávisle neověřeno.",
+      "known_role": "Posádka její původní lodi",
+      "location": null,
+      "health": null,
+      "attributes": null,
+      "skills": null,
+      "inventory": null,
+      "source": "ChatGPT log.txt:3434,3897",
+      "certainty": "npc_claim"
+    },
+    {
+      "id": "dawnstar-personnel",
+      "name": "Nejmenovaný výzkumný a lékařský personál DAWNSTAR",
+      "kind": "archival_group",
+      "presence": "Pouze archivní záznamy; žádné individuální statistiky.",
+      "known_role": "Výzkum R-6.6 a SEED",
+      "location": null,
+      "health": null,
+      "attributes": null,
+      "skills": null,
+      "inventory": null,
+      "source": "ChatGPT log.txt:14894-14913",
+      "certainty": "archive_claim"
+    },
+    {
+      "id": "root",
+      "name": "ROOT",
+      "kind": "system",
+      "presence": "Známé rozhraní/protokol z archivu, samostatná osobnost nepotvrzena.",
+      "known_role": "Čeká na souhlas subjektu s konvergencí",
+      "location": null,
+      "health": null,
+      "attributes": null,
+      "skills": null,
+      "inventory": null,
+      "source": "rudolf_dawnstar_updated.txt, den 16",
+      "certainty": "system_report"
+    },
+    {
+      "id": "unknown-fauna",
+      "name": "Drobný neidentifikovaný tvor",
+      "kind": "observed_fauna",
+      "presence": "Pozorován krátce při průzkumu vegetace; schoval se.",
+      "known_role": null,
+      "location": "Dřívější biologická zóna",
+      "health": null,
+      "attributes": null,
+      "skills": null,
+      "inventory": null,
+      "source": "ChatGPT log.txt:11295-11312",
+      "certainty": "observed"
+    }
+  ],
+  "notes": "Žádné umělé statblocky nebo inventáře pro neidentifikované, archivní či nepotkané postavy. Subject V/K jsou rozporné identifikátory, nikoli automaticky nové osoby; R-6.6, RDF-ΔK452 a REDWARD se vedou u Rudolfa. Jiné kampaně jsou vyloučeny."
+}

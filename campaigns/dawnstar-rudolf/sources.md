@@ -11,3 +11,7 @@ Další zdroje: dawnstar_rudolf_story_part1.txt (narativní souhrn s úmyslem vy
 Files/ obsahuje společné fikční podklady, interní logy, stanice, DBE manuál, tabulky, mapy a obrázky. Část je DM-only nebo z jiné kampaně. Nejde automaticky o znalost hráče. Některé přípony neodpovídají obsahu (textové soubory .pdf/.xlsx/.yaml), originály nezměnit. Před zveřejněním či použitím ve hře ověř kontinuitu a stav odhalení. Samostatný game_with_AGENT.txt je jiná kampaň. Projektový Foxenův log není součástí tohoto ZIPu a není kanonický pro Rudolfa.
 
 Doplnění při rekapitulaci: přímý ChatGPT log.txt, ř. 583–633 (Δ-47), 905–957 (záchrana Kary), 1725–1784 a 2052 (Gliese 5206 c), 2145–2160 (Redward), 3495–3625 (identita a vrstvy), 3671–3702 (init vector), 3990–4162 (autorizace), 4395–4496 (Kařiny záznamy), 4500–4610 (pokus deaktivace a sandbox), 4804–4911 (původ, trigger sets a definitivní volba GAMMA), 5389–5414 (blackbox), 5996 (Data Whisperer). Přímé hraní má přednost před chybnou lokací v revizi 0. Původní ZIP má datum souborů 6.–7. 6. 2025; nejde o přesné časové značky herních tahů.
+
+## Administrativní revize 30
+
+Při revizi byl znovu použit skutečně dostupný soukromý ZIP s logem stejného SHA256. Provedeno cílené systematické vyhledání atributů, levelů, traitů, postav, výstroje, zásob a spotřeb napříč 16 844 řádky a kontrola relevantních pasáží. Porovnány historické exporty a všechny eventy 0 až 29. Detailní provenance v jednotlivých modulech a audit.md. Původní soubory a neveřejné materiály zůstávají mimo GitHub.

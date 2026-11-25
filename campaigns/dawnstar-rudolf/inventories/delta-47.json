@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "id": "delta-47-inventory",
+  "kind": "inventory",
+  "owner": "delta-47",
+  "as_of_day": 19,
+  "items": [
+    {
+      "id": "drone-precision-tools",
+      "name": "Field Precision Tools",
+      "status": "installed",
+      "quantity": 1,
+      "unit": "modul",
+      "source": "ChatGPT log.txt:15761-15796",
+      "notes": "Instalováno; +1 relevantní Engineering při asistenci.",
+      "location": "Δ-47"
+    },
+    {
+      "id": "drone-diagnostic-port",
+      "name": "Diagnostic Port",
+      "status": "installed",
+      "quantity": 1,
+      "unit": "rozhraní",
+      "source": "ChatGPT log.txt:9407-9435; latest save",
+      "notes": "Servisní rozhraní pro firmware a diagnostiku.",
+      "location": "Δ-47"
+    },
+    {
+      "id": "drone-microtools",
+      "name": "Mikronástroje / manipulátory",
+      "status": "installed",
+      "quantity": 1,
+      "unit": "sada",
+      "source": "ChatGPT log.txt:9415-9424; events/000011.json",
+      "notes": "Funkční, omezená mikrooprava a manipulace.",
+      "location": "Δ-47"
+    },
+    {
+      "id": "drone-memory-core",
+      "name": "Chráněné paměťové jádro",
+      "status": "installed",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:9407-9424; latest save",
+      "notes": "Částečně izolované od GAMMA-six; viz sheet pro sloty.",
+      "location": "Δ-47"
+    },
+    {
+      "id": "drone-antenna",
+      "name": "Vysouvací anténa",
+      "status": "installed",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:583-639; latest save",
+      "notes": "Nenahrazuje neinstalovaný Telemetry Link Module.",
+      "location": "Δ-47"
+    },
+    {
+      "id": "drone-emp",
+      "name": "EMP obranný subsystém",
+      "status": "installed",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:9424",
+      "notes": "Bez zbraňového systému; stav připravenosti neznámý.",
+      "location": "Δ-47"
+    }
+  ],
+  "notes": "Neinstalované upgrady jsou možnosti v sheetu, nikoli automaticky naložené náhradní moduly."
+}

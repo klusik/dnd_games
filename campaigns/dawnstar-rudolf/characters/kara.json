@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "id": "kara",
+  "kind": "character_sheet",
+  "location": "Na prahu otevřeného hlavního vchodu DS-03, dosud venku",
+  "role": "Spojenkyně, analýza biologických vzorků",
+  "relationship": "Vzájemná důvěra, společná historie; samostatná osobnost",
+  "health": null,
+  "knowledge": [
+    "Výsledky biologických analýz",
+    "Předchozí výzkum DS-01",
+    "Data relé z DS-Δ2",
+    "Dílčí výpis archivu DS-Δ2: COMMS_SYNC dependency, handshake incomplete; souvislost s DS-03 zatím hypotéza. Záznam samotné autorizace izolace paměti dosud nenalezen.",
+    "Rudolf sdělil svou interpretaci konzultace GAMMA-six: snad bez globálního poplachu; jeho lokální biometrická autorizace otevřela závoru. Podrobný interní výpis GAMMA-six jí nesdělil."
+  ],
+  "name": "Kara Velin",
+  "age": 32,
+  "known_background": "Ex-Sirius Security; nezávislá kontraktorka; biometrická autorizace VELIN.KARA, Supervisor-5; podle archivu supervizorka DAWNSTAR. Vlastní vzpomínky neúplné.",
+  "expressed_goals": [
+    "Opustit planetu a obnovit běžný život bez permanentního ohrožení.",
+    "Objasnit svou minulou roli a případnou újmu způsobenou Rudolfovi.",
+    "Zjistit, zda jejich uváznutí bylo úmyslné, nebo následkem nehody; posoudit případné riziko návratu mezi lidi.",
+    "Soustředit další pátrání na DS-03 a přístup k archivu paměti, vynechat nepodstatné odbočky a nespouštět konvergenci bez pochopení následků."
+  ],
+  "last_question": null,
+  "known_personal_memories": [
+    "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
+  ],
+  "current_activity": "Připravila zbraň a zapnula svítilnu na helmě, čeká před vstupem.",
+  "level": null,
+  "xp": null,
+  "species": "Human",
+  "attributes": {
+    "STR": 10,
+    "DEX": 12,
+    "CON": 12,
+    "INT": 16,
+    "WIS": 14,
+    "CHA": 12
+  },
+  "attribute_modifiers": {
+    "STR": 0,
+    "DEX": 1,
+    "CON": 1,
+    "INT": 3,
+    "WIS": 2,
+    "CHA": 1
+  },
+  "skills": {
+    "Technology": 4,
+    "Engineering": 2,
+    "Investigation": 4,
+    "Insight": 3,
+    "Piloting": 3,
+    "Survival": 3,
+    "Stealth": 3,
+    "Perception": 3,
+    "Persuasion": 2,
+    "Medicine": 4,
+    "Biology": 5,
+    "Security": 4
+  },
+  "skill_bonuses_are_total": true,
+  "hp": {
+    "current": 14,
+    "max": 14,
+    "certainty": "provisional_dm_baseline"
+  },
+  "ac": 13,
+  "initiative_modifier": 1,
+  "conditions": [],
+  "combat": {
+    "attack_modifier": 1,
+    "weapon_id": "kara-weapon",
+    "damage_dice": "1d6",
+    "source": "Prospektivní DM baseline; žádná původní číselná karta ani typ zbraně nebyly doloženy. Nepředpokládat výcvik v jiné zbrani."
+  },
+  "traits": [
+    {
+      "name": "Biologická a genetická analýza",
+      "effect": "Odborná analýza a interpretace vzorků, vhodný celkový skill Biology +5.",
+      "source": "ChatGPT log.txt:2193,11365-11415"
+    },
+    {
+      "name": "Zkušenost se Sirius Security",
+      "effect": "Znalost bezpečnostních postupů a terminologie; celkový skill Security +4, pokud relevantní.",
+      "source": "ChatGPT log.txt:3495-3512,3420"
+    },
+    {
+      "name": "Supervisor-5",
+      "effect": "Dřívější biometrické oprávnění GAMMA; není univerzální klíč ani záruka aktuální autorizace.",
+      "source": "ChatGPT log.txt:4007,4095"
+    }
+  ],
+  "health_history": {
+    "initial_injury": "Zlomenina levé stehenní kosti, původně improvizovaná dlaha. EVA poškozený, O2 pod 15 min.",
+    "treatment": "Rudolf stabilizoval filtraci, tlak a kyslík na cca 6 h; polní ošetření Medicine 19+1, analgetikum, fixace.",
+    "later": "Dlouhodobě zafixovaná noha ještě den 5 dle přímého logu; později samostatná chůze a společné expedice. Úplné zhojení nikdy explicitně nezměřeno.",
+    "current": "Bez pozorovaného omezení při chůzi den 19; aktuální HP a AC jsou DM baseline, nepřidává se nedoložený postih.",
+    "source": "ChatGPT log.txt:850-962,1190-1223,2779,2876,5893,6381; events/000026.json"
+  },
+  "identity_archive": {
+    "affiliation": "Independent Contracting (REDSTAR-class)",
+    "clearance": "AEGIS-LC",
+    "status": "ACTIVE – MISSION PRIORITY CLASS 2",
+    "notes": "Emotional trauma markers detected – post-expulsion",
+    "source": "ChatGPT log.txt:3495-3504",
+    "certainty": "archive_claim"
+  },
+  "known_capabilities": [
+    "Biologická analýza a genetika",
+    "Základní znalost lékařských databází a diagnostiky",
+    "Bezpečnostní zkušenost",
+    "Práce s osobními a archivními daty"
+  ],
+  "sheet_provenance": {
+    "identity": "Historický archiv a současná hra",
+    "numbers": "Všechny uvedené číselné bojové a dovednostní hodnoty jsou nově stanovené prospektivní DM baseline podle pozorované role, nikoli rekonstrukce historického číselného sheetu. NPC nemá přidělený hráčský level ani XP.",
+    "notes": "HP a AC jsou pouze herní hodnoty, nikoli tvrzení o zhojení zlomeniny."
+  },
+  "inventory_ref": "inventories/kara.json"
+}

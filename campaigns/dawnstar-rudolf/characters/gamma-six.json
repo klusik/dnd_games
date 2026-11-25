@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "id": "gamma-six",
+  "kind": "character_sheet",
+  "status": "Aktivní, hráč po analýze vědomě zvolil ponechat aktivní",
+  "last_decision_source": "ChatGPT log.txt:4869-4911",
+  "known_capabilities": [
+    "Behaviorální supervize, kognitivní asistence",
+    "Nouzové převzetí při smrtelném ohrožení bez pomoci",
+    "Obranná aktivace při ohrožení Kary a neschopnosti Rudolfa zasáhnout",
+    "Autonomní restart při ztrátě osobnostní integrity"
+  ],
+  "prior_attempt": "Pokus o deaktivaci selhal (hod 4), následná simulace a analýza; hráč se rozhodl nechat systém aktivní.",
+  "certainty": "Doložené výpisy a simulace, nikoli nezávisle ověřené skutečné chování všech vrstev",
+  "last_consultation": {
+    "event": "000024",
+    "scope": "Lokální konzultace na žádost hráče, žádné externí spojení ani předání kontroly.",
+    "response_recipient": "Rudolf, interní hlas",
+    "claims": [
+      "Rozpoznává typ přístupového systému Sirius Corporation.",
+      "FALLBACK standardně používá lokální databázi oprávnění.",
+      "Standardní zamítnutí přístupu nevyvolává poplach, výjimkou jsou identity označené jako bezpečnostní hrozba.",
+      "Aktuální seznam označených identit nemá.",
+      "Terminály této řady standardně umožňují servisní přehled bez biometrické autentizace."
+    ],
+    "reported_external_connection": "NONE",
+    "reported_control_mode": "UNCHANGED",
+    "perceptible_symptoms": "Žádné při této konzultaci.",
+    "certainty": "Tvrzení GAMMA-six o obvyklé funkci zařízení, nikoli ověřená aktuální konfigurace DS-03. Dlouhodobé neurologické účinky neověřeny."
+  },
+  "player_concern": "Den 19, event 000024: Rudolf výslovně upozornil na neznámé následky používání implantátu pro vlastní mozek.",
+  "name": "GAMMA-six",
+  "body": "Integrované neurokognitivní rozhraní hostitele Rudolfa; bez nezávislého fyzického těla.",
+  "hp": null,
+  "ac": null,
+  "level": null,
+  "attributes": null,
+  "skills": null,
+  "inventory_ref": null,
+  "layers": [
+    {
+      "name": "Core Directive Layer",
+      "description": "Ochrana hostitele, stabilita osobnosti, priorita Kary dle analyzovaných logů."
+    },
+    {
+      "name": "Heuristic Analytical Layer",
+      "description": "Porovnání variant a odhad důsledků."
+    },
+    {
+      "name": "Cognitive Boost Module",
+      "description": "Podpůrné ovlivňování reakce, paměti a motoriky podle záznamů."
+    },
+    {
+      "name": "Override Interface",
+      "description": "Krajní dočasné převzetí; záznamy neprokazují všechny deklarované reakce."
+    }
+  ],
+  "partitions": [
+    {
+      "name": "Alpha",
+      "role": "Command Execution"
+    },
+    {
+      "name": "Beta",
+      "role": "Memory Isolation",
+      "historical_integrity_percent": 57
+    },
+    {
+      "name": "Gamma",
+      "role": "Emotional Suppression",
+      "historical_status": "degraded"
+    },
+    {
+      "name": "Delta",
+      "role": "Contingency Overdrive",
+      "historical_status": "armed"
+    },
+    {
+      "name": "OMEGA",
+      "role": "Neznámá uzamčená partition",
+      "status": "locked_or_redacted"
+    }
+  ],
+  "historical_trigger_variants": {
+    "source": "ChatGPT log.txt:4673-4700,4873-4905",
+    "notes": "Dřívější výpis uváděl také riziko porušení direktivy, biometrickou nestabilitu a různé prahy. Pozdější analýza obsahuje tři Trigger Sets uvedené v known_capabilities. Ani jeden není garantovaný. Nevyvozovat další aktivaci nebo konkrétní prahové hodnoty při hře ze starých údajů."
+  },
+  "source_notes": [
+    "ChatGPT log.txt:3531-3625,3671-3702,3950-4095,4611-4660,4873-4905",
+    "events/000024.json"
+  ],
+  "mechanics": "NPC/implantát. Žádné samostatné HP, AC, útoky nebo univerzální skill bonusy. Explicitně udělené schopnosti hostitele jsou v Rudolfově sheetu. Neprovádět automatickou konvergenci ani bezdůvodné převzetí hráčovy postavy."
+}

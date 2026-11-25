@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "id": "expedition-ds03-inventory",
+  "kind": "inventory",
+  "owner": "party",
+  "as_of_day": 19,
+  "items": [
+    {
+      "id": "exp-food",
+      "name": "Expediční jídlo",
+      "status": "confirmed",
+      "quantity": 3,
+      "unit": "dní pro dva",
+      "source": "events/000010.json; events/000014.json",
+      "notes": "Připraveno pro oba, dosud žádná potvrzená spotřeba při expedici; přesné porce a individuální distribuce neznámé.",
+      "location": "DBE/SRV"
+    },
+    {
+      "id": "exp-water",
+      "name": "Expediční voda",
+      "status": "confirmed",
+      "quantity": 3,
+      "unit": "dní pro dva",
+      "source": "events/000010.json; events/000014.json",
+      "notes": "Připraveno pro oba, dosud žádná potvrzená spotřeba; objem v litrech neznámý.",
+      "location": "DBE/SRV"
+    },
+    {
+      "id": "exp-medkit",
+      "name": "Expediční lékárnička",
+      "status": "confirmed",
+      "quantity": 1,
+      "unit": "sada",
+      "source": "events/000010.json; events/000014.json",
+      "notes": "Připravena; přesný obsah a počet použití neznámý. Není automaticky původní jednorázový medkit.",
+      "location": "DBE/SRV"
+    },
+    {
+      "id": "exp-filters",
+      "name": "Náhradní filtry",
+      "status": "confirmed",
+      "quantity": null,
+      "unit": "ks",
+      "source": "events/000010.json; events/000014.json",
+      "notes": "Připraveny, počet nevyčíslen.",
+      "location": "DBE/SRV"
+    },
+    {
+      "id": "exp-service-tools",
+      "name": "Servisní nářadí",
+      "status": "confirmed",
+      "quantity": 1,
+      "unit": "sada",
+      "source": "events/000014.json",
+      "notes": "Naloženo; přesný seznam a rozdělení nevyčísleno.",
+      "location": "DBE/SRV"
+    },
+    {
+      "id": "exp-binoculars",
+      "name": "Dalekohled",
+      "status": "last_known",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "events/000019.json; events/000020.json",
+      "notes": "Kara zapůjčila Rudolfovi během vizuální kontroly; poslední použití v SRV. Kdo jej nyní nese, neověřeno.",
+      "location": "SRV / posádka"
+    }
+  ],
+  "supplies_record": {
+    "food_days_for_two": 3,
+    "water_days_for_two": 3,
+    "medical_kit": true,
+    "spare_filters": true,
+    "packed_by": "Kara",
+    "loaded_on_ship": true,
+    "distribution": "Část zásob a servisního vybavení přímo v SRV, zbytek v DBE; přesné rozdělení nevyčísleno.",
+    "service_tools": true
+  },
+  "notes": "Jednotka dny pro dva není dny na jednotlivce. Položky jsou expediční inventář, nikoli automaticky v rukou pěší skupiny; SRV uzamčené před závorou. 'supplies_record' je metadata původního naložení, při spotřebě aktualizuj items, historické naložení nepřepisuj."
+}

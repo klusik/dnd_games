@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 29,
+  "revision": 30,
+  "day": 19,
+  "type": "administrative_sheet_inventory_reconstruction",
+  "player_action": "Pro DM: Prosím projdi kompletně historii a zkus nějak revidovat a rekonstruovat všechny inventáře a kompletní vlastnosti/sheety všech postav, které tu zatím máme, ať to máme konzistentní a připravené k použití. Ukládej dál do mainu, prosím. Klidně ukládej sheety a inventáře do zvlášť souborů, ať je to modulární a neplýtváme kredity a tokeny AI. Až to doděláš a commitneš & pushneš, budeme ve hře pokračovat (nejspíš v dalším vlákně, takže rovnou připrav pak pěkný prompt v češtině do dalšího vlákna)",
+  "dm_response": "Administrativní revize bez posunu příběhu. Rekonstruovány doložené schopnosti, historie výstroje a inventáře, doplněny explicitně označené prospektivní DM baseline pro nedoložená čísla; modularizován snapshot. Podrobnosti audit.md, pravidla a sheety. Vytvořen resume-prompt.md.",
+  "rolls": [],
+  "changes": [
+    "Zachovány současné atributy a devět skillů Rudolfa, obnoveny Technické soustředění a Skenovací čtení.",
+    "HP/AC Rudolfa, číselný sheet Kary a Δ-47, neověřená munice a základní pravidlo útoků jsou výslovně označené prospektivní baseline, nikoli retroaktivní údaje.",
+    "Odděleny osobní, sdílené, historické a datové inventáře; staré množství nepovažováno za aktuální. Archivní osoby bez nedoložených statblocků.",
+    "Modularizovány state, vozidla, postavy a výprava. Registry pro tuto kampaň active. Původní události a druhá kampaň beze změny.",
+    "Den 19, místo, připravenost, aktivní cíle, žádný pending a žádný vstup do budovy zachovány. Žádný nový hod, odpočinek nebo spotřeba."
+  ],
+  "sources": [
+    "ChatGPT log.txt: 28-54,178-262,583-639,850-1223,1317-1342,1855-2124,2684-2755,2948-2992,3293-3312,3495-3578,3829-3846,4611-4905,5996-6245,6402-6536,9199-9449,10021-10027,11289-11438,14894-15175,15384-15796",
+    "rudolf_dawnstar_updated.txt; další historické save",
+    "events/000000.json až events/000029.json",
+    "audit.md"
+  ],
+  "correction_of": null
+}

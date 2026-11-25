@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "id": "data-inventory",
+  "kind": "inventory",
+  "owner": "party",
+  "as_of_day": 19,
+  "items": [
+    {
+      "id": "kara-pod-memory-core",
+      "name": "Paměťové jádro Kařiny kapsle",
+      "status": "last_known",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:1028-1035,1072,1454-1474",
+      "notes": "Letové záznamy, mapy a poznámky. Uložené médium, ne celá zachovalá loď.",
+      "location": "4B"
+    },
+    {
+      "id": "sirius-data-card",
+      "name": "Datová karta Sirius Corp",
+      "status": "last_known",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:1043,1072,1482-1494",
+      "notes": "Kódovaný log DAWNSTAR, částečně přečten.",
+      "location": "4B"
+    },
+    {
+      "id": "shielded-memory-disk",
+      "name": "Stíněný paměťový disk",
+      "status": "last_known",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:2952,2989",
+      "notes": "Funkční šifrovaný disk odnesený z kapsle, uložen ve stíněném boxu; vztah k dřívějšímu paměťovému jádru nejasný, nepočítat stejná data dvakrát.",
+      "location": "4B"
+    },
+    {
+      "id": "west-memory-module",
+      "name": "Paměťový modul v rámu cca 92 kg",
+      "status": "last_known",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:3089-3142,3158-3271,3293-3327",
+      "notes": "Převoz nakonec potvrzen po skutečně vyhodnoceném pokusu; uzamčený modul ve stíněné laboratoři, nikoli přenosná jednotka v batohu.",
+      "location": "4B"
+    },
+    {
+      "id": "maintenance-datapad",
+      "name": "Starší datapad s logy údržby",
+      "status": "last_known",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:6505",
+      "notes": "Nalezen v DSS-A4, zamčený; pozdější odemčení neověřeno.",
+      "location": "4B / hangár"
+    },
+    {
+      "id": "medical-libraries",
+      "name": "Medical Libraries v4.18",
+      "status": "installed",
+      "quantity": 1,
+      "unit": "datový balík",
+      "source": "ChatGPT log.txt:3829-3846",
+      "notes": "Původ z přenosného rozhraní Kary, nainstalováno v STAR-LIMB v5.",
+      "location": "4B"
+    },
+    {
+      "id": "early-intel-archive",
+      "name": "Záznamy z modulu: crew, AI, failsafe, mission package 7, blackbox",
+      "status": "last_known",
+      "quantity": null,
+      "unit": "soubory",
+      "source": "ChatGPT log.txt:3327-3578,4152-4186,4913-5414",
+      "notes": "Smíšené čitelné a šifrované záznamy; přístup neznamená pravdivost. Obsah viz knowledge.md a history.md.",
+      "location": "4B"
+    },
+    {
+      "id": "cave-telemetry",
+      "name": "Záznamy slabé jeskynní telemetrie",
+      "status": "last_known",
+      "quantity": null,
+      "unit": "soubory",
+      "source": "ChatGPT log.txt:11157-11190",
+      "notes": "Uložena data, fyzické odebrání modulu nepotvrzeno.",
+      "location": "4B / dron, přesné rozložení neověřeno"
+    },
+    {
+      "id": "ds01-archive",
+      "name": "Archiv DS-01, SEED a R-6.6",
+      "status": "last_known",
+      "quantity": null,
+      "unit": "soubory",
+      "source": "ChatGPT log.txt:13581-13671,14843-15083",
+      "notes": "Zálohy na DBE a 4B, dronová paměť zálohována; obsah viz knowledge.md.",
+      "location": "DBE a 4B"
+    },
+    {
+      "id": "zeta-archive",
+      "name": "Biologický a komunikační archiv Zeta",
+      "status": "last_known",
+      "quantity": null,
+      "unit": "soubory",
+      "source": "ChatGPT log.txt:15610-15753,15761",
+      "notes": "Biologické záznamy a triangulace, ne všechny fragmenty přečtené.",
+      "location": "4B"
+    },
+    {
+      "id": "root-archive",
+      "name": "ROOT a neurologická/genomová mapa",
+      "status": "last_known",
+      "quantity": null,
+      "unit": "soubory",
+      "source": "rudolf_dawnstar_updated.txt, den 16",
+      "notes": "Přístup k protokolu, souhlas pro konvergenci dosud neudělen.",
+      "location": "4B"
+    },
+    {
+      "id": "mirror-telemetry",
+      "name": "Částečná telemetrie Mirror Node",
+      "status": "last_known",
+      "quantity": null,
+      "unit": "soubory",
+      "source": "rudolf_dawnstar_updated.txt, den 17",
+      "notes": "Checksum poškozený, fyzický modul nezískán.",
+      "location": "Dron / 4B, přesná kopie neověřena"
+    },
+    {
+      "id": "delta2-record-data",
+      "name": "DS-Δ2 RECORD a DATA",
+      "status": "last_known",
+      "quantity": null,
+      "unit": "soubory",
+      "source": "rudolf_dawnstar_updated.txt, den 17",
+      "notes": "Uloženo v dronu, relé na 4B. PHASE odemčené, čtení neprokázáno.",
+      "location": "4B / Δ-47"
+    },
+    {
+      "id": "delta2-full-archive",
+      "name": "Úplná záloha DS-Δ2",
+      "status": "confirmed",
+      "quantity": 1,
+      "unit": "archiv",
+      "source": "rudolf_dawnstar_updated.txt, den 18; events/000003.json",
+      "notes": "Záloha v 4B; Memory Isolation Archive šifrovaný, triple-node, COMMS_SYNC nedokončená. Zatím nečíst neodhalený obsah.",
+      "location": "4B"
+    }
+  ],
+  "notes": "Digitální kopie jsou evidovány dle potvrzeného přenosu; neznámý počet souborů není nula. Žádné tajné soubory ani původní soukromé podklady se nekopírují."
+}

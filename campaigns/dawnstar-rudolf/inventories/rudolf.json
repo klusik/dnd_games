@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "id": "rudolf-inventory",
+  "kind": "inventory",
+  "owner": "rudolf",
+  "as_of_day": 19,
+  "items": [
+    {
+      "id": "energy-pistol",
+      "name": "Malá energetická pistole",
+      "status": "equipped",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:52,525,11064-11066,13436; events/000029.json",
+      "notes": "Poškození 1d6; připravena. Stav nabití a pojistky neověřen. Žádný doložený výstřel v dostupné historii.",
+      "location": "U Rudolfa",
+      "damage_dice": "1d6"
+    },
+    {
+      "id": "pistol-ammunition",
+      "name": "Munice energetické pistole",
+      "status": "provisional",
+      "quantity": 20,
+      "unit": "výstřelů",
+      "source": "ChatGPT log.txt:252-254; events/000029.json",
+      "notes": "Původní nalezené množství bylo cca 20. Nezjištěna potvrzená střelba ani doplnění; 20 je přiznaná herní baseline, nikoli nově nalezená munice. Při skutečné kontrole lze zpřesnit.",
+      "location": "U Rudolfa",
+      "historical_quantity_approx": 20
+    },
+    {
+      "id": "knife",
+      "name": "Nůž",
+      "status": "last_known",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:54; events/000029.json",
+      "notes": "Poškození 1d4; poslední evidence osobní výstroj, aktuální připravenost neověřena.",
+      "location": "U Rudolfa, předpokládané",
+      "damage_dice": "1d4"
+    },
+    {
+      "id": "eva-suit",
+      "name": "EVA skafandr",
+      "status": "equipped",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:178-195,323-373,6187-6194; events/000029.json",
+      "notes": "Ochrana proti radiaci a nízké teplotě, zesílený HUD, filtrace, klimatizace, komunikátor, senzor okolí, integrovaná svítilna ON. Historicky 4 h samostatného O2, po úpravě až 8 h v použitelné atmosféře; aktuální O2 ani energie neověřeny.",
+      "location": "Na Rudolfovi",
+      "flashlight": "ON"
+    },
+    {
+      "id": "calibrated-scanner",
+      "name": "Calibrated Scanner",
+      "status": "carried",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:4782,6102,6187-6190; latest save",
+      "notes": "Biometrická, spektrální, biologická, EM, strukturální a datová analýza. Základní a kalibrovaný skener evidovány jako jedna vývojová linie, ne dva automaticky dostupné kusy.",
+      "location": "U Rudolfa"
+    },
+    {
+      "id": "light-explorer-suit",
+      "name": "Lehká průzkumnická kombinéza",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:30,46-50",
+      "notes": "Historicky 1 ks. Původní AC 13; po oblečení EVA další samostatný ochranný bonus nepřidávat.",
+      "location": null
+    },
+    {
+      "id": "initial-repair-kit",
+      "name": "Původní základní opravářská sada",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "použití",
+      "source": "ChatGPT log.txt:256-258,403,2028",
+      "notes": "Historicky 2 použití. Dva rozporné záznamy zbývajících použití, po dalších opravách aktuální zůstatek neznámý; nesčítat s dílenskými sadami.",
+      "location": null
+    },
+    {
+      "id": "initial-medkit",
+      "name": "Původní malá lékárnička",
+      "status": "used",
+      "quantity": 0,
+      "unit": "jednorázových použití",
+      "source": "ChatGPT log.txt:260-262,1193-1223",
+      "notes": "Původní jednorázová lékárnička použita při ošetření Kařiny nohy; +1d8 HP bylo původní pravidlo, pro další léčbu nepočítat.",
+      "location": "Historicky 4B"
+    },
+    {
+      "id": "initial-spare-cell",
+      "name": "Původní náhradní energetický článek",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:248-250",
+      "notes": "Historicky 1 ks. Jednorázově cca +15 % jádra. Pozdější stav samostatného článku není doložen.",
+      "location": null
+    },
+    {
+      "id": "eva-fine-gloves",
+      "name": "EVA rukavice pro jemnou manipulaci",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "pár",
+      "source": "ChatGPT log.txt:2948-2989,3053",
+      "notes": "Historicky 1 pár. Získány z kapsle, malý situační bonus při jemných pracích; současné nasazení nepotvrzeno.",
+      "location": null
+    },
+    {
+      "id": "harness",
+      "name": "Bezpečnostní postroj a batoh",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "sada",
+      "source": "ChatGPT log.txt:5780,5822",
+      "notes": "Historicky 1 sada. Doložené použití při sestupu; současné přenášení neověřeno.",
+      "location": null
+    }
+  ],
+  "resources": {
+    "food_days": null,
+    "water_days": null,
+    "oxygen_percent": null,
+    "suit_energy_percent": null,
+    "ammunition": null
+  },
+  "notes": "Číselný stav munice se vede pouze v položce pistol-ammunition. O2, energie a ostatní osobní zdroje null do zjištění. DBE, SRV, Δ-47 a implantát mají vlastní soubory, nejsou dalšími fyzickými položkami v batohu.",
+  "linked_entities": [
+    "dbe",
+    "srv",
+    "delta-47",
+    "gamma-six"
+  ]
+}

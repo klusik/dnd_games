@@ -1,0 +1,502 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "id": "base-4b-inventory",
+  "kind": "inventory",
+  "owner": "base-4b",
+  "as_of_day": 19,
+  "items": [
+    {
+      "id": "base-food-rations",
+      "name": "Vakuově balené porce a konzervy",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "dní pro dva",
+      "source": "ChatGPT log.txt:1324-1329; events/000006.json; events/000007.json",
+      "notes": "Historicky 5 dní pro dva. Den 18 potvrzen dostatek konzerv, večeře spotřebována a třídenní výprava zabalena. Aktuální zůstatek nevyčíslen.",
+      "location": "4B"
+    },
+    {
+      "id": "base-nutrition-tablets",
+      "name": "Výživové tablety",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "dní pro dva",
+      "source": "ChatGPT log.txt:1326-1329",
+      "notes": "Historicky 10 dní pro dva. Aktuální stav neověřen.",
+      "location": "4B"
+    },
+    {
+      "id": "base-water",
+      "name": "Pitná voda / recyklační zásobník",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "historických nálezů",
+      "source": "ChatGPT log.txt:1333-1335,2701-2755",
+      "notes": "Historicky 18 l + pozdější 2 t historických nálezů. Nejde o současný zůstatek. Historická voda vhodná po filtraci, recyklace funkční.",
+      "location": "4B"
+    },
+    {
+      "id": "base-coffee",
+      "name": "Sirius Dark Blend",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "malá konzerva",
+      "source": "ChatGPT log.txt:1338-1342; events/000014.json",
+      "notes": "Historicky 1 malá konzerva. Káva používána, současný zůstatek neznámý.",
+      "location": "4B"
+    },
+    {
+      "id": "base-biomass",
+      "name": "Poživatelné biohmoty",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "porcí",
+      "source": "ChatGPT log.txt:2684-2755",
+      "notes": "Historicky 17 porcí. Historický sběr, následná spotřeba nevyčíslena.",
+      "location": "4B"
+    },
+    {
+      "id": "base-spare-filter",
+      "name": "Náhradní kyslíkový filtr z kapsle",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:1039-1045,1072,2992",
+      "notes": "Historicky 1 ks. Získán, později výměna filtrů. Nepřičítat k nově připraveným expedičním filtrům bez zjištění.",
+      "location": "4B"
+    },
+    {
+      "id": "signal-flares",
+      "name": "Signální fléry",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:1041,1072",
+      "notes": "Historicky 2 ks. Odneseny do 4B, bez doloženého použití; aktuální umístění a množství neověřeny.",
+      "location": "4B nebo uložená výstroj"
+    },
+    {
+      "id": "heater-battery",
+      "name": "Přenosný ohřívač / nouzová baterie",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "použití",
+      "source": "ChatGPT log.txt:1045,1072,1255,1855",
+      "notes": "Historicky 1 použití. Není potvrzeno, zda totožné s článkem instalovaným do SRV; nesčítat jako aktuální rezervu.",
+      "location": "4B"
+    },
+    {
+      "id": "srv-installed-reserve-cell",
+      "name": "Záložní článek z Kařina modulu v SRV",
+      "status": "installed",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:1855-1867",
+      "notes": "Historicky instalován; energetický stav se vede u SRV.",
+      "location": "SRV"
+    },
+    {
+      "id": "base-cryo-cells",
+      "name": "Kryogenní články",
+      "status": "installed",
+      "quantity": 2,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:2950,2989",
+      "notes": "Při nálezu 78 %, později napojené na bateriový systém 4B; nepovažovat za přenosné volné články.",
+      "location": "4B bateriový systém"
+    },
+    {
+      "id": "base-armour-plate",
+      "name": "Pancéřovaný plát",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "kg",
+      "source": "ChatGPT log.txt:2953,2985-2989",
+      "notes": "Historicky 6 kg. Deformovaný, pevný, pozdější spotřeba neověřena.",
+      "location": "4B"
+    },
+    {
+      "id": "base-maintenance-kit",
+      "name": "Přenosná kompletní sada údržby",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "sada",
+      "source": "ChatGPT log.txt:2952,2985-2989",
+      "notes": "Historicky 1 sada. Nalezená v kapsli; možné použití při dalších opravách. Zda je totožná s naloženou servisní sadou, neověřeno.",
+      "location": "4B / expediční sklad"
+    },
+    {
+      "id": "base-medical-box",
+      "name": "Nouzový box s lékařským materiálem a biomonitorem",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "box",
+      "source": "ChatGPT log.txt:2955,2989",
+      "notes": "Historicky 1 box. Historicky přenesen do zdravotnického rohu, zůstatek léčiv neověřen. Není totožný automaticky s novou expediční lékárničkou.",
+      "location": "4B zdravotnický kout"
+    },
+    {
+      "id": "base-hand-tools",
+      "name": "Náhradní rukavice, nástrčný klíč, olejová plnička",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "sada",
+      "source": "ChatGPT log.txt:2232,2264",
+      "notes": "Historicky 1 sada. Použity při opravách; současné uložení neověřeno.",
+      "location": "4B"
+    },
+    {
+      "id": "base-decoder",
+      "name": "Dekódovací jednotka třídy III",
+      "status": "last_known",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:3293-3312",
+      "notes": "Funkční převodník Aux-IO, nepřímý přístup k zamknutým modulům.",
+      "location": "4B technická sekce"
+    },
+    {
+      "id": "base-isolated-console",
+      "name": "Izolovaná servisní konzole",
+      "status": "last_known",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:3299-3312",
+      "notes": "Oddělená od hlavní sítě, kompatibilní s paměťovým modulem.",
+      "location": "4B technická sekce"
+    },
+    {
+      "id": "base-hacking-tools",
+      "name": "Sada hacking tools",
+      "status": "last_known",
+      "quantity": 1,
+      "unit": "sada",
+      "source": "ChatGPT log.txt:3303-3312",
+      "notes": "Optický analyzátor, linkové spojení, diagnostika blokovaných sektorů.",
+      "location": "4B"
+    },
+    {
+      "id": "base-medical-diagnostics",
+      "name": "STAR-LIMB v5",
+      "status": "last_known",
+      "quantity": 1,
+      "unit": "systém",
+      "source": "ChatGPT log.txt:3764-3846",
+      "notes": "Lékařské knihovny v4.18 instalovány, Neurobehavioral Partition Map, AI Partition Markers a safeguards.",
+      "location": "4B"
+    },
+    {
+      "id": "base-high-voltage-cables",
+      "name": "Vysokonapěťové kabely",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:6402-6410,6530-6536,6570-6635",
+      "notes": "Historicky 2 ks. Později použity při opravách, množství neznámé.",
+      "location": "4B dílna"
+    },
+    {
+      "id": "base-insulators",
+      "name": "Náhradní izolátory",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "typy",
+      "source": "ChatGPT log.txt:6406; events/000013.json",
+      "notes": "Historicky 3 typy. Historické typy nejsou totéž co počet kusů; zůstatek neověřen.",
+      "location": "4B dílna"
+    },
+    {
+      "id": "base-service-frame",
+      "name": "Rozkládací servisní rám",
+      "status": "last_known",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:6409",
+      "notes": "Dříve k dispozici v hangáru.",
+      "location": "4B"
+    },
+    {
+      "id": "base-resonance-meter",
+      "name": "Rezonanční měřák 2203",
+      "status": "last_known",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:6412",
+      "notes": "Přesné měření toku energie a zkratů.",
+      "location": "4B dílna"
+    },
+    {
+      "id": "dss-a4-container",
+      "name": "DSS-A4 přepravní kontejner",
+      "status": "last_known",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:6402-6418,6484-6507",
+      "notes": "Otevřen, obsah přemístěn do hangáru; nepočítat znovu plný kontejner.",
+      "location": "4B"
+    },
+    {
+      "id": "base-thrust-vector-unit",
+      "name": "Jednotka řízení tahu lehkých lodí",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:6497-6503",
+      "notes": "Historicky 1 ks. Kompatibilní s DBE, pozdější použití neověřeno.",
+      "location": "4B / DBE"
+    },
+    {
+      "id": "base-energy-calibration-kit",
+      "name": "Senzorová sada kalibrace energetických transferů",
+      "status": "last_known",
+      "quantity": 1,
+      "unit": "sada",
+      "source": "ChatGPT log.txt:6499-6503",
+      "notes": "Diagnostika FSD a pohonu; neznamená obnovené pokročilé lodní skenery.",
+      "location": "4B dílna"
+    },
+    {
+      "id": "base-backup-power-module",
+      "name": "Záložní napájecí modul",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "kWh",
+      "source": "ChatGPT log.txt:6501-6503",
+      "notes": "Historicky 0.5 kWh. Historická kapacita, současné nabití a dostupnost neověřeny.",
+      "location": "4B"
+    },
+    {
+      "id": "base-components-box",
+      "name": "Pojistky, polovodiče, termální pásky",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "krabice",
+      "source": "ChatGPT log.txt:6503; events/000013.json",
+      "notes": "Historicky 1 krabice. Spotřeba opravami nevyčíslena.",
+      "location": "4B dílna"
+    },
+    {
+      "id": "base-shop-tools",
+      "name": "Mikrobruska, kalibrační sada, páječka, adaptéry",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "sada",
+      "source": "ChatGPT log.txt:6530-6536",
+      "notes": "Historicky 1 sada. Doložené přemístění do hangáru, přesná přenosná výprava neověřena.",
+      "location": "4B"
+    },
+    {
+      "id": "base-spare-coils",
+      "name": "Náhradní cívky",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:6532",
+      "notes": "Historicky 2 ks. Po opravách neznámý zůstatek.",
+      "location": "4B"
+    },
+    {
+      "id": "base-pressure-valves",
+      "name": "Tlakové ventily",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:6532",
+      "notes": "Historicky 3 ks. Po opravách neznámý zůstatek.",
+      "location": "4B"
+    },
+    {
+      "id": "base-mixture-generator",
+      "name": "Generátor směsi",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:6532,6600-6630",
+      "notes": "Historicky 1 ks. Použití či zůstatek neověřeny.",
+      "location": "4B"
+    },
+    {
+      "id": "dbe-control-chip",
+      "name": "Náhradní řídicí čip",
+      "status": "installed",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:6534,6638-6640,8580",
+      "notes": "Instalován; firmware ne zcela kompatibilní.",
+      "location": "DBE"
+    },
+    {
+      "id": "dbe-manipulator",
+      "name": "Manipulační rameno",
+      "status": "installed",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:6536,6638-6640; state rev29",
+      "notes": "Instalováno jako povrchový stabilizační prostředek; nepočítat jako volný díl.",
+      "location": "DBE"
+    },
+    {
+      "id": "base-fuel-cleaner",
+      "name": "Částečně poškozená čistička paliva",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:6536",
+      "notes": "Historicky 1 ks. Pozdější využití neověřeno.",
+      "location": "4B"
+    },
+    {
+      "id": "base-fasteners",
+      "name": "Záložní šroubové spojky, upevnění",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "sada",
+      "source": "ChatGPT log.txt:6536; events/000013.json",
+      "notes": "Historicky 1 sada. Dílenské spotřeby evidované, zůstatek neznámý.",
+      "location": "4B"
+    },
+    {
+      "id": "base-salvaged-wires",
+      "name": "Nekorodovaná kabeláž",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:10021-10027; latest save",
+      "notes": "Historicky množství neznámé. Sebrána den 9, zůstatek po dalších opravách neznámý.",
+      "location": "4B"
+    },
+    {
+      "id": "base-salvaged-energy",
+      "name": "Části částečně vybitých energetických článků",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:10021-10027; latest save",
+      "notes": "Historicky množství neznámé. Sebrány den 9; nepředpokládat aktuálně nabitý článek.",
+      "location": "4B"
+    },
+    {
+      "id": "base-salvaged-metal",
+      "name": "Drobné kovové součástky",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "ks",
+      "source": "ChatGPT log.txt:10021-10027; latest save",
+      "notes": "Historicky množství neznámé. Sebrány den 9, zůstatek neznámý.",
+      "location": "4B"
+    },
+    {
+      "id": "base-spare-cargo",
+      "name": "Odlehčovací cargo racky, redundantní podpora, sekvenční chlazení, poškozený levý motor",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "soubor dílů",
+      "source": "ChatGPT log.txt:1967-1980",
+      "notes": "Historicky množství neznámé. Plán a popis převozu během prvních oprav; pozdější stav dílů neověřen. Nezaměňovat s levým motorem aktuální DBE.",
+      "location": "4B"
+    },
+    {
+      "id": "cooling-seal-consumed",
+      "name": "Náhradní těsnění chlazení pravého motoru",
+      "status": "installed",
+      "quantity": 1,
+      "unit": "ks",
+      "source": "events/000012.json; events/000013.json",
+      "notes": "Instalováno a otestováno, není volný náhradní díl.",
+      "location": "DBE"
+    },
+    {
+      "id": "repair-insulation-consumed",
+      "name": "Izolace, upevňovací prvky, chladivo z oprav dne 18",
+      "status": "used",
+      "quantity": null,
+      "unit": "množství",
+      "source": "events/000012.json; events/000013.json",
+      "notes": "Spotřebováno v neznámém množství, nepřičítat ke skladu.",
+      "location": "DBE / SRV"
+    },
+    {
+      "id": "bio-blueleaf",
+      "name": "Blueleaf / R37-Δ",
+      "status": "last_known",
+      "quantity": null,
+      "unit": "vzorky",
+      "source": "ChatGPT log.txt:11270-11415,15633-15642; latest save",
+      "notes": "Analyzované vzorky, počet a současná životaschopnost neověřeny; názvy v záznamech podle klasifikace.",
+      "location": "4B laboratoř"
+    },
+    {
+      "id": "bio-l12-moss",
+      "name": "Mech L12 / bioaktivní mech",
+      "status": "last_known",
+      "quantity": null,
+      "unit": "vzorky",
+      "source": "latest save; ChatGPT log.txt:11270-11415,14900-14907",
+      "notes": "Klasifikace podle historických záznamů; přesný počet neznámý.",
+      "location": "4B laboratoř"
+    },
+    {
+      "id": "bio-lichen-fruit",
+      "name": "Lišejníky a plody",
+      "status": "last_known",
+      "quantity": null,
+      "unit": "vzorky",
+      "source": "ChatGPT log.txt:11289-11298,11365-11415",
+      "notes": "Odebrány do nádob, následné zpracování neověřeno.",
+      "location": "4B laboratoř"
+    },
+    {
+      "id": "bio-soil",
+      "name": "Vzorek půdy",
+      "status": "last_known",
+      "quantity": null,
+      "unit": "vzorky",
+      "source": "ChatGPT log.txt:11314-11336",
+      "notes": "Označená nádoba, analyzován; množství neověřeno.",
+      "location": "4B laboratoř"
+    },
+    {
+      "id": "bio-cave",
+      "name": "Případné vzorky jeskynních organismů",
+      "status": "historical_unverified",
+      "quantity": null,
+      "unit": "vzorky",
+      "source": "state rev29; ChatGPT log.txt:11100-11190",
+      "notes": "Historicky množství neznámé. Přímý log potvrzuje pozorování a uložení dat, nikoli jednoznačně odebrání všech vzorků. Nedávat do jistého inventáře.",
+      "location": null
+    },
+    {
+      "id": "satellite-module",
+      "name": "Satelitní triangulační modul",
+      "status": "not_acquired",
+      "quantity": 0,
+      "unit": "ks",
+      "source": "rudolf_dawnstar_updated.txt, den 17; events/000003.json",
+      "notes": "Označen na trase k DS-Δ2, při návratu nevyzvednut; údaje jsou v datovém inventáři.",
+      "location": "Na označeném místě v terénu"
+    },
+    {
+      "id": "bio-x23",
+      "name": "X23 a AURORA_PULSE",
+      "status": "not_acquired",
+      "quantity": 0,
+      "unit": "vzorků",
+      "source": "ChatGPT log.txt:15610-15653",
+      "notes": "Pozorováno/čteno v archivu, odběr nepotvrzen.",
+      "location": "DS-01/Zeta, přesné umístění vzorků neověřeno"
+    }
+  ],
+  "notes": "Historické nálezy nejsou aktuální skladový součet. 'last_known' znamená poslední doložené držení nebo umístění, nikoli aktuální dostupnost na místě hráče. 'historical_unverified' není k dispozici k automatické spotřebě; ověřit. Fyzické a digitální nosiče viz inventories/data.json.",
+  "legacy_salvage": [
+    "Nekorodovaná kabeláž",
+    "Částečně vybitý energetický článek",
+    "Drobné kovové součástky"
+  ],
+  "legacy_biological_samples": [
+    "Blueleaf",
+    "Mech L12",
+    "Půda",
+    "Vzorky jeskynních organismů dle historie; přesný inventář neověřen"
+  ]
+}

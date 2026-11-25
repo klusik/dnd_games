@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 29,
-  "last_event": "000029",
+  "revision": 30,
+  "last_event": "000030",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,10 +12,10 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "exploration",
-    "resume": "Rudolf navrhl připravit zbraně a svítilny před vstupem. Kara připravila zbraň (její držení je nově stanovené fikční pozorování DM, přesný typ a munice neznámé) a zapnula svítilnu na helmě. Rudolf připravil vlastní energetickou pistoli a zapnul integrovanou svítilnu skafandru. Osvícená recepce, převrácený nábytek a chodba vlevo, ve vzduchu částice prachu. Kara je připravena, Δ-47 v pohotovosti vedle nich. Hlavní dveře otevřeny, nikdo ještě nevstoupil. Oprava neúplného importu výstroje: původní log potvrzuje malou energetickou pistoli (1d6), nůž (1d4), svítilnu EVA a náhradní zásobník; historicky cca 20 výstřelů po nalezení, aktuální munice neznámá. Žádná střelba ani spotřeba munice. OOC ověření ukládání na main: revize 28 načtena, develop jiný commit; registr má paused oproti state active, registry nezměněn.",
+    "resume": "Den 19 ráno. Rudolf, Kara a Δ-47 stojí před hlavním vchodem DS-03. Dveře otevřené ručním tlačítkem, pohybový senzor nereagoval. Oba mají připravené zbraně a zapnuté svítilny. V hale převrácené židle, rozbitý monitor a světlo zleva směrem ke komunikačnímu středisku. Nikdo dosud nevstoupil. SRV uzamčeno před závorou, DBE zabezpečena cca 1,2 km od komplexu. Čeká se na další akci hráče. Revize 30 je pouze administrativní rekonstrukce výstroje, sheetů a struktury; žádný herní čas ani příběhová akce.",
     "pending": null,
     "certainty": "played",
-    "source": "events/000029.json",
+    "source": "events/000030.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -43,524 +43,50 @@
     "elapsed_since_previous_hours_approx": null
   },
   "character": {
-    "name": "Rudolf",
-    "level": 5,
-    "race": "Human (possibly augmented)",
-    "role": "Technical Explorer, Analyst, Pilot",
-    "background": "Amnézie; projekt DAWNSTAR",
-    "attributes": {
-      "STR": 10,
-      "DEX": 12,
-      "CON": 13,
-      "INT": 18,
-      "WIS": 14,
-      "CHA": 11
-    },
-    "skills": {
-      "Technology": 6,
-      "Engineering": 5,
-      "Investigation": 4,
-      "Insight": 4,
-      "Piloting": 4,
-      "Survival": 4,
-      "Stealth": 4,
-      "Perception": 2,
-      "Persuasion": 1
-    },
-    "skill_bonuses_are_total": true,
-    "hp": {
-      "current": null,
-      "max": null
-    },
-    "ac": null,
-    "xp": null,
-    "conditions": [],
-    "traits": [
-      {
-        "name": "Data Whisperer",
-        "effect": "+2 při interakci se starou technologií a databázemi, pokud bonus již není zahrnut ve vyhodnocení.",
-        "source": "ChatGPT log.txt:5996, 6152-6154"
-      },
-      {
-        "name": "Bioanalytik",
-        "effect": "+2 při analýze biologických vzorků, skryté vlastnosti a kódované biologické struktury."
-      },
-      {
-        "name": "Resonant Recall",
-        "effect": "Jednou denně výhoda na jeden INT skill při interakci s DAWNSTAR technologií.",
-        "used_today": false,
-        "source": "ChatGPT log.txt:15050-15052"
-      }
-    ],
-    "known_identity": [
-      "R-6.6",
-      "RDF-ΔK452",
-      "REDWARD (operační označení)",
-      "Primary Trigger Host"
-    ],
-    "inventory": [
-      "Calibrated Scanner s biometrickou analýzou",
-      "EVA Suit s rozšířeným HUD a filtrací",
-      "Utility Drone",
-      "SRV s přívěsem",
-      "DBE",
-      "GAMMA-six (aktivní, nikoliv běžně dominantní)",
-      "Malá energetická pistole (historicky 1d6 poškození)",
-      "Nůž (historicky 1d4 poškození)",
-      "Integrovaná svítilna skafandru EVA"
-    ],
-    "resources": {
-      "food_days": null,
-      "water_days": null,
-      "oxygen_percent": null,
-      "suit_energy_percent": null,
-      "ammunition": null
-    },
-    "expressed_goals": [
-      "Vyřešit dosavadní záhadu i za cenu nepříjemných zjištění o vlastní minulosti a vztahu s Karou (den 18, event 000008).",
-      "Prioritně prozkoumat DS-03 s Karou; před odletem důkladně zkontrolovat DBE a SRV."
-    ],
-    "last_rest": {
-      "day_started": 18,
-      "day_ended": 19,
-      "hours": 8,
-      "uninterrupted": true
-    },
-    "equipment_details": {
-      "energy_pistol": {
-        "damage_dice": "1d6",
-        "source": "ChatGPT log.txt:52, 252-254, 525, 11064-11066, 13436",
-        "current_ammunition": null,
-        "previous_ammunition": {
-          "approximate_shots": 20,
-          "source": "ChatGPT log.txt:252-254",
-          "historical_only": true
-        },
-        "readiness": "Připravena; konkrétní stav pojistky a nabití neověřen."
-      },
-      "knife": {
-        "damage_dice": "1d4",
-        "source": "ChatGPT log.txt:54",
-        "current_readiness": null
-      },
-      "flashlight": {
-        "type": "Integrovaná svítilna EVA",
-        "status": "ON",
-        "source": "ChatGPT log.txt:186; event 000029"
-      }
-    }
+    "id": "rudolf",
+    "sheet_ref": "characters/rudolf.json",
+    "inventory_ref": "inventories/rudolf.json"
   },
   "world": {
     "assets": {
       "DBE": {
-        "location": "DBE na přistávací ploše přibližně 1,2 km od komplexu DS-03, Gliese 5206 c",
-        "status": "Zaparkována a zabezpečena u DS-03, cca 1,2 km od komplexu. Posádka odjela SRV.",
-        "hull": "Dřívější opravy drží, bez nových deformací a nového zjevného poškození; pro atmosférický let se jeví dostatečně pevný.",
-        "left_engine": "Funkční a čistý",
-        "right_engine": "Provizorně opravený a mechanicky stabilizovaný motor; sekundární chladicí okruh utěsněn a ověřen tlakovou a cirkulační zkouškou, diagnostika bez závady chlazení.",
-        "maneuvering": "Kalibrováno; poškozená izolace kabelového svazku obnovena, svazek přemístěn a upevněn proti vibracím.",
-        "control": "Náhradní čip, drobná HUD nekompatibilita",
-        "power": "Stabilní hlavní reaktor, omezená záloha",
-        "sensors": "Základní funkce; pokročilé skenování omezené",
-        "flight": "Krátký planetární let a supercruise podle staršího záznamu bezpečné; mezihvězdný skok vyžaduje přípravu",
-        "manipulator": "Instalován, pouze na povrchu",
-        "source": "ChatGPT log.txt:12734-12746",
-        "last_preliminary_inspection": {
-          "day": 18,
-          "event": "000009",
-          "result": "Základní diagnostika odpovídá dřívějším známým stavům; bez výrazného viditelného zhoršení, detailní inspekce čeká na hod."
-        },
-        "last_detailed_inspection": {
-          "day": 18,
-          "event": "000010",
-          "engineering_total": 17,
-          "duration_minutes_approx": 45,
-          "findings": [
-            "Netěsné těsnění sekundárního chladicího okruhu pravého motoru",
-            "Odírající se kabelový svazek manévrovacích trysek",
-            "Trup a hlavní reaktor bez potřeby okamžitého zásahu",
-            "FSD mezihvězdný režim neověřen"
-          ]
-        },
-        "maintenance_tasks": [
-          {
-            "id": "right-cooling-seal",
-            "priority": "high",
-            "status": "completed",
-            "estimated_minutes": 0,
-            "parts": "Nové těsnění instalováno při prvním pokusu, nepoškozeno; vyrovnáno uchycení přípojky.",
-            "risk": "Zjištěná závada odstraněna",
-            "completed_event": "000013"
-          },
-          {
-            "id": "maneuvering-harness",
-            "priority": "medium",
-            "status": "completed",
-            "estimated_minutes": 0,
-            "parts": "Použita ochranná izolace a upevňovací prvky z dílny.",
-            "risk": "Zjištěná závada odstraněna",
-            "completed_event": "000013"
-          }
-        ],
-        "right_engine_cooling_diagnostics": {
-          "event": "000011",
-          "day": 18,
-          "primary": "NOMINAL",
-          "secondary_test_start_kpa": 240,
-          "secondary_test_after_120_seconds_kpa": 218,
-          "pump_percent": 100,
-          "heat_exchanger": "Bez omezení",
-          "leak": "Ztvrdlé těsnění přípojky s drobnou prasklinou; přípojka a potrubí bez zjevného poškození.",
-          "replacement": "Kompatibilní těsnění v dílně",
-          "repair_completed": true,
-          "latest_test": {
-            "event": "000013",
-            "start_kpa": 240,
-            "after_120_seconds_kpa": 240,
-            "pressure_loss_kpa": 0,
-            "status": "PASSED",
-            "new_seal_intact": true,
-            "circulation": "Stabilní, čerpadlo pracuje stabilně, bez diagnostické závady chlazení."
-          },
-          "replacement_installed": true,
-          "previous_test": {
-            "event": "000012",
-            "start_kpa": 240,
-            "after_120_seconds_kpa": 233,
-            "pressure_loss_kpa": 7,
-            "status": "FAILED",
-            "cause": "Nerovnoměrné stlačení nového těsnění kvůli neparalelním dosedacím plochám.",
-            "new_seal_intact": true
-          }
-        },
-        "fuel_percent": 75,
-        "last_preflight": {
-          "event": "000015",
-          "day": 19,
-          "result": "PASSED",
-          "fuel_percent_before_departure": 78,
-          "secondary_cooling_kpa": 240,
-          "leaks": "Bez nového úniku",
-          "checks": [
-            "Hlavní reaktor stabilní",
-            "Levý a pravý motor nominální při kontrole",
-            "Sekundární chlazení stabilní",
-            "Manévrovací trysky funkční",
-            "Kabina bez nového úniku",
-            "Podpora života funkční",
-            "Náklad zajištěn",
-            "Podvozek funkční"
-          ],
-          "limitations": [
-            "Omezené záložní napájení",
-            "Drobné nekompatibility HUD",
-            "Omezené pokročilé senzory",
-            "Mezihvězdný režim FSD neověřen"
-          ]
-        },
-        "last_flight": {
-          "event": "000015",
-          "day": 19,
-          "origin": "Sirius 4B",
-          "destination": "Přistávací plocha cca 1,2 km od DS-03",
-          "duration_minutes_approx": 15,
-          "result": "Bez komplikací",
-          "fuel_percent_before": 78,
-          "fuel_percent_after": 75
-        },
-        "security_scan": {
-          "event": "000016",
-          "mode": "PASSIVE_RX_ONLY",
-          "status": "completed_limited_confidence",
-          "preliminary": {
-            "visible_ships": "Žádné pozorované",
-            "moving_vehicles": "Nedetekována",
-            "radio": "Známý signál DS-03",
-            "thermal": "Probíhá analýza",
-            "automated_defenses": "Neověřeno",
-            "terrain": "Skalní zákryty, omezená viditelnost"
-          },
-          "limitations": "Pokročilé senzory omezené; negativní zjištění nejsou důkazem nepřítomnosti hrozeb.",
-          "result_event": "000017",
-          "duration_minutes_approx": 5,
-          "technology_total": 11,
-          "results": {
-            "ships": "Nedetekovány",
-            "vehicles": "Nedetekována",
-            "surface_movement": "Nedetekován v dostupném zorném poli",
-            "radio": "Pouze známý DS-03",
-            "thermal": {
-              "strong_source_count": 1,
-              "location": "Uvnitř budovy u paty stožáru",
-              "motion": "Stacionární",
-              "intensity": "Stabilní při pozorování",
-              "possible_explanation": "Napájecí jednotka nebo elektronika, neověřeno"
-            },
-            "biological_life": "Neprůkazné",
-            "automated_defenses": "Neověřeno",
-            "blind_areas": "Za budovou a okolními skalami, slabší zdroje nerozlišeny"
-          }
-        }
+        "id": "dbe",
+        "ref": "assets/dbe.json"
       },
       "SRV": {
-        "location": "Příjezdová cesta DS-03 u terminálu před otevřenou závorou",
-        "status": "Zaparkované a uzamčené před závorou DS-03 u terminálu, pohon vypnutý, komunikační systém v pohotovosti, bez posádky.",
-        "trailer": true,
-        "energy_percent_at_charge_start": 41,
-        "energy_percent": null,
-        "charging": false,
-        "trailer_inspection": "Vůle v uchycení odstraněna, mechanická kontrola spoje provedena.",
-        "maintenance_tasks": [
-          {
-            "id": "tow-coupling",
-            "priority": "medium",
-            "status": "completed",
-            "estimated_minutes": 0,
-            "parts": "Upevňovací prvky v dílně",
-            "completed_event": "000013"
-          }
-        ],
-        "last_measured_energy_percent": 100
+        "id": "srv",
+        "ref": "assets/srv.json"
       },
       "drone": {
-        "location": "S Rudolfem a Karou před hlavním vchodem DS-03",
-        "status": "Provozuschopný",
-        "functions": [
-          "Scanning",
-          "micro-repair",
-          "memory replay",
-          "field diagnostics"
-        ],
-        "installed_upgrades": [
-          "Field Precision Tools (+1 k opravářskému Engineering při asistenci)"
-        ],
-        "available_upgrades": [
-          "Telemetry Link Module",
-          "Data Archive Buffer",
-          "Micro-Deflector Emitter"
-        ],
-        "features": [
-          "Diagnostic Port",
-          "High-efficiency microtools",
-          "Protected memory core částečně izolované od GAMMA-six",
-          "Extendable antenna array"
-        ],
-        "designation": "Δ-47",
-        "current_activity": "Pohotovostní režim vedle Rudolfa a Kary u hlavního vchodu."
+        "id": "delta-47",
+        "sheet_ref": "characters/delta-47.json",
+        "inventory_ref": "inventories/delta-47.json"
       }
     },
     "npcs": {
       "kara": {
-        "location": "Na prahu otevřeného hlavního vchodu DS-03, dosud venku",
-        "role": "Spojenkyně, analýza biologických vzorků",
-        "relationship": "Vzájemná důvěra, společná historie; samostatná osobnost",
-        "health": null,
-        "knowledge": [
-          "Výsledky biologických analýz",
-          "Předchozí výzkum DS-01",
-          "Data relé z DS-Δ2",
-          "Dílčí výpis archivu DS-Δ2: COMMS_SYNC dependency, handshake incomplete; souvislost s DS-03 zatím hypotéza. Záznam samotné autorizace izolace paměti dosud nenalezen.",
-          "Rudolf sdělil svou interpretaci konzultace GAMMA-six: snad bez globálního poplachu; jeho lokální biometrická autorizace otevřela závoru. Podrobný interní výpis GAMMA-six jí nesdělil."
-        ],
-        "name": "Kara Velin",
-        "age": 32,
-        "known_background": "Ex-Sirius Security; nezávislá kontraktorka; biometrická autorizace VELIN.KARA, Supervisor-5; podle archivu supervizorka DAWNSTAR. Vlastní vzpomínky neúplné.",
-        "expressed_goals": [
-          "Opustit planetu a obnovit běžný život bez permanentního ohrožení.",
-          "Objasnit svou minulou roli a případnou újmu způsobenou Rudolfovi.",
-          "Zjistit, zda jejich uváznutí bylo úmyslné, nebo následkem nehody; posoudit případné riziko návratu mezi lidi.",
-          "Soustředit další pátrání na DS-03 a přístup k archivu paměti, vynechat nepodstatné odbočky a nespouštět konvergenci bez pochopení následků."
-        ],
-        "last_question": null,
-        "known_personal_memories": [
-          "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
-        ],
-        "current_activity": "Připravila zbraň a zapnula svítilnu na helmě, čeká před vstupem.",
-        "equipment_details": {
-          "weapon": {
-            "present": true,
-            "type": null,
-            "ammunition": null,
-            "readiness": "Připravena",
-            "source": "Nová fikční informace DM v eventu 000029; původní typ není doložen."
-          },
-          "helmet_light": {
-            "status": "ON",
-            "source": "ChatGPT log.txt:14752; event 000029"
-          }
-        }
+        "id": "kara",
+        "sheet_ref": "characters/kara.json",
+        "inventory_ref": "inventories/kara.json"
       }
+    },
+    "gamma_six": {
+      "id": "gamma-six",
+      "sheet_ref": "characters/gamma-six.json"
     },
     "locations": {
-      "base_4b": "Zázemí, archiv, hangár a výzkum; podle Rudolfova vyjádření v den 18 dostatek konzerv pro dvě osoby, přesný počet a trvanlivost neověřeny. Na konci dne 18 připraveny dvě porce z konzerv a koření, odebrány odpovídající suroviny; zůstatek neznámý.",
-      "ds_01": "ONLINE po SEED_REBOOT, Phase 1 zahájena",
-      "ds_02": "Ping selhal po rebootu; dříve degradace",
-      "ds_03": "Den 19: vizuálně identifikován komplex mezi skalními výběžky, komunikační stožár, nízká kovová budova ve svahu, jedna parabola nakloněná. Pasivně potvrzen aktuální periodický signál 1452,7 MHz, ID DS-03, FALLBACK, COMMS_SYNC INCOMPLETE. DBE přistála cca 1,2 km od komplexu. Přístup a vnitřek neprozkoumány. Při pozemním přiblížení zjištěna spuštěná závora u servisní plochy, přístupový terminál s oranžovou blikající kontrolkou a viditelné bezpečnostní kamery. SRV zastavilo cca 20 m před závorou; přístup neověřen, žádná viditelná reakce objektu. Po vizuální kontrole SRV přistoupilo k terminálu bez komplikací. Displej nabízí místní biometrickou autentizaci, síť FALLBACK, závora CLOSED. Autorizace nevyzkoušena. Den 19: místní biometrie RDF-ΔK452 přijata jako R-CLASS; závora otevřena. Hlavní vstup cca 50 m za závorou, nápis DS-03 / COMMUNICATIONS & SYNCHRONIZATION FACILITY. Budova neprozkoumána. Oba s dronem došli k hlavnímu vchodu; dveře pootevřené cca 40 cm, nouzové osvětlení, částečný pohled do recepce. Směrovky COMMUNICATIONS CONTROL vlevo, DATA CENTER rovně, ENGINEERING & MAINTENANCE a PERSONNEL FACILITIES vpravo. SRV uzamčené před závorou; budova dosud nevstoupena. Základní vnější mapování (event 000027): viditelná hlavní budova cca 40 m široká, zadní část ve skále, stožár a kabeláž vlevo, nižší přístavba s ventilací a servisními vraty vpravo. Půdorys interiéru neověřen. Hlavní dveře plně otevřeny ručním tlačítkem (event 000028); pohybový senzor nereagoval. V hale převrácené židle, rozbitý monitor, slabé bílé světlo zleva. Vstup zatím neproveden.",
-      "ds_04": "Ztracený nebo degradovaný signál; neověřeno",
-      "ds_delta2": "Podzemní archiv zálohován a zapečetěn, Rudolf se vrátil na 4B.",
-      "satellite_module": "Starý triangulační modul na trase k DS-Δ2; při návratu dne 18 stále na označeném místě, nevyzvednut.",
-      "orbital_relay": "Relay Node Sirius/743: dříve opakoval nouzový signál MAINFRAME FAILURE / RESTART REQUIRED po 31 s; aktuální stav neověřen.",
-      "ganymede_array": "Podle dřívějšího pasivního skenu neaktivní dva roky."
-    },
-    "salvage": [
-      "Nekorodovaná kabeláž",
-      "Částečně vybitý energetický článek",
-      "Drobné kovové součástky"
-    ],
-    "biological_samples": [
-      "Blueleaf",
-      "Mech L12",
-      "Půda",
-      "Vzorky jeskynních organismů dle historie; přesný inventář neověřen"
-    ],
-    "gamma_six": {
-      "status": "Aktivní, hráč po analýze vědomě zvolil ponechat aktivní",
-      "last_decision_source": "ChatGPT log.txt:4869-4911",
-      "known_capabilities": [
-        "Behaviorální supervize, kognitivní asistence",
-        "Nouzové převzetí při smrtelném ohrožení bez pomoci",
-        "Obranná aktivace při ohrožení Kary a neschopnosti Rudolfa zasáhnout",
-        "Autonomní restart při ztrátě osobnostní integrity"
-      ],
-      "prior_attempt": "Pokus o deaktivaci selhal (hod 4), následná simulace a analýza; hráč se rozhodl nechat systém aktivní.",
-      "certainty": "Doložené výpisy a simulace, nikoli nezávisle ověřené skutečné chování všech vrstev",
-      "last_consultation": {
-        "event": "000024",
-        "scope": "Lokální konzultace na žádost hráče, žádné externí spojení ani předání kontroly.",
-        "response_recipient": "Rudolf, interní hlas",
-        "claims": [
-          "Rozpoznává typ přístupového systému Sirius Corporation.",
-          "FALLBACK standardně používá lokální databázi oprávnění.",
-          "Standardní zamítnutí přístupu nevyvolává poplach, výjimkou jsou identity označené jako bezpečnostní hrozba.",
-          "Aktuální seznam označených identit nemá.",
-          "Terminály této řady standardně umožňují servisní přehled bez biometrické autentizace."
-        ],
-        "reported_external_connection": "NONE",
-        "reported_control_mode": "UNCHANGED",
-        "perceptible_symptoms": "Žádné při této konzultaci.",
-        "certainty": "Tvrzení GAMMA-six o obvyklé funkci zařízení, nikoli ověřená aktuální konfigurace DS-03. Dlouhodobé neurologické účinky neověřeny."
-      },
-      "player_concern": "Den 19, event 000024: Rudolf výslovně upozornil na neznámé následky používání implantátu pro vlastní mozek."
+      "id": "world-locations",
+      "ref": "world/locations.json"
     },
     "expedition_ds03": {
-      "status": "main_entrance_open",
-      "supplies": {
-        "food_days_for_two": 3,
-        "water_days_for_two": 3,
-        "medical_kit": true,
-        "spare_filters": true,
-        "packed_by": "Kara",
-        "loaded_on_ship": true,
-        "distribution": "Část zásob a servisního vybavení přímo v SRV, zbytek v DBE; přesné rozdělení nevyčísleno.",
-        "service_tools": true
-      },
-      "maintenance_remaining_minutes_approx": 0,
-      "departure": "Den 19 ráno, odlet z 4B a přistání v cílové oblasti dokončeny.",
-      "convergence_authorized": false,
-      "arrival": {
-        "day": 19,
-        "distance_to_complex_km_approx": 1.2,
-        "passive_signal_confirmed": true
-      },
-      "approach": {
-        "event": "000019",
-        "speed_kmh_approx": 10,
-        "stopped_distance_to_barrier_m_approx": 20,
-        "reason": "Neověřený přístupový terminál a závora; opatrný postup na žádost hráče.",
-        "drone_accompanying": true,
-        "building_entered": false,
-        "srv_parked_outside_barrier": true
-      },
-      "access_terminal": {
-        "event": "000021",
-        "distance_from_srv_m_approx": 1,
-        "power": "ONLINE",
-        "network": "FALLBACK",
-        "authentication": "LOCAL",
-        "prompt": "PRESENT BIOMETRIC ID",
-        "gate": "OPEN",
-        "contacted": true,
-        "authorization_verified": true,
-        "player_concern": "Možný poplach nebo označení identity při autentizaci; neověřeno.",
-        "gamma_assessment": {
-          "event": "000024",
-          "possible_service_overview_without_biometrics": true,
-          "source": "Tvrzení GAMMA-six o standardní řadě terminálu, konkrétní konfigurace neověřena.",
-          "flagged_identities_current_status": null,
-          "terminal_contacted": false
-        },
-        "last_authentication": {
-          "event": "000025",
-          "subject": "RDF-ΔK452",
-          "classification": "R-CLASS",
-          "biometric_match": "CONFIRMED",
-          "security_flag": "NONE",
-          "local_access": "AUTHORIZED",
-          "entry_log": "STORED LOCALLY",
-          "uplink": "UNAVAILABLE",
-          "result": "ACCESS GRANTED",
-          "observed_reaction": "Závora otevřena, bez sirény, viditelného pohybu kamer či jiné bezprostřední reakce.",
-          "certainty": "Lokální výpis a pozorovaná reakce; globální oprávnění a skutečný síťový stav neověřeny."
-        }
-      },
-      "main_entrance": {
-        "event": "000026",
-        "door": "Plně otevřená po stisku ručního tlačítka Karou",
-        "visible_interior": "Vstupní hala, recepce, několik převrácených židlí, rozbitý monitor u recepce, ostatní vybavení zdánlivě zachovalé, nouzové osvětlení a slabé bílé světlo zleva od komunikačního střediska.",
-        "audible": "Slabé pravidelné hučení ventilace.",
-        "signage": {
-          "left": "COMMUNICATIONS CONTROL",
-          "straight": "DATA CENTER",
-          "right": [
-            "ENGINEERING & MAINTENANCE",
-            "PERSONNEL FACILITIES"
-          ]
-        },
-        "entered": false,
-        "last_door_test": {
-          "event": "000028",
-          "motion_sensor": "Bez reakce na pohyb ruky",
-          "manual_button": "Funkční, elektromotor dveře plně otevřel",
-          "cause": "Nefunkční senzor je hypotéza Kary, příčina neověřena"
-        },
-        "pre_entry_readiness": {
-          "event": "000029",
-          "weapons_prepared": true,
-          "flashlights_on": true,
-          "drone_standby": true,
-          "entered": false
-        }
-      },
-      "exterior_survey": {
-        "event": "000027",
-        "viewpoint": "Od hlavního vchodu směrem do objektu, několik metrů odstup; bez obchůzky a vstupu.",
-        "observed": {
-          "aboveground_width_m_approx": 40,
-          "storeys_visible_approx": 1,
-          "rear": "Zadní část zapuštěná do skalnatého svahu.",
-          "left": "Komunikační stožár, několik parabolických antén, silné kabelové vedení vstupující do budovy.",
-          "right": "Nižší přístavba s ventilačními průduchy a širšími servisními vraty.",
-          "visible_persons_or_motion": "Nedetekováno vizuálně."
-        },
-        "inferred_layout": {
-          "left": "COMMUNICATIONS CONTROL",
-          "straight": "DATA CENTER",
-          "right": [
-            "ENGINEERING & MAINTENANCE",
-            "PERSONNEL FACILITIES"
-          ],
-          "source": "Směrovky z eventu 000026 a tvar exteriéru; nikoli ověřený půdorys.",
-          "kara_hypothesis": "Servery možná uvnitř skály kvůli stabilnější teplotě a ochraně."
-        },
-        "unknowns": [
-          "Přesný rozsah ve skále",
-          "Podzemní podlaží",
-          "Vnitřní příčky a propojení",
-          "Funkčnost servisních vrat",
-          "Bezpečnost nepozorovaných částí"
-        ],
-        "map_scale": "Orientační, není v měřítku"
-      }
+      "id": "expedition-ds03",
+      "ref": "world/expedition-ds03.json"
+    },
+    "roster_ref": "characters/index.json",
+    "inventory_refs": {
+      "base_4b": "inventories/4b.json",
+      "expedition_ds03": "inventories/expedition-ds03.json",
+      "data": "inventories/data.json"
     }
   },
   "objectives": [
@@ -615,18 +141,19 @@
     }
   ],
   "uncertainties": [
-    "Přímý export končí dnem 15; dny 16 až 18 jsou z pozdějšího savegamu. Den 18 je nejnovější doložený checkpoint, ne nutně poslední skutečně odehraný tah.",
-    "Přesné HP, maximální HP, AC, zásoby, energie, munice, čas a aktuální poloha DBE nejsou v pozdním save uvedeny.",
-    "DS-03 má několik odlišných souřadnic a vzdáleností; evidovat, nepřepočítávat bez průzkumu.",
-    "Úvod přímého logu začíná ve vraku; souhrny začínají na základně. Přímá scéna má pro úvod přednost.",
-    "Deník naznačuje záměr odjet k DS-03 zítra, nejnovější save končí u SRV po hovoru Kaře. Příjezd do 4B ani další noc nepotvrzeny.",
-    "Oprava importu: původní přímý log identifikuje planetu Gliese 5206 c, nikoli HIP 22022. Některé interní briefingy používají označení Moon 4B / Pleiades-South a HIP 20491; jde o údaje z fikčních dokumentů, nikoli nové astronomické určení aktuální polohy.",
-    "Výpis GAMMA status ACTIVE FOR 674 DAYS se liší od pozdějšího záznamu aktivace dva hodiny před havárií. Význam obou časů zatím nerozhodnut; nedoplňovat vysvětlení bez zjištění."
+    "Dny 1 až 15 přímý historický log; 16 až 18 poslední rozšířený save, další tahy events. Původní historické rozpory viz audit.md.",
+    "Aktuální přesná munice, O2 a energie skafandrů, množství ve skladu, aktuální energie SRV a dronu neověřeny. Číselná bojová baseline je výslovně označená v sheetech a inventářích.",
+    "DS-03: starší triangulace rozporné, aktuální příchod doložen. Bezpečnost interiéru, stav závory a servisních vrat neověřeny.",
+    "Výpis GAMMA ACTIVE FOR 674 DAYS versus aktivace krátce před havárií neobjasněn; dlouhodobé neurologické účinky neznámé.",
+    "Konvergence bez souhlasu, obsah uzamčených archivů a globální status oprávnění neověřeny."
   ],
   "dm_preferences": {
     "dc_visibility": "hidden",
     "show_roll_type_and_modifier": true,
     "show_dc_or_success_thresholds": false,
     "source": "events/000018.json"
-  }
+  },
+  "layout_version": 2,
+  "last_gameplay_event": "000029",
+  "audit_ref": "audit.md"
 }

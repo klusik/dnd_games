@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "id": "delta-47",
+  "kind": "character_sheet",
+  "location": "S Rudolfem a Karou před hlavním vchodem DS-03",
+  "status": "Provozuschopný",
+  "functions": [
+    "Scanning",
+    "micro-repair",
+    "memory replay",
+    "field diagnostics",
+    "Pasivní a krátkodosahový vizuální průzkum",
+    "Základní noční vidění",
+    "Přenos dat a mapa",
+    "Nouzová asistence a transport",
+    "EMP obranný záblesk krátkého dosahu"
+  ],
+  "installed_upgrades": [
+    "Field Precision Tools (+1 k opravářskému Engineering při asistenci)"
+  ],
+  "available_upgrades": [
+    "Telemetry Link Module",
+    "Data Archive Buffer",
+    "Micro-Deflector Emitter"
+  ],
+  "features": [
+    "Diagnostic Port",
+    "High-efficiency microtools",
+    "Protected memory core částečně izolované od GAMMA-six",
+    "Extendable antenna array"
+  ],
+  "designation": "Δ-47",
+  "current_activity": "Pohotovostní režim vedle Rudolfa a Kary u hlavního vchodu.",
+  "body": "Čtyřnohý nízký kloubový dron s otočnou hlavicí a vysouvací anténou; pozdější scény jej popisují i jako létající. Režim pohybu lze měnit jen podle doloženého vybavení, přesný pohon neověřen.",
+  "original_designation": "SIRIUS MINING SECURITY NODE",
+  "authorization": {
+    "friend_pattern": "SIRIUS CONTRACTOR #09748",
+    "following_mode": "ENGAGED",
+    "source": "ChatGPT log.txt:583-639",
+    "certainty": "historical_device_report"
+  },
+  "power": {
+    "type": "Vlastní mikroreaktor podle pozdější inspekce",
+    "historical_endurance_hours_approx": 6,
+    "current_percent": null,
+    "source": "ChatGPT log.txt:639,9411",
+    "notes": "Historický údaj 6 h a pozdější mikroreaktor nelze bez nového měření kombinovat."
+  },
+  "memory": {
+    "slots_total": 4,
+    "slots_used_last_inspection": 2,
+    "current_used": null,
+    "source": "ChatGPT log.txt:9407-9411",
+    "notes": "Pozdější ukládání dat neprokazuje instalaci dalšího fyzického slotu."
+  },
+  "defense": {
+    "weaponry": "Žádné zbraně",
+    "emp": {
+      "description": "Krátkodosahový obranný EMP záblesk jednou za několik hodin; žádné doložené přímé damage.",
+      "last_used": null,
+      "availability": null,
+      "source": "ChatGPT log.txt:9411-9424",
+      "notes": "Dosah, přesný cooldown a aktuální stav neznámé. Při použití DM stanov účinek podle situace; není to automatický útok."
+    }
+  },
+  "upgrade_details": [
+    {
+      "id": "field-precision-tools",
+      "installed": true,
+      "bonus": 1,
+      "applies_to": "Relevantní Engineering při reálné asistenci, zejména opravy, dekonstrukce, montáž.",
+      "source": "ChatGPT log.txt:15400-15401,15761-15796",
+      "notes": "Nezdvojovat s obecným +1 za tentýž úkon drona."
+    },
+    {
+      "id": "telemetry-link-module",
+      "installed": false,
+      "effect": "Přibližně +60 % dosah v otevřeném terénu",
+      "source": "ChatGPT log.txt:15403-15406"
+    },
+    {
+      "id": "data-archive-buffer",
+      "installed": false,
+      "effect": "Jednorázové uchování celého archivu bez návratu",
+      "source": "ChatGPT log.txt:15408-15411"
+    },
+    {
+      "id": "micro-deflector-emitter",
+      "installed": false,
+      "effect": "Jednou denně zabránění negativnímu environmentálnímu efektu",
+      "source": "ChatGPT log.txt:15413-15418"
+    }
+  ],
+  "upgrade_policy": {
+    "max_installs_per_day": 1,
+    "installation_time_approx_hours": 12,
+    "source": "ChatGPT log.txt:15418-15420",
+    "notes": "Čas půl dne je historický odhad pro moduly; pouze první skutečně nainstalován."
+  },
+  "hp": {
+    "current": 8,
+    "max": 8,
+    "certainty": "provisional_dm_baseline"
+  },
+  "ac": 14,
+  "skills": {
+    "Perception": 4,
+    "Technology": 3,
+    "Engineering": 3,
+    "Stealth": 2
+  },
+  "skill_bonuses_are_total": true,
+  "level": null,
+  "attributes": null,
+  "xp": null,
+  "sheet_provenance": {
+    "numbers": "HP, AC a autonomní skill bonusy jsou prospektivní nehumanoidní DM baseline, nikoli historické číselné údaje. Hráčův bonus asistence zůstává dle pravidel. Dron nemá humanoidní atributy, úroveň ani XP."
+  },
+  "inventory_ref": "inventories/delta-47.json"
+}

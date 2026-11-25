@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "id": "srv",
+  "kind": "vehicle",
+  "location": "Příjezdová cesta DS-03 u terminálu před otevřenou závorou",
+  "status": "Zaparkované a uzamčené před závorou DS-03 u terminálu, pohon vypnutý, komunikační systém v pohotovosti, bez posádky.",
+  "trailer": true,
+  "energy_percent_at_charge_start": 41,
+  "energy_percent": null,
+  "charging": false,
+  "trailer_inspection": "Vůle v uchycení odstraněna, mechanická kontrola spoje provedena.",
+  "maintenance_tasks": [
+    {
+      "id": "tow-coupling",
+      "priority": "medium",
+      "status": "completed",
+      "estimated_minutes": 0,
+      "parts": "Upevňovací prvky v dílně",
+      "completed_event": "000013"
+    }
+  ],
+  "last_measured_energy_percent": 100,
+  "historical_model": "Scarab",
+  "historical_range_km_approx": 25,
+  "range_current_km": null,
+  "trailer_capacity_t_historical": 2,
+  "combined_cargo_capacity_t_historical": 4,
+  "source_details": "ChatGPT log.txt:1848-1867,3123,6200-6204",
+  "notes": "Starší dojezd a kapacity jsou archivní, nikoli současný certifikovaný limit. Poslední měřená energie 100 % před jízdou, aktuální neznámá.",
+  "inventory_ref": "inventories/expedition-ds03.json"
+}

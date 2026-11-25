@@ -70,3 +70,7 @@ Kara vyzkoušela pohybový senzor bez reakce; ruční tlačítko na rámu spusti
 ## Doplnění výstroje z původního přímého logu (event 000029)
 
 Rudolfova malá energetická pistole (1d6) a nůž (1d4) jsou doloženy v ChatGPT log.txt:52–54, integrovaná svítilna EVA v ř. 186, náhradní zásobník a tehdejší cca 20 výstřelů v ř. 252–254. Pozdější příprava pistole je doložena v ř. 525, 11064–11066 a 13436. Aktuální stav munice neznámý. Kařina svítilna na helmě doložena v ř. 14752. Dne 19 oba připravili zbraně a zapnuli svítilny před DS-03; držení zbraně Karou nově stanoveno DM, typ a munice neznámé. Nikdo nevstoupil a nestřílelo se.
+
+## Administrativní rekonstrukce (event 000030)
+
+Doplnění výstroje, historie schopností a audit bez nového herního odhalení či posunu scény. Aktuální kanonické sheety a inventáře jsou odkazované z state.json; podrobnosti a rozpory v audit.md. Výchozí číselná mechanika pro dosud nedoložené hodnoty je výslovně označena, nikoli nově zjištěná minulost.

@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "id": "expedition-ds03",
+  "kind": "expedition",
+  "status": "main_entrance_open",
+  "maintenance_remaining_minutes_approx": 0,
+  "departure": "Den 19 ráno, odlet z 4B a přistání v cílové oblasti dokončeny.",
+  "convergence_authorized": false,
+  "arrival": {
+    "day": 19,
+    "distance_to_complex_km_approx": 1.2,
+    "passive_signal_confirmed": true
+  },
+  "approach": {
+    "event": "000019",
+    "speed_kmh_approx": 10,
+    "stopped_distance_to_barrier_m_approx": 20,
+    "reason": "Neověřený přístupový terminál a závora; opatrný postup na žádost hráče.",
+    "drone_accompanying": true,
+    "building_entered": false,
+    "srv_parked_outside_barrier": true
+  },
+  "access_terminal": {
+    "event": "000021",
+    "distance_from_srv_m_approx": 1,
+    "power": "ONLINE",
+    "network": "FALLBACK",
+    "authentication": "LOCAL",
+    "prompt": "PRESENT BIOMETRIC ID",
+    "gate": "OPEN",
+    "contacted": true,
+    "authorization_verified": true,
+    "player_concern": "Možný poplach nebo označení identity při autentizaci; neověřeno.",
+    "gamma_assessment": {
+      "event": "000024",
+      "possible_service_overview_without_biometrics": true,
+      "source": "Tvrzení GAMMA-six o standardní řadě terminálu, konkrétní konfigurace neověřena.",
+      "flagged_identities_current_status": null,
+      "terminal_contacted": false
+    },
+    "last_authentication": {
+      "event": "000025",
+      "subject": "RDF-ΔK452",
+      "classification": "R-CLASS",
+      "biometric_match": "CONFIRMED",
+      "security_flag": "NONE",
+      "local_access": "AUTHORIZED",
+      "entry_log": "STORED LOCALLY",
+      "uplink": "UNAVAILABLE",
+      "result": "ACCESS GRANTED",
+      "observed_reaction": "Závora otevřena, bez sirény, viditelného pohybu kamer či jiné bezprostřední reakce.",
+      "certainty": "Lokální výpis a pozorovaná reakce; globální oprávnění a skutečný síťový stav neověřeny."
+    }
+  },
+  "main_entrance": {
+    "event": "000026",
+    "door": "Plně otevřená po stisku ručního tlačítka Karou",
+    "visible_interior": "Vstupní hala, recepce, několik převrácených židlí, rozbitý monitor u recepce, ostatní vybavení zdánlivě zachovalé, nouzové osvětlení a slabé bílé světlo zleva od komunikačního střediska.",
+    "audible": "Slabé pravidelné hučení ventilace.",
+    "signage": {
+      "left": "COMMUNICATIONS CONTROL",
+      "straight": "DATA CENTER",
+      "right": [
+        "ENGINEERING & MAINTENANCE",
+        "PERSONNEL FACILITIES"
+      ]
+    },
+    "entered": false,
+    "last_door_test": {
+      "event": "000028",
+      "motion_sensor": "Bez reakce na pohyb ruky",
+      "manual_button": "Funkční, elektromotor dveře plně otevřel",
+      "cause": "Nefunkční senzor je hypotéza Kary, příčina neověřena"
+    },
+    "pre_entry_readiness": {
+      "event": "000029",
+      "weapons_prepared": true,
+      "flashlights_on": true,
+      "drone_standby": true,
+      "entered": false
+    }
+  },
+  "exterior_survey": {
+    "event": "000027",
+    "viewpoint": "Od hlavního vchodu směrem do objektu, několik metrů odstup; bez obchůzky a vstupu.",
+    "observed": {
+      "aboveground_width_m_approx": 40,
+      "storeys_visible_approx": 1,
+      "rear": "Zadní část zapuštěná do skalnatého svahu.",
+      "left": "Komunikační stožár, několik parabolických antén, silné kabelové vedení vstupující do budovy.",
+      "right": "Nižší přístavba s ventilačními průduchy a širšími servisními vraty.",
+      "visible_persons_or_motion": "Nedetekováno vizuálně."
+    },
+    "inferred_layout": {
+      "left": "COMMUNICATIONS CONTROL",
+      "straight": "DATA CENTER",
+      "right": [
+        "ENGINEERING & MAINTENANCE",
+        "PERSONNEL FACILITIES"
+      ],
+      "source": "Směrovky z eventu 000026 a tvar exteriéru; nikoli ověřený půdorys.",
+      "kara_hypothesis": "Servery možná uvnitř skály kvůli stabilnější teplotě a ochraně."
+    },
+    "unknowns": [
+      "Přesný rozsah ve skále",
+      "Podzemní podlaží",
+      "Vnitřní příčky a propojení",
+      "Funkčnost servisních vrat",
+      "Bezpečnost nepozorovaných částí"
+    ],
+    "map_scale": "Orientační, není v měřítku"
+  },
+  "inventory_ref": "inventories/expedition-ds03.json"
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "id": "character-roster",
+  "kind": "roster",
+  "active": [
+    {
+      "id": "rudolf",
+      "role": "player",
+      "sheet_ref": "characters/rudolf.json",
+      "inventory_ref": "inventories/rudolf.json"
+    },
+    {
+      "id": "kara",
+      "role": "npc",
+      "sheet_ref": "characters/kara.json",
+      "inventory_ref": "inventories/kara.json"
+    },
+    {
+      "id": "delta-47",
+      "role": "companion",
+      "sheet_ref": "characters/delta-47.json",
+      "inventory_ref": "inventories/delta-47.json"
+    },
+    {
+      "id": "gamma-six",
+      "role": "embedded_npc",
+      "sheet_ref": "characters/gamma-six.json"
+    }
+  ],
+  "archive_ref": "characters/archival.json",
+  "notes": "Pouze kampaň dawnstar-rudolf. Čti jednotlivé profily podle scény, archivní katalog jen podle potřeby."
+}
