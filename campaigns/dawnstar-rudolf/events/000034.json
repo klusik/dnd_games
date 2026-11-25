@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 33,
+  "revision": 34,
+  "day": 19,
+  "type": "joint_entry_reception",
+  "player_action": "Ke Kaře: „Pokud nás mohl někdo vidět, tak už nás nejspíš stejně vidět, vstoupíme a podíváme na tu konzoli?“",
+  "dm_response": "Kara přikývla: „Souhlasím. Stejně jsme se u závory autorizovali, takže systém o nás pravděpodobně ví. Jen bych zatím nic nevypínala, dokud nezjistíme, co všechno je tady ještě funkční.“ Společně vstoupili do haly a přiblížili se k recepci. Kara těsně vedle Rudolfa sleduje chodby; Δ-47 stále pod kamerou. Monitor částečně poškozený, pravá polovina černá. Na levé výpis SIRIUS CORPORATION; STATION: DS-03; TERMINAL: RECEPTION-01; MODE: LOCAL; SESSION: LOCKED; AUTHENTICATION REQUIRED. Pod monitorem klávesnice a biometrická čtečka. Přístup ke kamerám neověřen. Kara se rozhlédla za pultem: „Tady nikdo není. Podívej se na to, já budu dávat pozor.“ Konzole zatím nepoužita.",
+  "rolls": [],
+  "changes": [
+    "Hráčův návrh společného vstupu vyložen jako akce podmíněná souhlasem Kary; Kara souhlasila, lidé společně došli k recepci.",
+    "Nový vizuální nález: RECEPTION-01, lokální uzamčená relace, klávesnice, biometrická čtečka.",
+    "Bez autentizace, změn stanice, střelby, změny inventáře či doložené spotřeby. Rutinní přesun a vizuální čtení bez hodu."
+  ],
+  "sources": [
+    "events/000033.json",
+    "characters/kara.json",
+    "world/expedition-ds03.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}

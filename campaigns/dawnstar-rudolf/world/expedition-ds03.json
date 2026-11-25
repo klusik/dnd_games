@@ -3,7 +3,7 @@
   "campaign_id": "dawnstar-rudolf",
   "id": "expedition-ds03",
   "kind": "expedition",
-  "status": "main_entrance_open",
+  "status": "reception_reached",
   "maintenance_remaining_minutes_approx": 0,
   "departure": "Den 19 ráno, odlet z 4B a přistání v cílové oblasti dokončeny.",
   "convergence_authorized": false,
@@ -18,7 +18,7 @@
     "stopped_distance_to_barrier_m_approx": 20,
     "reason": "Neověřený přístupový terminál a závora; opatrný postup na žádost hráče.",
     "drone_accompanying": true,
-    "building_entered": false,
+    "building_entered": true,
     "srv_parked_outside_barrier": true,
     "drone_entered": true
   },
@@ -67,7 +67,7 @@
         "PERSONNEL FACILITIES"
       ]
     },
-    "entered": false,
+    "entered": true,
     "last_door_test": {
       "event": "000028",
       "motion_sensor": "Bez reakce na pohyb ruky",
@@ -100,10 +100,10 @@
       },
       "kara_comment": "Některé systémy zřejmě fungují, možnost pozorování neověřena.",
       "current_positions": {
-        "event": "000033",
-        "rudolf": "Venku u jedné strany vchodu",
-        "kara": "Venku u opačné strany vchodu",
-        "drone": "Uvnitř přímo pod kamerou nad recepcí"
+        "event": "000034",
+        "rudolf": "Uvnitř haly u recepčního pultu",
+        "kara": "Těsně vedle Rudolfa u recepce, sleduje chodby",
+        "drone": "Uvnitř pod kamerou nad recepcí"
       }
     },
     "drone_entered": true,
@@ -120,6 +120,14 @@
       "certainty": "Report dronu a viditelné pozorování; přístup k živému obrazu ani stav záznamu neověřeny.",
       "drone_position": "Uvnitř vstupní haly DS-03 přímo pod kamerou nad recepcí",
       "humans_entered": false
+    },
+    "entry": {
+      "event": "000034",
+      "humans_entered": true,
+      "location": "Vstupní hala u recepce",
+      "weapons_prepared": true,
+      "flashlights_on": true,
+      "observed": "Kara za pultem nikoho nevidí; navazující chodby neprozkoumány."
     }
   },
   "exterior_survey": {
@@ -152,5 +160,26 @@
     ],
     "map_scale": "Orientační, není v měřítku"
   },
-  "inventory_ref": "inventories/expedition-ds03.json"
+  "inventory_ref": "inventories/expedition-ds03.json",
+  "reception_terminal": {
+    "event": "000034",
+    "id": "RECEPTION-01",
+    "observed_display": {
+      "corporation": "SIRIUS CORPORATION",
+      "station": "DS-03",
+      "terminal": "RECEPTION-01",
+      "mode": "LOCAL",
+      "session": "LOCKED",
+      "authentication": "AUTHENTICATION REQUIRED"
+    },
+    "condition": "Pravá polovina monitoru černá, levá čitelná",
+    "interfaces": [
+      "Klávesnice",
+      "Biometrická čtečka"
+    ],
+    "interacted": false,
+    "authentication_attempted": false,
+    "camera_access": null,
+    "certainty": "Přímé vizuální pozorování; výpis je tvrzením systému, další funkce neověřeny."
+  }
 }
