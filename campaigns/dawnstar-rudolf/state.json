@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 16,
-  "last_event": "000016",
+  "revision": 17,
+  "last_event": "000017",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,34 +12,10 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "exploration",
-    "resume": "Rudolf před pozemním průzkumem požádal o bezpečnostní sken kvůli možné pasti nebo pirátům. Kara souhlasila s pasivním režimem a vrátila se k panelu druhého pilota. Zahájen kombinovaný pasivní termální, optický a elektromagnetický průzkum ze stojící DBE. Předběžně žádné viditelné lodě, nedetekována pohybující se vozidla, v rádiovém příjmu známý signál DS-03; analýza tepelných zdrojů čeká. Automatické obranné systémy neověřeny, skalní zákryty a omezené pokročilé senzory brání úplnému pokrytí. Kara upozornila na možnost automatické ochrany, nikoli zjištěnou hrozbu. Čeká se na Technology 1d20+6, DC10/15/20. Oba uvnitř DBE, SRV a Δ-47 stále naloženy, žádné vysílání, výstup, přesun ani konvergence.",
-    "pending": {
-      "kind": "roll",
-      "skill": "Technology",
-      "dice": "1d20",
-      "modifier": 6,
-      "dc": 10,
-      "tiers": [
-        {
-          "dc": 10,
-          "outcome": "Výrazné zdroje energie a pohyb"
-        },
-        {
-          "dc": 15,
-          "outcome": "Slabší tepelné a elektromagnetické stopy"
-        },
-        {
-          "dc": 20,
-          "outcome": "Detailnější rozlišení zdrojů a možných bezpečnostních rizik"
-        }
-      ],
-      "action": "Vyhodnocení kombinovaného pasivního termálního, optického a elektromagnetického průzkumu okolí DS-03 pomocí palubních senzorů stojící DBE; omezené pokročilé senzory, skalní zákryty. Žádné aktivní vysílání nebo přímé připojení k uzlu.",
-      "roll_owner": "player",
-      "raw": null,
-      "total": null
-    },
+    "resume": "Rudolf hodil 5 na kostce, Technology +6 = 11. DC10 dosažen, DC15 a DC20 nedosaženy. Po přibližně pěti minutách pasivního průzkumu DBE nebyly detekovány lodě, vozidla ani pohyb na povrchu v dostupném zorném poli. Výrazný stacionární tepelný zdroj uvnitř budovy u paty stožáru, intenzita při pozorování stabilní; možná napájecí jednotka či elektronika, identifikace neověřena. Rádiově pouze známý DS-03, biologické známky života neprůkazné, obranné systémy neověřeny. Slabší tepelné zdroje a prostor za budovou a skalami nelze dostatečně rozlišit. Kara navrhla poslat napřed Δ-47, čeká na reakci. Oba nadále v DBE, dron i SRV naloženy. Žádné aktivní vysílání, výstup ani konvergence.",
+    "pending": null,
     "certainty": "played",
-    "source": "events/000016.json",
+    "source": "events/000017.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -61,7 +37,7 @@
       "certainty": "Aktuální pasivní příjem a vizuální pozorování; přístup, přesná pozice a příčina závady neověřeny.",
       "origin": "Přistávací plocha u DS-03"
     },
-    "elapsed_since_previous_hours_approx": null
+    "elapsed_since_previous_hours_approx": 0.08333333333333333
   },
   "character": {
     "name": "Rudolf",
@@ -266,7 +242,7 @@
         "security_scan": {
           "event": "000016",
           "mode": "PASSIVE_RX_ONLY",
-          "status": "pending_analysis",
+          "status": "completed_limited_confidence",
           "preliminary": {
             "visible_ships": "Žádné pozorované",
             "moving_vehicles": "Nedetekována",
@@ -275,7 +251,26 @@
             "automated_defenses": "Neověřeno",
             "terrain": "Skalní zákryty, omezená viditelnost"
           },
-          "limitations": "Pokročilé senzory omezené; negativní zjištění nejsou důkazem nepřítomnosti hrozeb."
+          "limitations": "Pokročilé senzory omezené; negativní zjištění nejsou důkazem nepřítomnosti hrozeb.",
+          "result_event": "000017",
+          "duration_minutes_approx": 5,
+          "technology_total": 11,
+          "results": {
+            "ships": "Nedetekovány",
+            "vehicles": "Nedetekována",
+            "surface_movement": "Nedetekován v dostupném zorném poli",
+            "radio": "Pouze známý DS-03",
+            "thermal": {
+              "strong_source_count": 1,
+              "location": "Uvnitř budovy u paty stožáru",
+              "motion": "Stacionární",
+              "intensity": "Stabilní při pozorování",
+              "possible_explanation": "Napájecí jednotka nebo elektronika, neověřeno"
+            },
+            "biological_life": "Neprůkazné",
+            "automated_defenses": "Neověřeno",
+            "blind_areas": "Za budovou a okolními skalami, slabší zdroje nerozlišeny"
+          }
         }
       },
       "SRV": {
@@ -346,11 +341,11 @@
           "Zjistit, zda jejich uváznutí bylo úmyslné, nebo následkem nehody; posoudit případné riziko návratu mezi lidi.",
           "Soustředit další pátrání na DS-03 a přístup k archivu paměti, vynechat nepodstatné odbočky a nespouštět konvergenci bez pochopení následků."
         ],
-        "last_question": null,
+        "last_question": "Co kdybychom tam nejdřív poslali našeho malého kamaráda?",
         "known_personal_memories": [
           "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
         ],
-        "current_activity": "U panelu druhého pilota sleduje optický záznam budovy, upozornila na možnou automatickou ochranu."
+        "current_activity": "Sleduje výsledky pasivního průzkumu, navrhla vyslat drona jako první."
       }
     },
     "locations": {
@@ -388,7 +383,7 @@
       "certainty": "Doložené výpisy a simulace, nikoli nezávisle ověřené skutečné chování všech vrstev"
     },
     "expedition_ds03": {
-      "status": "landed_security_scan_pending",
+      "status": "landed_security_scan_completed_limited",
       "supplies": {
         "food_days_for_two": 3,
         "water_days_for_two": 3,
@@ -414,7 +409,7 @@
       "id": "ds03",
       "status": "open",
       "title": "Prozkoumat DS-03",
-      "detail": "Přistání cca 1,2 km od DS-03. Před výstupem probíhá pasivní bezpečnostní sken, čeká se na Technology hod; žádná potvrzená hrozba, bezpečnost dosud neověřena."
+      "detail": "Pasivní bezpečnostní sken ze stojící DBE dokončen s omezenou jistotou (Technology 11). Žádná potvrzená hrozba, jeden výrazný stacionární tepelný zdroj uvnitř budovy, slabší zdroje a zákryty nevyhodnoceny. Kara navrhla průzkum dronem; čeká na rozhodnutí hráče."
     },
     {
       "id": "delta2-data",

@@ -34,3 +34,7 @@ Kara našla dílčí výpis DS-Δ2 MEMORY ISOLATION ARCHIVE: SUBJECT RDF-ΔK452;
 ## Den 19, přílet k DS-03 (event 000015)
 
 Komplex vizuálně identifikován mezi skalními výběžky: vysoký komunikační stožár, nízká kovová budova zapuštěná částečně do svahu, jedna nakloněná parabola. Pasivní přijímač potvrdil aktuální periodické vysílání na 1452,7 MHz: NODE ID DS-03, MODE FALLBACK, COMMS_SYNC INCOMPLETE. DBE přistála cca 1,2 km od komplexu. Přístup, obyvatelé, příčina závady a obsah uzlu nejsou ověřeny. Nebylo navázáno aktivní spojení ani povolena konvergence.
+
+## Den 19, pasivní bezpečnostní průzkum DS-03 (event 000017)
+
+Technology 11 (DC10 dosažen). Ze stojící DBE nebyly v dostupném zorném poli detekovány lodě, vozidla či pohyb na povrchu. Jediný výraznější tepelný zdroj uvnitř budovy u paty stožáru, stacionární, stabilní intenzita. Napájecí jednotka nebo elektronika jsou pouze možné interpretace. Rádiově pouze známý DS-03, biologické známky života neprůkazné, automatická obrana neověřena, slabší zdroje a terénní zákryty zůstávají nerozlišené. Žádná potvrzená hrozba neznamená bezpečný objekt. Kara navrhla průzkum Δ-47, dosud nenasazen.

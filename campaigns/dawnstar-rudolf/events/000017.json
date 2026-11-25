@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 16,
+  "revision": 17,
+  "day": 19,
+  "type": "security_scan_result",
+  "player_action": "Hozeno 5",
+  "dm_response": "Technology 5+6=11, základní úspěch proti DC10, DC15 a DC20 nedosaženy. Po pěti minutách pasivního průzkumu lodě, vozidla a pohyb na povrchu nedetekovány, jeden výrazný tepelný zdroj, rádiové vysílání pouze DS-03, biologické známky života neprůkazné, obranné systémy neověřeny. Výrazný zdroj je uvnitř budovy u paty komunikačního stožáru, stacionární, intenzita se nemění. Mohlo by jít o napájecí jednotku nebo elektroniku. Slabší tepelné zdroje ani prostor za budovou a okolními skalami nelze dostatečně rozlišit. Kara: „Nevypadá to jako obydlená základna. Ale úplně bych na to nespoléhala. Co kdybychom tam nejdřív poslali našeho malého kamaráda?“ Ukáže k nákladovému prostoru s Δ-47.",
+  "rolls": [
+    {
+      "owner": "player",
+      "skill": "Technology",
+      "dice": "1d20",
+      "raw": 5,
+      "modifier": 6,
+      "total": 11,
+      "dc": 10,
+      "tiers": [
+        {
+          "dc": 10,
+          "success": true
+        },
+        {
+          "dc": 15,
+          "success": false
+        },
+        {
+          "dc": 20,
+          "success": false
+        }
+      ]
+    }
+  ],
+  "changes": [
+    "Čekající hod vyhodnocen, pending zrušeno.",
+    "Uplynulo přibližně pět minut; nové fikční pozorování jednoho výrazného tepelného zdroje, nikoli potvrzená identifikace jeho původu.",
+    "Negativní zjištění jsou omezena zorným polem a citlivostí senzorů; bezpečnost objektu není potvrzena.",
+    "Kara navrhla průzkum dronem, žádný nový průzkum ani přesun dosud neproběhl."
+  ],
+  "sources": [
+    "events/000016.json",
+    "rules.md",
+    "Nový herní výsledek tohoto tahu"
+  ],
+  "correction_of": null
+}
