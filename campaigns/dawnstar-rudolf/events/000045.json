@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 44,
+  "revision": 45,
+  "day": 19,
+  "type": "reception_security_event_log",
+  "player_action": "„asjně, jasně“ a mrknu na 4, security event log",
+  "dm_response": "Rudolf otevřel SECURITY EVENT LOG, místní buffer, nejnovější první. CURRENT SESSION: RECEPTION-01: AUTH_SUCCESS; SUBJECT: RDF-ΔK452; CLASSIFICATION: R-CLASS. TODAY / MORNING: MAIN ENTRANCE: MANUAL OPEN; PERIMETER GATE: ACCESS GRANTED; SUBJECT: RDF-ΔK452. ARCHIVE REF: CAM-03/003: CORRIDOR PANEL: MANUAL INPUT; LIGHTING CIRCUIT: ENABLED; USER: NOT IDENTIFIED. ARCHIVE REF: CAM-03/004: COMMS CONTROL: ACCESS GRANTED; AUTH METHOD: SERVICE TOKEN; AUTH REFERENCE: AUTH-019; IDENTITY: UNRESOLVED. CENTRAL AUTH DATABASE UNREACHABLE; REFER TO LOCAL ACCESS LOG. Starší události odpovídají kamerovým záznamům. Podle výpisu byl vstup do komunikačního střediska autorizován servisním tokenem, identita nepřiřazena, odkaz AUTH-019. Podrobnosti mohou být v ACCESS LOG hlavní nabídky. Není ověřena skutečná identita či vlastník tokenu, žádná další položka neotevřena.",
+  "rolls": [],
+  "changes": [
+    "Otevřen a přečten místní bezpečnostní log, nové pozorované tvrzení systému o servisní autorizaci AUTH-019 a aktivaci osvětlení.",
+    "Obsah AUTH-019 ani identita držitele tokenu dosud neověřeny; Kara zatím o výpisu nebyla výslovně informována.",
+    "Rutinní čtení bez hodu; žádná změna konfigurace, pozic, zdraví, inventáře ani doložené spotřeby."
+  ],
+  "sources": [
+    "events/000025.json",
+    "events/000028.json",
+    "events/000035.json",
+    "events/000042.json",
+    "events/000044.json",
+    "world/expedition-ds03.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}

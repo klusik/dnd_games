@@ -196,8 +196,8 @@
         "ACCESS LOG",
         "PERSONNEL REGISTRY"
       ],
-      "prompt": "SELECT FUNCTION OR ESC",
-      "view": "SECURITY & SURVEILLANCE",
+      "prompt": "ESC RETURN TO SECURITY MENU",
+      "view": "SECURITY EVENT LOG",
       "security_status": {
         "SECURITY NETWORK": "DEGRADED",
         "LOCAL RECORDING": "ACTIVE",
@@ -245,7 +245,47 @@
         "SECURITY EVENT LOG",
         "SECURITY ADMINISTRATION"
       ],
-      "administration": "LOCKED; vyšší oprávnění nutné dle rozhraní"
+      "administration": "LOCKED; vyšší oprávnění nutné dle rozhraní",
+      "security_event_log": {
+        "storage": "LOCAL BUFFER",
+        "order": "NEWEST FIRST",
+        "entries": [
+          {
+            "time_label": "CURRENT SESSION",
+            "lines": [
+              "RECEPTION-01: AUTH_SUCCESS",
+              "SUBJECT: RDF-ΔK452",
+              "CLASSIFICATION: R-CLASS"
+            ]
+          },
+          {
+            "time_label": "TODAY / MORNING",
+            "lines": [
+              "MAIN ENTRANCE: MANUAL OPEN",
+              "PERIMETER GATE: ACCESS GRANTED",
+              "SUBJECT: RDF-ΔK452"
+            ]
+          },
+          {
+            "time_label": "ARCHIVE REF: CAM-03/003",
+            "lines": [
+              "CORRIDOR PANEL: MANUAL INPUT",
+              "LIGHTING CIRCUIT: ENABLED",
+              "USER: NOT IDENTIFIED"
+            ]
+          },
+          {
+            "time_label": "ARCHIVE REF: CAM-03/004",
+            "lines": [
+              "COMMS CONTROL: ACCESS GRANTED",
+              "AUTH METHOD: SERVICE TOKEN",
+              "AUTH REFERENCE: AUTH-019",
+              "IDENTITY: UNRESOLVED"
+            ]
+          }
+        ],
+        "warning": "CENTRAL AUTH DATABASE UNREACHABLE; REFER TO LOCAL ACCESS LOG"
+      }
     },
     "last_authentication": {
       "event": "000035",
@@ -335,7 +375,11 @@
       "administration": "LOCKED; vyšší oprávnění nutné dle rozhraní",
       "live_feed_opened": true,
       "archive_opened": true,
-      "selected_function": null,
+      "selected_function": {
+        "number": 4,
+        "name": "SECURITY EVENT LOG",
+        "event": "000045"
+      },
       "certainty": "Výpis lokálního bezpečnostního rozhraní v režimu FALLBACK, nikoli nezávislé ověření. ONLINE neprokazuje funkční živý obraz; ACTIVE RECORDING neprokazuje skutečné zaznamenání příchodu. UNREACHABLE neznamená zničené zařízení, REMOTE MONITORING UNAVAILABLE neprokazuje absenci všech forem vzdáleného sledování."
     },
     "live_camera_report": {
@@ -492,6 +536,48 @@
       "event": "000043",
       "from": "RECORDING ARCHIVE",
       "session": "UNLOCKED"
+    },
+    "security_event_log_report": {
+      "event": "000045",
+      "storage": "LOCAL BUFFER",
+      "order": "NEWEST FIRST",
+      "entries": [
+        {
+          "time_label": "CURRENT SESSION",
+          "lines": [
+            "RECEPTION-01: AUTH_SUCCESS",
+            "SUBJECT: RDF-ΔK452",
+            "CLASSIFICATION: R-CLASS"
+          ]
+        },
+        {
+          "time_label": "TODAY / MORNING",
+          "lines": [
+            "MAIN ENTRANCE: MANUAL OPEN",
+            "PERIMETER GATE: ACCESS GRANTED",
+            "SUBJECT: RDF-ΔK452"
+          ]
+        },
+        {
+          "time_label": "ARCHIVE REF: CAM-03/003",
+          "lines": [
+            "CORRIDOR PANEL: MANUAL INPUT",
+            "LIGHTING CIRCUIT: ENABLED",
+            "USER: NOT IDENTIFIED"
+          ]
+        },
+        {
+          "time_label": "ARCHIVE REF: CAM-03/004",
+          "lines": [
+            "COMMS CONTROL: ACCESS GRANTED",
+            "AUTH METHOD: SERVICE TOKEN",
+            "AUTH REFERENCE: AUTH-019",
+            "IDENTITY: UNRESOLVED"
+          ]
+        }
+      ],
+      "warning": "CENTRAL AUTH DATABASE UNREACHABLE; REFER TO LOCAL ACCESS LOG",
+      "certainty": "Výpis místního bezpečnostního logu, korelace podle odkazů na kamerové záznamy. Použití servisního tokenu je tvrzení systému, nikoli ověření jeho vlastníka, platnosti, způsobu získání ani totožnosti postavy. Absence záznamu o násilném vstupu nevylučuje manipulaci či jiné způsoby vstupu. Obsah AUTH-019 dosud neotevřen."
     }
   }
 }
