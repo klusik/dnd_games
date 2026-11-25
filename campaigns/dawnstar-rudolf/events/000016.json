@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 15,
+  "revision": 16,
+  "day": 19,
+  "type": "security_scan_pending_roll",
+  "player_action": "Než se tam vydáme, zkusme znovu senzory, jestli něco nezachytí, nechci tam vpadnout do nějaké pasti, piráti a podobně.",
+  "dm_response": "„Dobrý nápad,“ odpoví Kara a vrátí se k panelu druhého pilota. „Zkusme nejdřív pasivní senzory. Nemusíme na sebe zbytečně upozorňovat.“\n\nSpustíš kombinovaný průzkum okolí pomocí termálních, optických a elektromagnetických senzorů DBE. Předběžný výsledek: žádné viditelné lodě, pohybující se vozidla nedetekována, známý signál DS-03, probíhá analýza tepelných zdrojů, automatické obranné systémy neověřeny, omezená viditelnost prostoru za skalami. Zatím nic bezprostředně nenasvědčuje přítomnosti pirátů. Pokročilé senzory DBE ale stále nefungují naplno a skalnatý terén vytváří několik slepých míst.\n\nKara si přiblíží optický záznam budovy. „I kdyby tam nikdo nebyl, může mít ten objekt pořád aktivní automatickou ochranu.“\n\nTechnology 1d20 +6, DC10 výrazné zdroje energie a pohyb, DC15 slabší tepelné a elektromagnetické stopy, DC20 detailnější rozlišení zdrojů a možných bezpečnostních rizik. Hoď si 1d20. Zatím zůstáváte uvnitř DBE a nic směrem k objektu nevysíláte.",
+  "rolls": [],
+  "changes": [
+    "Zahájen pasivní bezpečnostní průzkum ze stojící DBE, zvolen režim bez vysílání vzhledem k hráčově opatrnosti.",
+    "Předběžná negativní zjištění jen v dostupném zorném poli a citlivosti senzorů; přítomnost hrozeb nevyloučena.",
+    "Čekající hráčův hod Technology +6, DC10/15/20; bonus Data Whisperer neuplatněn, jde o palubní senzory, nikoli práci se starou technologií či databází. Dron dosud nenasazen.",
+    "Žádný přesun, spotřeba zdrojů nevyčíslena, žádné nové definitivní zjištění o hrozbě."
+  ],
+  "sources": [
+    "events/000015.json",
+    "rules.md: Technology",
+    "state.json revize 15: omezení senzorů",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}
