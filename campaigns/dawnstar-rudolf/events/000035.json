@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 34,
+  "revision": 35,
+  "day": 19,
+  "type": "reception_authentication",
+  "player_action": "„Mrknu na tu konzoli, zkusím tu čtečku“ a přiložím vhodnou část těla ke čtečce (nevím, jestli je to čtečka otisku, dlaně, či čeho, tak podle toho).",
+  "dm_response": "Čtečka má podsvícený obrys dlaně. Rudolf přiložil volnou ruku přes rukavici skafandru. Čtečka zablikala, přejela po dlani modrým světlem a pípla. RECEPTION-01 hlásí BIOMETRIC MATCH: CONFIRMED; SUBJECT: RDF-ΔK452; CLASSIFICATION: R-CLASS; AUTHORITY: LOCAL; SESSION: UNLOCKED. MAIN MENU: [1] STATION DIRECTORY, [2] SYSTEM STATUS, [3] SECURITY & SURVEILLANCE, [4] ACCESS LOG, [5] PERSONNEL REGISTRY. SELECT OPTION. Pravá polovina monitoru černá, nabídka čitelná celá. Kamera se nepohnula, žádný slyšitelný alarm, Kara stále sleduje okolí. Žádná položka zatím vybrána.",
+  "rolls": [],
+  "changes": [
+    "Rutinní biometrická autentizace bez hodu s využitím známé lokální identity; terminál hlásí odemčenou relaci.",
+    "Nový nález: čtečka dlaně funguje přes rukavici, hlavní nabídka RECEPTION-01 čitelná.",
+    "Bez změny konfigurace, vstupu do dalších prostor, výstřelu, poškození, změny inventáře či doložené spotřeby. Přístup ke kamerám a globální oprávnění neověřeny."
+  ],
+  "sources": [
+    "events/000025.json",
+    "events/000034.json",
+    "world/expedition-ds03.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}

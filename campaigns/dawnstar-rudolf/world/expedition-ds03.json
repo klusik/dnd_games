@@ -3,7 +3,7 @@
   "campaign_id": "dawnstar-rudolf",
   "id": "expedition-ds03",
   "kind": "expedition",
-  "status": "reception_reached",
+  "status": "reception_authenticated",
   "maintenance_remaining_minutes_approx": 0,
   "departure": "Den 19 ráno, odlet z 4B a přistání v cílové oblasti dokončeny.",
   "convergence_authorized": false,
@@ -177,9 +177,34 @@
       "Klávesnice",
       "Biometrická čtečka"
     ],
-    "interacted": false,
-    "authentication_attempted": false,
+    "interacted": true,
+    "authentication_attempted": true,
     "camera_access": null,
-    "certainty": "Přímé vizuální pozorování; výpis je tvrzením systému, další funkce neověřeny."
+    "certainty": "Přímé vizuální pozorování; výpis je tvrzením systému, další funkce neověřeny.",
+    "current_display": {
+      "corporation": "SIRIUS CORPORATION",
+      "terminal": "RECEPTION-01",
+      "biometric_match": "CONFIRMED",
+      "subject": "RDF-ΔK452",
+      "classification": "R-CLASS",
+      "authority": "LOCAL",
+      "session": "UNLOCKED",
+      "main_menu": [
+        "STATION DIRECTORY",
+        "SYSTEM STATUS",
+        "SECURITY & SURVEILLANCE",
+        "ACCESS LOG",
+        "PERSONNEL REGISTRY"
+      ],
+      "prompt": "SELECT OPTION"
+    },
+    "last_authentication": {
+      "event": "000035",
+      "method": "Dlaň přiložena přes rukavici na čtečku s podsvíceným obrysem dlaně",
+      "result": "SESSION: UNLOCKED",
+      "observed_reaction": "Modré světlo čtečky, tiché pípnutí, čitelná hlavní nabídka. Bez pozorovaného alarmu či pohybu kamery.",
+      "certainty": "Lokální výpis terminálu; globální oprávnění a přístup k jednotlivým funkcím neověřeny."
+    },
+    "selected_menu_item": null
   }
 }
