@@ -46,3 +46,7 @@ Oba v SRV s Δ-47, DBE zabezpečena. Při opatrné jízdě nebyl pozorován pohy
 ## Den 19, u přístupového terminálu DS-03 (event 000021)
 
 Perception 18. Vizuálně bez známek pastí či nedávných zásahů do cesty; kamery pokryté prachem. SRV popojelo bez komplikací a stojí vedle terminálu cca 1 m od něj před zavřenou závorou. Displej: SIRIUS CORPORATION, DS-03 ACCESS CONTROL, POWER ONLINE, NETWORK FALLBACK, AUTHENTICATION LOCAL, SECURITY GATE CLOSED, PRESENT BIOMETRIC ID. Kara předpokládá možnost původních oprávnění, ale nikdo se dosud neautentizoval. Pozorování nepotvrzují absolutní bezpečnost, ani funkčnost kamer.
+
+## Den 19, konzultace GAMMA-six u závory DS-03 (event 000024)
+
+GAMMA-six v interní konzultaci bez externího spojení tvrdí, že rozpoznává řadu přístupového systému Sirius Corporation. Dle něj FALLBACK využívá místní databázi oprávnění, běžné zamítnutí nevyvolává poplach kromě identit označených za bezpečnostní hrozbu a servisní přehled terminálů této řady je standardně dostupný bez biometrie. Nemá aktuální seznam označených identit. Konkrétní konfigurace, servisní přehled a oprávnění DS-03 nebyly ověřeny. Výpis EXTERNAL CONNECTION NONE, CONTROL MODE UNCHANGED. Rudolf výslovně upozornil na neznámé neurologické účinky používání implantátu; konzultace bez vnímatelných fyzických obtíží není důkazem dlouhodobé bezpečnosti. Odpověď zná Rudolf, Kara ji neslyšela. Terminál zatím nekontaktován.

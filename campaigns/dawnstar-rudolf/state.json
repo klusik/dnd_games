@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 23,
-  "last_event": "000023",
+  "revision": 24,
+  "last_event": "000024",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,10 +12,10 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "exploration",
-    "resume": "Rudolf se Kary zeptal, jak by pomohla konzultace GAMMA-six. Kara připomněla jeho dřívější technologickou asistenci a znalosti projektu, navrhla zeptat se na známé bezpečnostní protokoly, význam FALLBACK a reakci zařízení na zneplatněné oprávnění. Jde o hypotézu o znalostech GAMMA-six, nikoliv o potvrzené schopnosti či aktuální stav oprávnění. Výslovně navrhla pouze dotaz bez předání kontroly nebo spojení s terminálem. Oba sedí v SRV u terminálu před zavřenou závorou, GAMMA-six dosud neosloven; žádný kontakt ani autentizace.",
+    "resume": "Rudolf souhlasil s pouhou konzultací GAMMA-six a výslovně upozornil na neznámé následky jeho používání pro mozek; ve své řeči jej nazval omega-six. Kara opravila označení GAMMA-six, OMEGA je dosud zamčená část, uznala nejistotu dlouhodobých účinků. GAMMA-six byl konzultován bez externího spojení a změny režimu řízení. Interním hlasem tvrdí, že rozpoznává typ Sirius access control, FALLBACK používá místní databázi, standardní zamítnutí přístupu nevyvolává poplach kromě identit označených jako bezpečnostní hrozba, aktuální seznam nemá. Tvrdí, že terminály této řady mají servisní přehled standardně dostupný bez biometrie; konkrétní konfigurace DS-03, dostupnost přehledu a aktuální oprávnění neověřeny. Zobrazeno EXTERNAL CONNECTION NONE a CONTROL MODE UNCHANGED. Hráč během konzultace nemá vnímatelné fyzické obtíže; dlouhodobé neurologické následky neznámé. Kara odpověď neslyšela, čeká na sdělení Rudolfa. Oba stále uvnitř SRV vedle zavřené závory, žádný kontakt s terminálem nebo autentizace.",
     "pending": null,
     "certainty": "played",
-    "source": "events/000023.json",
+    "source": "events/000024.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -347,7 +347,7 @@
         "known_personal_memories": [
           "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
         ],
-        "current_activity": "Vysvětlila návrh konzultovat GAMMA-six pouze dotazem na jeho existující znalosti, bez připojení a předání kontroly."
+        "current_activity": "Čeká v SRV, až Rudolf sdělí výsledek interní konzultace GAMMA-six; odpověď zatím nezná."
       }
     },
     "locations": {
@@ -382,7 +382,24 @@
         "Autonomní restart při ztrátě osobnostní integrity"
       ],
       "prior_attempt": "Pokus o deaktivaci selhal (hod 4), následná simulace a analýza; hráč se rozhodl nechat systém aktivní.",
-      "certainty": "Doložené výpisy a simulace, nikoli nezávisle ověřené skutečné chování všech vrstev"
+      "certainty": "Doložené výpisy a simulace, nikoli nezávisle ověřené skutečné chování všech vrstev",
+      "last_consultation": {
+        "event": "000024",
+        "scope": "Lokální konzultace na žádost hráče, žádné externí spojení ani předání kontroly.",
+        "response_recipient": "Rudolf, interní hlas",
+        "claims": [
+          "Rozpoznává typ přístupového systému Sirius Corporation.",
+          "FALLBACK standardně používá lokální databázi oprávnění.",
+          "Standardní zamítnutí přístupu nevyvolává poplach, výjimkou jsou identity označené jako bezpečnostní hrozba.",
+          "Aktuální seznam označených identit nemá.",
+          "Terminály této řady standardně umožňují servisní přehled bez biometrické autentizace."
+        ],
+        "reported_external_connection": "NONE",
+        "reported_control_mode": "UNCHANGED",
+        "perceptible_symptoms": "Žádné při této konzultaci.",
+        "certainty": "Tvrzení GAMMA-six o obvyklé funkci zařízení, nikoli ověřená aktuální konfigurace DS-03. Dlouhodobé neurologické účinky neověřeny."
+      },
+      "player_concern": "Den 19, event 000024: Rudolf výslovně upozornil na neznámé následky používání implantátu pro vlastní mozek."
     },
     "expedition_ds03": {
       "status": "at_access_terminal",
@@ -422,7 +439,14 @@
         "gate": "CLOSED",
         "contacted": false,
         "authorization_verified": false,
-        "player_concern": "Možný poplach nebo označení identity při autentizaci; neověřeno."
+        "player_concern": "Možný poplach nebo označení identity při autentizaci; neověřeno.",
+        "gamma_assessment": {
+          "event": "000024",
+          "possible_service_overview_without_biometrics": true,
+          "source": "Tvrzení GAMMA-six o standardní řadě terminálu, konkrétní konfigurace neověřena.",
+          "flagged_identities_current_status": null,
+          "terminal_contacted": false
+        }
       }
     }
   },
@@ -431,7 +455,7 @@
       "id": "ds03",
       "status": "open",
       "title": "Prozkoumat DS-03",
-      "detail": "Vizuální kontrola cesty dokončena (Perception 18), žádné viditelné známky pastí. SRV stojí vedle napájeného terminálu před zavřenou závorou. Terminál vyžaduje místní biometrickou autentizaci; hráč ji dosud neprovedl."
+      "detail": "SRV stojí u zavřené závory. GAMMA-six lokálně konzultován, tvrdí, že běžná řada terminálu má servisní přehled bez biometrie; konkrétní dostupnost a aktuální označení identit neověřeny. Kara ještě nezná odpověď. Bez kontaktu s terminálem."
     },
     {
       "id": "delta2-data",

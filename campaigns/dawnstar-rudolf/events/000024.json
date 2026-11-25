@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 23,
+  "revision": 24,
+  "day": 19,
+  "type": "local_gamma_consultation",
+  "player_action": "\"Rozumím, tak zkusit bychom to mohli. Pro záznam jen uvádím, že pořád nevíme, jestli jen tak ledabyle spuštění omega-six nemá nějaké důsledky pro můj mozek třeba\" :-D",
+  "dm_response": "Kara se pousměje.\n\n„GAMMA-six. OMEGA je ta část, kterou máme pořád zamčenou. Ale máš pravdu. To, že ti pomáhá, ještě neznamená, že je jeho působení dlouhodobě neškodné.“\n\nObrátíš se tedy na GAMMA-six s žádostí o konzultaci, bez navázání spojení s terminálem. Během několika sekund se ozve známý hlas ve tvé hlavě.\n\nGAMMA-six | LOCAL ANALYSIS\nRozpoznávám typ přístupového systému Sirius Corporation.\n\nV režimu FALLBACK využívá lokálně uloženou databázi oprávnění. Zamítnutí přístupu standardně nevyvolává bezpečnostní poplach. Výjimkou jsou identity označené jako bezpečnostní hrozba.\n\nAktuální seznam těchto identit nemám k dispozici.\n\nTerminály této řady disponují servisním přehledem, který lze za standardních podmínek zobrazit bez biometrické autentizace.\nEXTERNAL CONNECTION: NONE\nCONTROL MODE: UNCHANGED\n\nGAMMA-six během konzultace nezpůsobí žádné vnímatelné fyzické obtíže. To ovšem nic nevypovídá o případných dlouhodobých účincích implantátu na tvůj mozek.\n\nKara čeká, až jí sdělíš, co ses dozvěděl. Nemůže totiž slyšet odpověď, kterou ti GAMMA-six předal.",
+  "rolls": [],
+  "changes": [
+    "Hráč souhlasil s konzultací GAMMA-six bez připojení k terminálu; zaznamenána jeho obava o neurologické následky.",
+    "Kara opravila označení GAMMA-six oproti OMEGA a uznala nejistotu.",
+    "Nové fikční tvrzení GAMMA-six o standardní funkci přístupových terminálů a servisním přehledu, nikoli potvrzení aktuální konfigurace DS-03.",
+    "Interní konzultace bez vnímatelných obtíží, žádné doložené předání kontroly či externí spojení; dlouhodobé následky stále neznámé.",
+    "Kara odpověď neslyšela, hráč ji zatím nesdělil. Žádný kontakt s terminálem, autentizace, poplach či posun."
+  ],
+  "sources": [
+    "events/000023.json",
+    "knowledge.md: GAMMA-six, OMEGA, biometrické autorizace a DS-03",
+    "Nový fikční dialog a tvrzení GAMMA-six v tomto tahu"
+  ],
+  "correction_of": null
+}
