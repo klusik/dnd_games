@@ -1,30 +1,21 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 20,
-  "last_event": "000020",
+  "revision": 21,
+  "last_event": "000021",
   "status": "active",
   "language": "cs",
   "scene": {
     "day": 19,
     "time": "morning",
-    "location": "SRV na příjezdové cestě k DS-03, cca 20 m před spuštěnou závorou",
+    "location": "SRV na příjezdové cestě DS-03, vedle přístupového terminálu před zavřenou závorou",
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "exploration",
-    "resume": "Rudolf chce důkladně vizuálně prověřit příjezdovou cestu a okolí závory kvůli možným pastem, než se přiblíží SRV k terminálu. Zůstává stát cca 20 m před závorou. Kara půjčila dalekohled a sleduje budovu. Cesta zčásti pokryta prachem a drobným kamením, viditelné zbytky dopravního značení, nízká vegetace u okrajů. Na první pohled žádné zjevné překážky ani pohyb, kontrolka terminálu bliká stejným rytmem, žádná z viditelných kamer se zatím neotočila směrem k posádce. Čeká se na hráčův hod Perception 1d20+2 k podrobnému vizuálnímu průzkumu, DC neveřejné podle pravidel. Žádný posun vozidla, žádný kontakt s terminálem ani ověření nepřítomnosti pastí.",
-    "pending": {
-      "kind": "roll",
-      "skill": "Perception",
-      "dice": "1d20",
-      "modifier": 2,
-      "action": "Podrobná vizuální kontrola příjezdové cesty a okolí závory ze stojícího SRV s dalekohledem, před podmíněným přiblížením k terminálu. Kara sleduje budovu samostatně. Výsledek určí pozorované stopy, nikoli absolutní bezpečnost. Žádné popojetí před vyhodnocením.",
-      "roll_owner": "player",
-      "raw": null,
-      "total": null
-    },
+    "resume": "Rudolf hodil 16 na kostce, Perception +2 = 18. Podrobná vizuální kontrola neodhalila viditelné známky pastí ani zjevné stopy nedávného zásahu na cestě; povrch dlouhodobě neudržovaný. Kamery na budově pokryté silnou vrstvou prachu, terminál napájen. V souladu s dříve uvedeným podmíněným záměrem hráče SRV pomalu popojelo a zastavilo vedle terminálu cca 1 m od něj, bez viditelné nežádoucí reakce. Displej čitelný ze SRV: SIRIUS CORPORATION, DS-03 ACCESS CONTROL, POWER ONLINE, NETWORK FALLBACK, AUTHENTICATION LOCAL, SECURITY GATE CLOSED, PRESENT BIOMETRIC ID. Kara vyslovila hypotézu, že mohou platit jejich původní oprávnění. Oba stále uvnitř SRV, žádný kontakt s terminálem, žádná biometrická autorizace ani překročení závory.",
+    "pending": null,
     "certainty": "played",
-    "source": "events/000020.json",
+    "source": "events/000021.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -43,12 +34,12 @@
       "live_signal_status": "DETECTED; NODE ID DS-03; FALLBACK; COMMS_SYNC INCOMPLETE; PERIODIC",
       "range_estimate": null,
       "travel_time": null,
-      "certainty": "Cca 20 m k závoře, přesná vzdálenost ke komplexu nezměřena; bezpečnost kamer a systému neověřena.",
-      "origin": "SRV na příjezdové cestě před závorou",
-      "approach_observations": "Spuštěná závora před servisní plochou, terminál s blikající oranžovou kontrolkou, viditelné bezpečnostní kamery. Žádná viditelná reakce objektu.",
-      "distance_to_barrier_m_approx": 20
+      "certainty": "SRV stojí před závorou, terminál cca 1 m od vozidla. Vizuální průzkum nezjistil známky pastí, jejich absence není zaručena.",
+      "origin": "SRV vedle přístupového terminálu DS-03",
+      "approach_observations": "Prašné kamery, napájený terminál, místní biometrická autentizace dle displeje. Bez viditelné reakce při přiblížení.",
+      "distance_to_barrier_m_approx": null
     },
-    "elapsed_since_previous_hours_approx": null
+    "elapsed_since_previous_hours_approx": 0.08333333333333333
   },
   "character": {
     "name": "Rudolf",
@@ -285,8 +276,8 @@
         }
       },
       "SRV": {
-        "location": "SRV na příjezdové cestě k DS-03, cca 20 m před spuštěnou závorou",
-        "status": "Provozuschopné; stojí před závorou, posádka uvnitř.",
+        "location": "SRV na příjezdové cestě DS-03, vedle přístupového terminálu před zavřenou závorou",
+        "status": "Provozuschopné, stojí vedle terminálu před závorou; posádka uvnitř.",
         "trailer": true,
         "energy_percent_at_charge_start": 41,
         "energy_percent": null,
@@ -305,7 +296,7 @@
         "last_measured_energy_percent": 100
       },
       "drone": {
-        "location": "S Rudolfem a Karou v SRV před závorou DS-03",
+        "location": "V SRV vedle terminálu DS-03",
         "status": "Provozuschopný",
         "functions": [
           "Scanning",
@@ -333,7 +324,7 @@
     },
     "npcs": {
       "kara": {
-        "location": "SRV na příjezdové cestě k DS-03, cca 20 m před spuštěnou závorou",
+        "location": "SRV na příjezdové cestě DS-03, vedle přístupového terminálu před zavřenou závorou",
         "role": "Spojenkyně, analýza biologických vzorků",
         "relationship": "Vzájemná důvěra, společná historie; samostatná osobnost",
         "health": null,
@@ -356,14 +347,14 @@
         "known_personal_memories": [
           "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
         ],
-        "current_activity": "Půjčila Rudolfovi dalekohled, samostatně sleduje budovu a okolí."
+        "current_activity": "Prohlíží přístupový terminál; vyslovila hypotézu o platnosti původních oprávnění."
       }
     },
     "locations": {
       "base_4b": "Zázemí, archiv, hangár a výzkum; podle Rudolfova vyjádření v den 18 dostatek konzerv pro dvě osoby, přesný počet a trvanlivost neověřeny. Na konci dne 18 připraveny dvě porce z konzerv a koření, odebrány odpovídající suroviny; zůstatek neznámý.",
       "ds_01": "ONLINE po SEED_REBOOT, Phase 1 zahájena",
       "ds_02": "Ping selhal po rebootu; dříve degradace",
-      "ds_03": "Den 19: vizuálně identifikován komplex mezi skalními výběžky, komunikační stožár, nízká kovová budova ve svahu, jedna parabola nakloněná. Pasivně potvrzen aktuální periodický signál 1452,7 MHz, ID DS-03, FALLBACK, COMMS_SYNC INCOMPLETE. DBE přistála cca 1,2 km od komplexu. Přístup a vnitřek neprozkoumány. Při pozemním přiblížení zjištěna spuštěná závora u servisní plochy, přístupový terminál s oranžovou blikající kontrolkou a viditelné bezpečnostní kamery. SRV zastavilo cca 20 m před závorou; přístup neověřen, žádná viditelná reakce objektu.",
+      "ds_03": "Den 19: vizuálně identifikován komplex mezi skalními výběžky, komunikační stožár, nízká kovová budova ve svahu, jedna parabola nakloněná. Pasivně potvrzen aktuální periodický signál 1452,7 MHz, ID DS-03, FALLBACK, COMMS_SYNC INCOMPLETE. DBE přistála cca 1,2 km od komplexu. Přístup a vnitřek neprozkoumány. Při pozemním přiblížení zjištěna spuštěná závora u servisní plochy, přístupový terminál s oranžovou blikající kontrolkou a viditelné bezpečnostní kamery. SRV zastavilo cca 20 m před závorou; přístup neověřen, žádná viditelná reakce objektu. Po vizuální kontrole SRV přistoupilo k terminálu bez komplikací. Displej nabízí místní biometrickou autentizaci, síť FALLBACK, závora CLOSED. Autorizace nevyzkoušena.",
       "ds_04": "Ztracený nebo degradovaný signál; neověřeno",
       "ds_delta2": "Podzemní archiv zálohován a zapečetěn, Rudolf se vrátil na 4B.",
       "satellite_module": "Starý triangulační modul na trase k DS-Δ2; při návratu dne 18 stále na označeném místě, nevyzvednut.",
@@ -394,7 +385,7 @@
       "certainty": "Doložené výpisy a simulace, nikoli nezávisle ověřené skutečné chování všech vrstev"
     },
     "expedition_ds03": {
-      "status": "barrier_visual_inspection_pending",
+      "status": "at_access_terminal",
       "supplies": {
         "food_days_for_two": 3,
         "water_days_for_two": 3,
@@ -420,6 +411,17 @@
         "reason": "Neověřený přístupový terminál a závora; opatrný postup na žádost hráče.",
         "drone_accompanying": true,
         "building_entered": false
+      },
+      "access_terminal": {
+        "event": "000021",
+        "distance_from_srv_m_approx": 1,
+        "power": "ONLINE",
+        "network": "FALLBACK",
+        "authentication": "LOCAL",
+        "prompt": "PRESENT BIOMETRIC ID",
+        "gate": "CLOSED",
+        "contacted": false,
+        "authorization_verified": false
       }
     }
   },
@@ -428,7 +430,7 @@
       "id": "ds03",
       "status": "open",
       "title": "Prozkoumat DS-03",
-      "detail": "SRV stojí cca 20 m před spuštěnou závorou; před dalším přiblížením probíhá detailní vizuální kontrola cesty a okolí závory, čeká se na Perception hod. Kara sleduje budovu."
+      "detail": "Vizuální kontrola cesty dokončena (Perception 18), žádné viditelné známky pastí. SRV stojí vedle napájeného terminálu před zavřenou závorou. Terminál vyžaduje místní biometrickou autentizaci; hráč ji dosud neprovedl."
     },
     {
       "id": "delta2-data",

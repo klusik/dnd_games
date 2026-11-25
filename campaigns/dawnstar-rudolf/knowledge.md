@@ -42,3 +42,7 @@ Technology 11 (DC10 dosažen). Ze stojící DBE nebyly v dostupném zorném poli
 ## Den 19, pozemní přiblížení k DS-03 (event 000019)
 
 Oba v SRV s Δ-47, DBE zabezpečena. Při opatrné jízdě nebyl pozorován pohyb, vozidla ani zjevné známky nedávné lidské činnosti. SRV zastavilo cca 20 m před spuštěnou závorou u servisní plochy. Vedle závory přístupový terminál s pravidelně blikající oranžovou kontrolkou; na budově viditelné bezpečnostní kamery, žádné zjevné zbraně či obranné věže. Žádná viditelná reakce objektu. Kara odhaduje napájení alespoň části bezpečnostního systému; funkčnost, bezpečnost a autorizace přístupu nejsou ověřeny. Závora nepřekročena, terminál nekontaktován.
+
+## Den 19, u přístupového terminálu DS-03 (event 000021)
+
+Perception 18. Vizuálně bez známek pastí či nedávných zásahů do cesty; kamery pokryté prachem. SRV popojelo bez komplikací a stojí vedle terminálu cca 1 m od něj před zavřenou závorou. Displej: SIRIUS CORPORATION, DS-03 ACCESS CONTROL, POWER ONLINE, NETWORK FALLBACK, AUTHENTICATION LOCAL, SECURITY GATE CLOSED, PRESENT BIOMETRIC ID. Kara předpokládá možnost původních oprávnění, ale nikdo se dosud neautentizoval. Pozorování nepotvrzují absolutní bezpečnost, ani funkčnost kamer.

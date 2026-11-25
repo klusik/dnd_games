@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 20,
+  "revision": 21,
+  "day": 19,
+  "type": "barrier_inspection_result",
+  "player_action": "hod 16",
+  "dm_response": "Perception: 16 (hod) + 2 (dovednost) = 18.\n\nPo důkladném prozkoumání cesty nenacházíš žádné viditelné známky nastražených pastí. Povrch vypadá dlouhodobě neudržovaný, ale bez zjevných stop nedávného zásahu.\n\nVšimneš si také, že kamery na budově mají poměrně silnou vrstvu prachu. Přístupový terminál je oproti nim zjevně stále napájený.\n\nPomalu popojedeš k závoře a zastavíš vedle terminálu. Nic neobvyklého se během přiblížení nestane.\n\nZ bezprostřední blízkosti už dokážeš přečíst jeho displej.\n\nSIRIUS CORPORATION\nDS-03 ACCESS CONTROL\nPOWER: ONLINE\nNETWORK: FALLBACK\nAUTHENTICATION: LOCAL\nSECURITY GATE: CLOSED\nPRESENT BIOMETRIC ID\n\n„No vida. Biometrie,“ poznamená Kara. „Možná nám budou pořád platit naše původní přístupová oprávnění.“\n\nTerminál je přibližně metr od SRV. Oba jste stále uvnitř vozidla. Zatím jste se systému nijak nedotkli a závora zůstává zavřená.",
+  "rolls": [
+    {
+      "owner": "player",
+      "skill": "Perception",
+      "dice": "1d20",
+      "raw": 16,
+      "modifier": 2,
+      "total": 18,
+      "outcome": "Vizuální průzkum dokončen, další pozorování a bezpečné přiblížení."
+    }
+  ],
+  "changes": [
+    "Vyhodnocen čekající hod, pending zrušen; skryté DC nezveřejněno.",
+    "Nová fikční pozorování: prašné kamery, žádné viditelné známky pastí ani nedávných zásahů. Skryté hrozby nevyloučeny.",
+    "Popojetí k terminálu provedeno na základě předchozího výslovného podmíněného záměru hráče; odhad DM cca 5 minut pro kontrolu a přiblížení.",
+    "Terminál čitelný, místní biometrická autentizace nabízena; žádný kontakt ani autentizace. Platnost oprávnění je hypotéza Kary.",
+    "Posádka zůstává v SRV, závora nepřekročena."
+  ],
+  "sources": [
+    "events/000020.json",
+    "events/000019.json",
+    "knowledge.md: dřívější biometrické autorizace",
+    "Nový herní výsledek tohoto tahu"
+  ],
+  "correction_of": null
+}
