@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 11,
+  "revision": 12,
+  "day": 18,
+  "type": "maintenance_repair_result",
+  "player_action": "Hodil jsem 3",
+  "dm_response": "Engineering 3+5+1=9 proti DC12, nekritický neúspěch. Výměna těsnění, doplnění chladiva, tlaková zkouška. Po 120 s tlak z 240 na 233 kPa, před opravou z 240 na 218 kPa. Zkouška FAILED, únik menší. Δ-47 odhalil neparalelní dosedací plochy přípojky, nové těsnění stlačeno nerovnoměrně, ale nepoškozené. Možnost uvolnit uchycení potrubí a vyrovnat přípojku s dronem a zopakovat zkoušku, cca 15 min, Engineering 1d20+6 DC10, pokud hráč zvolí metodu. Žádný další pokus automaticky neproběhl.",
+  "rolls": [
+    {
+      "owner": "player",
+      "skill": "Engineering",
+      "dice": "1d20",
+      "raw": 3,
+      "modifier": 6,
+      "total": 9,
+      "dc": 12,
+      "success": false,
+      "critical": false
+    }
+  ],
+  "changes": [
+    "Původní čekající hod vyhodnocen.",
+    "Výměna jednoho těsnění a doplnění média; únik snížen, oprava není dokončena.",
+    "Uplynulo cca 25 minut; nové tlakové hodnoty a příčina jsou fikční rozhodnutí DM. Zbývající stav náhradních dílů neznámý.",
+    "Navržena konkrétní oprava s nižším DC, bez zahájení nového pokusu.",
+    "SRV dále nabíjí, poslední naměřená hodnota 68 %, aktuální nezměřena."
+  ],
+  "sources": [
+    "events/000011.json",
+    "rules.md",
+    "Nový herní výsledek tohoto tahu"
+  ],
+  "correction_of": null
+}

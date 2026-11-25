@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 11,
-  "last_event": "000011",
+  "revision": 12,
+  "last_event": "000012",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,24 +12,10 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "maintenance",
-    "resume": "Rudolf Kaře oznámil, že opraví všechny tři zjištěné závady s dronem, a nabídl jí odpočinek. Kara odešla do obytné části. Rudolf s Δ-47 otevřel servisní panel pravého motoru DBE a provedl samostatný servisní test okruhů bez spuštění hlavního motoru. Primární okruh nominální; sekundární zkušební tlak 240 kPa, po 120 s 218 kPa; čerpadlo 100 %, výměník průchodný. Dron lokalizoval ztvrdlé prasklé těsnění přípojky, přípojka a potrubí bez zjevného poškození, kompatibilní náhradní těsnění v dílně. Plán: výměna těsnění, doplnění média, odvzdušnění a tlaková zkouška. Čeká se na hráčův hod Engineering 1d20+6 (skill +5, Field Precision Tools +1), DC 12. Žádná oprava dosud provedena; kabeláž a tažné zařízení zůstávají otevřené.",
-    "pending": {
-      "kind": "roll",
-      "skill": "Engineering",
-      "dice": "1d20",
-      "modifier": 6,
-      "modifier_breakdown": {
-        "engineering": 5,
-        "drone_field_precision_tools": 1
-      },
-      "dc": 12,
-      "action": "Oprava sekundárního chladicího okruhu pravého motoru DBE s asistencí Δ-47: výměna těsnění, doplnění chladicího média, odvzdušnění a kontrola těsnosti.",
-      "roll_owner": "player",
-      "raw": null,
-      "total": null
-    },
+    "resume": "Rudolf hodil 3 na kostce, Engineering +5 a Field Precision Tools +1 = 9 proti DC12, nekritický neúspěch. Během cca 25 minut vyměnil těsnění sekundárního chladicího okruhu pravého motoru, doplnil médium a provedl tlakovou zkoušku. Tlak po 120 s klesl z 240 na 233 kPa (před opravou 218 kPa). Netěsnost zmenšena, ale zkouška neúspěšná. Δ-47 odhalil neparalelní dosedací plochy přípojky a nerovnoměrné stlačení těsnění; nové těsnění nepoškozeno. Možná náprava: uvolnit uchycení potrubí, vyrovnat přípojku přesnými nástroji drona a zopakovat zkoušku, cca 15 minut, Engineering 1d20+6 DC10, pokud hráč zvolí tuto metodu. Zatím nejde o zahájený pokus, čeká se na rozhodnutí. Opravy kabeláže a tažného zařízení stále otevřeny.",
+    "pending": null,
     "certainty": "played",
-    "source": "events/000011.json",
+    "source": "events/000012.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -50,7 +36,7 @@
       "travel_time": null,
       "certainty": "Pouze odhad z uložené mapy, nikoli nové měření; přesný azimut a délka trasy nejsou ověřeny."
     },
-    "elapsed_since_previous_hours_approx": null
+    "elapsed_since_previous_hours_approx": 0.4166666666666667
   },
   "character": {
     "name": "Rudolf",
@@ -135,7 +121,7 @@
         "status": "Atmosférický let možný podle dosavadního stavu; nově zjištěné chlazení pravého motoru a kabeláž vhodné opravit před expedicí.",
         "hull": "Dřívější opravy drží, bez nových deformací a nového zjevného poškození; pro atmosférický let se jeví dostatečně pevný.",
         "left_engine": "Funkční a čistý",
-        "right_engine": "Provizorně opraven a mechanicky stabilizován; detailní kontrola dne 18 odhalila netěsné těsnění sekundárního chladicího okruhu, tlak klesá při zahřátí, riziko přehřátí při delším vysokém výkonu.",
+        "right_engine": "Provizorně opravený motor; nové těsnění instalováno, netěsnost sekundárního okruhu zmenšena, avšak tlaková zkouška neúspěšná. Odhalena nesouosost dosedacích ploch přípojky; nutná náprava před expedicí.",
         "maneuvering": "Kalibrováno; jeden kabelový svazek se při vibracích otírá o kov, izolace poškozena, vodiče neporušeny.",
         "control": "Náhradní čip, drobná HUD nekompatibilita",
         "power": "Stabilní hlavní reaktor, omezená záloha",
@@ -164,10 +150,18 @@
           {
             "id": "right-cooling-seal",
             "priority": "high",
-            "status": "pending_repair_roll",
-            "estimated_minutes": 25,
-            "parts": "Náhradní těsnění v dílně",
-            "risk": "Přehřátí při delším vysokém výkonu"
+            "status": "partial_repair_failed_test",
+            "estimated_minutes": 15,
+            "parts": "Nové těsnění instalováno a nepoškozeno, další náhradní díl pro navrženou opravu není potřeba.",
+            "risk": "Přehřátí při delším vysokém výkonu",
+            "proposed_next_action": {
+              "action": "Uvolnit uchycení potrubí, vyrovnat přípojku s Δ-47 a zopakovat tlakovou zkoušku.",
+              "dice": "1d20",
+              "modifier": 6,
+              "dc": 10,
+              "estimated_minutes": 15,
+              "requires_player_decision": true
+            }
           },
           {
             "id": "maneuvering-harness",
@@ -188,7 +182,17 @@
           "heat_exchanger": "Bez omezení",
           "leak": "Ztvrdlé těsnění přípojky s drobnou prasklinou; přípojka a potrubí bez zjevného poškození.",
           "replacement": "Kompatibilní těsnění v dílně",
-          "repair_completed": false
+          "repair_completed": false,
+          "latest_test": {
+            "event": "000012",
+            "start_kpa": 240,
+            "after_120_seconds_kpa": 233,
+            "pressure_loss_kpa": 7,
+            "status": "FAILED",
+            "cause": "Nerovnoměrné stlačení nového těsnění kvůli neparalelním dosedacím plochám.",
+            "new_seal_intact": true
+          },
+          "replacement_installed": true
         }
       },
       "SRV": {
@@ -309,7 +313,7 @@
         "packed_by": "Kara",
         "loaded_on_ship": null
       },
-      "maintenance_remaining_minutes_approx": 50,
+      "maintenance_remaining_minutes_approx": 40,
       "departure": "Plánováno ráno, podmíněno opravami a kontrolou",
       "convergence_authorized": false
     }
@@ -319,7 +323,7 @@
       "id": "ds03",
       "status": "open",
       "title": "Prozkoumat DS-03",
-      "detail": "Zásoby na tři dny pro oba připraveny Karou. Rudolf dokončil inspekci DBE a SRV; tři opravy cca 50 minut zbývají, SRV 68 % a nabíjí se. Odlet dosud neproveden."
+      "detail": "Zásoby připraveny, SRV se nabíjí. První pokus o opravu chlazení zmenšil únik, ale neprošel zkouškou; cca 40 minut zbývajících oprav při úspěchu. Odlet dosud neproveden."
     },
     {
       "id": "delta2-data",
