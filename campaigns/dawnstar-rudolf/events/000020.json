@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 19,
+  "revision": 20,
+  "day": 19,
+  "type": "barrier_inspection_pending_roll",
+  "player_action": "Pořádně se rozhlédnu, jestli si nevšimnu nějaké pasti, lanka přes cestu, nášlapné miny, optická pojítka, něco tkaového. Chtěl bych přijet SRVčkem k závoře a pak se podívat na terminál, ale než tak učiním, chci být obezřetný.",
+  "dm_response": "Zůstaneš stát a několik minut si důkladně prohlížíš prostor mezi SRV a závorou. Kara ti podá dalekohled a sama sleduje okolí budovy.\n\nPříjezdová cesta je zčásti pokrytá prachem a drobným kamením. Na několika místech ještě rozeznáváš původní dopravní značení. Okraje cesty jsou zarostlé nízkou vegetací.\n\nNa první pohled nevidíš žádné zjevné překážky ani pohyb. Zajímavé je, že kontrolka terminálu stále bliká ve stejném rytmu a žádná z viditelných kamer se zatím neotočila vaším směrem.\n\n„Když už jsme tak blízko, můžu sledovat budovu, zatímco ty se budeš věnovat cestě,“ řekne Kara.\n\nPerception, detailní vizuální kontrola příjezdové cesty a okolí závory, 1d20 + 2.\n\nHoď si. Podle výsledku vyhodnotíme, čeho si všimneš, než se rozhodneš popojet k terminálu.",
+  "rolls": [],
+  "changes": [
+    "Zahájena podrobná vizuální kontrola z nezměněné pozice SRV; dalekohled zapůjčen Karou, která samostatně sleduje budovu.",
+    "Předběžná fikční pozorování: prach, kamení, značení, nízká vegetace; žádný zjevný pohyb, kontrolka beze změny, žádné pozorované otočení kamer.",
+    "Čekající hod Perception +2. Obtížnost nezveřejněna dle preference hráče; žádný další bonus za pomoc bez společného provádění stejného úkonu.",
+    "Žádné potvrzení bezpečnosti, žádný posun SRV, výstup ani kontakt s terminálem."
+  ],
+  "sources": [
+    "events/000019.json",
+    "rules.md",
+    "Nový fikční průběh v tomto tahu"
+  ],
+  "correction_of": null
+}

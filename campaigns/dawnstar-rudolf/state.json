@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign_id": "dawnstar-rudolf",
-  "revision": 19,
-  "last_event": "000019",
+  "revision": 20,
+  "last_event": "000020",
   "status": "active",
   "language": "cs",
   "scene": {
@@ -12,10 +12,19 @@
     "system": "Gliese 5206",
     "planet": "Gliese 5206 c",
     "phase": "exploration",
-    "resume": "Rudolf potvrdil pomalý opatrný postup a zastavení při čemkoli podezřelém. Oba přešli do SRV, vzali Δ-47, zabezpečili DBE a jeli přibližně 10 km/h, Kara sledovala okolí. Bez pozorovaného pohybu, vozidel a zjevných známek nedávné lidské činnosti. Kara upozornila na sloupek a Rudolf v souladu se svým záměrem zastavil cca 20 m před spuštěnou závorou u servisního parkoviště. Vedle závory přístupový terminál s pravidelně blikající oranžovou kontrolkou. Na budově viditelné bezpečnostní kamery, žádné zjevné zbraně či obranné věže. Závora se nehýbe, žádná viditelná reakce objektu. Kara odhaduje, že alespoň část bezpečnostního systému je napájena, navrhla ověřit přístup přes terminál. Oba uvnitř stojícího SRV, dron s nimi. Žádný kontakt s terminálem, překročení závory ani konvergence.",
-    "pending": null,
+    "resume": "Rudolf chce důkladně vizuálně prověřit příjezdovou cestu a okolí závory kvůli možným pastem, než se přiblíží SRV k terminálu. Zůstává stát cca 20 m před závorou. Kara půjčila dalekohled a sleduje budovu. Cesta zčásti pokryta prachem a drobným kamením, viditelné zbytky dopravního značení, nízká vegetace u okrajů. Na první pohled žádné zjevné překážky ani pohyb, kontrolka terminálu bliká stejným rytmem, žádná z viditelných kamer se zatím neotočila směrem k posádce. Čeká se na hráčův hod Perception 1d20+2 k podrobnému vizuálnímu průzkumu, DC neveřejné podle pravidel. Žádný posun vozidla, žádný kontakt s terminálem ani ověření nepřítomnosti pastí.",
+    "pending": {
+      "kind": "roll",
+      "skill": "Perception",
+      "dice": "1d20",
+      "modifier": 2,
+      "action": "Podrobná vizuální kontrola příjezdové cesty a okolí závory ze stojícího SRV s dalekohledem, před podmíněným přiblížením k terminálu. Kara sleduje budovu samostatně. Výsledek určí pozorované stopy, nikoli absolutní bezpečnost. Žádné popojetí před vyhodnocením.",
+      "roll_owner": "player",
+      "raw": null,
+      "total": null
+    },
     "certainty": "played",
-    "source": "events/000019.json",
+    "source": "events/000020.json",
     "planet_index": 3,
     "location_source": "ChatGPT log.txt:1725-1784; 2052",
     "navigation_analysis": {
@@ -39,7 +48,7 @@
       "approach_observations": "Spuštěná závora před servisní plochou, terminál s blikající oranžovou kontrolkou, viditelné bezpečnostní kamery. Žádná viditelná reakce objektu.",
       "distance_to_barrier_m_approx": 20
     },
-    "elapsed_since_previous_hours_approx": 0.16666666666666666
+    "elapsed_since_previous_hours_approx": null
   },
   "character": {
     "name": "Rudolf",
@@ -343,11 +352,11 @@
           "Zjistit, zda jejich uváznutí bylo úmyslné, nebo následkem nehody; posoudit případné riziko návratu mezi lidi.",
           "Soustředit další pátrání na DS-03 a přístup k archivu paměti, vynechat nepodstatné odbočky a nespouštět konvergenci bez pochopení následků."
         ],
-        "last_question": "Zkusíme zjistit, jestli nás ten terminál pustí dovnitř?",
+        "last_question": null,
         "known_personal_memories": [
           "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
         ],
-        "current_activity": "Sleduje okolí a prohlíží přístupový terminál dalekohledem."
+        "current_activity": "Půjčila Rudolfovi dalekohled, samostatně sleduje budovu a okolí."
       }
     },
     "locations": {
@@ -385,7 +394,7 @@
       "certainty": "Doložené výpisy a simulace, nikoli nezávisle ověřené skutečné chování všech vrstev"
     },
     "expedition_ds03": {
-      "status": "stopped_before_access_barrier",
+      "status": "barrier_visual_inspection_pending",
       "supplies": {
         "food_days_for_two": 3,
         "water_days_for_two": 3,
@@ -419,7 +428,7 @@
       "id": "ds03",
       "status": "open",
       "title": "Prozkoumat DS-03",
-      "detail": "Posádka se opatrně přiblížila SRV, stojí cca 20 m před spuštěnou závorou DS-03. Terminál bliká, bezpečnostní kamery viditelné; vstup a funkce obrany neověřeny. Kara navrhla zjistit přístup přes terminál."
+      "detail": "SRV stojí cca 20 m před spuštěnou závorou; před dalším přiblížením probíhá detailní vizuální kontrola cesty a okolí závory, čeká se na Perception hod. Kara sleduje budovu."
     },
     {
       "id": "delta2-data",
