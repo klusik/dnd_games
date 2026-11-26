@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 55,
+  "revision": 56,
+  "day": 19,
+  "type": "reception_agree_to_explore",
+  "player_action": "„Jo, proč ne. Pamatuješ si, které ty dveře byly otevřené a funkční? Vyrazíme na průzkum?“",
+  "dm_response": "Kara: „Hlavní vchod určitě funguje ručně, sama jsem ho otevřela. A ty dveře vlevo do komunikačního střediska jsou pootevřené. U ostatních si jistá nejsem.“ Zkontrolovala zbraň a obrátila se k levé chodbě. „Jsem pro. Začneme tím komunikačním střediskem. Třeba tam najdeme ten kufřík a rovnou zjistíme, co brání synchronizaci.“ Podívala se na Δ-47: „Pošleme ho zase napřed, nebo půjdeme všichni společně?“ Zobrazena orientační mapa podle dříve získaného schématu a reportu dveří. Kara neobdržela celý výpis DOOR STATUS; její odpověď vychází z přímého pozorování. Skupina dosud neopustila recepci.",
+  "rolls": [],
+  "changes": [
+    "Rudolf a Kara se dohodli na průzkumu komunikačního střediska; způsob postupu ponechán na hráči.",
+    "Kara zkontrolovala zbraň a otočila se k levé chodbě; držení zbraní, poloha skupiny a stav dronu se nemění.",
+    "Bez hodu, změny konfigurace, zdraví, inventáře či doložené spotřeby; konzole stále odemčená v P-005."
+  ],
+  "sources": [
+    "events/000026.json",
+    "events/000028.json",
+    "events/000032.json",
+    "events/000046.json",
+    "events/000048.json",
+    "events/000055.json",
+    "characters/kara.json"
+  ],
+  "correction_of": null
+}
