@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 51,
+  "revision": 52,
+  "day": 19,
+  "type": "reception_main_menu_return",
+  "player_action": "„Souhlasím,“ pokývnu. Dám ESC a zpět do hlavní nabídky.",
+  "dm_response": "Kara přikývla a opět se věnuje hlídání chodby. Rudolf souhlasil s jejím návrhem na držení sklopených zbraní při případném setkání s neznámou osobou. Stiskl ESC a vrátil se do hlavní nabídky RECEPTION-01, relace aktivní. [1] STATION DIRECTORY, [2] SYSTEM STATUS, [3] SECURITY & SURVEILLANCE, [4] ACCESS LOG již přečteny v dostupném rozsahu; [5] PERSONNEL REGISTRY dosud neotevřen.",
+  "rolls": [],
+  "changes": [
+    "Zaznamenán Rudolfův souhlas s návrhem na neagresivní kontakt při případném setkání; současné držení zbraní se nemění.",
+    "Návrat do hlavního menu; předchozí reporty zachovány.",
+    "Rutinní rozhovor a navigace bez hodu; žádná změna konfigurace, zdraví, pozic, inventáře či doložené spotřeby."
+  ],
+  "sources": [
+    "events/000050.json",
+    "events/000051.json",
+    "world/expedition-ds03.json",
+    "characters/kara.json"
+  ],
+  "correction_of": null
+}

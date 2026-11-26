@@ -20,7 +20,8 @@
     "Den 19, event 000044: Rudolf jí sdělil obsah dvou starších záznamů CAM-03 v rozsahu neidentifikované postavy nesoucí kufřík dovnitř a podobné postavy vracející se bez něj; další záznamy zachycují jejich příchod. Nezná identitu, současné místo osoby ani obsah kufříku. Přesné stáří záznamů a obsluhu panelu jí Rudolf v tomto tahu výslovně nesdělil.",
     "Den 19, event 000046: Rudolf sdělil, že přístupové události odpovídají videu a že systém zaznamenal servisní vstup s referencí AUTH-019, bez přiřazené konkrétní identity. Kara navrhla zjistit, komu byl token vydán. Skutečnou identitu ani vlastníka tokenu nezná; Rudolf jí zatím nesdělil výsledek DOOR STATUS.",
     "Den 19, event 000047: Rudolf vyslovil domněnku, že po spuštění stanice může být možné vzdálené ovládání dveří. Kara upozornila na oprávnění read-only a nejistotu ohledně postačujícího obnovení napájení. Přesný seznam stavů dveří jí Rudolf výslovně nepředal.",
-    "Den 19, event 000051: Rudolf jí ukázal aktuální ACCESS LOG. Kara si přečetla záznam AUTH-019, včetně pozdějšího vstupu D-04 (134 s po CAM-03/003) a přiřazení servisnímu oprávnění bez konkrétní osobní identity. Vnímá možnost, že by neznámý držitel mohl být údržbář a mohl pomoci, ale jeho identitu, motiv, současnou polohu a úplnost záznamu nezná. Rudolf vyslovil domněnku, že osoba odešla a již není vidět."
+    "Den 19, event 000051: Rudolf jí ukázal aktuální ACCESS LOG. Kara si přečetla záznam AUTH-019, včetně pozdějšího vstupu D-04 (134 s po CAM-03/003) a přiřazení servisnímu oprávnění bez konkrétní osobní identity. Vnímá možnost, že by neznámý držitel mohl být údržbář a mohl pomoci, ale jeho identitu, motiv, současnou polohu a úplnost záznamu nezná. Rudolf vyslovil domněnku, že osoba odešla a již není vidět.",
+    "Den 19, event 000052: Rudolf slovně souhlasil s návrhem Kary držet zbraně při případném setkání s neznámou osobou sklopené. Žádný bezprostřední pokyn ke změně držení zbraně nebo pohybu."
   ],
   "name": "Kara Velin",
   "age": 32,
@@ -35,7 +36,7 @@
   "known_personal_memories": [
     "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
   ],
-  "current_activity": "U recepce vedle Rudolfa, přečetla ukázaný výpis ACCESS LOG, upozornila na D-04 a možnost kontaktu s údržbářem. Navrhla při případném setkání držet zbraně sklopené, nikoli je nyní odložit. Rozhlíží se směrem k pravé chodbě a nadále hlídá okolí. Zbraň připravena, svítilna zapnuta.",
+  "current_activity": "U recepce vedle Rudolfa, po jeho souhlasu s návrhem na neagresivní kontakt se opět věnuje hlídání chodby. Zbraň připravena, svítilna zapnuta.",
   "level": null,
   "xp": null,
   "species": "Human",
