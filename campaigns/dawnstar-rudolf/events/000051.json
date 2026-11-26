@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 50,
+  "revision": 51,
+  "day": 19,
+  "type": "reception_share_access_log",
+  "player_action": "„Karo, tady ten člověk,“ ukazuji na displej, „nejspíš pak zmizel a odešel, víc už ho vidět není, no.“ Ale nejspíš to nemusí znamenat, že tu nikde není, prostě jen není vidět. A i když, nevypadal nebepzečně.",
+  "dm_response": "Kara se naklonila k monitoru a přečetla ukázaný výpis. „Počkej, tady máš ještě jeden vstup. Engineering. Dvě minuty poté, co vyšel z komunikačního střediska.“ Ukázala na AUTH-019. „Jestli je to opravdu údržbář, mohl by nám dokonce pomoct. Třeba ví, proč stanice nefunguje. Docela ráda bych si promluvila s někým, kdo si pamatuje, co se tady stalo.“ Narovnala se a podívala směrem k pravé chodbě. „Ale pokud ho potkáme, nechala bych zbraně sklopené. Nemusíme hned vypadat jako ozbrojená přepadovka.“ Její spojení událostí je hypotéza; přesný odstup dle konzole 134 s. Hráčovo nevyřčené hodnocení nebylo Kaře připsáno jako sdělená znalost.",
+  "rolls": [],
+  "changes": [
+    "Kara získala znalost ukázaného výpisu ACCESS LOG a vyjádřila zájem o případný neagresivní kontakt.",
+    "Žádné nové potvrzení totožnosti, bezpečnosti či současného pobytu osoby.",
+    "Žádná změna polohy, výstroje, držení zbraní, konfigurace, zdraví či doložené spotřeby. Rutinní rozhovor bez hodu. Konzole stále v ACCESS LOG."
+  ],
+  "sources": [
+    "events/000044.json",
+    "events/000046.json",
+    "events/000050.json",
+    "characters/kara.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}
