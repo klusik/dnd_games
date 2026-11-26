@@ -196,8 +196,50 @@
         "ACCESS LOG",
         "PERSONNEL REGISTRY"
       ],
-      "prompt": "SELECT OPTION",
-      "view": "MAIN MENU"
+      "prompt": "ESC RETURN TO MAIN MENU",
+      "view": "ACCESS LOG",
+      "access_log": {
+        "source": "LOCAL AUTHORIZATION CACHE",
+        "auth_019": {
+          "reference": "AUTH-019",
+          "credential_type": "SERVICE TOKEN",
+          "assigned_to": "COMMS MAINTENANCE UNIT",
+          "personal_identity": "NOT ASSIGNED",
+          "biometric_binding": "NONE",
+          "validation": "LOCAL CACHE",
+          "credential_status": "ACCEPTED",
+          "authorized_sectors": [
+            {
+              "door": "D-02",
+              "name": "COMMUNICATIONS CONTROL"
+            },
+            {
+              "door": "D-04",
+              "name": "ENGINEERING & MAINTENANCE"
+            },
+            {
+              "door": "D-06",
+              "name": "SERVICE ENTRANCE"
+            }
+          ],
+          "recorded_access_events": [
+            {
+              "relative_reference": "CAM-03/004",
+              "door": "D-02",
+              "result": "ACCESS GRANTED",
+              "direction": "ENTRY"
+            },
+            {
+              "relative_reference": "CAM-03/003",
+              "offset_seconds": 134,
+              "door": "D-04",
+              "result": "ACCESS GRANTED",
+              "direction": "ENTRY"
+            }
+          ],
+          "subsequent_events": "NO SUBSEQUENT AUTH-019 EVENTS IN AVAILABLE LOCAL CACHE"
+        }
+      }
     },
     "last_authentication": {
       "event": "000035",
@@ -206,7 +248,11 @@
       "observed_reaction": "Modré světlo čtečky, tiché pípnutí, čitelná hlavní nabídka. Bez pozorovaného alarmu či pohybu kamery.",
       "certainty": "Lokální výpis terminálu; globální oprávnění a přístup k jednotlivým funkcím neověřeny."
     },
-    "selected_menu_item": null,
+    "selected_menu_item": {
+      "number": 4,
+      "name": "ACCESS LOG",
+      "event": "000050"
+    },
     "system_status_report": {
       "event": "000037",
       "query_type": "LOCAL DIAGNOSTICS | LIVE QUERY",
@@ -631,6 +677,50 @@
         }
       ],
       "certainty": "Nově získané schéma a popis funkcí z lokálního adresáře. Odpovídá dřívějším směrovkám, ale přesné rozměry, podlaží, vnitřní dispozice, skutečná průchodnost a aktuální poloha osob nejsou ověřeny. D-06 propojuje exteriér s technickou sekcí podle adresáře; funkčnost neověřena. Stavy dveří jsou dřívější report 000046, nikoli nové měření."
+    },
+    "access_log_report": {
+      "event": "000050",
+      "source": "LOCAL AUTHORIZATION CACHE",
+      "auth_019": {
+        "reference": "AUTH-019",
+        "credential_type": "SERVICE TOKEN",
+        "assigned_to": "COMMS MAINTENANCE UNIT",
+        "personal_identity": "NOT ASSIGNED",
+        "biometric_binding": "NONE",
+        "validation": "LOCAL CACHE",
+        "credential_status": "ACCEPTED",
+        "authorized_sectors": [
+          {
+            "door": "D-02",
+            "name": "COMMUNICATIONS CONTROL"
+          },
+          {
+            "door": "D-04",
+            "name": "ENGINEERING & MAINTENANCE"
+          },
+          {
+            "door": "D-06",
+            "name": "SERVICE ENTRANCE"
+          }
+        ],
+        "recorded_access_events": [
+          {
+            "relative_reference": "CAM-03/004",
+            "door": "D-02",
+            "result": "ACCESS GRANTED",
+            "direction": "ENTRY"
+          },
+          {
+            "relative_reference": "CAM-03/003",
+            "offset_seconds": 134,
+            "door": "D-04",
+            "result": "ACCESS GRANTED",
+            "direction": "ENTRY"
+          }
+        ],
+        "subsequent_events": "NO SUBSEQUENT AUTH-019 EVENTS IN AVAILABLE LOCAL CACHE"
+      },
+      "certainty": "Pozorovaný lokální výpis; ACCEPTED je hlášení konzole, nikoli nezávislé ověření aktuální platnosti. Stejný token není důkaz totožnosti jeho uživatele. Nepřítomnost dalšího záznamu není důkaz, že osoba neopustila technickou sekci nebo stanici. D-04 zůstává aktuálně neověřená; dřívější autorizace neprokazuje dnešní průchodnost. Původ časové základny a úplnost cache neověřeny."
     }
   }
 }

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 49,
+  "revision": 50,
+  "day": 19,
+  "type": "reception_access_log",
+  "player_action": "Vyberu položku 4: ACCESS LOG.",
+  "dm_response": "Rudolf otevřel ACCESS LOG a našel AUTH-019 v lokální autorizační cache. Credential type SERVICE TOKEN; assigned to COMMS MAINTENANCE UNIT; personal identity NOT ASSIGNED; biometric binding NONE; validation LOCAL CACHE; credential status ACCEPTED. Authorized sectors D-02 COMMUNICATIONS CONTROL, D-04 ENGINEERING & MAINTENANCE, D-06 SERVICE ENTRANCE. Evidence: D-02 ACCESS GRANTED ENTRY při CAM-03/004; D-04 ACCESS GRANTED ENTRY 2 min 14 s po události CAM-03/003. NO SUBSEQUENT AUTH-019 EVENTS IN AVAILABLE LOCAL CACHE. Stejný token může naznačovat přesun stejné osoby do technické sekce, pokud nezměnil držitele; neprokazuje totožnost ani současný pobyt. Obsah kufříku neznámý, absence dalšího záznamu neprokazuje, že osoba neodešla. Kara zatím o výpisu nebyla výslovně informována. ESC návrat do hlavního menu. Schéma pouze ilustruje hypotézu, nikoli potvrzenou trasu.",
+  "rolls": [],
+  "changes": [
+    "Přečten lokální ACCESS LOG; podrobnosti AUTH-019 a evidované sektory zaznamenány.",
+    "Nová stopa: D-04 ACCESS GRANTED ENTRY stejným tokenem 134 s po CAM-03/003. Souvislost osob a aktuální přítomnost zůstávají hypotézou.",
+    "Rutinní čtení bez hodu, žádná změna konfigurace, pozic, zdraví, inventáře a doložené spotřeby."
+  ],
+  "sources": [
+    "events/000042.json",
+    "events/000045.json",
+    "events/000046.json",
+    "events/000048.json",
+    "events/000049.json",
+    "world/expedition-ds03.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}
