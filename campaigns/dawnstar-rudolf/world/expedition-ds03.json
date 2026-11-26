@@ -196,8 +196,8 @@
         "ACCESS LOG",
         "PERSONNEL REGISTRY"
       ],
-      "prompt": "SELECT PERSONNEL RECORD OR SEARCH OR ESC RETURN TO MAIN MENU",
-      "view": "PERSONNEL REGISTRY",
+      "prompt": "ESC RETURN TO PERSONNEL REGISTRY",
+      "view": "PERSONNEL RECORD",
       "personnel_registry": {
         "source": "LOCAL PERSONNEL CACHE",
         "last_synchronization": "UNKNOWN",
@@ -246,6 +246,33 @@
           "OPEN PERSONNEL RECORD",
           "SEARCH PERSONNEL"
         ]
+      },
+      "personnel_record": {
+        "id": "P-005",
+        "name": "Nadia Chen",
+        "age": 35,
+        "employer": "Sirius Corporation",
+        "role": "Systems Engineer",
+        "department": "COMMS MAINTENANCE UNIT",
+        "assignment": "DS-03",
+        "specialization": "SYSTEMS INTEGRATION",
+        "personnel_status": "UNKNOWN",
+        "last_duty_assignment": "FALLBACK SYSTEM VALIDATION",
+        "last_duty_assignment_timestamp": null,
+        "primary_responsibilities": [
+          "Network infrastructure",
+          "Emergency power distribution",
+          "Node synchronization",
+          "Fallback diagnostics"
+        ],
+        "current_location": "UNAVAILABLE",
+        "personal_auth_019_assignment": null,
+        "identification_photo": {
+          "available": true,
+          "description": "Portrét ženy, tmavé vlasy po ramena, technická uniforma."
+        },
+        "source": "LOCAL PERSONNEL CACHE",
+        "read_event": "000054"
       }
     },
     "last_authentication": {
@@ -774,14 +801,81 @@
           "department": "DATA CENTER"
         }
       ],
-      "opened_records": [],
-      "selected_record": null,
+      "opened_records": [
+        "P-004",
+        "P-005"
+      ],
+      "selected_record": "P-005",
       "search_performed": false,
       "functions": [
         "OPEN PERSONNEL RECORD",
         "SEARCH PERSONNEL"
       ],
-      "certainty": "Pozorovaný index lokálně uloženého personálního registru. Šest záznamů není potvrzený počet přítomných či všech zaměstnanců. Zařazení Mercera a Chen ke stejné jednotce jako AUTH-019 není důkaz, že token použili, ani potvrzení jejich současné polohy. Podrobné profily, úplnost indexu, aktuálnost záznamů a výsledek případného vyhledávání dosud neověřeny."
+      "certainty": "Pozorovaný index lokálně uloženého personálního registru. Šest záznamů není potvrzený počet přítomných či všech zaměstnanců. Zařazení Mercera a Chen ke stejné jednotce jako AUTH-019 není důkaz, že token použili, ani potvrzení jejich současné polohy. Podrobné profily, úplnost indexu, aktuálnost záznamů a výsledek případného vyhledávání dosud neověřeny.",
+      "profile_details": [
+        {
+          "id": "P-004",
+          "name": "Daniel Mercer",
+          "age": 42,
+          "employer": "Sirius Corporation",
+          "role": "Maintenance Technician",
+          "department": "COMMS MAINTENANCE UNIT",
+          "assignment": "DS-03",
+          "specialization": "FIELD HARDWARE",
+          "personnel_status": "UNKNOWN",
+          "last_duty_assignment": "ANTENNA INTERFACE INSPECTION",
+          "last_duty_assignment_timestamp": null,
+          "primary_responsibilities": [
+            "Antenna assemblies",
+            "Signal amplifiers",
+            "Physical communication interfaces",
+            "Equipment replacement"
+          ],
+          "current_location": "UNAVAILABLE",
+          "personal_auth_019_assignment": null,
+          "identification_photo": {
+            "available": true,
+            "description": "Portrét muže, krátké hnědošedé vlasy, krátký vous, technická uniforma."
+          },
+          "source": "LOCAL PERSONNEL CACHE",
+          "read_event": "000054"
+        },
+        {
+          "id": "P-005",
+          "name": "Nadia Chen",
+          "age": 35,
+          "employer": "Sirius Corporation",
+          "role": "Systems Engineer",
+          "department": "COMMS MAINTENANCE UNIT",
+          "assignment": "DS-03",
+          "specialization": "SYSTEMS INTEGRATION",
+          "personnel_status": "UNKNOWN",
+          "last_duty_assignment": "FALLBACK SYSTEM VALIDATION",
+          "last_duty_assignment_timestamp": null,
+          "primary_responsibilities": [
+            "Network infrastructure",
+            "Emergency power distribution",
+            "Node synchronization",
+            "Fallback diagnostics"
+          ],
+          "current_location": "UNAVAILABLE",
+          "personal_auth_019_assignment": null,
+          "identification_photo": {
+            "available": true,
+            "description": "Portrét ženy, tmavé vlasy po ramena, technická uniforma."
+          },
+          "source": "LOCAL PERSONNEL CACHE",
+          "read_event": "000054"
+        }
+      ],
+      "last_profile_review": {
+        "event": "000054",
+        "order": [
+          "P-004",
+          "P-005"
+        ],
+        "certainty": "Částečně dostupné historické profily z lokální cache; čas posledního pracovního zařazení chybí, současný stav, držitel tokenu a identifikace postavy z videa neověřeny."
+      }
     }
   }
 }

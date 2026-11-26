@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 53,
+  "revision": 54,
+  "day": 19,
+  "type": "reception_personnel_profiles",
+  "player_action": "Postupně kliknu na obě jména (P004 i 005) a podívám se, co tam najdu",
+  "dm_response": "PERSONNEL REGISTRY (000054): Rudolf otevřel postupně P-004 Daniel Mercer (42 let, Maintenance Technician, FIELD HARDWARE, DS-03, poslední evidovaný úkol ANTENNA INTERFACE INSPECTION, anténní sestavy, zesilovače signálu, fyzická komunikační rozhraní, výměna vybavení) a P-005 Nadia Chen (35 let, Systems Engineer, SYSTEMS INTEGRATION, DS-03, poslední evidovaný úkol FALLBACK SYSTEM VALIDATION, síťová infrastruktura, nouzová distribuce napájení, synchronizace uzlů, diagnostika fallback). Oba Sirius Corporation, COMMS MAINTENANCE UNIT. U obou dostupná identifikační fotografie, ale tváře na kamerových záznamech nelze rozeznat. Personnel status UNKNOWN, current location UNAVAILABLE, čas posledního pracovního zařazení neznámý; žádné osobní přiřazení AUTH-019 v profilech. Aktuální platnost a úplnost lokálních údajů neověřena, držitel tokenu neidentifikován. Kara zatím výslovně neinformována o profilech. Mercer je hardwarový technik, Chen se zabývá systémovou integrací a jejím posledním evidovaným úkolem je ověřování fallback. Zobrazeny schematické rekonstrukce identifikačních fotografií. Aktuální obrazovka P-005; ESC vrací do seznamu. Žádné další úkony.",
+  "rolls": [],
+  "changes": [
+    "Přečteny dva detailní personální profily v pořadí P-004, P-005, nové údaje z lokální cache uloženy v modulu výpravy.",
+    "Žádné potvrzení identity držitele AUTH-019, aktuální polohy osob či data posledního úkolu.",
+    "Rutinní čtení bez hodu. Žádná změna konfigurace, pozic, zdraví, inventáře či doložené spotřeby."
+  ],
+  "sources": [
+    "events/000042.json",
+    "events/000050.json",
+    "events/000053.json",
+    "world/expedition-ds03.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}
