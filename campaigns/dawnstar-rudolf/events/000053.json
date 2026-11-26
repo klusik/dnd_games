@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 52,
+  "revision": 53,
+  "day": 19,
+  "type": "reception_personnel_registry",
+  "player_action": "Vyberu položku 5: PERSONNEL REGISTRY.",
+  "dm_response": "Rudolf otevřel PERSONNEL REGISTRY; po několika sekundách zobrazen lokální index, centrální databáze nedostupná. PERSONNEL REGISTRY (000053): pokus o centrální databázi neúspěšný, LOCAL PERSONNEL CACHE, LAST SYNCHRONIZATION UNKNOWN, CURRENT OCCUPANCY UNKNOWN. Šest záznamů: P-001 Dr. Helena Ward, Station Supervisor, ADMINISTRATION; P-002 Marcus Hale, Communications Specialist, COMMUNICATIONS CONTROL; P-003 Elena Voss, Synchronization Engineer, COMMUNICATIONS CONTROL; P-004 Daniel Mercer, Maintenance Technician, COMMS MAINTENANCE UNIT; P-005 Nadia Chen, Systems Engineer, COMMS MAINTENANCE UNIT; P-006 Adrian Cole, Data Administrator, DATA CENTER. P-004 Daniel Mercer a P-005 Nadia Chen mají dle indexu stejnou organizační jednotku COMMS MAINTENANCE UNIT jako AUTH-019; nejde o identifikaci držitele tokenu. Detailní záznamy dosud neotevřeny, vyhledávání neprovedeno. Kara o novém výpisu dosud výslovně neinformována. Nabídka umožňuje otevřít jednotlivé personální záznamy, SEARCH PERSONNEL nebo ESC návrat do hlavní nabídky. Aktuální obsazenost neznámá. Žádná další akce neprovedena.",
+  "rolls": [],
+  "changes": [
+    "Přečten index lokálního personálního registru, šest nově pozorovaných záznamů uloženo v modulu výpravy.",
+    "Daniel Mercer a Nadia Chen mají dle výpisu stejnou organizační jednotku jako AUTH-019, nikoli potvrzenou identitu držitele tokenu.",
+    "Rutinní čtení bez hodu; žádná změna konfigurace, pozic, zdraví, inventáře a doložené spotřeby."
+  ],
+  "sources": [
+    "events/000036.json",
+    "events/000050.json",
+    "events/000052.json",
+    "world/expedition-ds03.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}

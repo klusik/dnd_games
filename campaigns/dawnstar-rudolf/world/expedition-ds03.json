@@ -196,8 +196,57 @@
         "ACCESS LOG",
         "PERSONNEL REGISTRY"
       ],
-      "prompt": "SELECT OPTION",
-      "view": "MAIN MENU"
+      "prompt": "SELECT PERSONNEL RECORD OR SEARCH OR ESC RETURN TO MAIN MENU",
+      "view": "PERSONNEL REGISTRY",
+      "personnel_registry": {
+        "source": "LOCAL PERSONNEL CACHE",
+        "last_synchronization": "UNKNOWN",
+        "central_database": "UNREACHABLE",
+        "cached_personnel_records": 6,
+        "current_occupancy": "UNKNOWN",
+        "entries": [
+          {
+            "id": "P-001",
+            "name": "Dr. Helena Ward",
+            "role": "Station Supervisor",
+            "department": "ADMINISTRATION"
+          },
+          {
+            "id": "P-002",
+            "name": "Marcus Hale",
+            "role": "Communications Specialist",
+            "department": "COMMUNICATIONS CONTROL"
+          },
+          {
+            "id": "P-003",
+            "name": "Elena Voss",
+            "role": "Synchronization Engineer",
+            "department": "COMMUNICATIONS CONTROL"
+          },
+          {
+            "id": "P-004",
+            "name": "Daniel Mercer",
+            "role": "Maintenance Technician",
+            "department": "COMMS MAINTENANCE UNIT"
+          },
+          {
+            "id": "P-005",
+            "name": "Nadia Chen",
+            "role": "Systems Engineer",
+            "department": "COMMS MAINTENANCE UNIT"
+          },
+          {
+            "id": "P-006",
+            "name": "Adrian Cole",
+            "role": "Data Administrator",
+            "department": "DATA CENTER"
+          }
+        ],
+        "functions": [
+          "OPEN PERSONNEL RECORD",
+          "SEARCH PERSONNEL"
+        ]
+      }
     },
     "last_authentication": {
       "event": "000035",
@@ -206,7 +255,11 @@
       "observed_reaction": "Modré světlo čtečky, tiché pípnutí, čitelná hlavní nabídka. Bez pozorovaného alarmu či pohybu kamery.",
       "certainty": "Lokální výpis terminálu; globální oprávnění a přístup k jednotlivým funkcím neověřeny."
     },
-    "selected_menu_item": null,
+    "selected_menu_item": {
+      "number": 5,
+      "name": "PERSONNEL REGISTRY",
+      "event": "000053"
+    },
     "system_status_report": {
       "event": "000037",
       "query_type": "LOCAL DIAGNOSTICS | LIVE QUERY",
@@ -675,6 +728,60 @@
         "subsequent_events": "NO SUBSEQUENT AUTH-019 EVENTS IN AVAILABLE LOCAL CACHE"
       },
       "certainty": "Pozorovaný lokální výpis; ACCEPTED je hlášení konzole, nikoli nezávislé ověření aktuální platnosti. Stejný token není důkaz totožnosti jeho uživatele. Nepřítomnost dalšího záznamu není důkaz, že osoba neopustila technickou sekci nebo stanici. D-04 zůstává aktuálně neověřená; dřívější autorizace neprokazuje dnešní průchodnost. Původ časové základny a úplnost cache neověřeny."
+    },
+    "personnel_registry_report": {
+      "event": "000053",
+      "source": "LOCAL PERSONNEL CACHE",
+      "last_synchronization": "UNKNOWN",
+      "central_database": "UNREACHABLE",
+      "cached_personnel_records": 6,
+      "current_occupancy": "UNKNOWN",
+      "entries": [
+        {
+          "id": "P-001",
+          "name": "Dr. Helena Ward",
+          "role": "Station Supervisor",
+          "department": "ADMINISTRATION"
+        },
+        {
+          "id": "P-002",
+          "name": "Marcus Hale",
+          "role": "Communications Specialist",
+          "department": "COMMUNICATIONS CONTROL"
+        },
+        {
+          "id": "P-003",
+          "name": "Elena Voss",
+          "role": "Synchronization Engineer",
+          "department": "COMMUNICATIONS CONTROL"
+        },
+        {
+          "id": "P-004",
+          "name": "Daniel Mercer",
+          "role": "Maintenance Technician",
+          "department": "COMMS MAINTENANCE UNIT"
+        },
+        {
+          "id": "P-005",
+          "name": "Nadia Chen",
+          "role": "Systems Engineer",
+          "department": "COMMS MAINTENANCE UNIT"
+        },
+        {
+          "id": "P-006",
+          "name": "Adrian Cole",
+          "role": "Data Administrator",
+          "department": "DATA CENTER"
+        }
+      ],
+      "opened_records": [],
+      "selected_record": null,
+      "search_performed": false,
+      "functions": [
+        "OPEN PERSONNEL RECORD",
+        "SEARCH PERSONNEL"
+      ],
+      "certainty": "Pozorovaný index lokálně uloženého personálního registru. Šest záznamů není potvrzený počet přítomných či všech zaměstnanců. Zařazení Mercera a Chen ke stejné jednotce jako AUTH-019 není důkaz, že token použili, ani potvrzení jejich současné polohy. Podrobné profily, úplnost indexu, aktuálnost záznamů a výsledek případného vyhledávání dosud neověřeny."
     }
   }
 }
