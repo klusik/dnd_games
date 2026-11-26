@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 54,
+  "revision": 55,
+  "day": 19,
+  "type": "reception_share_personnel_profile",
+  "player_action": "„Koukni,“ ukážu na displej, jeden z nich to nejspíš bude.",
+  "dm_response": "Kara přečetla aktuálně zobrazený profil Nadii Chen. „Nouzové napájení, synchronizace uzlů, diagnostika. Tahle ženská by nám byla zatraceně užitečná.“ Po chvíli: „A kdo je ten druhý? Pamatuješ si jeho jméno?“ Podívala se směrem ke komunikačnímu středisku. „Asi bych se nejdřív podívala po tom kufříku. Třeba zjistíme, na čem tu vlastně pracovali.“ Kara neviděla profil P-004. Její návrh neznamená potvrzení polohy kufříku ani automatický přesun skupiny.",
+  "rolls": [],
+  "changes": [
+    "Kara získala znalost právě zobrazeného profilu P-005 a hráčovy hypotézy, nikoli automaticky profilu P-004.",
+    "Kara se zeptala na druhého člověka a navrhla průzkum komunikačního střediska. Totožnost neznámé osoby nepotvrzena.",
+    "Rutinní rozhovor bez hodu. Bez změny konfigurace, pozic, zdraví, inventáře a doložené spotřeby. Konzole stále zobrazuje P-005."
+  ],
+  "sources": [
+    "events/000051.json",
+    "events/000054.json",
+    "characters/kara.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}
