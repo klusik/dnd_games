@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 48,
+  "revision": 49,
+  "day": 19,
+  "type": "reception_main_menu_return",
+  "player_action": "Vrátím se do hlavní nabídky konzole.",
+  "dm_response": "Rudolf stiskl ESC a vrátil se do hlavního menu RECEPTION-01. Relace RDF-ΔK452 R-CLASS zůstala odemčená. Nabídka: [1] STATION DIRECTORY (přečteno), [2] SYSTEM STATUS (přečteno), [3] SECURITY & SURVEILLANCE (prohlédnuty dostupné čtecí funkce), [4] ACCESS LOG, [5] PERSONNEL REGISTRY. Kara nadále hlídá okolí, v hale je klid.",
+  "rolls": [],
+  "changes": [
+    "Návrat ze STATION DIRECTORY do hlavního menu; schéma a dosavadní reporty zachovány.",
+    "Rutinní navigace bez hodu. Bez změny konfigurace, pozic, zdraví, inventáře a doložené spotřeby."
+  ],
+  "sources": [
+    "events/000047.json",
+    "events/000048.json",
+    "world/expedition-ds03.json"
+  ],
+  "correction_of": null
+}
