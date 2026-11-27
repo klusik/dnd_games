@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 56,
+  "revision": 57,
+  "day": 19,
+  "type": "comms_control_threshold_recon_pending",
+  "player_action": "„Karo, pojďme tedy do D-02, jo? Opatrně, koukneme do dveří, zkusíme je trošku pootevřít více...“",
+  "dm_response": "Kara tiše souhlasila. Rudolf a Kara prošli levou chodbou a došli k D-02. Levá komunikační chodba cca 8 m od recepce, kabelové svazky pod stropem, ovládací panely, nouzové osvětlení a jedna funkční bílá světelná lišta. D-02 pootevřené cca 25 cm; Rudolf ručně posunul křídlo při mírném odporu na otvor cca 65 cm, slabé tření mechanismu. Oba zůstali před prahem, Kara na druhé straně zárubně. Viditelné konzole, vybavení vzadu; Kara při Perception 16+3=19 zahlédla na stole za konzolí předmět, který může být kufříkem. Identita předmětu a obsah neověřeny. V dostupném výhledu žádný pohyb, slabé hučení elektroniky a ventilace. Výhled do celé místnosti omezen. Δ-47 bez nového příkazu čeká pod kamerou CAM-02 u recepce. Orientační nákres zobrazuje pouze omezený výhled. Rudolf Perception 1d20+2, čeká na hráčův hod. Rutinní ruční posun dveří bez hodu. Dron zůstal bez nového příkazu na místě.",
+  "rolls": [
+    {
+      "actor": "kara",
+      "skill": "Perception",
+      "dice": "1d20",
+      "roll": 16,
+      "modifier": 3,
+      "total": 19,
+      "result": "V omezeném zorném poli zahlédla konzole, vybavení a možný kufřík na stole za konzolí; skutečná identita předmětu a bezpečnost místnosti neověřeny."
+    }
+  ],
+  "changes": [
+    "Rudolf a Kara se přesunuli z recepce před práh D-02, Δ-47 zůstal u recepce. Recepční terminál ponechán bez obsluhy, poslední pozorovaná relace odemčená.",
+    "D-02 ručně rozšířeno přibližně z 25 na 65 cm, bez vstupu, žádná změna konfigurace ani zásah do zámku.",
+    "Kara provedla vlastní vizuální průzkum, pozorovala možný kufřík. Uložen pending Rudolf Perception 1d20+2; žádná tajná hranice není uložena.",
+    "Bez změny zdraví, inventáře, munice a doložené číselné spotřeby."
+  ],
+  "sources": [
+    "events/000032.json",
+    "events/000040.json",
+    "events/000046.json",
+    "events/000048.json",
+    "events/000056.json",
+    "characters/kara.json",
+    "characters/rudolf.json",
+    "characters/delta-47.json",
+    "world/expedition-ds03.json",
+    "rules.md",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}

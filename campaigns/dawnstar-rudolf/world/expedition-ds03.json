@@ -100,10 +100,10 @@
       },
       "kara_comment": "Některé systémy zřejmě fungují, možnost pozorování neověřena.",
       "current_positions": {
-        "event": "000034",
-        "rudolf": "Uvnitř haly u recepčního pultu",
-        "kara": "Těsně vedle Rudolfa u recepce, sleduje chodby",
-        "drone": "Uvnitř pod kamerou nad recepcí"
+        "event": "000057",
+        "rudolf": "Levá komunikační chodba před prahem D-02, u zárubně",
+        "kara": "Před prahem D-02 na druhé straně zárubně",
+        "drone": "Uvnitř vstupní haly DS-03 přímo pod kamerou nad recepcí"
       }
     },
     "drone_entered": true,
@@ -876,6 +876,51 @@
         ],
         "certainty": "Částečně dostupné historické profily z lokální cache; čas posledního pracovního zařazení chybí, současný stav, držitel tokenu a identifikace postavy z videa neověřeny."
       }
+    },
+    "last_attended": {
+      "event": "000057",
+      "last_observed_view": "PERSONNEL RECORD",
+      "last_observed_session": "UNLOCKED",
+      "unattended": true,
+      "current_session_verified": false
+    }
+  },
+  "comms_control": {
+    "approach": {
+      "event": "000057",
+      "corridor_length_m_approx": 8,
+      "observed": "Kabelové svazky, ovládací panely, nouzové osvětlení a jedna bílá světelná lišta."
+    },
+    "door": {
+      "id": "D-02",
+      "event": "000057",
+      "opening_before_cm_approx": 25,
+      "opening_after_cm_approx": 65,
+      "operation": "Ručně posunuto, mírný odpor, slabé tření mechanismu.",
+      "entered": false
+    },
+    "threshold_recon": {
+      "event": "000057",
+      "positions": "Rudolf a Kara před prahem na opačných stranách zárubně, Δ-47 u recepce.",
+      "visible": "Několik konzolí, vybavení vzadu, část stolu. Ve viditelné části žádný pohyb.",
+      "audible": "Slabé hučení elektroniky a ventilace.",
+      "kara_roll": {
+        "dice": "1d20",
+        "roll": 16,
+        "modifier": 3,
+        "total": 19
+      },
+      "kara_observation": "Na stole za konzolí předmět, který může být hledaným kufříkem; identita neověřena.",
+      "rudolf_pending": {
+        "type": "skill_check",
+        "actor": "rudolf",
+        "skill": "Perception",
+        "dice": "1d20",
+        "modifier": 2,
+        "context": "Vizuální průzkum z prahu D-02 do COMMUNICATIONS CONTROL po ručním rozšíření otvoru na cca 65 cm. Rudolf dosud nevstoupil. Kara již provedla vlastní pozorování (16+3=19), její hod neopakovat. Hráč rozlišuje další viditelné detaily a možné stopy či rizika v omezeném zorném poli.",
+        "event": "000057"
+      },
+      "entered": false
     }
   }
 }

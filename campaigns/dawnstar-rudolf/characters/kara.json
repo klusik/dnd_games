@@ -3,7 +3,7 @@
   "campaign_id": "dawnstar-rudolf",
   "id": "kara",
   "kind": "character_sheet",
-  "location": "Uvnitř vstupní haly DS-03 těsně vedle Rudolfa u recepce",
+  "location": "DS-03, levá komunikační chodba, před prahem D-02 na opačné straně zárubně než Rudolf",
   "role": "Spojenkyně, analýza biologických vzorků",
   "relationship": "Vzájemná důvěra, společná historie; samostatná osobnost",
   "health": null,
@@ -23,7 +23,8 @@
     "Den 19, event 000051: Rudolf jí ukázal aktuální ACCESS LOG. Kara si přečetla záznam AUTH-019, včetně pozdějšího vstupu D-04 (134 s po CAM-03/003) a přiřazení servisnímu oprávnění bez konkrétní osobní identity. Vnímá možnost, že by neznámý držitel mohl být údržbář a mohl pomoci, ale jeho identitu, motiv, současnou polohu a úplnost záznamu nezná. Rudolf vyslovil domněnku, že osoba odešla a již není vidět.",
     "Den 19, event 000052: Rudolf slovně souhlasil s návrhem Kary držet zbraně při případném setkání s neznámou osobou sklopené. Žádný bezprostřední pokyn ke změně držení zbraně nebo pohybu.",
     "Den 19, event 000055: Rudolf ukázal aktuální profil P-005 Nadia Chen, Systems Engineer, COMMS MAINTENANCE UNIT, odpovědnosti zahrnují nouzovou distribuci energie, synchronizaci uzlů a fallback diagnostiku. Rudolf předpokládá, že jeden ze dvou nalezených lidí může být osoba z kamer. Kara dosud neviděla profil P-004 a nezná jméno druhého člověka. Identita držitele tokenu ani aktuální poloha obou osob nepotvrzeny.",
-    "Den 19, event 000056: Rudolf souhlasil s návrhem průzkumu a zeptal se na stav dveří. Kara vychází ze svého přímého pozorování ručně otevřeného hlavního vstupu a pootevřených dveří do komunikačního střediska; nezná spolehlivý stav ostatních dveří. Souhlasí s průzkumem komunikačního střediska kvůli kufříku a synchronizaci. Zeptala se na postup s Δ-47."
+    "Den 19, event 000056: Rudolf souhlasil s návrhem průzkumu a zeptal se na stav dveří. Kara vychází ze svého přímého pozorování ručně otevřeného hlavního vstupu a pootevřených dveří do komunikačního střediska; nezná spolehlivý stav ostatních dveří. Souhlasí s průzkumem komunikačního střediska kvůli kufříku a synchronizaci. Zeptala se na postup s Δ-47.",
+    "Den 19, event 000057: D-02 bylo možné ručně rozšířit z cca 25 na 65 cm; z prahu viděla konzole, vybavení a na stole předmět, který může být kufříkem. Obsah místnosti, bezpečnost a identita předmětu neověřeny."
   ],
   "name": "Kara Velin",
   "age": 32,
@@ -34,11 +35,11 @@
     "Zjistit, zda jejich uváznutí bylo úmyslné, nebo následkem nehody; posoudit případné riziko návratu mezi lidi.",
     "Soustředit další pátrání na DS-03 a přístup k archivu paměti, vynechat nepodstatné odbočky a nespouštět konvergenci bez pochopení následků."
   ],
-  "last_question": "Pošleme ho zase napřed, nebo půjdeme všichni společně?",
+  "last_question": null,
   "known_personal_memories": [
     "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
   ],
-  "current_activity": "U recepce vedle Rudolfa, zkontrolovala připravenou zbraň a obrátila se směrem k levé chodbě, svítilna zapnuta. Připravena na průzkum komunikačního střediska; čeká na Rudolfovu volbu, zda vyslat Δ-47 napřed nebo jít společně. Ještě neopustila recepci.",
+  "current_activity": "Opatrně došla s Rudolfem k D-02. Nakoukla dovnitř z druhé strany zárubně, Perception 16+3=19. Vidí konzole, vybavení a na stole za konzolí možný kufřík. Sdělila pozorování Rudolfovi, zatím nevstoupila. Zbraň připravena, svítilna zapnuta.",
   "level": null,
   "xp": null,
   "species": "Human",
