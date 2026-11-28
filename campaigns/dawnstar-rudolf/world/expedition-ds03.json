@@ -1084,8 +1084,8 @@
         ],
         "session": "UNLOCKED",
         "authority": "LOCAL",
-        "prompt": "SELECT SERVICE FUNCTION OR ESC RETURN TO MAIN MENU",
-        "view": "SERVICE INTERFACE",
+        "prompt": "ESC RETURN TO SERVICE INTERFACE",
+        "view": "LINK DETAILS",
         "biometric_match": "CONFIRMED",
         "subject": "RDF-ΔK452",
         "classification": "R-CLASS",
@@ -1117,6 +1117,41 @@
             "SERVICE CONTROL"
           ],
           "control_access": "LOCKED; ADDITIONAL AUTHORIZATION REQUIRED"
+        },
+        "link_details": {
+          "event": "000066",
+          "terminal": "COMMS CONTROL-01",
+          "mode": "LOCAL DIAGNOSTICS",
+          "access": "READ ONLY",
+          "physical_interface": "RACK-A / SVC-02",
+          "link_status": "ACTIVE",
+          "capture_point": "COMMS_SYNC BUS",
+          "capture_format": "PROTOCOL FRAMES",
+          "capture_mode": "PASSIVE MIRROR",
+          "destination": "EXTERNAL DEVICE",
+          "monitored_channels": [
+            {
+              "name": "ANTENNA RX BUFFER",
+              "status": "FRAMES PRESENT",
+              "description": "Přijaté komunikační rámce"
+            },
+            {
+              "name": "LOCAL SYNC TX QUEUE",
+              "status": "REQUESTS PRESENT",
+              "description": "Místní požadavky na synchronizaci"
+            },
+            {
+              "name": "SYNC STATE EVENTS",
+              "status": "ACTIVE",
+              "description": "Interní stavové zprávy"
+            }
+          ],
+          "remote_node_authentication": "INCOMPLETE",
+          "outbound_rf_delivery": "UNCONFIRMED",
+          "external_device_ack": "PRESENT",
+          "external_control_channel": "NOT ROUTED",
+          "auxiliary_power_output": "ENABLED",
+          "certainty": "Výpis místní diagnostiky, nikoli nezávislé ověření skutečného RF příjmu, původu či stáří rámců v bufferu, jejich obsahu nebo doručení odchozích požadavků. Konzole hlásí zrcadlení protokolových rámců z RX, TX a interních stavových zpráv, ACK od externího zařízení a nepřesměrovaný řídicí kanál. Neprokazuje identitu zařízení, absenci jiných řídicích cest, uložení všech dat ani skutečný účel zařízení. Kufřík pravděpodobný příjemce dle dřívějšího fyzického sledování kabelu od racku A; konkrétní port SVC-02 dosud fyzicky neověřen. Schéma pouze rekonstrukce podle výpisu."
         }
       },
       "observed_by": "kara",
@@ -1171,8 +1206,47 @@
           "SERVICE CONTROL"
         ],
         "control_access": "LOCKED; ADDITIONAL AUTHORIZATION REQUIRED",
-        "selected_function": null,
+        "selected_function": {
+          "number": 1,
+          "name": "LINK DETAILS",
+          "event": "000066"
+        },
         "certainty": "Pozorovaný výpis místní diagnostiky, nikoli nezávisle ověřený tok, obsah, účel, stav napájení nebo totožnost zařízení. Fyzický port patří k označenému racku A, ze kterého Rudolf sledoval kabel ke kufříku; přímá vazba konkrétního portu SVC-02 na tento kabel zatím neověřena. AUTH-019 je referencí úlohy, nikoli důkazem totožnosti osoby ani přesného času jejího spuštění. Hodnota 4,8 kB je údaj rozhraní za poslední minutu při dotazu, nikoli konstantní přenosová rychlost. Graf je schematická ilustrace, ne uložený časový průběh."
+      },
+      "link_details_report": {
+        "event": "000066",
+        "terminal": "COMMS CONTROL-01",
+        "mode": "LOCAL DIAGNOSTICS",
+        "access": "READ ONLY",
+        "physical_interface": "RACK-A / SVC-02",
+        "link_status": "ACTIVE",
+        "capture_point": "COMMS_SYNC BUS",
+        "capture_format": "PROTOCOL FRAMES",
+        "capture_mode": "PASSIVE MIRROR",
+        "destination": "EXTERNAL DEVICE",
+        "monitored_channels": [
+          {
+            "name": "ANTENNA RX BUFFER",
+            "status": "FRAMES PRESENT",
+            "description": "Přijaté komunikační rámce"
+          },
+          {
+            "name": "LOCAL SYNC TX QUEUE",
+            "status": "REQUESTS PRESENT",
+            "description": "Místní požadavky na synchronizaci"
+          },
+          {
+            "name": "SYNC STATE EVENTS",
+            "status": "ACTIVE",
+            "description": "Interní stavové zprávy"
+          }
+        ],
+        "remote_node_authentication": "INCOMPLETE",
+        "outbound_rf_delivery": "UNCONFIRMED",
+        "external_device_ack": "PRESENT",
+        "external_control_channel": "NOT ROUTED",
+        "auxiliary_power_output": "ENABLED",
+        "certainty": "Výpis místní diagnostiky, nikoli nezávislé ověření skutečného RF příjmu, původu či stáří rámců v bufferu, jejich obsahu nebo doručení odchozích požadavků. Konzole hlásí zrcadlení protokolových rámců z RX, TX a interních stavových zpráv, ACK od externího zařízení a nepřesměrovaný řídicí kanál. Neprokazuje identitu zařízení, absenci jiných řídicích cest, uložení všech dat ani skutečný účel zařízení. Kufřík pravděpodobný příjemce dle dřívějšího fyzického sledování kabelu od racku A; konkrétní port SVC-02 dosud fyzicky neověřen. Schéma pouze rekonstrukce podle výpisu."
       }
     },
     "drone_arrival": {

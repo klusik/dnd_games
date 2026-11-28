@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 65,
+  "revision": 66,
+  "day": 19,
+  "type": "comms_control_service_link_details",
+  "player_action": "„Píše mi to Comms_sync, to může být cokoliv... mrknu na 'link details', třeba to pomůže.“ A otevřu [1]",
+  "dm_response": "Rudolf sdělil Kaře SOURCE COMMS_SYNC a záměr otevřít LINK DETAILS. Kara: „Tak snad tam bude vidět, odkud si ta synchronizace bere data,“ a dál hlídá u D-02. Rudolf otevřel [1] LINK DETAILS. Výpis: RACK-A / SVC-02 ACTIVE, CAPTURE POINT COMMS_SYNC BUS, CAPTURE FORMAT PROTOCOL FRAMES, CAPTURE MODE PASSIVE MIRROR, DESTINATION EXTERNAL DEVICE; ANTENNA RX BUFFER FRAMES PRESENT, LOCAL SYNC TX QUEUE REQUESTS PRESENT, SYNC STATE EVENTS ACTIVE; REMOTE NODE AUTHENTICATION INCOMPLETE, OUTBOUND RF DELIVERY UNCONFIRMED, EXTERNAL DEVICE ACK PRESENT, EXTERNAL CONTROL CHANNEL NOT ROUTED, AUXILIARY POWER OUTPUT ENABLED. Podle konzole se kopírují přijaté rámce, místní odchozí požadavky a interní stavové zprávy, externí zařízení hlásí ACK. Nelze potvrdit zdroj vysílání, doručení odchozích požadavků, aktuálnost RX bufferu, identitu zařízení nebo skutečný účel. Absence směrovaného řídicího kanálu v tomto rozhraní nevylučuje jiné možnosti řízení. Kara dosud nedostala nový detailní výpis. Zobrazeno schéma toku podle diagnostiky: anténní RX buffer, lokální TX fronta a stavové zprávy do COMMS_SYNC BUS, zrcadlení přes RACK-A/SVC-02 do externího zařízení, pravděpodobně kufříku. Výpis naznačuje záznamovou či diagnostickou funkci, nikoli potvrzený účel. ESC návrat do SERVICE INTERFACE.",
+  "rolls": [],
+  "changes": [
+    "Kara obdržela údaj SOURCE COMMS_SYNC; nový detailní výpis dosud neobdržela.",
+    "Otevřeno [1] LINK DETAILS v SERVICE INTERFACE; uloženy údaje o zrcadlených kanálech, formátu, ACK a směrování řídicího kanálu. Skutečný původ a obsah rámců ani identita zařízení nejsou ověřeny.",
+    "Rutinní čtení bez hodu. Žádná další volba, změna poloh, zásah do kufříku, aktivní diagnostika dronem, změna konfigurace, zdraví, inventáře, doložené číselné spotřeby či konvergence."
+  ],
+  "sources": [
+    "events/000060.json",
+    "events/000061.json",
+    "events/000064.json",
+    "events/000065.json",
+    "world/expedition-ds03.json",
+    "characters/kara.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}
