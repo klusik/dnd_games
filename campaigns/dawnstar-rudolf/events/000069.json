@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 68,
+  "revision": 69,
+  "day": 19,
+  "type": "comms_control_synchronization_diagnostics",
+  "player_action": "Ok, vlezu zpět do hlavní nabídky a do synchronization diagnostics.",
+  "dm_response": "Rudolf dvěma stisky ESC přešel do hlavní nabídky a otevřel SYNCHRONIZATION DIAGNOSTICS. SYNCHRONIZATION DIAGNOSTICS (000069): DAWN-SECURE-V2, TRIPLE-NODE, sync incomplete. Uložená konfigurace skupiny DS-03 (LOCAL NODE, EPOCH 17), DS-01 (AUTH REJECTED, přijatý EPOCH 18), DS-Δ2 (NO VALID RESPONSE, EPOCH UNKNOWN). EPOCH TYPE KEY GENERATION, LOCAL KEY MANIFEST CACHED / GEN 17, REFERENCE VALIDATION UNAVAILABLE, LAST ERROR EPOCH MISMATCH. Nabídka [1] NODE STATUS, [2] EPOCH DETAILS, [3] VALIDATION LOG, [4] RESYNCHRONIZATION (zamčeno, další autorizace), ESC hlavní menu. Možná souvislost nové generace s historickým SEED_REBOOT DS-01 (den 14) je nabídnutá hypotéza, ne potvrzený děj či úmysl hráče. Členství DS-Δ2 odpovídá dříve zjištěné závislosti archivu na COMMS_SYNC, ale podmínky odemčení dosud neověřeny. Autoritativní generace a referenční manifest neověřeny. Žádná další funkce neotevřena, žádná synchronizace spuštěna. Kara dosud výslovně neinformována o výpisu. Zobrazeno schéma topologie podle uložené konfigurace. Kara hlídá, Δ-47 čeká, žádná další akce.",
+  "rolls": [],
+  "changes": [
+    "Návrat do hlavní nabídky a otevření synchronizační diagnostiky v jednom zadaném tahu.",
+    "Nové pozorované údaje: konfigurace DS-03, DS-01 a DS-Δ2, EPOCH je podle konzole generace klíčů, lokální 17 a přijatá 18, referenční validace nedostupná. Příčina a autoritativní generace neověřeny.",
+    "Rutinní čtení bez hodu, žádná další volba, změna konfigurace, synchronizace, konvergence, poloh, zdraví, inventáře nebo doložené spotřeby."
+  ],
+  "sources": [
+    "history.md",
+    "knowledge.md",
+    "events/000061.json",
+    "events/000067.json",
+    "events/000068.json",
+    "world/expedition-ds03.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}

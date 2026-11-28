@@ -1084,104 +1084,66 @@
         ],
         "session": "UNLOCKED",
         "authority": "LOCAL",
-        "prompt": "ESC RETURN TO SERVICE INTERFACE",
-        "view": "CAPTURE BUFFER",
+        "prompt": "SELECT DIAGNOSTIC FUNCTION OR ESC RETURN TO MAIN MENU",
+        "view": "SYNCHRONIZATION DIAGNOSTICS",
         "biometric_match": "CONFIRMED",
         "subject": "RDF-ΔK452",
         "classification": "R-CLASS",
         "diagnostic_access": "GRANTED",
         "control_operations": "SUBJECT TO ADDITIONAL AUTHORIZATION",
-        "service_interface": {
-          "physical_port": "RACK-A / SVC-02",
-          "link_status": "ACTIVE",
-          "device_identification": "UNRESOLVED",
-          "data_channel": "ESTABLISHED",
-          "auxiliary_power_output": "ENABLED",
-          "interface_mode": "DIAGNOSTIC BRIDGE",
-          "current_service_task": {
-            "task": "PASSIVE SIGNAL CAPTURE",
-            "source": "COMMS_SYNC",
-            "destination": "EXTERNAL DEVICE",
-            "status": "RUNNING",
-            "authorization_ref": "AUTH-019"
-          },
-          "transfer_sample": {
-            "value": 4.8,
-            "unit": "kB",
-            "window_seconds": 60
-          },
-          "functions": [
-            "LINK DETAILS",
-            "TRANSACTION HISTORY",
-            "CAPTURE BUFFER",
-            "SERVICE CONTROL"
-          ],
-          "control_access": "LOCKED; ADDITIONAL AUTHORIZATION REQUIRED"
-        },
-        "capture_buffer": {
-          "event": "000068",
+        "synchronization_diagnostics": {
+          "event": "000069",
           "terminal": "COMMS CONTROL-01",
-          "source": "COMMS_SYNC BUS",
-          "storage": "LOCAL RING BUFFER",
-          "display_mode": "LIVE",
-          "entries": [
+          "protocol": "DAWN-SECURE-V2",
+          "topology": "TRIPLE-NODE",
+          "topology_source": "LOCAL STORED CONFIGURATION",
+          "sync_status": "INCOMPLETE",
+          "nodes": [
             {
-              "relative_time_seconds": 0,
-              "direction": "TX",
-              "source": "DS-03",
-              "destination": "SYNC GROUP",
-              "type": "SYNC_HELLO",
-              "status": "QUEUED"
+              "id": "DS-03",
+              "role": "LOCAL NODE",
+              "status": "LOCAL",
+              "epoch": 17
             },
             {
-              "relative_time_seconds": 0.218,
-              "direction": "RX",
-              "source": "DS-01",
-              "destination": "DS-03",
-              "type": "SYNC_HELLO_ACK",
-              "status": "CRC VALID"
+              "id": "DS-01",
+              "role": "CONFIGURED PEER",
+              "status": "AUTH REJECTED",
+              "received_epoch": 18,
+              "remote_identity_verified": false
             },
             {
-              "relative_time_seconds": 0.221,
-              "direction": "SYS",
-              "source": "COMMS_SYNC",
-              "destination": "LOCAL",
-              "type": "AUTH_VALIDATION",
-              "status": "EPOCH MISMATCH"
-            },
-            {
-              "relative_time_seconds": 0.223,
-              "direction": "SYS",
-              "source": "COMMS_SYNC",
-              "destination": "LOCAL",
-              "type": "HANDSHAKE_REJECTED",
-              "status": "RETRY SCHEDULED"
-            },
-            {
-              "relative_time_seconds": 8,
-              "direction": "TX",
-              "source": "DS-03",
-              "destination": "SYNC GROUP",
-              "type": "SYNC_HELLO",
-              "status": "QUEUED"
+              "id": "DS-Δ2",
+              "role": "CONFIGURED PEER",
+              "status": "NO VALID RESPONSE",
+              "epoch": null,
+              "remote_identity_verified": false
             }
           ],
-          "repeated_sequence_interval_seconds_approx": 8,
-          "header_decoding": "AVAILABLE",
-          "payload_decoding": "PARTIAL",
-          "remote_identity": "NOT VERIFIED",
-          "external_archive_read": false,
-          "exported": false,
-          "certainty": "Zobrazený vzorek průběžně aktualizovaného lokálního bufferu, nikoli nezávislé RF měření či kompletní archiv. DS-01 je tvrzená identita zdroje v hlavičce přijatého rámce; CRC VALID potvrzuje dle systému kontrolu integrity, nikoli autentizaci identity. TX QUEUED neprokazuje vyslání či doručení. EPOCH MISMATCH je pozorovaná chybová zpráva lokální validace, přesná definice EPOCH, hodnoty, příčina a správná referenční hodnota dosud neznámé. Osmisekundové opakování je pozorovaný průběh výpisu, ne nezávisle ověřená vlastnost protokolu. Souvislost s kufříkem vychází z předchozích servisních výpisů a fyzického kabelu; není potvrzeno, že kufřík všechna data skutečně uchovává."
+          "local_epoch": 17,
+          "received_peer_epoch": 18,
+          "epoch_type": "KEY GENERATION",
+          "local_key_manifest": "CACHED / GEN 17",
+          "reference_validation": "UNAVAILABLE",
+          "last_error": "EPOCH MISMATCH",
+          "functions": [
+            "NODE STATUS",
+            "EPOCH DETAILS",
+            "VALIDATION LOG",
+            "RESYNCHRONIZATION"
+          ],
+          "resynchronization_access": "LOCKED; ADDITIONAL AUTHORIZATION REQUIRED",
+          "selected_function": null,
+          "certainty": "Výpis místní diagnostiky, konfigurace tří členů není ověření jejich přítomnosti či dosažitelnosti. DS-01 je tvrzený vzdálený identifikátor v nepřijatém rámci, epoch 18 jeho hlášená hodnota. DS-Δ2 NO VALID RESPONSE neprokazuje zničení, vypnutí ani absenci vysílání. EPOCH TYPE KEY GENERATION je údaj konzole; skutečná platnost generací, autoritativní referenční manifest a příčina nesouladu nejsou ověřeny. Možná souvislost s dřívějším SEED_REBOOT DS-01 je hypotéza, nikoli potvrzený mechanismus či rozhodnutí hráče. Čtení neprovádí synchronizaci ani konvergenci."
         }
       },
       "observed_by": "kara",
       "input_used": true,
       "authentication_attempted": true,
       "selected_function": {
-        "number": 3,
-        "name": "SERVICE INTERFACE",
-        "event": "000064"
+        "number": 1,
+        "name": "SYNCHRONIZATION DIAGNOSTICS",
+        "event": "000069"
       },
       "configuration_changed": false,
       "certainty": "Kara vizuálně přečetla obrazovku a sdělila Rudolfovi podstatné údaje. SERVICE INTERFACE CONNECTED a fyzické propojení kufříku mohou souviset, ale identita zařízení, datový tok, funkčnost antén a příčina neúplné synchronizace dosud neověřeny.",
@@ -1227,11 +1189,7 @@
           "SERVICE CONTROL"
         ],
         "control_access": "LOCKED; ADDITIONAL AUTHORIZATION REQUIRED",
-        "selected_function": {
-          "number": 3,
-          "name": "CAPTURE BUFFER",
-          "event": "000068"
-        },
+        "selected_function": null,
         "certainty": "Pozorovaný výpis místní diagnostiky, nikoli nezávisle ověřený tok, obsah, účel, stav napájení nebo totožnost zařízení. Fyzický port patří k označenému racku A, ze kterého Rudolf sledoval kabel ke kufříku; přímá vazba konkrétního portu SVC-02 na tento kabel zatím neověřena. AUTH-019 je referencí úlohy, nikoli důkazem totožnosti osoby ani přesného času jejího spuštění. Hodnota 4,8 kB je údaj rozhraní za poslední minutu při dotazu, nikoli konstantní přenosová rychlost. Graf je schematická ilustrace, ne uložený časový průběh."
       },
       "link_details_report": {
@@ -1380,6 +1338,51 @@
         "external_archive_read": false,
         "exported": false,
         "certainty": "Zobrazený vzorek průběžně aktualizovaného lokálního bufferu, nikoli nezávislé RF měření či kompletní archiv. DS-01 je tvrzená identita zdroje v hlavičce přijatého rámce; CRC VALID potvrzuje dle systému kontrolu integrity, nikoli autentizaci identity. TX QUEUED neprokazuje vyslání či doručení. EPOCH MISMATCH je pozorovaná chybová zpráva lokální validace, přesná definice EPOCH, hodnoty, příčina a správná referenční hodnota dosud neznámé. Osmisekundové opakování je pozorovaný průběh výpisu, ne nezávisle ověřená vlastnost protokolu. Souvislost s kufříkem vychází z předchozích servisních výpisů a fyzického kabelu; není potvrzeno, že kufřík všechna data skutečně uchovává."
+      },
+      "synchronization_diagnostics_report": {
+        "event": "000069",
+        "terminal": "COMMS CONTROL-01",
+        "protocol": "DAWN-SECURE-V2",
+        "topology": "TRIPLE-NODE",
+        "topology_source": "LOCAL STORED CONFIGURATION",
+        "sync_status": "INCOMPLETE",
+        "nodes": [
+          {
+            "id": "DS-03",
+            "role": "LOCAL NODE",
+            "status": "LOCAL",
+            "epoch": 17
+          },
+          {
+            "id": "DS-01",
+            "role": "CONFIGURED PEER",
+            "status": "AUTH REJECTED",
+            "received_epoch": 18,
+            "remote_identity_verified": false
+          },
+          {
+            "id": "DS-Δ2",
+            "role": "CONFIGURED PEER",
+            "status": "NO VALID RESPONSE",
+            "epoch": null,
+            "remote_identity_verified": false
+          }
+        ],
+        "local_epoch": 17,
+        "received_peer_epoch": 18,
+        "epoch_type": "KEY GENERATION",
+        "local_key_manifest": "CACHED / GEN 17",
+        "reference_validation": "UNAVAILABLE",
+        "last_error": "EPOCH MISMATCH",
+        "functions": [
+          "NODE STATUS",
+          "EPOCH DETAILS",
+          "VALIDATION LOG",
+          "RESYNCHRONIZATION"
+        ],
+        "resynchronization_access": "LOCKED; ADDITIONAL AUTHORIZATION REQUIRED",
+        "selected_function": null,
+        "certainty": "Výpis místní diagnostiky, konfigurace tří členů není ověření jejich přítomnosti či dosažitelnosti. DS-01 je tvrzený vzdálený identifikátor v nepřijatém rámci, epoch 18 jeho hlášená hodnota. DS-Δ2 NO VALID RESPONSE neprokazuje zničení, vypnutí ani absenci vysílání. EPOCH TYPE KEY GENERATION je údaj konzole; skutečná platnost generací, autoritativní referenční manifest a příčina nesouladu nejsou ověřeny. Možná souvislost s dřívějším SEED_REBOOT DS-01 je hypotéza, nikoli potvrzený mechanismus či rozhodnutí hráče. Čtení neprovádí synchronizaci ani konvergenci."
       }
     },
     "drone_arrival": {
