@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 60,
+  "revision": 61,
+  "day": 19,
+  "type": "comms_control_console_observation",
+  "player_action": "„Vidíš to, jak je ten kufřík připojený?“ Kouknu na Karu. „Co je na té konzoli?“",
+  "dm_response": "Kara: „Aha. Takže ho tu někdo nenechal jen tak. Raději bych ho zatím neodpojovala.“ Kara po Rudolfově upozornění vizuálně sledovala kabel až ke kufříku a doporučila jej zatím neodpojovat. Přešla k hlavní konzoli COMMS CONTROL-01 a bez dotyku klávesnice přečetla výpis: FALLBACK MODE; AUXILIARY POWER ONLINE; ANTENNA INTERFACE READY; EXTERNAL UPLINK UNAVAILABLE; SERVICE INTERFACE CONNECTED; EXTERNAL DEVICE ID UNRESOLVED; COMMS_SYNC TRIPLE-NODE, HANDSHAKE INCOMPLETE, WAITING FOR VALID REMOTE RESPONSE. Nabídka [1] SYNCHRONIZATION DIAGNOSTICS, [2] ANTENNA CONTROL, [3] SERVICE INTERFACE, [4] COMMUNICATION LOG, [5] POWER DISTRIBUTION. LOCAL SESSION LOCKED, AUTHENTICATION REQUIRED. Kara propojila údaj TRIPLE-NODE s dřívější analýzou dat DS-Δ2 a vyslovila hypotézu, že připojené servisní zařízení může být kufřík. Navrhla zkusit Rudolfovu biometrii; konkrétní způsob autentizace zde zatím neověřen. Výpis systému není nezávislým ověřením funkčnosti rozhraní, identity zařízení ani příčiny neúplného handshake. Kara: „Je tu zase ta synchronizace tří uzlů, stejně jako v datech z DS-Δ2. Čeká to na odpověď vzdáleného uzlu. A hlásí to připojené servisní zařízení, ale bez identifikace.“ Otočila se ke kufříku. „To by mohl být právě on. Hele, pojď sem, zkusíš zase svoji biometrii?“",
+  "rolls": [],
+  "changes": [
+    "Kara získala znalost fyzického propojení kufříku a vizuálně přečetla hlavní konzoli. Přesunula se k ní.",
+    "Nový výpis COMMS CONTROL-01 uložen, relace zamčena, připojené servisní zařízení neidentifikováno. Hypotéza o kufříku nepotvrzena.",
+    "Rudolf zůstává u servisních dvířek, Δ-47 u recepce. Žádná autentizace, stisk klávesy, změna konfigurace ani odpojení zařízení. Rutinní čtení bez hodu; beze změny zdraví, inventáře či doložené spotřeby."
+  ],
+  "sources": [
+    "events/000037.json",
+    "events/000059.json",
+    "events/000060.json",
+    "characters/kara.json",
+    "world/expedition-ds03.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}

@@ -100,9 +100,9 @@
       },
       "kara_comment": "Některé systémy zřejmě fungují, možnost pozorování neověřena.",
       "current_positions": {
-        "event": "000060",
+        "event": "000061",
         "rudolf": "Uvnitř COMMUNICATIONS CONTROL, u servisních dvířek v pravé stěně",
-        "kara": "Uvnitř COMMUNICATIONS CONTROL u velké skříně vlevo",
+        "kara": "Uvnitř COMMUNICATIONS CONTROL, u hlavní konzole",
         "drone": "Uvnitř vstupní haly DS-03 přímo pod kamerou nad recepcí"
       }
     },
@@ -1054,6 +1054,44 @@
         "passability_verified": false,
         "certainty": "Konstrukce dvířek a označení pozorovány. Rozměry přibližné, otvor velikostí umožňuje prolezení člověkem, stav a prostor za ním neověřeny."
       }
+    },
+    "main_console": {
+      "event": "000061",
+      "current_display": {
+        "corporation": "SIRIUS CORPORATION",
+        "station": "DS-03",
+        "terminal": "COMMS CONTROL-01",
+        "mode": "FALLBACK",
+        "status": {
+          "AUXILIARY POWER": "ONLINE",
+          "ANTENNA INTERFACE": "READY",
+          "EXTERNAL UPLINK": "UNAVAILABLE",
+          "SERVICE INTERFACE": "CONNECTED",
+          "EXTERNAL DEVICE ID": "UNRESOLVED"
+        },
+        "sync": {
+          "name": "COMMS_SYNC",
+          "topology": "TRIPLE-NODE",
+          "handshake": "INCOMPLETE",
+          "message": "WAITING FOR VALID REMOTE RESPONSE"
+        },
+        "functions": [
+          "SYNCHRONIZATION DIAGNOSTICS",
+          "ANTENNA CONTROL",
+          "SERVICE INTERFACE",
+          "COMMUNICATION LOG",
+          "POWER DISTRIBUTION"
+        ],
+        "session": "LOCKED",
+        "authority": "LOCAL",
+        "prompt": "AUTHENTICATION REQUIRED"
+      },
+      "observed_by": "kara",
+      "input_used": false,
+      "authentication_attempted": false,
+      "selected_function": null,
+      "configuration_changed": false,
+      "certainty": "Kara vizuálně přečetla obrazovku a sdělila Rudolfovi podstatné údaje. SERVICE INTERFACE CONNECTED a fyzické propojení kufříku mohou souviset, ale identita zařízení, datový tok, funkčnost antén a příčina neúplné synchronizace dosud neověřeny."
     }
   }
 }
