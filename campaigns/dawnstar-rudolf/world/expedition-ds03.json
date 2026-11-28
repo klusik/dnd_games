@@ -100,9 +100,9 @@
       },
       "kara_comment": "Některé systémy zřejmě fungují, možnost pozorování neověřena.",
       "current_positions": {
-        "event": "000061",
-        "rudolf": "Uvnitř COMMUNICATIONS CONTROL, u servisních dvířek v pravé stěně",
-        "kara": "Uvnitř COMMUNICATIONS CONTROL, u hlavní konzole",
+        "event": "000062",
+        "rudolf": "Uvnitř COMMUNICATIONS CONTROL u hlavní konzole",
+        "kara": "Uvnitř COMMUNICATIONS CONTROL vedle Rudolfa u hlavní konzole",
         "drone": "Uvnitř vstupní haly DS-03 přímo pod kamerou nad recepcí"
       }
     },
@@ -1082,16 +1082,35 @@
           "COMMUNICATION LOG",
           "POWER DISTRIBUTION"
         ],
-        "session": "LOCKED",
+        "session": "UNLOCKED",
         "authority": "LOCAL",
-        "prompt": "AUTHENTICATION REQUIRED"
+        "prompt": "SELECT OPTION",
+        "view": "MAIN MENU",
+        "biometric_match": "CONFIRMED",
+        "subject": "RDF-ΔK452",
+        "classification": "R-CLASS",
+        "diagnostic_access": "GRANTED",
+        "control_operations": "SUBJECT TO ADDITIONAL AUTHORIZATION"
       },
       "observed_by": "kara",
-      "input_used": false,
-      "authentication_attempted": false,
+      "input_used": true,
+      "authentication_attempted": true,
       "selected_function": null,
       "configuration_changed": false,
-      "certainty": "Kara vizuálně přečetla obrazovku a sdělila Rudolfovi podstatné údaje. SERVICE INTERFACE CONNECTED a fyzické propojení kufříku mohou souviset, ale identita zařízení, datový tok, funkčnost antén a příčina neúplné synchronizace dosud neověřeny."
+      "certainty": "Kara vizuálně přečetla obrazovku a sdělila Rudolfovi podstatné údaje. SERVICE INTERFACE CONNECTED a fyzické propojení kufříku mohou souviset, ale identita zařízení, datový tok, funkčnost antén a příčina neúplné synchronizace dosud neověřeny.",
+      "authentication": {
+        "event": "000062",
+        "method": "Biometrická čtečka dlaně na pravé straně konzole, přes rukavici",
+        "biometric_match": "CONFIRMED",
+        "subject": "RDF-ΔK452",
+        "classification": "R-CLASS",
+        "authority": "LOCAL",
+        "diagnostic_access": "GRANTED",
+        "session": "UNLOCKED",
+        "control_operations": "SUBJECT TO ADDITIONAL AUTHORIZATION",
+        "observed_reaction": "Tiché pípnutí, zelená kontrolka, bez zjevného alarmu.",
+        "certainty": "Pozorovaný výsledek místní autentizace. Konkrétní oprávnění k jednotlivým řídicím operacím a globální platnost neověřeny; žádná funkce dosud neotevřena."
+      }
     }
   }
 }

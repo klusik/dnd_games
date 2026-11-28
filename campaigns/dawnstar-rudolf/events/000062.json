@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 61,
+  "revision": 62,
+  "day": 19,
+  "type": "comms_control_biometric_authentication",
+  "player_action": "„jo, počkej...“ a zkusím ověřit biometrii",
+  "dm_response": "Rudolf přešel od servisních dvířek k hlavní konzoli a přiložil dlaň v rukavici na biometrickou čtečku na její pravé straně. Po krátkém skenu tiché pípnutí, zelená kontrolka. BIOMETRIC MATCH CONFIRMED, AUTHENTICATION SUCCESSFUL, SUBJECT RDF-ΔK452, CLASSIFICATION R-CLASS, AUTHORITY LOCAL, DIAGNOSTIC ACCESS GRANTED, SESSION UNLOCKED. COMMS CONTROL-01 hlavní nabídka [1] SYNCHRONIZATION DIAGNOSTICS, [2] ANTENNA CONTROL, [3] SERVICE INTERFACE, [4] COMMUNICATION LOG, [5] POWER DISTRIBUTION. CONTROL OPERATIONS SUBJECT TO ADDITIONAL AUTHORIZATION. Žádný zjevný alarm. Kara ustoupila vedle konzole a vyjádřila zájem o servisní rozhraní. Autentizace rutinní, bez hodu. Žádná funkce nebyla vybrána ani změněna konfigurace. Kara: „Tak výborně.“ Ustoupila, aby měl Rudolf přístup. „Jsem zvědavá, jestli se z toho servisního rozhraní dozvíme něco o kufříku.“",
+  "rolls": [],
+  "changes": [
+    "Rudolf se přesunul k hlavní konzoli, Kara vedle něj. Δ-47 zůstává u recepce.",
+    "Úspěšná lokální biometrická autentizace, diagnostický přístup povolen, hlavní nabídka odemčena. Oprávnění k řídicím operacím zatím neověřeno.",
+    "Rutinní autentizace bez hodu. Žádná další funkce vybrána, žádná změna konfigurace, zdraví, inventáře, munice ani doložené číselné spotřeby. Kufřík a servisní dvířka zavřené."
+  ],
+  "sources": [
+    "events/000025.json",
+    "events/000035.json",
+    "events/000061.json",
+    "world/expedition-ds03.json",
+    "characters/kara.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}

@@ -3,7 +3,7 @@
   "campaign_id": "dawnstar-rudolf",
   "id": "kara",
   "kind": "character_sheet",
-  "location": "DS-03, uvnitř COMMUNICATIONS CONTROL (D-02), u hlavní konzole",
+  "location": "DS-03, uvnitř COMMUNICATIONS CONTROL (D-02), vedle Rudolfa u hlavní konzole",
   "role": "Spojenkyně, analýza biologických vzorků",
   "relationship": "Vzájemná důvěra, společná historie; samostatná osobnost",
   "health": null,
@@ -27,7 +27,8 @@
     "Den 19, event 000057: D-02 bylo možné ručně rozšířit z cca 25 na 65 cm; z prahu viděla konzole, vybavení a na stole předmět, který může být kufříkem. Obsah místnosti, bezpečnost a identita předmětu neověřeny.",
     "Den 19, event 000058: při pokračujícím pozorování z prahu D-02 nezaznamenala ve svém omezeném zorném poli hrozbu; navrhla vstup. Nové detaily Rudolfova pozorování jí dosud výslovně nesdělil.",
     "Den 19, event 000059: vstoupila do D-02 s Rudolfem, prohlédla dostupný prostor za konzolemi a stojany, nikoho tam neviděla. Nedokázala pořádně prohlédnout prostor za velkou skříní u stěny. Bezpečnost celé místnosti nepotvrzena; Rudolfovy jednotlivé nové technické postřehy zatím výslovně nesděleny.",
-    "Den 19, event 000061: viděla fyzické kabelové propojení kufříku a stojanu. Přečetla COMMS CONTROL-01: FALLBACK, pomocné napájení online, anténní rozhraní ready, external uplink unavailable, service interface connected, external device ID unresolved, COMMS_SYNC TRIPLE-NODE handshake incomplete, čeká na platnou vzdálenou odpověď, místní relace zamčená. Zná zobrazenou nabídku. Hypotéza, že servisní zařízení je kufřík, nepotvrzena. Nezná označení ani konstrukční detaily servisních dvířek nalezených Rudolfem."
+    "Den 19, event 000061: viděla fyzické kabelové propojení kufříku a stojanu. Přečetla COMMS CONTROL-01: FALLBACK, pomocné napájení online, anténní rozhraní ready, external uplink unavailable, service interface connected, external device ID unresolved, COMMS_SYNC TRIPLE-NODE handshake incomplete, čeká na platnou vzdálenou odpověď, místní relace zamčená. Zná zobrazenou nabídku. Hypotéza, že servisní zařízení je kufřík, nepotvrzena. Nezná označení ani konstrukční detaily servisních dvířek nalezených Rudolfem.",
+    "Den 19, event 000062: pozorovala úspěšnou místní autentizaci Rudolfovy biometrie na COMMS CONTROL-01, RDF-ΔK452, R-CLASS, diagnostický přístup povolen, řídicí operace podléhají další autorizaci. Žádná funkce ještě neotevřena. Připojené zařízení dosud neidentifikováno."
   ],
   "name": "Kara Velin",
   "age": 32,
@@ -38,11 +39,11 @@
     "Zjistit, zda jejich uváznutí bylo úmyslné, nebo následkem nehody; posoudit případné riziko návratu mezi lidi.",
     "Soustředit další pátrání na DS-03 a přístup k archivu paměti, vynechat nepodstatné odbočky a nespouštět konvergenci bez pochopení následků."
   ],
-  "last_question": "Hele, pojď sem, zkusíš zase svoji biometrii?",
+  "last_question": null,
   "known_personal_memories": [
     "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
   ],
-  "current_activity": "Po Rudolfově upozornění sledovala kabel k zavřenému kufříku, doporučila jej neodpojovat. Přešla k hlavní konzoli, přečetla dostupný výpis bez ovládání a navrhla Rudolfovi zkusit biometrii. Zbraň připravena, svítilna zapnuta.",
+  "current_activity": "Ustoupila vedle hlavní konzole, aby měl Rudolf přístup. Pozorovala úspěšnou biometrickou autentizaci, vyjádřila zájem o servisní rozhraní a nadále sleduje okolí. Zbraň připravena, svítilna zapnuta.",
   "level": null,
   "xp": null,
   "species": "Human",
