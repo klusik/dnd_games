@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 62,
+  "revision": 63,
+  "day": 19,
+  "type": "comms_control_consult_kara",
+  "player_action": "„Tak jsme asi uvnitř,“ řeknu Kaře. „Co myslíš, že bychom měli dělat?“",
+  "dm_response": "Kara se zadívala na nabídku. „Začala bych trojkou, SERVICE INTERFACE. Někdo si dal práci s tím, aby sem ten kufřík donesl a připojil ho. Zajímalo by mě, jestli se snažil stanici opravit, nebo z ní něco získat.“ Opřela se bokem o konzoli. „Pak bych se podívala na diagnostiku synchronizace a komunikační log. Jestli dokážeme obnovit přístup k tomu archivu v DS-Δ2, nemusíme nutně zprovoznit celou stanici. Nerada bych něco restartovala, dokud nevíme, co tu vlastně běží.“ „A možná bychom si sem měli zavolat Δ-47. Mohl by nám pomoct s diagnostikou kufříku, zatímco já budu hlídat.“ Hlavní menu COMMS CONTROL-01 zůstává aktivní, žádná funkce nebyla vybrána. Návrhy nejsou potvrzením příčiny poruchy, funkce kufříku ani postačujícího rozsahu obnovy stanice.",
+  "rolls": [],
+  "changes": [
+    "Kara na hráčův dotaz navrhla pořadí průzkumu, opatrnost při zásahu do provozu a možnost přivolat dron. Žádná z navržených akcí nebyla provedena.",
+    "Rutinní rozhovor bez hodu, beze změny konfigurace, poloh, zdraví, inventáře či doložené číselné spotřeby."
+  ],
+  "sources": [
+    "events/000050.json",
+    "events/000061.json",
+    "events/000062.json",
+    "characters/kara.json",
+    "world/expedition-ds03.json"
+  ],
+  "correction_of": null
+}
