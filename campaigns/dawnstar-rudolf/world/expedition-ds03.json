@@ -100,8 +100,8 @@
       },
       "kara_comment": "Některé systémy zřejmě fungují, možnost pozorování neověřena.",
       "current_positions": {
-        "event": "000059",
-        "rudolf": "Uvnitř COMMUNICATIONS CONTROL, přední část místnosti",
+        "event": "000060",
+        "rudolf": "Uvnitř COMMUNICATIONS CONTROL, u servisních dvířek v pravé stěně",
         "kara": "Uvnitř COMMUNICATIONS CONTROL u velké skříně vlevo",
         "drone": "Uvnitř vstupní haly DS-03 přímo pod kamerou nad recepcí"
       }
@@ -967,40 +967,93 @@
         "case": "Zavřený tmavý pevný kufřík na pracovním stole, tvarově odpovídá kamerovému záznamu. Totožnost, obsah a případné elektrické propojení neověřeny; nebyl dotčen."
       },
       "scope": "Základní vizuální prohlídka bez manipulace s vybavením; za velkou skříní neověřeno.",
-      "pending_checks": [
+      "pending_checks": [],
+      "completed_checks": [
         {
-          "type": "skill_check",
           "actor": "rudolf",
           "skill": "Engineering",
           "dice": "1d20",
+          "roll": 5,
           "modifier": 5,
-          "context": "Podrobná fyzická kontrola vedení kabeláže, viditelných připojení a možné funkce, včetně volného kabelu od racku A pod stůl; pouze pozorování, nic neodpojuje ani neotevírá. Základní Engineering bez dalšího bonusu za digitální data nebo dron.",
-          "event": "000059"
+          "total": 10,
+          "outcome": "partial_success",
+          "result": "Silný černý kabel od racku A po podlaze pod pracovní stůl pokračuje vzhůru po zadní straně stolu a je přímo zapojen do konektoru na zadní straně zavřeného kufříku. Zjevně fyzické propojení mimo běžné rozvody; účel, přenos energie či dat, směr přenosu a stav zapojení neověřeny.",
+          "result_event": "000060",
+          "pending_event": "000059"
         },
         {
-          "type": "skill_check",
           "actor": "rudolf",
           "skill": "Perception",
           "dice": "1d20",
+          "roll": 1,
           "modifier": 2,
-          "context": "Cílená vizuální kontrola místnosti, rohů a stropu kvůli kamerám, případným nenápadným senzorům a nouzovým ovladačům. Samotná existence objektu ani viditelné kontrolky neověřují funkčnost nebo záznam.",
-          "event": "000059"
+          "total": 3,
+          "outcome": "critical_failure",
+          "result": "Odraz integrované svítilny od lesklého kopulovitého objektu brání rozeznání objektivu nebo jiného senzoru. Další kamery a nouzové ovladače při této kontrole nenalezeny, jejich existenci nelze vyloučit. Známý objekt a tlačítko EMERGENCY RELEASE zůstávají dříve pozorovanými prvky, funkčnost neověřena.",
+          "result_event": "000060",
+          "pending_event": "000059"
         },
         {
-          "type": "skill_check",
           "actor": "rudolf",
           "skill": "Investigation",
           "dice": "1d20",
+          "roll": 20,
           "modifier": 4,
-          "context": "Hledání dalších, případně skrytých vstupů, anomálií ve stěnách, spár a servisních přístupů, včetně viditelného kovového panelu; bez demontáže, násilného otevření nebo aktivace. Neopakovat Karu.",
-          "event": "000059"
+          "total": 24,
+          "outcome": "exceptional_success",
+          "result": "Kovový servisní panel na pravé stěně má zapuštěné panty na boku, nenápadné mechanické madlo v dolní části a pod špínou vyražený nápis CABLE GALLERY / SERVICE ACCESS. Jde o servisní dvířka přibližně 65 × 110 cm, otvor by byl velikostí vhodný k prolezení člověkem. V dříve načteném schématu nebyla zakreslena. Dvířka nebyla otevřena ani vyzkoušena, zámek, prostor za nimi, průchodnost a cíl neověřeny.",
+          "result_event": "000060",
+          "pending_event": "000059"
         }
       ],
-      "completed_checks": [],
       "case_opened": false,
       "console_used": false,
       "emergency_release_activated": false,
-      "physical_configuration_changed": false
+      "physical_configuration_changed": false,
+      "result_event": "000060",
+      "elapsed_detail_minutes_approx": 5,
+      "cable_trace": {
+        "event": "000060",
+        "from": "Rack A",
+        "route": "Volně po podlaze, pod pracovní stůl, po zadní straně stolu vzhůru",
+        "to": "Konektor na zadní straně zavřeného kufříku",
+        "physical_connection_observed": true,
+        "signal_type": null,
+        "purpose": null,
+        "direction": null,
+        "power_state": null,
+        "disconnected": false
+      },
+      "camera_followup": {
+        "event": "000060",
+        "object": "Kopulovitý objekt v horním rohu pravé strany vzdálenější stěny",
+        "identification": null,
+        "functional_status": null,
+        "observation_limitation": "Odraz svítilny na lesklém povrchu",
+        "other_devices_found": false,
+        "other_devices_ruled_out": false,
+        "emergency_release_activated": false
+      },
+      "service_access": {
+        "event": "000060",
+        "label": "CABLE GALLERY / SERVICE ACCESS",
+        "location": "Pravá stěna COMMUNICATIONS CONTROL, dříve pozorovaný kovový panel",
+        "dimensions_cm_approx": {
+          "width": 65,
+          "height": 110
+        },
+        "features": [
+          "Zapuštěné panty",
+          "Nenápadné mechanické madlo",
+          "Vyražený nápis pod špínou"
+        ],
+        "listed_in_station_directory": false,
+        "opened": false,
+        "lock_status": null,
+        "destination": null,
+        "passability_verified": false,
+        "certainty": "Konstrukce dvířek a označení pozorovány. Rozměry přibližné, otvor velikostí umožňuje prolezení člověkem, stav a prostor za ním neověřeny."
+      }
     }
   }
 }

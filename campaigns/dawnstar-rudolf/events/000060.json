@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 59,
+  "revision": 60,
+  "day": 19,
+  "type": "comms_control_room_survey_result",
+  "player_action": "Engineering: hodil jsem 5, Perception: hodil jsem 1, Investigation: hodil jsem 20",
+  "dm_response": "Engineering 5+5=10: Silný černý kabel od racku A po podlaze pod pracovní stůl pokračuje vzhůru po zadní straně stolu a je přímo zapojen do konektoru na zadní straně zavřeného kufříku. Zjevně fyzické propojení mimo běžné rozvody; účel, přenos energie či dat, směr přenosu a stav zapojení neověřeny. Perception 1+2=3: Odraz integrované svítilny od lesklého kopulovitého objektu brání rozeznání objektivu nebo jiného senzoru. Další kamery a nouzové ovladače při této kontrole nenalezeny, jejich existenci nelze vyloučit. Známý objekt a tlačítko EMERGENCY RELEASE zůstávají dříve pozorovanými prvky, funkčnost neověřena. Investigation 20+4=24: Kovový servisní panel na pravé stěně má zapuštěné panty na boku, nenápadné mechanické madlo v dolní části a pod špínou vyražený nápis CABLE GALLERY / SERVICE ACCESS. Jde o servisní dvířka přibližně 65 × 110 cm, otvor by byl velikostí vhodný k prolezení člověkem. V dříve načteném schématu nebyla zakreslena. Dvířka nebyla otevřena ani vyzkoušena, zámek, prostor za nimi, průchodnost a cíl neověřeny. Zobrazeny schematické rekonstrukce fyzického propojení kufříku a servisních dvířek. Rudolf skončil u dvířek na pravé stěně, Kara zůstává u velké skříně, všimla si jeho prohlídky a ptá se: „Co tam máš?“ Δ-47 stále čeká u recepce. Žádná manipulace se zařízením. Podrobná prohlídka přibližně 5 minut, žádný další čekající hod.",
+  "rolls": [
+    {
+      "actor": "rudolf",
+      "skill": "Engineering",
+      "dice": "1d20",
+      "roll": 5,
+      "modifier": 5,
+      "total": 10,
+      "outcome": "partial_success",
+      "result": "Silný černý kabel od racku A po podlaze pod pracovní stůl pokračuje vzhůru po zadní straně stolu a je přímo zapojen do konektoru na zadní straně zavřeného kufříku. Zjevně fyzické propojení mimo běžné rozvody; účel, přenos energie či dat, směr přenosu a stav zapojení neověřeny."
+    },
+    {
+      "actor": "rudolf",
+      "skill": "Perception",
+      "dice": "1d20",
+      "roll": 1,
+      "modifier": 2,
+      "total": 3,
+      "outcome": "critical_failure",
+      "result": "Odraz integrované svítilny od lesklého kopulovitého objektu brání rozeznání objektivu nebo jiného senzoru. Další kamery a nouzové ovladače při této kontrole nenalezeny, jejich existenci nelze vyloučit. Známý objekt a tlačítko EMERGENCY RELEASE zůstávají dříve pozorovanými prvky, funkčnost neověřena."
+    },
+    {
+      "actor": "rudolf",
+      "skill": "Investigation",
+      "dice": "1d20",
+      "roll": 20,
+      "modifier": 4,
+      "total": 24,
+      "outcome": "exceptional_success",
+      "result": "Kovový servisní panel na pravé stěně má zapuštěné panty na boku, nenápadné mechanické madlo v dolní části a pod špínou vyražený nápis CABLE GALLERY / SERVICE ACCESS. Jde o servisní dvířka přibližně 65 × 110 cm, otvor by byl velikostí vhodný k prolezení člověkem. V dříve načteném schématu nebyla zakreslena. Dvířka nebyla otevřena ani vyzkoušena, zámek, prostor za nimi, průchodnost a cíl neověřeny."
+    }
+  ],
+  "changes": [
+    "Vyhodnoceny všechny tři čekající hráčovy hody v původním pořadí, bonusy přičteny právě jednou. Pending vymazán. Kary hod z 000059 neopakován.",
+    "Potvrzeno fyzické kabelové propojení racku A a kufříku, funkce neověřena. Perception neposkytl dodatečné ověření senzorů. Odhalena nezakreslená servisní dvířka CABLE GALLERY / SERVICE ACCESS.",
+    "Rudolf se při prohlídce dostal k pravé stěně, Kara hlídá u velké skříně, dron u recepce. Nové objevy Kaře ještě výslovně nesděleny.",
+    "Podrobná prohlídka cca 5 minut. Žádná změna konfigurace, zdraví, inventáře, munice ani doložené číselné spotřeby. Kufřík a dvířka neotevřeny, kabel nedotčen, konzole a nouzové tlačítko nepoužity."
+  ],
+  "sources": [
+    "events/000059.json",
+    "events/000058.json",
+    "events/000048.json",
+    "events/000039.json",
+    "world/expedition-ds03.json",
+    "characters/kara.json",
+    "characters/rudolf.json",
+    "rules.md",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}
