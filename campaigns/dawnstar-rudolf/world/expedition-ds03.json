@@ -911,16 +911,23 @@
         "total": 19
       },
       "kara_observation": "Na stole za konzolí předmět, který může být hledaným kufříkem; identita neověřena.",
-      "rudolf_pending": {
-        "type": "skill_check",
-        "actor": "rudolf",
-        "skill": "Perception",
+      "rudolf_pending": null,
+      "entered": false,
+      "result_event": "000058",
+      "rudolf_roll": {
         "dice": "1d20",
+        "roll": 13,
         "modifier": 2,
-        "context": "Vizuální průzkum z prahu D-02 do COMMUNICATIONS CONTROL po ručním rozšíření otvoru na cca 65 cm. Rudolf dosud nevstoupil. Kara již provedla vlastní pozorování (16+3=19), její hod neopakovat. Hráč rozlišuje další viditelné detaily a možné stopy či rizika v omezeném zorném poli.",
-        "event": "000057"
+        "total": 15
       },
-      "entered": false
+      "rudolf_observations": {
+        "monitor": "Na jedné z hlavních konzolí svítí monitor, několik řádků textu se pravidelně obnovuje; z prahu nečitelné.",
+        "cable": "Silnější černý kabel vede od stojanu s elektronikou po podlaze směrem k pracovnímu stolu, mimo běžný rozvod ve stěnách. Riziko zakopnutí. Koncové připojení a funkce neověřeny.",
+        "footprints": "Stopy podrážek v prachu, mezi konzolí a pracovním stolem výrazně rozšlapaný prach; stáří a totožnost neznámé.",
+        "object": "Na stole část tmavého hranatého předmětu tvarově odpovídajícího kufříku ze záznamu; zbytek zakrývá konzole. Identita, obsah a případné propojení s kabelem neověřeny.",
+        "visible_risks": "V dostupném zorném poli žádný člověk, krev ani známky střelby. Za vyšší stojany není vidět; bezpečnost celé místnosti neověřena."
+      },
+      "kara_comment": "Z mojí strany taky čisto. Myslím, že můžeme dovnitř."
     }
   }
 }

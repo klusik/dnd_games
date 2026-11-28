@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 57,
+  "revision": 58,
+  "day": 19,
+  "type": "comms_control_threshold_recon_result",
+  "player_action": "Hodil jsem 13 na Perception.",
+  "dm_response": "Perception 13+2=15. Rudolf z prahu D-02 provedl vlastní vizuální průzkum. Na jedné z hlavních konzolí svítí monitor, několik řádků textu se pravidelně obnovuje; z prahu nečitelné. Silnější černý kabel vede od stojanu s elektronikou po podlaze směrem k pracovnímu stolu, mimo běžný rozvod ve stěnách. Riziko zakopnutí. Koncové připojení a funkce neověřeny. Stopy podrážek v prachu, mezi konzolí a pracovním stolem výrazně rozšlapaný prach; stáří a totožnost neznámé. Na stole část tmavého hranatého předmětu tvarově odpovídajícího kufříku ze záznamu; zbytek zakrývá konzole. Identita, obsah a případné propojení s kabelem neověřeny. V dostupném zorném poli žádný člověk, krev ani známky střelby. Za vyšší stojany není vidět; bezpečnost celé místnosti neověřena. Kara do komunikátoru: „Z mojí strany taky čisto. Myslím, že můžeme dovnitř.“ Návrh není potvrzením bezpečnosti celé místnosti. Oba zatím před prahem, Δ-47 u recepce. Žádný další hod nečeká.",
+  "rolls": [
+    {
+      "actor": "rudolf",
+      "skill": "Perception",
+      "dice": "1d20",
+      "roll": 13,
+      "modifier": 2,
+      "total": 15,
+      "result": "Na jedné z hlavních konzolí svítí monitor, několik řádků textu se pravidelně obnovuje; z prahu nečitelné. Silnější černý kabel vede od stojanu s elektronikou po podlaze směrem k pracovnímu stolu, mimo běžný rozvod ve stěnách. Riziko zakopnutí. Koncové připojení a funkce neověřeny. Stopy podrážek v prachu, mezi konzolí a pracovním stolem výrazně rozšlapaný prach; stáří a totožnost neznámé. Na stole část tmavého hranatého předmětu tvarově odpovídajícího kufříku ze záznamu; zbytek zakrývá konzole. Identita, obsah a případné propojení s kabelem neověřeny. V dostupném zorném poli žádný člověk, krev ani známky střelby. Za vyšší stojany není vidět; bezpečnost celé místnosti neověřena."
+    }
+  ],
+  "changes": [
+    "Vyhodnocen čekající Rudolfův Perception, pending zrušen; předchozí hod Kary neopakován.",
+    "Získány konkrétní pozorovatelné detaily vybavení a podlahy. Identita kufříku a bezpečnost zbytku místnosti neověřeny.",
+    "Kara navrhla vstoupit; žádný automatický vstup, přesun dronu, manipulace s kabelem nebo konzolí. Beze změny zdraví, inventáře, munice, konfigurace a doložené číselné spotřeby."
+  ],
+  "sources": [
+    "events/000057.json",
+    "events/000042.json",
+    "characters/rudolf.json",
+    "characters/kara.json",
+    "world/expedition-ds03.json",
+    "rules.md",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}
