@@ -31,7 +31,8 @@
     "Den 19, event 000062: pozorovala úspěšnou místní autentizaci Rudolfovy biometrie na COMMS CONTROL-01, RDF-ΔK452, R-CLASS, diagnostický přístup povolen, řídicí operace podléhají další autorizaci. Žádná funkce ještě neotevřena. Připojené zařízení dosud neidentifikováno.",
     "Den 19, event 000064: Rudolf souhlasil s přivoláním Δ-47 a požádal ji, aby to zařídila. Dron dorazil do komunikačního střediska, čeká u pracovního stolu na pokyn. Kara hlídá u D-02. Obsah nového servisního výpisu jí zatím nebyl sdělen.",
     "Den 19, event 000065: Rudolf sdělil domněnku, že rack A do kufříku posílá signál, a zeptal se, zda pochází z antén. Kara vychází z dříve viděného ANTENNA INTERFACE READY a EXTERNAL UPLINK UNAVAILABLE. Původ signálu nezná, připouští i vnitřní provoz stanice. Úplný výpis SERVICE INTERFACE ani jeho SOURCE COMMS_SYNC jí Rudolf zatím nesdělil.",
-    "Den 19, event 000066: Rudolf sdělil, že zdroj na konzoli je COMMS_SYNC a že otevře LINK DETAILS. Kara souhlasila s prohlídkou, zůstává u D-02. Podrobný nový výpis jí Rudolf zatím nesdělil."
+    "Den 19, event 000066: Rudolf sdělil, že zdroj na konzoli je COMMS_SYNC a že otevře LINK DETAILS. Kara souhlasila s prohlídkou, zůstává u D-02. Podrobný nový výpis jí Rudolf zatím nesdělil.",
+    "Den 19, event 000067: Rudolf sdělil interpretaci LINK DETAILS, podle níž se sbírají data z různých zdrojů do externího zařízení, pravděpodobně kufříku. Navrhl ponechat zapojení beze změny; Kara souhlasila podmíněně, pokud jde o zaznamenávání provozu. Obsah TRANSACTION HISTORY jí zatím nesdělil."
   ],
   "name": "Kara Velin",
   "age": 32,
@@ -46,7 +47,7 @@
   "known_personal_memories": [
     "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
   ],
-  "current_activity": "Hlídá u D-02, zbraň připravena, svítilna zapnuta. Po Rudolfově sdělení SOURCE COMMS_SYNC očekává podrobnosti z LINK DETAILS; nevzdálila se od dveří.",
+  "current_activity": "Hlídá u D-02, zbraň připravena, svítilna zapnuta. Souhlasila s ponecháním kufříku připojeného na základě Rudolfova shrnutí, zatímco čte TRANSACTION HISTORY. Neopustila vchod.",
   "level": null,
   "xp": null,
   "species": "Human",

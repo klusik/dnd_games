@@ -1085,7 +1085,7 @@
         "session": "UNLOCKED",
         "authority": "LOCAL",
         "prompt": "ESC RETURN TO SERVICE INTERFACE",
-        "view": "LINK DETAILS",
+        "view": "TRANSACTION HISTORY",
         "biometric_match": "CONFIRMED",
         "subject": "RDF-ΔK452",
         "classification": "R-CLASS",
@@ -1118,40 +1118,61 @@
           ],
           "control_access": "LOCKED; ADDITIONAL AUTHORIZATION REQUIRED"
         },
-        "link_details": {
-          "event": "000066",
+        "transaction_history": {
+          "event": "000067",
           "terminal": "COMMS CONTROL-01",
-          "mode": "LOCAL DIAGNOSTICS",
-          "access": "READ ONLY",
           "physical_interface": "RACK-A / SVC-02",
-          "link_status": "ACTIVE",
-          "capture_point": "COMMS_SYNC BUS",
-          "capture_format": "PROTOCOL FRAMES",
-          "capture_mode": "PASSIVE MIRROR",
-          "destination": "EXTERNAL DEVICE",
-          "monitored_channels": [
+          "source": "LOCAL TRANSACTION LOG",
+          "scope": "Aktuální servisní relace",
+          "relative_time_origin": "INITIAL LINK ESTABLISHMENT",
+          "entries": [
             {
-              "name": "ANTENNA RX BUFFER",
-              "status": "FRAMES PRESENT",
-              "description": "Přijaté komunikační rámce"
+              "relative_time_seconds": -4,
+              "label": "PRE-CONNECTION SNAPSHOT",
+              "fields": {
+                "COMMS_SYNC": "INCOMPLETE",
+                "SERVICE PORT": "DISCONNECTED"
+              }
             },
             {
-              "name": "LOCAL SYNC TX QUEUE",
-              "status": "REQUESTS PRESENT",
-              "description": "Místní požadavky na synchronizaci"
+              "relative_time_seconds": 0,
+              "label": "PHYSICAL LINK ESTABLISHED",
+              "fields": {
+                "PORT": "SVC-02",
+                "DEVICE ID": "UNRESOLVED"
+              }
             },
             {
-              "name": "SYNC STATE EVENTS",
-              "status": "ACTIVE",
-              "description": "Interní stavové zprávy"
+              "relative_time_seconds": 7,
+              "label": "SERVICE AUTHORIZATION",
+              "fields": {
+                "REFERENCE": "AUTH-019",
+                "RESULT": "ACCEPTED"
+              }
+            },
+            {
+              "relative_time_seconds": 12,
+              "label": "CAPTURE TASK CREATED",
+              "fields": {
+                "MODE": "PASSIVE MIRROR",
+                "SOURCE": "COMMS_SYNC BUS",
+                "STOP CONDITION": "MANUAL"
+              }
+            },
+            {
+              "relative_time_seconds": 14,
+              "label": "FIRST DATA TRANSFER",
+              "fields": {
+                "DESTINATION": "EXTERNAL DEVICE",
+                "ACK": "RECEIVED"
+              }
             }
           ],
-          "remote_node_authentication": "INCOMPLETE",
-          "outbound_rf_delivery": "UNCONFIRMED",
-          "external_device_ack": "PRESENT",
-          "external_control_channel": "NOT ROUTED",
-          "auxiliary_power_output": "ENABLED",
-          "certainty": "Výpis místní diagnostiky, nikoli nezávislé ověření skutečného RF příjmu, původu či stáří rámců v bufferu, jejich obsahu nebo doručení odchozích požadavků. Konzole hlásí zrcadlení protokolových rámců z RX, TX a interních stavových zpráv, ACK od externího zařízení a nepřesměrovaný řídicí kanál. Neprokazuje identitu zařízení, absenci jiných řídicích cest, uložení všech dat ani skutečný účel zařízení. Kufřík pravděpodobný příjemce dle dřívějšího fyzického sledování kabelu od racku A; konkrétní port SVC-02 dosud fyzicky neověřen. Schéma pouze rekonstrukce podle výpisu."
+          "capture_session_age_at_query_minutes": 1868,
+          "session_interruptions_reported": 0,
+          "remote_control_transactions_reported": 0,
+          "task_status": "RUNNING",
+          "certainty": "Výpis lokálního logu, nikoli nezávislé měření. Podle předspojovacího snapshotu byla COMMS_SYNC INCOMPLETE 4 s před navázáním fyzické linky SVC-02 v této relaci. Neprokazuje původní příčinu poruchy, bezpečnost zařízení, úplnost logu ani absenci jiných řídicích cest. Časy kamer 004 (31 h 16 min) a 003 (9 h 42 min) pocházejí z dřívějšího dotazu 000041, stáří capture session 31 h 08 min z aktuálního dotazu; synchronizace časových základen a přesný odstup neověřeny. Chronologická souvislost s kamerami je orientační. Nulové počty pouze dle dostupného logu aktuální relace. Identita externího zařízení a jeho skutečného operátora neověřena."
         }
       },
       "observed_by": "kara",
@@ -1207,9 +1228,9 @@
         ],
         "control_access": "LOCKED; ADDITIONAL AUTHORIZATION REQUIRED",
         "selected_function": {
-          "number": 1,
-          "name": "LINK DETAILS",
-          "event": "000066"
+          "number": 2,
+          "name": "TRANSACTION HISTORY",
+          "event": "000067"
         },
         "certainty": "Pozorovaný výpis místní diagnostiky, nikoli nezávisle ověřený tok, obsah, účel, stav napájení nebo totožnost zařízení. Fyzický port patří k označenému racku A, ze kterého Rudolf sledoval kabel ke kufříku; přímá vazba konkrétního portu SVC-02 na tento kabel zatím neověřena. AUTH-019 je referencí úlohy, nikoli důkazem totožnosti osoby ani přesného času jejího spuštění. Hodnota 4,8 kB je údaj rozhraní za poslední minutu při dotazu, nikoli konstantní přenosová rychlost. Graf je schematická ilustrace, ne uložený časový průběh."
       },
@@ -1247,6 +1268,62 @@
         "external_control_channel": "NOT ROUTED",
         "auxiliary_power_output": "ENABLED",
         "certainty": "Výpis místní diagnostiky, nikoli nezávislé ověření skutečného RF příjmu, původu či stáří rámců v bufferu, jejich obsahu nebo doručení odchozích požadavků. Konzole hlásí zrcadlení protokolových rámců z RX, TX a interních stavových zpráv, ACK od externího zařízení a nepřesměrovaný řídicí kanál. Neprokazuje identitu zařízení, absenci jiných řídicích cest, uložení všech dat ani skutečný účel zařízení. Kufřík pravděpodobný příjemce dle dřívějšího fyzického sledování kabelu od racku A; konkrétní port SVC-02 dosud fyzicky neověřen. Schéma pouze rekonstrukce podle výpisu."
+      },
+      "transaction_history_report": {
+        "event": "000067",
+        "terminal": "COMMS CONTROL-01",
+        "physical_interface": "RACK-A / SVC-02",
+        "source": "LOCAL TRANSACTION LOG",
+        "scope": "Aktuální servisní relace",
+        "relative_time_origin": "INITIAL LINK ESTABLISHMENT",
+        "entries": [
+          {
+            "relative_time_seconds": -4,
+            "label": "PRE-CONNECTION SNAPSHOT",
+            "fields": {
+              "COMMS_SYNC": "INCOMPLETE",
+              "SERVICE PORT": "DISCONNECTED"
+            }
+          },
+          {
+            "relative_time_seconds": 0,
+            "label": "PHYSICAL LINK ESTABLISHED",
+            "fields": {
+              "PORT": "SVC-02",
+              "DEVICE ID": "UNRESOLVED"
+            }
+          },
+          {
+            "relative_time_seconds": 7,
+            "label": "SERVICE AUTHORIZATION",
+            "fields": {
+              "REFERENCE": "AUTH-019",
+              "RESULT": "ACCEPTED"
+            }
+          },
+          {
+            "relative_time_seconds": 12,
+            "label": "CAPTURE TASK CREATED",
+            "fields": {
+              "MODE": "PASSIVE MIRROR",
+              "SOURCE": "COMMS_SYNC BUS",
+              "STOP CONDITION": "MANUAL"
+            }
+          },
+          {
+            "relative_time_seconds": 14,
+            "label": "FIRST DATA TRANSFER",
+            "fields": {
+              "DESTINATION": "EXTERNAL DEVICE",
+              "ACK": "RECEIVED"
+            }
+          }
+        ],
+        "capture_session_age_at_query_minutes": 1868,
+        "session_interruptions_reported": 0,
+        "remote_control_transactions_reported": 0,
+        "task_status": "RUNNING",
+        "certainty": "Výpis lokálního logu, nikoli nezávislé měření. Podle předspojovacího snapshotu byla COMMS_SYNC INCOMPLETE 4 s před navázáním fyzické linky SVC-02 v této relaci. Neprokazuje původní příčinu poruchy, bezpečnost zařízení, úplnost logu ani absenci jiných řídicích cest. Časy kamer 004 (31 h 16 min) a 003 (9 h 42 min) pocházejí z dřívějšího dotazu 000041, stáří capture session 31 h 08 min z aktuálního dotazu; synchronizace časových základen a přesný odstup neověřeny. Chronologická souvislost s kamerami je orientační. Nulové počty pouze dle dostupného logu aktuální relace. Identita externího zařízení a jeho skutečného operátora neověřena."
       }
     },
     "drone_arrival": {

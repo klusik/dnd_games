@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 66,
+  "revision": 67,
+  "day": 19,
+  "type": "comms_control_service_transaction_history",
+  "player_action": "„Vypadá to, že sběrnice sbírá data z různých zdrojů, celé to linearizuje a posílá do nějakého externího zařízení,“ ukážu prstem na kufřík. „Já bych na to zatím nehrabal, nemusí to ničemu škodit, že to sbírá data.“ Klávesou [ESC] se vrátím do původního menu a vstoupím rovnou do dalšího menu „Transaction history“ [2]",
+  "dm_response": "Kara po Rudolfově shrnutí souhlasila s ponecháním připojení: „Souhlasím. Pokud to jen zaznamenává provoz, může nám to nakonec ještě pomoct.“ Zůstala u D-02. Rudolf se vrátil do SERVICE INTERFACE a otevřel TRANSACTION HISTORY. TRANSACTION HISTORY (000067): aktuální lokální servisní relace SVC-02, T=navázání fyzické linky. T−4 s PRE-CONNECTION SNAPSHOT: COMMS_SYNC INCOMPLETE, SERVICE PORT DISCONNECTED; T+0 s PHYSICAL LINK ESTABLISHED: SVC-02, DEVICE ID UNRESOLVED; T+7 s SERVICE AUTHORIZATION AUTH-019 ACCEPTED; T+12 s CAPTURE TASK CREATED: PASSIVE MIRROR, COMMS_SYNC BUS, STOP CONDITION MANUAL; T+14 s FIRST DATA TRANSFER, EXTERNAL DEVICE, ACK RECEIVED. CAPTURE SESSION AGE 31 h 08 min dle konzole při dotazu, SESSION INTERRUPTIONS 0, REMOTE CONTROL TRANSACTIONS 0, TASK STATUS RUNNING. Podle lokálního výpisu byla synchronizace neúplná před připojením této servisní linky; hypotéza o diagnostice již existující poruchy získává oporu, ale skutečný účel ani bezpečnost zařízení neověřeny. Časová souvislost s CAM-03/004 a CAM-03/003 pouze přibližná, údaje pocházejí z různých dotazů, časová synchronizace neověřena. Kara dosud neobdržela nový výpis. Zobrazena orientační časová osa s dřívějšími kamerovými záznamy. ESC návrat do SERVICE INTERFACE.",
+  "rolls": [],
+  "changes": [
+    "Kara obdržela hráčovu interpretaci zrcadlení a souhlasila s nezasahováním do zapojení. Nový detailní výpis zatím nezná.",
+    "Návrat z LINK DETAILS a otevření TRANSACTION HISTORY v jednom výslovně zadaném tahu; uložena historie aktuální servisní relace. Podle výpisu byla COMMS_SYNC INCOMPLETE před navázáním linky SVC-02.",
+    "Rutinní čtení bez hodu. Žádná další volba, změna poloh, zásah do kufříku, diagnostika dronem, změna konfigurace, zdraví, inventáře, doložené spotřeby či konvergence."
+  ],
+  "sources": [
+    "events/000041.json",
+    "events/000042.json",
+    "events/000050.json",
+    "events/000064.json",
+    "events/000066.json",
+    "world/expedition-ds03.json",
+    "characters/kara.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}
