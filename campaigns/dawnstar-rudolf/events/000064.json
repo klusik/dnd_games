@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 63,
+  "revision": 64,
+  "day": 19,
+  "type": "comms_control_service_interface_and_drone_arrival",
+  "player_action": "„Jo, drona zavoláme, dobrý nápad, zařídíš to prosím? Já se zatím mrknu na tu konzoli tady...“ A otevřu [3]",
+  "dm_response": "Kara: „Jasně, zařídím.“ Kara na Rudolfovu žádost přivolala Δ-47 přes komunikátor. Dron opustil místo pod CAM-02 u recepce, prošel známou levou chodbou a D-02, dorazil do komunikačního střediska a zastavil u pracovního stolu na pokyn Kary. Bez nového pozorovaného incidentu. Kara hlídá okolí u vchodu D-02. Dron zatím čeká na konkrétní diagnostický pokyn, kufříku ani kabelu se nedotkl. Rudolf otevřel [3] SERVICE INTERFACE. Lokální výpis: RACK-A / SVC-02, LINK ACTIVE, DEVICE IDENTIFICATION UNRESOLVED, DATA CHANNEL ESTABLISHED, AUXILIARY POWER OUTPUT ENABLED, DIAGNOSTIC BRIDGE. CURRENT SERVICE TASK: PASSIVE SIGNAL CAPTURE, SOURCE COMMS_SYNC, DESTINATION EXTERNAL DEVICE, RUNNING, AUTHORIZATION REF AUTH-019. Přenesená data za poslední minutu podle výpisu 4,8 kB. Nabídka [1] LINK DETAILS, [2] TRANSACTION HISTORY, [3] CAPTURE BUFFER, [4] SERVICE CONTROL (zamčeno, další autorizace), ESC návrat. Fyzický port odpovídá racku A, pravděpodobný příjemce je kufřík, ale konkrétní port a fyzická linka nejsou nezávisle korelovány. Obsah zachycených dat, přesný účel, identita a držitel tokenu neověřeny. Žádná další položka neotevřena. Dron u pracovního stolu, čeká na konkrétní diagnostický pokyn; Kara hlídá u dveří. Přibližně jedna minuta. Graf pouze schematická ilustrace, nikoli měření průběhu.",
+  "rolls": [],
+  "changes": [
+    "Kara na výslovnou žádost hráče přivolala dron; rutinní přesun po známé trase do D-02 bez hodu. Aktualizovány polohy Kary a Δ-47.",
+    "Otevřeno [3] SERVICE INTERFACE, nový lokální výpis a nabídka uloženy. Hlášená úloha PASSIVE SIGNAL CAPTURE nese AUTH-019; identita zařízení, obsah dat, příčina a účel neověřeny.",
+    "Žádná další funkce vybrána, žádná aktivní diagnostika dronem, žádný dotyk kufříku či kabelu, změna konfigurace nebo konvergence. Herní čas cca +1 minuta; zdraví, inventář, munice a neověřené číselné zdroje beze změny."
+  ],
+  "sources": [
+    "events/000050.json",
+    "events/000060.json",
+    "events/000061.json",
+    "events/000062.json",
+    "events/000063.json",
+    "world/expedition-ds03.json",
+    "characters/kara.json",
+    "characters/delta-47.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}

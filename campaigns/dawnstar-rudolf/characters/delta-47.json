@@ -3,7 +3,7 @@
   "campaign_id": "dawnstar-rudolf",
   "id": "delta-47",
   "kind": "character_sheet",
-  "location": "Uvnitř vstupní haly DS-03 přímo pod kamerou nad recepcí",
+  "location": "DS-03, uvnitř COMMUNICATIONS CONTROL (D-02), u pracovního stolu",
   "status": "Provozuschopný",
   "functions": [
     "Scanning",
@@ -31,7 +31,7 @@
     "Extendable antenna array"
   ],
   "designation": "Δ-47",
-  "current_activity": "Dokončil omezenou diagnostiku kamery a čeká na další příkaz; obraz nezískal, smyčku nevytvořil, EMP nepoužil.",
+  "current_activity": "Na přivolání Kary se souhlasem Rudolfa přešel od recepce známou levou chodbou přes D-02 do komunikačního střediska. Zastavil u pracovního stolu a čeká na konkrétní pokyn. Žádné skenování, diagnostika, zásah do kufříku nebo kabelu ani EMP.",
   "body": "Čtyřnohý nízký kloubový dron s otočnou hlavicí a vysouvací anténou; pozdější scény jej popisují i jako létající. Režim pohybu lze měnit jen podle doloženého vybavení, přesný pohon neověřen.",
   "original_designation": "SIRIUS MINING SECURITY NODE",
   "authorization": {

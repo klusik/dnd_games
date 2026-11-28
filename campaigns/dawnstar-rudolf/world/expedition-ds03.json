@@ -100,10 +100,10 @@
       },
       "kara_comment": "Některé systémy zřejmě fungují, možnost pozorování neověřena.",
       "current_positions": {
-        "event": "000062",
+        "event": "000064",
         "rudolf": "Uvnitř COMMUNICATIONS CONTROL u hlavní konzole",
-        "kara": "Uvnitř COMMUNICATIONS CONTROL vedle Rudolfa u hlavní konzole",
-        "drone": "Uvnitř vstupní haly DS-03 přímo pod kamerou nad recepcí"
+        "kara": "Uvnitř COMMUNICATIONS CONTROL u vchodu D-02, hlídá",
+        "drone": "Uvnitř COMMUNICATIONS CONTROL u pracovního stolu, čeká na pokyn"
       }
     },
     "drone_entered": true,
@@ -1084,18 +1084,49 @@
         ],
         "session": "UNLOCKED",
         "authority": "LOCAL",
-        "prompt": "SELECT OPTION",
-        "view": "MAIN MENU",
+        "prompt": "SELECT SERVICE FUNCTION OR ESC RETURN TO MAIN MENU",
+        "view": "SERVICE INTERFACE",
         "biometric_match": "CONFIRMED",
         "subject": "RDF-ΔK452",
         "classification": "R-CLASS",
         "diagnostic_access": "GRANTED",
-        "control_operations": "SUBJECT TO ADDITIONAL AUTHORIZATION"
+        "control_operations": "SUBJECT TO ADDITIONAL AUTHORIZATION",
+        "service_interface": {
+          "physical_port": "RACK-A / SVC-02",
+          "link_status": "ACTIVE",
+          "device_identification": "UNRESOLVED",
+          "data_channel": "ESTABLISHED",
+          "auxiliary_power_output": "ENABLED",
+          "interface_mode": "DIAGNOSTIC BRIDGE",
+          "current_service_task": {
+            "task": "PASSIVE SIGNAL CAPTURE",
+            "source": "COMMS_SYNC",
+            "destination": "EXTERNAL DEVICE",
+            "status": "RUNNING",
+            "authorization_ref": "AUTH-019"
+          },
+          "transfer_sample": {
+            "value": 4.8,
+            "unit": "kB",
+            "window_seconds": 60
+          },
+          "functions": [
+            "LINK DETAILS",
+            "TRANSACTION HISTORY",
+            "CAPTURE BUFFER",
+            "SERVICE CONTROL"
+          ],
+          "control_access": "LOCKED; ADDITIONAL AUTHORIZATION REQUIRED"
+        }
       },
       "observed_by": "kara",
       "input_used": true,
       "authentication_attempted": true,
-      "selected_function": null,
+      "selected_function": {
+        "number": 3,
+        "name": "SERVICE INTERFACE",
+        "event": "000064"
+      },
       "configuration_changed": false,
       "certainty": "Kara vizuálně přečetla obrazovku a sdělila Rudolfovi podstatné údaje. SERVICE INTERFACE CONNECTED a fyzické propojení kufříku mohou souviset, ale identita zařízení, datový tok, funkčnost antén a příčina neúplné synchronizace dosud neověřeny.",
       "authentication": {
@@ -1110,7 +1141,50 @@
         "control_operations": "SUBJECT TO ADDITIONAL AUTHORIZATION",
         "observed_reaction": "Tiché pípnutí, zelená kontrolka, bez zjevného alarmu.",
         "certainty": "Pozorovaný výsledek místní autentizace. Konkrétní oprávnění k jednotlivým řídicím operacím a globální platnost neověřeny; žádná funkce dosud neotevřena."
+      },
+      "service_interface_report": {
+        "event": "000064",
+        "terminal": "COMMS CONTROL-01",
+        "mode": "LOCAL DIAGNOSTICS",
+        "physical_port": "RACK-A / SVC-02",
+        "link_status": "ACTIVE",
+        "device_identification": "UNRESOLVED",
+        "data_channel": "ESTABLISHED",
+        "auxiliary_power_output": "ENABLED",
+        "interface_mode": "DIAGNOSTIC BRIDGE",
+        "current_service_task": {
+          "task": "PASSIVE SIGNAL CAPTURE",
+          "source": "COMMS_SYNC",
+          "destination": "EXTERNAL DEVICE",
+          "status": "RUNNING",
+          "authorization_ref": "AUTH-019"
+        },
+        "transfer_sample": {
+          "value": 4.8,
+          "unit": "kB",
+          "window_seconds": 60
+        },
+        "functions": [
+          "LINK DETAILS",
+          "TRANSACTION HISTORY",
+          "CAPTURE BUFFER",
+          "SERVICE CONTROL"
+        ],
+        "control_access": "LOCKED; ADDITIONAL AUTHORIZATION REQUIRED",
+        "selected_function": null,
+        "certainty": "Pozorovaný výpis místní diagnostiky, nikoli nezávisle ověřený tok, obsah, účel, stav napájení nebo totožnost zařízení. Fyzický port patří k označenému racku A, ze kterého Rudolf sledoval kabel ke kufříku; přímá vazba konkrétního portu SVC-02 na tento kabel zatím neověřena. AUTH-019 je referencí úlohy, nikoli důkazem totožnosti osoby ani přesného času jejího spuštění. Hodnota 4,8 kB je údaj rozhraní za poslední minutu při dotazu, nikoli konstantní přenosová rychlost. Graf je schematická ilustrace, ne uložený časový průběh."
       }
+    },
+    "drone_arrival": {
+      "event": "000064",
+      "requested_by": "rudolf",
+      "summoned_by": "kara",
+      "from": "Recepce pod kamerou CAM-02",
+      "route": "Známá levá chodba, otevřené D-02",
+      "destination": "U pracovního stolu v COMMUNICATIONS CONTROL",
+      "status": "ARRIVED / STANDBY",
+      "diagnostics_started": false,
+      "incident_observed": false
     }
   }
 }
