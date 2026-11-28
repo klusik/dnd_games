@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 64,
+  "revision": 65,
+  "day": 19,
+  "type": "comms_control_consult_signal_source",
+  "player_action": "„Díky, zatím koukej, Rack A nejpíš do toho kufříku něco posílá,“ ukážu na kufřík, „asi nějaký signál. Ale odkud? Z antén?“",
+  "dm_response": "Kara se podívala na kufřík, zůstala u dveří. „Možná. Předtím konzole hlásila, že anténní rozhraní je připravené, ale vnější spojení nefunguje. To ještě neznamená, že antény nic nepřijímají. Klidně to ale může být i provoz uvnitř stanice.“ Zeptala se: „Co ti konzole píše jako zdroj těch dat?“ Rudolf má na aktuálním výpisu SOURCE: COMMS_SYNC, nikoli přímo anténní rozhraní. Z tohoto výpisu nelze rozlišit příchozí signály, odchozí požadavky na synchronizaci či obojí; jde o možnosti, nikoli nově ověřený datový tok. Konzole stále zobrazuje SERVICE INTERFACE a nabídku LINK DETAILS, TRANSACTION HISTORY, CAPTURE BUFFER, SERVICE CONTROL (zamčeno, další autorizace), ESC. Kara hlídá u dveří, Δ-47 čeká u pracovního stolu. Žádná diagnostika ani ovládání navíc.",
+  "rolls": [],
+  "changes": [
+    "Kara obdržela hráčovu hypotézu o přenosu signálu do kufříku, nikoli automaticky celý výpis konzole. Vyslovila možné zdroje a zeptala se na údaj SOURCE.",
+    "Původ signálu, jeho směr vzhledem k anténám, obsah dat a identita zařízení nadále neověřeny. Žádné nové měření ani použití konzole.",
+    "Rutinní rozhovor bez hodu. Polohy, konfigurace, kufřík, kabel, zdraví, inventář a doložené číselné zdroje beze změny."
+  ],
+  "sources": [
+    "events/000060.json",
+    "events/000061.json",
+    "events/000064.json",
+    "characters/kara.json",
+    "world/expedition-ds03.json"
+  ],
+  "correction_of": null
+}
