@@ -1085,7 +1085,7 @@
         "session": "UNLOCKED",
         "authority": "LOCAL",
         "prompt": "ESC RETURN TO SERVICE INTERFACE",
-        "view": "TRANSACTION HISTORY",
+        "view": "CAPTURE BUFFER",
         "biometric_match": "CONFIRMED",
         "subject": "RDF-ΔK452",
         "classification": "R-CLASS",
@@ -1118,61 +1118,61 @@
           ],
           "control_access": "LOCKED; ADDITIONAL AUTHORIZATION REQUIRED"
         },
-        "transaction_history": {
-          "event": "000067",
+        "capture_buffer": {
+          "event": "000068",
           "terminal": "COMMS CONTROL-01",
-          "physical_interface": "RACK-A / SVC-02",
-          "source": "LOCAL TRANSACTION LOG",
-          "scope": "Aktuální servisní relace",
-          "relative_time_origin": "INITIAL LINK ESTABLISHMENT",
+          "source": "COMMS_SYNC BUS",
+          "storage": "LOCAL RING BUFFER",
+          "display_mode": "LIVE",
           "entries": [
             {
-              "relative_time_seconds": -4,
-              "label": "PRE-CONNECTION SNAPSHOT",
-              "fields": {
-                "COMMS_SYNC": "INCOMPLETE",
-                "SERVICE PORT": "DISCONNECTED"
-              }
-            },
-            {
               "relative_time_seconds": 0,
-              "label": "PHYSICAL LINK ESTABLISHED",
-              "fields": {
-                "PORT": "SVC-02",
-                "DEVICE ID": "UNRESOLVED"
-              }
+              "direction": "TX",
+              "source": "DS-03",
+              "destination": "SYNC GROUP",
+              "type": "SYNC_HELLO",
+              "status": "QUEUED"
             },
             {
-              "relative_time_seconds": 7,
-              "label": "SERVICE AUTHORIZATION",
-              "fields": {
-                "REFERENCE": "AUTH-019",
-                "RESULT": "ACCEPTED"
-              }
+              "relative_time_seconds": 0.218,
+              "direction": "RX",
+              "source": "DS-01",
+              "destination": "DS-03",
+              "type": "SYNC_HELLO_ACK",
+              "status": "CRC VALID"
             },
             {
-              "relative_time_seconds": 12,
-              "label": "CAPTURE TASK CREATED",
-              "fields": {
-                "MODE": "PASSIVE MIRROR",
-                "SOURCE": "COMMS_SYNC BUS",
-                "STOP CONDITION": "MANUAL"
-              }
+              "relative_time_seconds": 0.221,
+              "direction": "SYS",
+              "source": "COMMS_SYNC",
+              "destination": "LOCAL",
+              "type": "AUTH_VALIDATION",
+              "status": "EPOCH MISMATCH"
             },
             {
-              "relative_time_seconds": 14,
-              "label": "FIRST DATA TRANSFER",
-              "fields": {
-                "DESTINATION": "EXTERNAL DEVICE",
-                "ACK": "RECEIVED"
-              }
+              "relative_time_seconds": 0.223,
+              "direction": "SYS",
+              "source": "COMMS_SYNC",
+              "destination": "LOCAL",
+              "type": "HANDSHAKE_REJECTED",
+              "status": "RETRY SCHEDULED"
+            },
+            {
+              "relative_time_seconds": 8,
+              "direction": "TX",
+              "source": "DS-03",
+              "destination": "SYNC GROUP",
+              "type": "SYNC_HELLO",
+              "status": "QUEUED"
             }
           ],
-          "capture_session_age_at_query_minutes": 1868,
-          "session_interruptions_reported": 0,
-          "remote_control_transactions_reported": 0,
-          "task_status": "RUNNING",
-          "certainty": "Výpis lokálního logu, nikoli nezávislé měření. Podle předspojovacího snapshotu byla COMMS_SYNC INCOMPLETE 4 s před navázáním fyzické linky SVC-02 v této relaci. Neprokazuje původní příčinu poruchy, bezpečnost zařízení, úplnost logu ani absenci jiných řídicích cest. Časy kamer 004 (31 h 16 min) a 003 (9 h 42 min) pocházejí z dřívějšího dotazu 000041, stáří capture session 31 h 08 min z aktuálního dotazu; synchronizace časových základen a přesný odstup neověřeny. Chronologická souvislost s kamerami je orientační. Nulové počty pouze dle dostupného logu aktuální relace. Identita externího zařízení a jeho skutečného operátora neověřena."
+          "repeated_sequence_interval_seconds_approx": 8,
+          "header_decoding": "AVAILABLE",
+          "payload_decoding": "PARTIAL",
+          "remote_identity": "NOT VERIFIED",
+          "external_archive_read": false,
+          "exported": false,
+          "certainty": "Zobrazený vzorek průběžně aktualizovaného lokálního bufferu, nikoli nezávislé RF měření či kompletní archiv. DS-01 je tvrzená identita zdroje v hlavičce přijatého rámce; CRC VALID potvrzuje dle systému kontrolu integrity, nikoli autentizaci identity. TX QUEUED neprokazuje vyslání či doručení. EPOCH MISMATCH je pozorovaná chybová zpráva lokální validace, přesná definice EPOCH, hodnoty, příčina a správná referenční hodnota dosud neznámé. Osmisekundové opakování je pozorovaný průběh výpisu, ne nezávisle ověřená vlastnost protokolu. Souvislost s kufříkem vychází z předchozích servisních výpisů a fyzického kabelu; není potvrzeno, že kufřík všechna data skutečně uchovává."
         }
       },
       "observed_by": "kara",
@@ -1228,9 +1228,9 @@
         ],
         "control_access": "LOCKED; ADDITIONAL AUTHORIZATION REQUIRED",
         "selected_function": {
-          "number": 2,
-          "name": "TRANSACTION HISTORY",
-          "event": "000067"
+          "number": 3,
+          "name": "CAPTURE BUFFER",
+          "event": "000068"
         },
         "certainty": "Pozorovaný výpis místní diagnostiky, nikoli nezávisle ověřený tok, obsah, účel, stav napájení nebo totožnost zařízení. Fyzický port patří k označenému racku A, ze kterého Rudolf sledoval kabel ke kufříku; přímá vazba konkrétního portu SVC-02 na tento kabel zatím neověřena. AUTH-019 je referencí úlohy, nikoli důkazem totožnosti osoby ani přesného času jejího spuštění. Hodnota 4,8 kB je údaj rozhraní za poslední minutu při dotazu, nikoli konstantní přenosová rychlost. Graf je schematická ilustrace, ne uložený časový průběh."
       },
@@ -1324,6 +1324,62 @@
         "remote_control_transactions_reported": 0,
         "task_status": "RUNNING",
         "certainty": "Výpis lokálního logu, nikoli nezávislé měření. Podle předspojovacího snapshotu byla COMMS_SYNC INCOMPLETE 4 s před navázáním fyzické linky SVC-02 v této relaci. Neprokazuje původní příčinu poruchy, bezpečnost zařízení, úplnost logu ani absenci jiných řídicích cest. Časy kamer 004 (31 h 16 min) a 003 (9 h 42 min) pocházejí z dřívějšího dotazu 000041, stáří capture session 31 h 08 min z aktuálního dotazu; synchronizace časových základen a přesný odstup neověřeny. Chronologická souvislost s kamerami je orientační. Nulové počty pouze dle dostupného logu aktuální relace. Identita externího zařízení a jeho skutečného operátora neověřena."
+      },
+      "capture_buffer_report": {
+        "event": "000068",
+        "terminal": "COMMS CONTROL-01",
+        "source": "COMMS_SYNC BUS",
+        "storage": "LOCAL RING BUFFER",
+        "display_mode": "LIVE",
+        "entries": [
+          {
+            "relative_time_seconds": 0,
+            "direction": "TX",
+            "source": "DS-03",
+            "destination": "SYNC GROUP",
+            "type": "SYNC_HELLO",
+            "status": "QUEUED"
+          },
+          {
+            "relative_time_seconds": 0.218,
+            "direction": "RX",
+            "source": "DS-01",
+            "destination": "DS-03",
+            "type": "SYNC_HELLO_ACK",
+            "status": "CRC VALID"
+          },
+          {
+            "relative_time_seconds": 0.221,
+            "direction": "SYS",
+            "source": "COMMS_SYNC",
+            "destination": "LOCAL",
+            "type": "AUTH_VALIDATION",
+            "status": "EPOCH MISMATCH"
+          },
+          {
+            "relative_time_seconds": 0.223,
+            "direction": "SYS",
+            "source": "COMMS_SYNC",
+            "destination": "LOCAL",
+            "type": "HANDSHAKE_REJECTED",
+            "status": "RETRY SCHEDULED"
+          },
+          {
+            "relative_time_seconds": 8,
+            "direction": "TX",
+            "source": "DS-03",
+            "destination": "SYNC GROUP",
+            "type": "SYNC_HELLO",
+            "status": "QUEUED"
+          }
+        ],
+        "repeated_sequence_interval_seconds_approx": 8,
+        "header_decoding": "AVAILABLE",
+        "payload_decoding": "PARTIAL",
+        "remote_identity": "NOT VERIFIED",
+        "external_archive_read": false,
+        "exported": false,
+        "certainty": "Zobrazený vzorek průběžně aktualizovaného lokálního bufferu, nikoli nezávislé RF měření či kompletní archiv. DS-01 je tvrzená identita zdroje v hlavičce přijatého rámce; CRC VALID potvrzuje dle systému kontrolu integrity, nikoli autentizaci identity. TX QUEUED neprokazuje vyslání či doručení. EPOCH MISMATCH je pozorovaná chybová zpráva lokální validace, přesná definice EPOCH, hodnoty, příčina a správná referenční hodnota dosud neznámé. Osmisekundové opakování je pozorovaný průběh výpisu, ne nezávisle ověřená vlastnost protokolu. Souvislost s kufříkem vychází z předchozích servisních výpisů a fyzického kabelu; není potvrzeno, že kufřík všechna data skutečně uchovává."
       }
     },
     "drone_arrival": {

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 67,
+  "revision": 68,
+  "day": 19,
+  "type": "comms_control_service_capture_buffer",
+  "player_action": "Okey, jdi ven z nabídky a do „Capture buffer“, prosím",
+  "dm_response": "Rudolf stiskl ESC z TRANSACTION HISTORY a otevřel CAPTURE BUFFER. CAPTURE BUFFER (000068): COMMS_SYNC BUS, LOCAL RING BUFFER, LIVE. Vzorek relativních událostí: T+0.000 TX DS-03 → SYNC GROUP, SYNC_HELLO QUEUED; T+0.218 RX DS-01 → DS-03, SYNC_HELLO_ACK CRC VALID; T+0.221 SYS COMMS_SYNC → LOCAL AUTH_VALIDATION EPOCH MISMATCH; T+0.223 SYS COMMS_SYNC → LOCAL HANDSHAKE_REJECTED RETRY SCHEDULED; T+8.000 TX DS-03 → SYNC GROUP SYNC_HELLO QUEUED. Sekvence podle výpisu opakovaná cca po 8 s. HEADER DECODING AVAILABLE, PAYLOAD DECODING PARTIAL, REMOTE IDENTITY NOT VERIFIED. DS-01 odpovídá označení dříve aktivované stanice, ale samotný údaj v hlavičce neověřuje identitu vzdáleného uzlu. EPOCH MISMATCH naznačuje nesoulad synchronizačního kontextu/generace; přesný význam EPOCH, hodnoty, správná reference a příčina dosud neznámé. TX QUEUED neprokazuje RF doručení. CRC není autentizace. Kompletní externí archiv nepřečten, žádná kopie dat nepořízena. Hypotéza, že kufřík zaznamenává opakovaný handshake, není nezávisle potvrzena. Zobrazeno schéma pořadí událostí s nepotvrzenou identitou DS-01. Kara hlídá u D-02, Δ-47 čeká u pracovního stolu. ESC návrat do SERVICE INTERFACE.",
+  "rolls": [],
+  "changes": [
+    "Návrat z TRANSACTION HISTORY a otevření CAPTURE BUFFER v jednom zadaném tahu; uložena pozorovaná posloupnost rámců a chybových stavů.",
+    "Nová stopa EPOCH MISMATCH při lokální autorizační kontrole, opakovaný handshake a tvrzený zdroj DS-01. Přesná příčina, hodnoty a identita neověřeny.",
+    "Rutinní čtení bez hodu. Žádná kopie dat, ovládání, změna konfigurace, poloh, zdraví, inventáře či doložené číselné spotřeby. Žádná konvergence."
+  ],
+  "sources": [
+    "events/000037.json",
+    "events/000061.json",
+    "events/000064.json",
+    "events/000066.json",
+    "events/000067.json",
+    "world/expedition-ds03.json",
+    "inventories/data.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}
