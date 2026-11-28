@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 58,
+  "revision": 59,
+  "day": 19,
+  "type": "comms_control_entry_room_survey_pending",
+  "player_action": "„Jo, jdeme, opatrně, koukni za překážky, jestli se tam někdo neschovává“ a jdeme dovnitř. Až budeme uvnitř, pořádně se rozhlédnu, jestli uvidím, kudy vedou kabeláže, kolik a kde jsou kamery, jestli tam jsou nějaká nouzová tlačítka, další dveře, skryté dveře. (Klidně na všechno zvlášť) :-D",
+  "dm_response": "Rudolf a Kara opatrně vstoupili do D-02. Kara: „Za konzolemi nikdo není. Za tou velkou skříní se ale pořádně nepodívám, je moc blízko stěny.“ Kara prohlédla dostupný prostor za konzolemi a stojany. Perception 5+3=8; za konzolemi nikoho nevidí, za velkou skříň přiléhající ke stěně se pořádně nepodívá. Nejde o kompletní kontrolu místnosti. Přibližný rozměr 7 × 6 m. Více světla než v recepci, část elektroniky aktivní, ventilátory ve stojanech se otáčejí. Vlevo rack A a blíže vchodu velká skříň u stěny; hlavní konzole uprostřed v zadní části, pracovní stůl vpravo, kovový servisní panel v pravé stěně. D-02 v přední stěně, vedle něj nouzový panel. Orientační dispozice, nikoli přesný zaměřený půdorys. Hlavní rozvody pod stropem, volně položený silnější černý kabel od racku A pod pracovní stůl. Funkce a přesné zakončení dosud neověřeny. Jeden kopulovitý objekt v horním rohu na pravé straně vzdálenější stěny připomíná kameru; v dřívějším seznamu není kamera uvnitř této místnosti uvedena. Identita a provozní stav objektu neověřeny. Vedle D-02 červené tlačítko v ochranném krytu označené EMERGENCY RELEASE, neaktivováno. D-02 jediný zjevný vstup či východ. Na pravé stěně větší kovový servisní panel bez viditelné kliky. Další vstupy neověřeny. Zavřený tmavý pevný kufřík na pracovním stole, tvarově odpovídá kamerovému záznamu. Totožnost, obsah a případné elektrické propojení neověřeny; nebyl dotčen. Orientační nákres podle viditelné dispozice. Dron bez nového pokynu zůstává u recepce. Zjevné údaje bez hodu; podrobná vizuální kontrola čeká na hráčovy tři hody: Engineering 1d20+5 (fyzické vedení kabeláže), Perception 1d20+2 (kamery a nouzové prvky), Investigation 1d20+4 (skryté vstupy a servisní panel). Žádná manipulace s vybavením. Vstup a základní prohlídka cca 2 minuty.",
+  "rolls": [
+    {
+      "actor": "kara",
+      "skill": "Perception",
+      "dice": "1d20",
+      "roll": 5,
+      "modifier": 3,
+      "total": 8,
+      "result": "Kara prohlédla dostupný prostor za konzolemi a stojany. Perception 5+3=8; za konzolemi nikoho nevidí, za velkou skříň přiléhající ke stěně se pořádně nepodívá. Nejde o kompletní kontrolu místnosti."
+    }
+  ],
+  "changes": [
+    "Oba lidé vstoupili do D-02, Δ-47 zůstává u recepce; aktualizovány polohy a pozorovaná dispozice.",
+    "Kara provedla omezenou kontrolu za překážkami, za velkou skříní neověřeno. Žádné potvrzení úplné bezpečnosti.",
+    "Viditelné prvky a zavřený kufřík zaznamenány, nové detailní hráčovy hody čekají. Žádná tajná hranice uložena.",
+    "Vstup a základní kontrola přibližně 2 minuty, stále den 19 ráno; žádná ověřená číselná spotřeba, změna zdraví, inventáře, munice nebo konfigurace."
+  ],
+  "sources": [
+    "events/000057.json",
+    "events/000058.json",
+    "events/000039.json",
+    "events/000048.json",
+    "world/expedition-ds03.json",
+    "characters/kara.json",
+    "characters/rudolf.json",
+    "characters/delta-47.json",
+    "rules.md",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}

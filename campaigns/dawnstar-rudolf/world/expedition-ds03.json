@@ -100,9 +100,9 @@
       },
       "kara_comment": "Některé systémy zřejmě fungují, možnost pozorování neověřena.",
       "current_positions": {
-        "event": "000057",
-        "rudolf": "Levá komunikační chodba před prahem D-02, u zárubně",
-        "kara": "Před prahem D-02 na druhé straně zárubně",
+        "event": "000059",
+        "rudolf": "Uvnitř COMMUNICATIONS CONTROL, přední část místnosti",
+        "kara": "Uvnitř COMMUNICATIONS CONTROL u velké skříně vlevo",
         "drone": "Uvnitř vstupní haly DS-03 přímo pod kamerou nad recepcí"
       }
     },
@@ -897,7 +897,7 @@
       "opening_before_cm_approx": 25,
       "opening_after_cm_approx": 65,
       "operation": "Ručně posunuto, mírný odpor, slabé tření mechanismu.",
-      "entered": false
+      "entered": true
     },
     "threshold_recon": {
       "event": "000057",
@@ -928,6 +928,79 @@
         "visible_risks": "V dostupném zorném poli žádný člověk, krev ani známky střelby. Za vyšší stojany není vidět; bezpečnost celé místnosti neověřena."
       },
       "kara_comment": "Z mojí strany taky čisto. Myslím, že můžeme dovnitř."
+    },
+    "entry": {
+      "event": "000059",
+      "entered": true,
+      "door": "D-02",
+      "opening_cm_approx": 65,
+      "positions": {
+        "event": "000059",
+        "rudolf": "Uvnitř COMMUNICATIONS CONTROL, přední část místnosti",
+        "kara": "Uvnitř COMMUNICATIONS CONTROL u velké skříně vlevo",
+        "drone": "Uvnitř vstupní haly DS-03 přímo pod kamerou nad recepcí"
+      },
+      "weapons_prepared": true,
+      "flashlights_on": true,
+      "kara_search": {
+        "dice": "1d20",
+        "roll": 5,
+        "modifier": 3,
+        "total": 8,
+        "result": "Kara prohlédla dostupný prostor za konzolemi a stojany. Perception 5+3=8; za konzolemi nikoho nevidí, za velkou skříň přiléhající ke stěně se pořádně nepodívá. Nejde o kompletní kontrolu místnosti."
+      },
+      "elapsed_minutes_approx": 2
+    },
+    "room_survey": {
+      "event": "000059",
+      "observations": {
+        "dimensions_m_approx": {
+          "width": 7,
+          "depth": 6
+        },
+        "lighting": "Více světla než v recepci, část elektroniky aktivní, ventilátory ve stojanech se otáčejí.",
+        "layout": "Vlevo rack A a blíže vchodu velká skříň u stěny; hlavní konzole uprostřed v zadní části, pracovní stůl vpravo, kovový servisní panel v pravé stěně. D-02 v přední stěně, vedle něj nouzový panel. Orientační dispozice, nikoli přesný zaměřený půdorys.",
+        "cabling": "Hlavní rozvody pod stropem, volně položený silnější černý kabel od racku A pod pracovní stůl. Funkce a přesné zakončení dosud neověřeny.",
+        "cameras": "Jeden kopulovitý objekt v horním rohu na pravé straně vzdálenější stěny připomíná kameru; v dřívějším seznamu není kamera uvnitř této místnosti uvedena. Identita a provozní stav objektu neověřeny.",
+        "emergency_controls": "Vedle D-02 červené tlačítko v ochranném krytu označené EMERGENCY RELEASE, neaktivováno.",
+        "doors": "D-02 jediný zjevný vstup či východ. Na pravé stěně větší kovový servisní panel bez viditelné kliky. Další vstupy neověřeny.",
+        "case": "Zavřený tmavý pevný kufřík na pracovním stole, tvarově odpovídá kamerovému záznamu. Totožnost, obsah a případné elektrické propojení neověřeny; nebyl dotčen."
+      },
+      "scope": "Základní vizuální prohlídka bez manipulace s vybavením; za velkou skříní neověřeno.",
+      "pending_checks": [
+        {
+          "type": "skill_check",
+          "actor": "rudolf",
+          "skill": "Engineering",
+          "dice": "1d20",
+          "modifier": 5,
+          "context": "Podrobná fyzická kontrola vedení kabeláže, viditelných připojení a možné funkce, včetně volného kabelu od racku A pod stůl; pouze pozorování, nic neodpojuje ani neotevírá. Základní Engineering bez dalšího bonusu za digitální data nebo dron.",
+          "event": "000059"
+        },
+        {
+          "type": "skill_check",
+          "actor": "rudolf",
+          "skill": "Perception",
+          "dice": "1d20",
+          "modifier": 2,
+          "context": "Cílená vizuální kontrola místnosti, rohů a stropu kvůli kamerám, případným nenápadným senzorům a nouzovým ovladačům. Samotná existence objektu ani viditelné kontrolky neověřují funkčnost nebo záznam.",
+          "event": "000059"
+        },
+        {
+          "type": "skill_check",
+          "actor": "rudolf",
+          "skill": "Investigation",
+          "dice": "1d20",
+          "modifier": 4,
+          "context": "Hledání dalších, případně skrytých vstupů, anomálií ve stěnách, spár a servisních přístupů, včetně viditelného kovového panelu; bez demontáže, násilného otevření nebo aktivace. Neopakovat Karu.",
+          "event": "000059"
+        }
+      ],
+      "completed_checks": [],
+      "case_opened": false,
+      "console_used": false,
+      "emergency_release_activated": false,
+      "physical_configuration_changed": false
     }
   }
 }

@@ -3,7 +3,7 @@
   "campaign_id": "dawnstar-rudolf",
   "id": "kara",
   "kind": "character_sheet",
-  "location": "DS-03, levá komunikační chodba, před prahem D-02 na opačné straně zárubně než Rudolf",
+  "location": "DS-03, uvnitř COMMUNICATIONS CONTROL (D-02), u velké skříně vlevo",
   "role": "Spojenkyně, analýza biologických vzorků",
   "relationship": "Vzájemná důvěra, společná historie; samostatná osobnost",
   "health": null,
@@ -25,7 +25,8 @@
     "Den 19, event 000055: Rudolf ukázal aktuální profil P-005 Nadia Chen, Systems Engineer, COMMS MAINTENANCE UNIT, odpovědnosti zahrnují nouzovou distribuci energie, synchronizaci uzlů a fallback diagnostiku. Rudolf předpokládá, že jeden ze dvou nalezených lidí může být osoba z kamer. Kara dosud neviděla profil P-004 a nezná jméno druhého člověka. Identita držitele tokenu ani aktuální poloha obou osob nepotvrzeny.",
     "Den 19, event 000056: Rudolf souhlasil s návrhem průzkumu a zeptal se na stav dveří. Kara vychází ze svého přímého pozorování ručně otevřeného hlavního vstupu a pootevřených dveří do komunikačního střediska; nezná spolehlivý stav ostatních dveří. Souhlasí s průzkumem komunikačního střediska kvůli kufříku a synchronizaci. Zeptala se na postup s Δ-47.",
     "Den 19, event 000057: D-02 bylo možné ručně rozšířit z cca 25 na 65 cm; z prahu viděla konzole, vybavení a na stole předmět, který může být kufříkem. Obsah místnosti, bezpečnost a identita předmětu neověřeny.",
-    "Den 19, event 000058: při pokračujícím pozorování z prahu D-02 nezaznamenala ve svém omezeném zorném poli hrozbu; navrhla vstup. Nové detaily Rudolfova pozorování jí dosud výslovně nesdělil."
+    "Den 19, event 000058: při pokračujícím pozorování z prahu D-02 nezaznamenala ve svém omezeném zorném poli hrozbu; navrhla vstup. Nové detaily Rudolfova pozorování jí dosud výslovně nesdělil.",
+    "Den 19, event 000059: vstoupila do D-02 s Rudolfem, prohlédla dostupný prostor za konzolemi a stojany, nikoho tam neviděla. Nedokázala pořádně prohlédnout prostor za velkou skříní u stěny. Bezpečnost celé místnosti nepotvrzena; Rudolfovy jednotlivé nové technické postřehy zatím výslovně nesděleny."
   ],
   "name": "Kara Velin",
   "age": 32,
@@ -40,7 +41,7 @@
   "known_personal_memories": [
     "Vůně mokré země po letní bouřce, bez konkrétního místa (vlastní sdělení dne 18)."
   ],
-  "current_activity": "Před prahem D-02 na opačné straně zárubně než Rudolf; po dokončení jeho vizuálního průzkumu sdělila do komunikátoru, že ze své strany nevidí hrozbu, a navrhla vstoupit. Dosud nevstoupila. Zbraň připravena, svítilna zapnuta.",
+  "current_activity": "Vstoupila s Rudolfem do D-02, prohlédla dostupná místa za konzolemi a stojany, Perception 5+3=8. Za konzolemi nikoho nevidí, za velkou skříní u stěny nemá dostatečný výhled. Hlásí omezení, zůstává v místnosti u skříně, zbraň připravena, svítilna zapnuta.",
   "level": null,
   "xp": null,
   "species": "Human",
