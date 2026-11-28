@@ -31,7 +31,7 @@
     "Extendable antenna array"
   ],
   "designation": "Δ-47",
-  "current_activity": "Na přivolání Kary se souhlasem Rudolfa přešel od recepce známou levou chodbou přes D-02 do komunikačního střediska. Zastavil u pracovního stolu a čeká na konkrétní pokyn. Žádné skenování, diagnostika, zásah do kufříku nebo kabelu ani EMP.",
+  "current_activity": "U pracovního stolu v COMMUNICATIONS CONTROL. Na Rudolfův dotaz natočil hlavici k němu a odpověděl ohledně možné asistence s analýzou a aktualizací klíčů, vyžaduje místní manifest a ověřenou referenci. Oprávnění k zápisu neověřena. Čeká na diagnostická data či další příkaz. Žádné připojení ke konzoli, manipulace s kufříkem, skenování ani EMP.",
   "body": "Čtyřnohý nízký kloubový dron s otočnou hlavicí a vysouvací anténou; pozdější scény jej popisují i jako létající. Režim pohybu lze měnit jen podle doloženého vybavení, přesný pohon neověřen.",
   "original_designation": "SIRIUS MINING SECURITY NODE",
   "authorization": {
@@ -129,5 +129,26 @@
     "reaction": "Bez pozorovaného pohybu kamery, sirény či jiné zjevné reakce",
     "recommendation": "Vyhledat místní bezpečnostní konzoli",
     "certainty": "Report dronu a viditelné pozorování; přístup k živému obrazu ani stav záznamu neověřeny."
+  },
+  "last_key_update_consultation": {
+    "event": "000070",
+    "requested_by": "rudolf",
+    "query": "Schopnost aktualizovat klíče v systému",
+    "reported_capabilities": {
+      "manifest_analysis": "SUPPORTED",
+      "generation_comparison": "SUPPORTED",
+      "reference_validation": "CONDITIONAL",
+      "write_authorization": "UNVERIFIED",
+      "direct_system_update": "NOT VERIFIED"
+    },
+    "required_inputs": [
+      "Aktuální manifest stanice",
+      "Ověřená referenční verze"
+    ],
+    "response": "Mohu asistovat při analýze a aktualizaci klíčů. Potřebuji však nejprve získat aktuální manifest stanice a ověřenou referenční verzi. Moje oprávnění k zápisu do tohoto systému dosud nebylo ověřeno.",
+    "diagnostic_data_received": false,
+    "connected_to_main_console": false,
+    "configuration_changed": false,
+    "certainty": "Vlastní vyjádření dronu o možné diagnostické asistenci v rámci známých funkcí. Nejde o ověření konkrétní kompatibility s DAWN-SECURE-V2, získání referenčních klíčů ani oprávnění provést aktualizaci. Žádný nový technický test ani externí dotaz."
   }
 }

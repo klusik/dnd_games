@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "campaign_id": "dawnstar-rudolf",
+  "previous_revision": 69,
+  "revision": 70,
+  "day": 19,
+  "type": "comms_control_drone_capability_query",
+  "player_action": "Otočím se na DS-delta2 (mluv na mě česky, proč mluvíš maďarsky? :-o) a zadám query, jestli je schopen aktualizovat klíče v systému.",
+  "dm_response": "OOC: omluva za maďarštinu, pokračování česky. DS-delta2 interpretováno jako přítomný dron Δ-47, nikoli vzdálený archivní uzel DS-Δ2; rozlišení sděleno hráči. Δ-47 natočil hlavici a odpověděl: „Mohu asistovat při analýze a aktualizaci klíčů. Potřebuji však nejprve získat aktuální manifest stanice a ověřenou referenční verzi. Moje oprávnění k zápisu do tohoto systému dosud nebylo ověřeno.“ Vlastní posouzení: analýza manifestu a porovnání generací supported, referenční validace conditional, zápis unverified, přímá aktualizace not verified. Dron není připojený k hlavní konzoli a nezná její aktuální výpis. Žádný vzdálený dotaz, diagnostické měření, zápis či aktualizace.",
+  "rolls": [],
+  "changes": [
+    "Zaznamenán dotaz na schopnost dronu a jeho podmíněná odpověď. Neověřena konkrétní kompatibilita, platný referenční manifest ani oprávnění k zápisu.",
+    "Výslovně rozlišeny Δ-47 a DS-Δ2. Dotaz interpretován jako neinvazivní místní rozhovor, nikoli příkaz vzdálenému uzlu.",
+    "Rutinní dotaz bez hodu. Žádná změna konfigurace, poloh, zdraví, inventáře, doložené spotřeby, žádná synchronizace či konvergence. Konzole zůstává v SYNCHRONIZATION DIAGNOSTICS."
+  ],
+  "sources": [
+    "events/000064.json",
+    "events/000069.json",
+    "characters/delta-47.json",
+    "world/expedition-ds03.json",
+    "Nový fikční průběh tohoto tahu"
+  ],
+  "correction_of": null
+}
